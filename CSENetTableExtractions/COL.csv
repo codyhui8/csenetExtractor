@@ -1,0 +1,136 @@
+COL P CITAX − COLLECTION PROVISION OF INFORMATION – TAX OFFSET
+DISBURSED OR NEGATIVE ADJUSTMENT CONFIRMED
+Description/Business Usage
+Sent by Initiating State:
+This transaction is used to electronically notify the responding state that federal or state tax
+monies have been received and disbursed. It may also be used to identify when a negative
+adjustment (from the original offset) has occurred by entering a negative payment amount
+value. This transaction should be sent only after monies have been disbursed or a negative
+adjustment confirmed.
+Used on:
+Established interstate cases
+Relevant CFR Requirements:
+"The 45CFR 303.72(d)(1) states that the state referring past-due support for offset must, in"
+"interstate situations, notify any other state involved in enforcing the support order when it"
+receives the offset amount from the Secretary of the U.S. Treasury.
+Automated Triggers:
+Determine how the CSE system records when tax offset monies are received and disbursed
+"on an interstate case. Likewise, determine how the CSE system records a negative"
+adjustment and send this transaction with the negative adjustment amount in the Payment-
+Amount field.
+Action by Receiving State:
+"Process according to state policy and federal guidelines. Update case information, such as"
+"noting receipt of the transaction, and determine action needed to update payment records."
+Recommended Use of Data:
+"For IRS collections, use Interstate-Payment-Method = O in the Collection data block, so"
+monies will not be forwarded to the other jurisdiction.
+Required Data Blocks and Elements Data Element Description (Data Block Record Layout)
+HEADER
+LOCAL-FIPS-STATE/COUNTY Your state/county FIPS code
+OTHER-FIPS-STATE/COUNTY State/county FIPS code to which transaction
+is directed
+CSENET-VERSION-NUMBER 003
+TRANSACTION-SERIAL-NUMBER Fill as appropriate
+ACTION-CODE P
+FUNCTIONAL-TYPE-CODE COL
+TXN-DATE Date transaction was created
+COL P CITAX − COLLECTION PROVISION OF INFORMATION – TAX OFFSET
+DISBURSED OR NEGATIVE ADJUSTMENT CONFIRMED
+CASE-ID Your case ID
+OTHER-CASE-ID Other case ID
+ACTION-REASON CITAX
+ATTACHMENTS-IND =N
+CASE-DATA-IND =1 (numeric)
+"*NCP-IDENTIFICATION-IND =1 (numeric)"
+NCP-LOCATE-DATA-IND Fill as appropriate
+"*PARTICIPANT-DATA-IND =1 (numeric)"
+ORDER-DATA-IND Fill as appropriate
+COLLECTION-DATA-IND =1 (numeric)
+INFORMATION-IND =0 (numeric)
+OVERDUE-IND =0 (numeric)
+CASE DATA BLOCK
+CASE TYPE Any case type except non-IV-D
+CASE-STATUS =O (alpha)
+"*CONTACT-NAME-LAST Your state contact last name"
+"*CONTACT-NAME-FIRST Your state contact first name"
+"*CONTACT-ADDRESS-LINE1 Contact address"
+"*CONTACT-CITY Contact city"
+"*CONTACT-STATE Contact state"
+"*CONTACT-ZIP-1 Contact ZIP Code"
+"*CONTACT-PHONE-NUM Contact phone number"
+NCP IDENTIFICATION DATA BLOCK
+NAME-LAST NCP last name
+NAME-FIRST NCP first name
+"*SSN NCP Social Security number"
+"*DATE-OF-BIRTH NCP date of birth"
+"*PARTICIPANT DATA BLOCK"
+"*NAME-LAST Participant last name"
+COL P CITAX − COLLECTION PROVISION OF INFORMATION – TAX OFFSET
+DISBURSED OR NEGATIVE ADJUSTMENT CONFIRMED
+"*NAME-FIRST Participant first name"
+"*RELATIONSHIP Fill as appropriate"
+"*PARTICIPANT-STATUS =O (alpha)"
+COLLECTION DATA BLOCK
+DATE-OF-COLLECTION Date payment was received
+DATE-OF-POSTING Date payment was posted
+PAYMENT-AMOUNT Fill as appropriate
+PAYMENT-SOURCE Fill as appropriate
+INTERSTATE-PAYMENT-METHOD Fill as appropriate
+"[COL P CISUB − COLLECTION PROVISION OF INFORMATION – SUBMISSION"
+FOR FEDERAL TAX OFFSET]
+Description/Business Usage
+Sent by Initiating State:
+This transaction is used to electronically notify a responding state that an NCP’s case has
+been submitted for federal tax offset. The Collection data block is NOT required for this
+transaction.
+Relevant CFR requirements:
+"45CFR 303.72(d)(1) states that the state referring past-due support for offset must, in"
+"interstate situations, notify any other state involved in enforcing the support order when it"
+submits an interstate case for offset.
+Automated Triggers:
+"When your state submits a case for the federal tax offset process, check to see whether you"
+"are the initiating state in a two state case. If so, automatically send this transaction to the"
+other state.
+Action by Receiving State:
+"Process according to state policy and federal guidelines. In most cases, the worker will not"
+"need to take any action upon receiving this transaction, so determine what action is needed"
+before automatically notifying workers that this transaction was received.
+Required Data Blocks and Elements Data Element Description (Data Block Record Layout)
+HEADER
+LOCAL-FIPS-STATE/COUNTY Your state/county FIPS code
+OTHER-FIPS-STATE/COUNTY State/county FIPS code to which transaction
+is directed
+CSENET-VERSION-NUMBER 003
+TRANSACTION-SERIAL-NUMBER Fill as appropriate
+ACTION-CODE P
+FUNCTIONAL-TYPE-CODE COL
+TXN-DATE Date transaction was created
+CASE-ID Your case ID
+OTHER-CASE-ID Other case ID
+ACTION-REASON CISUB
+ATTACHMENTS-IND =N
+"*CASE-DATA-IND =1 (numeric)"
+"*NCP-IDENTIFICATION-IND =1 (numeric)"
+"[COL P CISUB − COLLECTION PROVISION OF INFORMATION – SUBMISSION"
+FOR FEDERAL TAX OFFSET]
+NCP-LOCATE-DATA-IND =0 (numeric)
+PARTICIPANT-DATA-IND =0 (numeric)
+ORDER-DATA-IND =0 (numeric)
+COLLECTION-DATA-IND =0 (numeric)
+INFORMATION-IND =0 (numeric)
+OVERDUE-IND =0 (numeric)
+CASE DATA BLOCK
+CASE TYPE Any case type except non-IV-D
+CASE-STATUS =O (alpha)
+"*CONTACT-NAME-LAST Your state contact last name"
+"*CONTACT-NAME-FIRST Your state contact first name"
+"*CONTACT-ADDRESS-LINE1 Contact address"
+"*CONTACT-CITY Contact city"
+"*CONTACT-STATE Contact state"
+"*CONTACT-ZIP-1 Contact ZIP Code"
+"*CONTACT-PHONE-NUM Contact phone number"
+NCP IDENTIFICATION DATA BLOCK
+NAME-LAST NCP last name
+NAME-FIRST NCP first name
+"*SSN NCP Social Security number"
+"*DATE-OF-BIRTH NCP date of birth"
