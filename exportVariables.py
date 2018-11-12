@@ -8,3 +8,12 @@ dataBlocks = [
     'INFORMATION DATA BLOCK'
 ]
 
+allFunctionCodes = [
+    'COL',
+    'CSI',
+    'ENF',
+    'EST',
+    'LO1',
+    'MSC',
+    'PAT'
+]
