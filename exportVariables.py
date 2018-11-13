@@ -1,4 +1,5 @@
 dataBlocks = [
+    'HEADER',
     'CASE DATA BLOCK',
     'NCP IDENTIFICATION DATA BLOCK',
     'NCP LOCATE DATA BLOCK',

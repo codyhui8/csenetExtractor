@@ -1,8 +1,8 @@
 import csv
 import os
 import exportVariables
-import xlsxwriter
 import re
+
 
 class mainExtractor(object):
 
@@ -107,7 +107,7 @@ class mainExtractor(object):
                     # print("Append the Header")
                     self.appendHeader(codes, FARCode, lineNumber, rows)
                     isDescriptionLine = True
-
+        # # This will run if we have a file with a UTF-8 value of 'âˆ’'. Otherwise, this can be commented out
         # elif (len(firstThreeWords) > 2 and 'âˆ’' in firstThreeWords[2] and self.isFarCode(firstThreeWords)):
         #     if ((len(firstThreeWords[0]) == 3 and len(firstThreeWords[1]) == 1)):
         #         FARCode = ' '.join([firstThreeWords[0], firstThreeWords[1], firstThreeWords[2][:4]])
@@ -177,7 +177,7 @@ class mainExtractor(object):
         return True
 
     def removeAsterisk(self, value):
-        if value[0] =='*':
+        if value[0] == '*':
             return value[1:]
         else:
             return value
@@ -205,7 +205,8 @@ class mainExtractor(object):
         else:
             with open(self.saveLocationFARCode, mode='w') as transactionsTypes:
                 transactionsCSV = csv.writer(transactionsTypes, delimiter=',', quotechar='"', lineterminator='\n')
-                header = ['FAR_CODE_CD', 'ACTION_CD', 'FUNCTION_CD', 'ACTION_REASON_CD', 'FAR_CODE_ID', 'FAR_CODE_DESCRIPTION_TXT']
+                header = ['FAR_CODE_CD', 'ACTION_CD', 'FUNCTION_CD', 'ACTION_REASON_CD', 'FAR_CODE_ID',
+                          'FAR_CODE_DESCRIPTION_TXT']
                 transactionsCSV.writerow(header)
                 self.writeFARCode(transactionsCSV, currentCount, csenetTransactions)
 
@@ -253,6 +254,7 @@ class mainExtractor(object):
                 self.exportFARCode(FARCodes, transactionsCSV, currentLocation)
                 currentLocation += len(FARCodes)
                 transactionsTypes.close()
+
 
 extractor = mainExtractor()
 extractor.extractData()
