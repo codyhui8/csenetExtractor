@@ -2,6 +2,7 @@ import csv
 import os
 import exportVariables
 import xlsxwriter
+import re
 
 class mainExtractor(object):
 
@@ -24,13 +25,14 @@ class mainExtractor(object):
             fileName = os.path.join(dirName, 'CSENetTableExtractions/', self.fileName + '.csv')
             # print(fileName)
             FARCodes = self.extractCSV(fileName)
+            # print(FARCodes)
             self.exportDataBlocks(FARCodes)
             self.exportFARCode(FARCodes, None, 1)
 
     # Start reader and extract the FAR codes with relevant Data Block information
     def extractCSV(self, fileName):
         with open(fileName, 'r') as csv_file:
-            csv_reader = csv.reader(csv_file, delimiter=",")
+            csv_reader = csv.reader(csv_file, delimiter=",", quotechar='"')
             extractedFAR = self.extractBlocks(csv_reader)
 
         return extractedFAR
@@ -39,55 +41,102 @@ class mainExtractor(object):
     def extractBlocks(self, extractedFile):
         codes = []
         lineNumber = 0
+        isDescriptionLine = True
         for rows in extractedFile:
+            # print(rows)
             if len(rows) > 0:
                 if rows[0][4:8] == 'R, U':
                     firstFourWords = rows[0].split()[:4]
                     firstFarCode = [firstFourWords[0], firstFourWords[1][:1], firstFourWords[3]]
                     secondFarCode = [firstFourWords[0], firstFourWords[2], firstFourWords[3]]
-                    # print(firstFarCode)
-                    # print(secondFarCode)
-                    # print(codes)
-                    codes = self.extractFromFirstThreeWords(firstFarCode, lineNumber, codes, rows)
-                    codes = self.extractFromFirstThreeWords(secondFarCode, lineNumber, codes, rows)
-                    # print(codes)
-                else:
+
+                    firstFarCode = ''.join(firstFarCode)
+                    description = rows[1].lstrip(' ').replace("\n", "\\n")
+                    codes.append([firstFarCode, lineNumber, ['HEADER'], description])
+
+                    secondFarCode = ''.join(secondFarCode)
+                    description = rows[1].lstrip(' ').replace("\n", "\\n")
+                    codes.append([secondFarCode, lineNumber, ['HEADER'], description])
+
+                elif len(rows[0]) == 11 and re.search(r'\w[A-Z]{2,3}\b\s\w{1,1}\b\s\w{5,5}\b', rows[0]):
                     firstThreeWords = rows[0].split()[:3]
-                    codes = self.extractFromFirstThreeWords(firstThreeWords, lineNumber, codes, rows)
+                    farCode = ''.join(firstThreeWords)
+                    if (farCode not in [i[0] for i in codes]):
+                        description = rows[1].lstrip(' ').replace("\n", "\\n")
+                        codes.append([farCode, lineNumber, ['HEADER'], description])
+
+
+                elif re.search(r'\w[A-Z]{2,3}\b\s\w{1,1}\b\s\w{5,5}\b', rows[0]) and isDescriptionLine:
+                    # print(rows[0])
+                    firstThreeWords = rows[0].split()[:3]
+                    tempExtractWords = self.extractFromFirstThreeWords(firstThreeWords, lineNumber, codes, rows,
+                                                                       isDescriptionLine)
+                    codes = tempExtractWords[0]
+                    codes[len(codes) - 1][3] = (rows[1].replace("\n", "\\n"))
+                    # print(codes)
+                    isDescriptionLine = tempExtractWords[1]
+
+                else:
+                    firstThreeWords = rows[1].split()[:3]
+                    # print(firstThreeWords)
+                    tempExtractWords = self.extractFromFirstThreeWords(firstThreeWords, lineNumber, codes, rows,
+                                                                       isDescriptionLine)
+                    codes = tempExtractWords[0]
+                    isDescriptionLine = tempExtractWords[1]
 
             lineNumber += 1
 
         return codes
 
     # Extract from first three words either a FAR code or a Data Block for the FAR code
-    def extractFromFirstThreeWords(self, firstThreeWords, lineNumber, codes, rows):
+    def extractFromFirstThreeWords(self, firstThreeWords, lineNumber, codes, rows, isDescriptionLine):
         # The following IF/ELIF statement will check to see if the FAR code already exists in the 'codes' array.
         # If it does not exist, then it inputs the FAR code and then the 'Header' block, since all FAR codes will have a Header Block
-        if (len(firstThreeWords) > 1 and self.isUpper(firstThreeWords)):
+        # print(rows)
+        if (len(firstThreeWords) > 1 and self.isUpper(firstThreeWords) and self.isFarCode(firstThreeWords)):
             if ((len(firstThreeWords[0]) == 3 and len(firstThreeWords[1]) == 1 and len(firstThreeWords[2]) == 5)):
                 FARCode = ' '.join(firstThreeWords)
-                if (FARCode not in [i[0] for i in codes]):
-                    codes.append([FARCode, lineNumber, ['HEADER']])
+                if FARCode not in (temp[0] for temp in codes):
+                    # print("Append the Header")
+                    self.appendHeader(codes, FARCode, lineNumber, rows)
+                    isDescriptionLine = True
+
             elif ((len(firstThreeWords[0]) == 4 and len(firstThreeWords[1]) == 1 and len(firstThreeWords[2]) == 5)):
                 FARCode = firstThreeWords[0][1:] + ' ' + ' '.join(firstThreeWords[1:])
-                if (FARCode not in [i[0] for i in codes]):
-                    codes.append([FARCode, lineNumber, ['HEADER']])
-        elif (len(firstThreeWords) > 2 and firstThreeWords[2] == 'âˆ’'):
-            if (
-                    (len(firstThreeWords[0]) == 3 and len(firstThreeWords[1]) == 1)):
-                FARCode = ' '.join(firstThreeWords[:2])
-                if (FARCode not in [i[0] for i in codes]):
-                    codes.append([FARCode, lineNumber, ['HEADER']])
-            elif (
-                    (len(firstThreeWords[0]) == 4 and len(firstThreeWords[1]) == 1)):
-                FARCode = firstThreeWords[0][1:] + ' ' + ' '.join(firstThreeWords[1])
-                if (FARCode not in [i[0] for i in codes]):
-                    codes.append([FARCode, lineNumber, ['HEADER']])
+                if FARCode not in (temp[0] for temp in codes):
+                    # print("Append the Header")
+                    self.appendHeader(codes, FARCode, lineNumber, rows)
+                    isDescriptionLine = True
+
+        # elif (len(firstThreeWords) > 2 and 'âˆ’' in firstThreeWords[2] and self.isFarCode(firstThreeWords)):
+        #     if ((len(firstThreeWords[0]) == 3 and len(firstThreeWords[1]) == 1)):
+        #         FARCode = ' '.join([firstThreeWords[0], firstThreeWords[1], firstThreeWords[2][:4]])
+        #         if FARCode not in (temp[0] for temp in codes):
+        #             self.appendHeader(codes, FARCode, lineNumber, rows)
+        #             isDescriptionLine = True
+        #
+        #     elif (
+        #             (len(firstThreeWords[0]) == 4 and len(firstThreeWords[1]) == 1)):
+        #         FARCode = firstThreeWords[0][1:] + ' ' + ' '.join(firstThreeWords[1])
+        #         if FARCode not in (temp[0] for temp in codes):
+        #             self.appendHeader(codes, FARCode, lineNumber, rows)
+        #             isDescriptionLine = True
+
+        # Append additional lines to the Description text
+        elif isDescriptionLine and not rows[1].startswith('Description'):
+            # print(codes[len(codes) - 1][3])
+            description = codes[len(codes) - 1][3] + rows[0] + " " + rows[1]
+            # print(description)
+            codes[len(codes) - 1][3] = description
+            # print(codes)
+        else:
+            isDescriptionLine = False
 
         # Store FAR code data block if it is not linked to the FAR code yet.
         if (rows[0][1:].isupper() and
                 (rows[0][1:] in exportVariables.dataBlocks or rows[0] in exportVariables.dataBlocks)):
-            codes[len(codes) - 1][2].append(rows[0])
+            codes[len(codes) - 1][2].append(self.removeAsterisk(rows[0]))
+            # print(codes)
         elif (len(rows) > 1):
             if (rows[1][1:].isupper() and
                     (rows[1][1:] in exportVariables.dataBlocks or rows[1] in exportVariables.dataBlocks)):
@@ -95,13 +144,43 @@ class mainExtractor(object):
                     codes[len(codes)][2].append(rows[1])
                 else:
                     codes[len(codes) - 1][2].append(rows[1])
+
+        # print(isDescriptionLine)
+        return [codes, isDescriptionLine]
+
+    def appendHeader(self, codes, FARCode, lineNumber, rows):
+        if (FARCode not in [i[0] for i in codes]):
+            # print(rows)
+            if rows[1][0] == '[':
+                description = rows[1][12:].lstrip(' ')
+            else:
+                description = rows[1][11:].lstrip(' ')
+            # print(description)
+            codes.append([FARCode, lineNumber, ['HEADER'], description])
+            # print(codes)
+
         return codes
+
+    def isFarCode(self, firstThreeWords):
+        if len(firstThreeWords[0]) > 4 or len(firstThreeWords[0]) < 3:
+            return False
+        elif len(firstThreeWords[1]) != 1:
+            return False
+        elif len(firstThreeWords[2]) > 8:
+            return False
+        return True
 
     def isUpper(self, words):
         for i in words:
             if not i[:2].isupper():
                 return False
         return True
+
+    def removeAsterisk(self, value):
+        if value[0] =='*':
+            return value[1:]
+        else:
+            return value
 
     def exportDataBlocks(self, csenetTransactions):
         with open(self.saveLocation, mode='w') as transactionsTypes:
@@ -145,9 +224,15 @@ class mainExtractor(object):
             else:
                 farType.append('BLANK')
             farType.append(count + currentCount)
-            farType.append('')
+            farType.append(farCodes[3])
+            # print(farCodes[3])
 
             transactionsCSV.writerow(farType)
+
+    # # Get the description of the FAR Codes
+    # # Input: String in the format of 'AAA A AAAAA'. Whitespaces are important here
+    # def getFARDescription(self, farCode):
+    #     return None
 
     # Write CSV defintion of values for a PostgreSQL import on the table of FAR_CODES
     def extractAllFARCode(self):

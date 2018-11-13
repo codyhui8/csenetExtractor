@@ -1,187 +1,123 @@
-"CSI R FRINF − CASE INFORMATION REQUEST, ALL AVAILABLE"
-IV-D INFORMATION
-Description/Business Usage
-Sent by any State:
-This transaction is used to electronically request all available information on a IV-D case in
-another state based on a proactive match received from the FCR.
-Automated Triggers:
-"Upon receipt of an FCR proactive match, determine how your CSE system records this"
-information. Determine whether your state has an interstate case with the state where the
-"match was made and whether the participant or activity is known. If the answer is no, then"
-consider automatically generating a CSI request to the state with the FCR proactive match.
-Action by Receiving State:
-Automated processes will include a search to determine whether the case ID is in your state
-"and if so, to extract existing case information and send the CSI P FSINF transaction. If the"
-"case ID is not in your state, send the CSI P FUINF transaction."
-Recommended Use of Data:
-Do not send CSI Requests for each match received from the FCR.
-States should develop criteria for when to generate CSI transactions and should only resend
-a Request for the same case after 30 days have elapsed.
-States should respond to a CSI Request within 7 days.
-Required Data Blocks and Elements
-"(Data Block Record Layout) Data Element Description"
-HEADER
-LOCAL-FIPS-STATE/COUNTY Your state/county FIPS code
-OTHER-FIPS-STATE/COUNTY State/county FIPS code to which transaction
-is directed
-CSENET-VERSION-NUMBER 003
-TRANSACTION-SERIAL-NUMBER Fill as appropriate
-ACTION-CODE R
-FUNCTIONAL-TYPE-CODE CSI
-TXN-DATE Date transaction was created
-CASE-ID Your case ID
-OTHER-CASE-ID Other case ID
-ACTION-REASON FRINF
-ATTACHMENTS-IND =N
-CASE-DATA-IND =0 (numeric)
-"CSI R FRINF − CASE INFORMATION REQUEST, ALL AVAILABLE"
-IV-D INFORMATION
-NCP-IDENTIFICATION-IND =0 (numeric)
-NCP-LOCATE-DATA-IND =0 (numeric)
-PARTICIPANT-DATA-IND =0 (numeric)
-ORDER-DATA-IND =0 (numeric)
-COLLECTION-DATA-IND =0 (numeric)
-INFORMATION-IND =0 (numeric)
-OVERDUE-IND =0 (numeric)
-"CSI R FRNNF − CASE INFORMATION REQUEST, ALL AVAILABLE NON IV-D"
-INFORMATION
-Description/Business Usage
-Sent by Any State:
-This transaction is used to electronically request all available information on a non-IV-D
-case in another state based on a proactive match received from the FCR.
-Automated Triggers:
-"Upon receipt of a FCR proactive match, determine how your CSE system records this"
-information. Determine whether your state has an interstate case with the state where the
-"match was made and whether the participant or activity is known. If the answer is no, then"
-consider automatically generating a CSI request to the state with the FCR proactive match.
-Action by Receiving State:
-Automated processes will include a search to determine whether the case ID is in your state
-"and if so, to extract existing case information and send the CSI P FSINF transaction. If the"
-"case ID is not in your state, send the CSI P FUINF transaction."
-Recommended Use of Data:
-Do not send a CSI Request for every match received from the FCR.
-States should develop criteria for when to generate CSI transactions and should only resend
-a Request for the same case after 30 days have elapsed.
-States should respond to a CSI Request within 7 days.
-Required Data Blocks and Elements
-"(Data Block Record Layout) Data Element Description"
-HEADER
-LOCAL-FIPS-STATE/COUNTY Your state/county FIPS code
-OTHER-FIPS-STATE/COUNTY State/county FIPS code to which transaction
-is directed
-CSENET-VERSION-NUMBER 003
-TRANSACTION-SERIAL-NUMBER Fill as appropriate
-ACTION-CODE R
-FUNCTIONAL-TYPE-CODE CSI
-TXN-DATE Date transaction was created
-CASE-ID Your case ID
-OTHER-CASE-ID Other case ID
-ACTION-REASON FRNNF
-ATTACHMENTS-IND =N
-CASE-DATA-IND =0 (numeric)
-"CSI R FRNNF − CASE INFORMATION REQUEST, ALL AVAILABLE NON IV-D"
-INFORMATION
-NCP-IDENTIFICATION-IND =0 (numeric)
-NCP-LOCATE-DATA-IND =0 (numeric)
-PARTICIPANT-DATA-IND =0 (numeric)
-ORDER-DATA-IND =0 (numeric)
-COLLECTION-DATA-IND =0 (numeric)
-INFORMATION-IND =0 (numeric)
-OVERDUE-IND =0 (numeric)
-"CSI P FSINF − CASE INFORMATION PROVISION OF INFORMATION, ALL"
-AVAILABLE CASE INFORMATION
-Description/Business Usage
-Sent by Responding State:
-This transaction is used to electronically respond to CSI R FRINF and CSI R FRNNF
-"transactions requesting all IV-D or non-IV-D information, including all case information"
-available.
-Automated Triggers:
-"Upon receipt of a CSI Request, automated processes will include a search to determine"
-"whether the case ID is in your state and if so, to extract existing case information and"
-automatically generate this response transaction.
-Action by Receiving State:
-Process according to state procedures. Determine whether your CSE system can compare
-data in the transaction or whether a worker needs to review it.
-Recommended Use of Data:
-States should always include a complete local state and county FIPS code. This directs the
-receiving state to the appropriate entity to obtain additional information.
-States should respond to a CSI Request within 7 days.
-Required Data Blocks and Elements
-"(Data Block Record Layout) Data Element Description"
-HEADER
-LOCAL-FIPS-STATE/COUNTY Your state/county FIPS code
-OTHER-FIPS-STATE/COUNTY State/county FIPS code to which transaction
-is directed
-CSENET-VERSION NUMBER 003
-TRANSACTION-SERIAL-NUMBER Fill as appropriate
-ACTION-CODE P
-FUNCTIONAL-TYPE-CODE CSI
-TXN-DATE Date transaction was created
-CASE-ID Your case ID
-OTHER-CASE-ID Other case ID
-ACTION-REASON FSINF
-ATTACHMENTS-IND =N
-CASE-DATA-IND =1 (numeric)
-NCP-IDENTIFICATION-IND Fill as appropriate
-"CSI P FSINF − CASE INFORMATION PROVISION OF INFORMATION, ALL"
-AVAILABLE CASE INFORMATION
-NCP-LOCATE-DATA-IND Fill as appropriate
-PARTICIPANT-DATA-IND Fill as appropriate
-ORDER-DATA-IND Fill as appropriate
-COLLECTION-DATA-IND =0 (numeric)
-INFORMATION-IND =0 (numeric)
-OVERDUE-IND =0 (numeric)
-CASE DATA BLOCK
-CASE TYPE Any case type
-CASE-STATUS Fill as appropriate
-"*CONTACT-NAME-LAST Your state contact last name"
-"*CONTACT-NAME-FIRST Your state contact first name"
-"*CONTACT-ADDRESS-LINE1 Contact address"
-"*CONTACT-CITY Contact city"
-"*CONTACT-STATE Contact state"
-"*CONTACT-ZIP-1 Contact ZIP Code"
-"*CONTACT-PHONE-NUM NCP phone number"
-PARTICIPANT DATA BLOCK
-NAME-LAST Participant last name
-NAME-FIRST Participant first name
-"*RELATIONSHIP Fill as appropriate"
-PARTICIPANT-STATUS =O (alpha)
-"CSI P FUINF − CASE INFORMATION PROVISION OF INFORMATION,"
-NO CASE INFORMATION AVAILABLE
-Description/Business Usage
-Sent by Responding State:
-This transaction is used to electronically respond to CSI FRINF and CSI R FRNNF
-transactions requesting IV-D or non-IV-D information. It indicates that the requested case
-ID was not found in your state.
-Automated Triggers:
-"Upon receipt of a CSI Request, automated processes should include a search to determine"
-"whether the case ID is in your state and if not, to automatically generate this response."
-Action by Receiving State:
-Process according to state procedures. Determine where or how the other state’s case ID
-was obtained for use in the CSI request and whether any corrective action needs to be taken
-by your state.
-Required Data Blocks and Elements
-"(Data Block Record Layout) Data Element Description"
-HEADER
-LOCAL-FIPS-STATE/COUNTY Your state/county FIPS code
-OTHER-FIPS-STATE/COUNTY State/county FIPS code to which transaction
-is directed
-CSENET-VERSION-NUMBER 003
-TRANSACTION-SERIAL-NUMBER Fill as appropriate
-ACTION-CODE P
-FUNCTIONAL-TYPE-CODE CSI
-TXN-DATE Date transaction was created
-CASE-ID Your case ID
-OTHER-CASE-ID Other case ID
-ACTION-REASON FUINF
-ATTACHMENTS-IND =N
-CASE-DATA-IND =0 (numeric)
-NCP-IDENTIFICATION-IND =0 (numeric)
-NCP-LOCATE-DATA-IND =0 (numeric)
-PARTICIPANT-DATA-IND =0 (numeric)
-ORDER-DATA-IND =0 (numeric)
-"CSI P FUINF − CASE INFORMATION PROVISION OF INFORMATION,"
-NO CASE INFORMATION AVAILABLE
-COLLECTION-DATA-IND =0 (numeric)
-INFORMATION-IND =0 (numeric)
-OVERDUE-IND =0 (numeric)
+"","CSI R FRINF − CASE INFORMATION REQUEST, ALL AVAILABLE",,
+"",IV-D INFORMATION,,
+"",Description/Business Usage,,
+"Sent by any State:This transaction is used to electronically request all available information on a IV-D case inanother state based on a proactive match received from the FCR.Automated Triggers:Upon receipt of an FCR proactive match, determine how your CSE system records thisinformation. Determine whether your state has an interstate case with the state where thematch was made and whether the participant or activity is known. If the answer is no, thenconsider automatically generating a CSI request to the state with the FCR proactive match.Action by Receiving State:Automated processes will include a search to determine whether the case ID is in your stateand if so, to extract existing case information and send the CSI P FSINF transaction. If thecase ID is not in your state, send the CSI P FUINF transaction.Recommended Use of Data:Do not send CSI Requests for each match received from the FCR.States should develop criteria for when to generate CSI transactions and should only resenda Request for the same case after 30 days have elapsed.States should respond to a CSI Request within 7 days.",,,
+"",Required Data Blocks and Elements,,
+"",,Data Element Description,
+"(Data Block Record Layout)",,,
+HEADER,,,
+LOCAL-FIPS-STATE/COUNTY,Your state/county FIPS code,,
+OTHER-FIPS-STATE/COUNTY,"State/county FIPS code to which transactionis directed",,
+CSENET-VERSION-NUMBER,003,,
+TRANSACTION-SERIAL-NUMBER,Fill as appropriate,,
+ACTION-CODE,R,,
+FUNCTIONAL-TYPE-CODE,CSI,,
+TXN-DATE,Date transaction was created,,
+CASE-ID,Your case ID,,
+OTHER-CASE-ID,Other case ID,,
+ACTION-REASON,FRINF,,
+ATTACHMENTS-IND,=N,,
+"","CSI R FRINF − CASE INFORMATION REQUEST, ALL AVAILABLE",
+IV-D INFORMATION,,
+NCP-IDENTIFICATION-IND,=0 (numeric),
+NCP-LOCATE-DATA-IND,=0 (numeric),
+PARTICIPANT-DATA-IND,=0 (numeric),
+ORDER-DATA-IND,=0 (numeric),
+COLLECTION-DATA-IND,=0 (numeric),
+INFORMATION-IND,=0 (numeric),
+"","CSI R FRNNF − CASE INFORMATION REQUEST, ALL AVAILABLE NON IV-D",,
+"",INFORMATION,,
+"",Description/Business Usage,,
+"Sent by Any State:This transaction is used to electronically request all available information on a non-IV-Dcase in another state based on a proactive match received from the FCR.Automated Triggers:Upon receipt of a FCR proactive match, determine how your CSE system records thisinformation. Determine whether your state has an interstate case with the state where thematch was made and whether the participant or activity is known. If the answer is no, thenconsider automatically generating a CSI request to the state with the FCR proactive match.Action by Receiving State:Automated processes will include a search to determine whether the case ID is in your stateand if so, to extract existing case information and send the CSI P FSINF transaction. If thecase ID is not in your state, send the CSI P FUINF transaction.Recommended Use of Data:Do not send a CSI Request for every match received from the FCR.States should develop criteria for when to generate CSI transactions and should only resenda Request for the same case after 30 days have elapsed.States should respond to a CSI Request within 7 days.",,,
+"",Required Data Blocks and Elements,,
+"",,Data Element Description,
+"(Data Block Record Layout)",,,
+HEADER,,,
+LOCAL-FIPS-STATE/COUNTY,Your state/county FIPS code,,
+OTHER-FIPS-STATE/COUNTY,"State/county FIPS code to which transactionis directed",,
+CSENET-VERSION-NUMBER,003,,
+TRANSACTION-SERIAL-NUMBER,Fill as appropriate,,
+ACTION-CODE,R,,
+FUNCTIONAL-TYPE-CODE,CSI,,
+TXN-DATE,Date transaction was created,,
+CASE-ID,Your case ID,,
+OTHER-CASE-ID,Other case ID,,
+ACTION-REASON,FRNNF,,
+ATTACHMENTS-IND,=N,,
+"","CSI R FRNNF − CASE INFORMATION REQUEST, ALL AVAILABLE NON IV-D",
+INFORMATION,,
+NCP-IDENTIFICATION-IND,=0 (numeric),
+NCP-LOCATE-DATA-IND,=0 (numeric),
+PARTICIPANT-DATA-IND,=0 (numeric),
+ORDER-DATA-IND,=0 (numeric),
+COLLECTION-DATA-IND,=0 (numeric),
+INFORMATION-IND,=0 (numeric),
+"","CSI P FSINF − CASE INFORMATION PROVISION OF INFORMATION, ALL",,
+"",AVAILABLE CASE INFORMATION,,
+"",Description/Business Usage,,
+"Sent by Responding State:This transaction is used to electronically respond to CSI R FRINF and CSI R FRNNFtransactions requesting all IV-D or non-IV-D information, including all case informationavailable.Automated Triggers:Upon receipt of a CSI Request, automated processes will include a search to determinewhether the case ID is in your state and if so, to extract existing case information andautomatically generate this response transaction.Action by Receiving State:Process according to state procedures. Determine whether your CSE system can comparedata in the transaction or whether a worker needs to review it.Recommended Use of Data:States should always include a complete local state and county FIPS code. This directs thereceiving state to the appropriate entity to obtain additional information.States should respond to a CSI Request within 7 days.",,,
+"",Required Data Blocks and Elements,,
+"",,Data Element Description,
+"(Data Block Record Layout)",,,
+HEADER,,,
+LOCAL-FIPS-STATE/COUNTY,Your state/county FIPS code,,
+OTHER-FIPS-STATE/COUNTY,"State/county FIPS code to which transactionis directed",,
+CSENET-VERSION NUMBER,003,,
+TRANSACTION-SERIAL-NUMBER,Fill as appropriate,,
+ACTION-CODE,P,,
+FUNCTIONAL-TYPE-CODE,CSI,,
+TXN-DATE,Date transaction was created,,
+CASE-ID,Your case ID,,
+OTHER-CASE-ID,Other case ID,,
+ACTION-REASON,FSINF,,
+ATTACHMENTS-IND,=N,,
+CASE-DATA-IND,=1 (numeric),,
+"","CSI P FSINF − CASE INFORMATION PROVISION OF INFORMATION, ALL",
+AVAILABLE CASE INFORMATION,,
+NCP-LOCATE-DATA-IND,Fill as appropriate,
+PARTICIPANT-DATA-IND,Fill as appropriate,
+ORDER-DATA-IND,Fill as appropriate,
+COLLECTION-DATA-IND,=0 (numeric),
+INFORMATION-IND,=0 (numeric),
+OVERDUE-IND,=0 (numeric),
+CASE DATA BLOCK,,
+CASE TYPE,Any case type,
+CASE-STATUS,Fill as appropriate,
+"*CONTACT-NAME-LAST",Your state contact last name,
+"*CONTACT-NAME-FIRST",Your state contact first name,
+"*CONTACT-ADDRESS-LINE1",Contact address,
+"*CONTACT-CITY",Contact city,
+"*CONTACT-STATE",Contact state,
+"*CONTACT-ZIP-1",Contact ZIP Code,
+"*CONTACT-PHONE-NUM",NCP phone number,
+PARTICIPANT DATA BLOCK,,
+NAME-LAST,Participant last name,
+NAME-FIRST,Participant first name,
+"*RELATIONSHIP",Fill as appropriate,
+"","CSI P FUINF − CASE INFORMATION PROVISION OF INFORMATION,",,
+"",NO CASE INFORMATION AVAILABLE,,
+"",Description/Business Usage,,
+"Sent by Responding State:This transaction is used to electronically respond to CSI FRINF and CSI R FRNNFtransactions requesting IV-D or non-IV-D information. It indicates that the requested caseID was not found in your state.Automated Triggers:Upon receipt of a CSI Request, automated processes should include a search to determinewhether the case ID is in your state and if not, to automatically generate this response.Action by Receiving State:Process according to state procedures. Determine where or how the other state’s case IDwas obtained for use in the CSI request and whether any corrective action needs to be takenby your state.",,,
+"",Required Data Blocks and Elements,,
+"",,Data Element Description,
+"(Data Block Record Layout)",,,
+HEADER,,,
+LOCAL-FIPS-STATE/COUNTY,Your state/county FIPS code,,
+OTHER-FIPS-STATE/COUNTY,"State/county FIPS code to which transactionis directed",,
+CSENET-VERSION-NUMBER,003,,
+TRANSACTION-SERIAL-NUMBER,Fill as appropriate,,
+ACTION-CODE,P,,
+FUNCTIONAL-TYPE-CODE,CSI,,
+TXN-DATE,Date transaction was created,,
+CASE-ID,Your case ID,,
+OTHER-CASE-ID,Other case ID,,
+ACTION-REASON,FUINF,,
+ATTACHMENTS-IND,=N,,
+CASE-DATA-IND,=0 (numeric),,
+NCP-IDENTIFICATION-IND,=0 (numeric),,
+NCP-LOCATE-DATA-IND,=0 (numeric),,
+PARTICIPANT-DATA-IND,=0 (numeric),,
+"","CSI P FUINF − CASE INFORMATION PROVISION OF INFORMATION,",
+NO CASE INFORMATION AVAILABLE,,
+COLLECTION-DATA-IND,=0 (numeric),
+INFORMATION-IND,=0 (numeric),

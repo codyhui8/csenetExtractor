@@ -4,7 +4,8 @@ EST A ANOAD,1,1,,1,,,
 EST P GSCOE,1,1,,,1,,
 EST P SICHS,1,1,,,,,1
 EST P SSADJ,1,1,,,,,
-EST P SSMOD,,,,,,,
+EST P SSEST,1,1,,,1,,
+EST P SSMOD,1,1,,,1,,
 EST P SUADJ,1,1,,,,,
 EST P SUEST,1,1,,,,,1
 EST P SUMOD,1,1,,,1,,1
@@ -14,6 +15,9 @@ EST R SROMC,1,1,1,,,,
 EST R SROPP,1,1,1,,,,
 EST R SRORD,1,1,1,,,,
 EST R SRPAT,1,1,1,,,,1
+EST A BLANK,,,,,,,
+EST C BLANK,,,,,,,
+EST M BLANK,,,,,,,
 EST M GRPOU,,,,,,,
 EST P GSARR,,,,,,,
 EST P GSFIL,,,,,,,

@@ -1,12 +1,12 @@
-LO1 R − QUICK LOCATE REQUEST
-Description/Business Usage
-Sent by Initiating State:
+,LO1 R BLANK QUICK LOCATE REQUEST,,,,
+,Description/Business Usage,,,,
+"Sent by Initiating State:
 This transaction is used to electronically request locate information on an individual from
 another state. This transaction should be used in lieu of the paper Locate Data Sheet.
 Corresponds To:
 Locate Data Sheet
-"[ ] Non Custodial Parent Information or"
-"[ ] Custodial Parent Information"
+[ ] Non Custodial Parent Information or
+[ ] Custodial Parent Information
 Automated Triggers:
 Determine how the CSE system records the need to locate an individual and to which state
 the request must be sent.
@@ -15,521 +15,521 @@ Initiate an automatic search without a worker’s intervention for address and e
 information. A IV-D case does not need to be initiated to process this transaction.
 Recommended Use of Data:
 States have agreed to expand the use of this transaction to include locate requests for CPs as
-"well as NCPs, rather than create a new transaction for CP locate requests."
-Required Data Blocks and Elements
-"(Data Block Record Layout) Data Element Description"
-HEADER
-LOCAL-FIPS-STATE/COUNTY Your state/county FIPS code
-OTHER-FIPS-STATE/COUNTY State/county FIPS code to which transaction
-is directed
-CSENET-VERSION-NUMBER 003
-TRANSACTION-SERIAL-NUMBER Fill as appropriate
-ACTION-CODE R
-FUNCTIONAL-TYPE-CODE LO1
-TXN-DATE Date transaction was created
-CASE-ID Your case ID
-ATTACHMENTS-IND =N
-CASE-DATA-IND =1
-NCP-IDENTIFICATION-IND =1
-NCP-LOCATE-DATA-IND =0 (numeric)
-PARTICIPANT-DATA-IND =0 (numeric)
-"",LO1 R − QUICK LOCATE REQUEST
-ORDER-DATA-IND,=0 (numeric)
-COLLECTION-DATA-IND,=0 (numeric)
-INFORMATION-IND,=0 (numeric)
-OVERDUE-IND,=0 (numeric)
-"",CASE DATA BLOCK
-CASE-TYPE,Any case type except non-IV-D
-CASE-STATUS,Fill as appropriate
-"*CONTACT-NAME-LAST",Your state contact last name
-"*CONTACT-NAME-FIRST",Your state contact first name
-"*CONTACT-ADDRESS-LINE1",Contact address
-"*CONTACT-CITY",Contact city
-"*CONTACT-STATE",Contact state
-"*CONTACT-ZIP-1",Contact ZIP Code
-"*CONTACT-PHONE-NUM",Contact phone number
-"",NCP IDENTIFICATION DATA BLOCK
-NAME-LAST,NCP last name
-NAME-FIRST,NCP first name
-"*SSN",NCP Social Security number
-"*DATE-OF-BIRTH",NCP date of birth
-"LO1 P LICAD − QUICK LOCATE RESPONSE, ADDRESS LOCATED BUT NOT"
-CONFIRMED
-Description/Business Usage
-Sent by Responding State:
+well as NCPs, rather than create a new transaction for CP locate requests.",,,,,
+,Required Data Blocks and Elements,,,,
+,,Data Element Description,,,
+(Data Block Record Layout),,,,,
+HEADER,,,,,
+LOCAL-FIPS-STATE/COUNTY,Your state/county FIPS code,,,,
+OTHER-FIPS-STATE/COUNTY,"State/county FIPS code to which transaction
+is directed",,,,
+CSENET-VERSION-NUMBER,3,,,,
+TRANSACTION-SERIAL-NUMBER,Fill as appropriate,,,,
+ACTION-CODE,R,,,,
+FUNCTIONAL-TYPE-CODE,LO1,,,,
+TXN-DATE,Date transaction was created,,,,
+CASE-ID,Your case ID,,,,
+ATTACHMENTS-IND,#NAME?,,,,
+CASE-DATA-IND,1,,,,
+NCP-IDENTIFICATION-IND,1,,,,
+NCP-LOCATE-DATA-IND,=0 (numeric),,,,
+,LO1 R BLANK QUICK LOCATE REQUEST,,,,
+ORDER-DATA-IND,=0 (numeric),,,,
+COLLECTION-DATA-IND,=0 (numeric),,,,
+INFORMATION-IND,=0 (numeric),,,,
+OVERDUE-IND,=0 (numeric),,,,
+CASE DATA BLOCK,,,,,
+CASE-TYPE,Any case type except non-IV-D,,,,
+CASE-STATUS,Fill as appropriate,,,,
+*CONTACT-NAME-LAST,Your state contact last name,,,,
+*CONTACT-NAME-FIRST,Your state contact first name,,,,
+*CONTACT-ADDRESS-LINE1,Contact address,,,,
+*CONTACT-CITY,Contact city,,,,
+*CONTACT-STATE,Contact state,,,,
+*CONTACT-ZIP-1,Contact ZIP Code,,,,
+*CONTACT-PHONE-NUM,Contact phone number,,,,
+NCP IDENTIFICATION DATA BLOCK,,,,,
+NAME-LAST,NCP last name,,,,
+NAME-FIRST,NCP first name,,,,
+*SSN,NCP Social Security number,,,,
+*DATE-OF-BIRTH,NCP date of birth,,,,
+,"LO1 P LICAD  QUICK LOCATE RESPONSE, ADDRESS LOCATED BUT NOT",,,,
+,CONFIRMED,,,,
+,Description/Business Usage,,,,
+"Sent by Responding State:
 This transaction is used to electronically respond to a locate request (LO1 R) and notifies
-"the other state that an address has been found, but has not been confirmed."
+the other state that an address has been found, but has not been confirmed.
 Automated Triggers:
-"Determine how the CSE system records that an address was found, but not confirmed."
+Determine how the CSE system records that an address was found, but not confirmed.
 Action by Receiving State:
-"Process according to state procedures. Update case information, such as noting receipt of"
-the transaction.
-Required Data Blocks and Elements
-"(Data Block Record Layout) Data Element Description"
-HEADER
-LOCAL-FIPS-STATE/COUNTY Your state/county FIPS code
-OTHER-FIPS-STATE/COUNTY State/county FIPS code to which transaction
-is directed
-CSENET-VERSION-NUMBER 003
-TRANSACTION-SERIAL-NUMBER Fill as appropriate
-ACTION-CODE P
-FUNCTIONAL-TYPE-CODE LO1
-TXN-DATE Date transaction was created
-OTHER-CASE-ID Other case ID
-ACTION-REASON LICAD
-ATTACHMENTS-IND =N
-CASE-DATA-IND =1
-NCP-IDENTIFICATION-IND =1
-"*NCP-LOCATE-DATA-IND =1"
-PARTICIPANT-DATA-IND =0 (numeric)
-ORDER-DATA-IND =0 (numeric)
-COLLECTION-DATA-IND =0 (numeric)
-INFORMATION-IND =0 (numeric)
-OVERDUE-IND =0 (numeric)
-"LO1 P LICAD − QUICK LOCATE RESPONSE, ADDRESS LOCATED BUT NOT"
-CONFIRMED
-CASE DATA BLOCK
-CASE-TYPE Any case type
-CASE-STATUS =O (alpha)
-"*CONTACT-NAME-LAST Your state contact last name"
-"*CONTACT-NAME-FIRST Your state contact first name"
-"*CONTACT-ADDRESS-LINE1 Contact address"
-"*CONTACT-CITY Contact city"
-"*CONTACT-STATE Contact state"
-"*CONTACT-ZIP-1 Contact ZIP Code"
-"*CONTACT-PHONE-NUM Contact phone number"
-NCP IDENTIFICATION DATA BLOCK
-NAME-LAST NCP last name
-NAME-FIRST NCP first name
-"*SSN NCP Social Security number"
-"*DATE-OF-BIRTH NCP date of birth"
-"*NCP LOCATE DATA BLOCK"
-"*RESIDENTIAL-ADDRESS-LINE 1 Street address"
-"*RESIDENTIAL-CITY City"
-"*RESIDENTIAL-STATE State"
-"*RESIDENTIAL-ZIP-1 ZIP Code"
-"*RESIDENTIAL-ADDRESS-EFFECTIVE- Required if residential address entered"
-DATE
-"*RESIDENTIAL-ADDRESS-CONFIRMED- =N"
-IND
-"LO1 P LICEM − QUICK LOCATE RESPONSE, EMPLOYER FOUND BUT NOT"
-CONFIRMED
-Description/Business Usage
-Sent by Responding State:
+Process according to state procedures. Update case information, such as noting receipt of
+the transaction.",,,,,
+,Required Data Blocks and Elements,,,,
+,,Data Element Description,,,
+(Data Block Record Layout),,,,,
+HEADER,,,,,
+LOCAL-FIPS-STATE/COUNTY,Your state/county FIPS code,,,,
+OTHER-FIPS-STATE/COUNTY,"State/county FIPS code to which transaction
+is directed",,,,
+CSENET-VERSION-NUMBER,3,,,,
+TRANSACTION-SERIAL-NUMBER,Fill as appropriate,,,,
+ACTION-CODE,P,,,,
+FUNCTIONAL-TYPE-CODE,LO1,,,,
+TXN-DATE,Date transaction was created,,,,
+OTHER-CASE-ID,Other case ID,,,,
+ACTION-REASON,LICAD,,,,
+ATTACHMENTS-IND,#NAME?,,,,
+CASE-DATA-IND,1,,,,
+NCP-IDENTIFICATION-IND,1,,,,
+*NCP-LOCATE-DATA-IND,1,,,,
+PARTICIPANT-DATA-IND,=0 (numeric),,,,
+ORDER-DATA-IND,=0 (numeric),,,,
+COLLECTION-DATA-IND,=0 (numeric),,,,
+INFORMATION-IND,=0 (numeric),,,,
+,"LO1 P LICAD  QUICK LOCATE RESPONSE, ADDRESS LOCATED BUT NOT",,,,
+CONFIRMED,,,,,
+CASE DATA BLOCK,,,,,
+CASE-TYPE,Any case type,,,,
+CASE-STATUS,#NAME?,,,,
+*CONTACT-NAME-LAST,Your state contact last name,,,,
+*CONTACT-NAME-FIRST,Your state contact first name,,,,
+*CONTACT-ADDRESS-LINE1,Contact address,,,,
+*CONTACT-CITY,Contact city,,,,
+*CONTACT-STATE,Contact state,,,,
+*CONTACT-ZIP-1,Contact ZIP Code,,,,
+*CONTACT-PHONE-NUM,Contact phone number,,,,
+NCP IDENTIFICATION DATA BLOCK,,,,,
+NAME-LAST,NCP last name,,,,
+NAME-FIRST,NCP first name,,,,
+*SSN,NCP Social Security number,,,,
+*DATE-OF-BIRTH,NCP date of birth,,,,
+*NCP LOCATE DATA BLOCK,,,,,
+*RESIDENTIAL-ADDRESS-LINE 1,Street address,,,,
+*RESIDENTIAL-CITY,City,,,,
+*RESIDENTIAL-STATE,State,,,,
+*RESIDENTIAL-ZIP-1,ZIP Code,,,,
+"*RESIDENTIAL-ADDRESS-EFFECTIVE-
+DATE",Required if residential address entered,,,,
+,"LO1 P LICEM  QUICK LOCATE RESPONSE, EMPLOYER FOUND BUT NOT",,,,
+,CONFIRMED,,,,
+,Description/Business Usage,,,,
+"Sent by Responding State:
 This transaction is used to electronically respond to a locate request (LO1 R) and indicates
-"that an employer has been found, but has not been confirmed."
+that an employer has been found, but has not been confirmed.
 Automated Triggers:
-"Determine how the CSE system records that an employer was found, but not confirmed."
+Determine how the CSE system records that an employer was found, but not confirmed.
 Action by Receiving State:
-"Process according to state procedures. Update case information, such as noting receipt of"
-the transaction.
-Required Data Blocks and Elements
-"(Data Block Record Layout) Data Element Description"
-HEADER
-LOCAL-FIPS-STATE/COUNTY Your state/county FIPS code
-OTHER-FIPS-STATE/COUNTY State/county FIPS code to which transaction
-is directed
-CSENET-VERSION-NUMBER 003
-TRANSACTION-SERIAL-NUMBER Fill as appropriate
-ACTION-CODE P
-FUNCTIONAL-TYPE-CODE LO1
-TXN-DATE Date transaction was created
-OTHER-CASE-ID Other case ID
-ACTION-REASON LICEM
-ATTACHMENTS-IND =N
-CASE-DATA-IND =1
-NCP-IDENTIFICATION-IND =1
-"*NCP-LOCATE-DATA-IND =1"
-PARTICIPANT-DATA-IND =0 (numeric)
-ORDER-DATA-IND =0 (numeric)
-COLLECTION-DATA-IND =0 (numeric)
-INFORMATION-IND =0 (numeric)
-OVERDUE-IND =0 (numeric)
-"LO1 P LICEM − QUICK LOCATE RESPONSE, EMPLOYER FOUND BUT NOT"
-CONFIRMED
-CASE DATA BLOCK
-CASE-TYPE Any case type
-CASE-STATUS =O (alpha)
-"*CONTACT-NAME-LAST Your state contact last name"
-"*CONTACT-NAME-FIRST Your state contact first name"
-"*CONTACT-ADDRESS-LINE1 Contact address"
-"*CONTACT-CITY Contact city"
-"*CONTACT-STATE Contact state"
-"*CONTACT-ZIP-1 Contact ZIP Code"
-"*CONTACT-PHONE-NUM Contact phone number"
-NCP IDENTIFICATION DATA BLOCK
-NAME-LAST NCP last name
-NAME-FIRST NCP first name
-"*SSN NCP Social Security number"
-"*DATE-OF-BIRTH NCP date of birth"
-"*NCP LOCATE DATA BLOCK"
-"*EMPLOYER-NAME Employer name"
-"*EMPLOYER-ADDRESS-LINE 1 Employer street address"
-"*EMPLOYER-CITY Employer city"
-"*EMPLOYER-STATE Employer state"
-"*EMPLOYER-ZIP-1 Employer ZIP Code"
-"*EMPLOYER-PHONE-NUM Employer telephone number"
-"*EMPLOYER-EFFECTIVE-DATE Required if employer entered"
-"*EMPLOYER-CONFIRMED-IND =N"
-"LO1 P LSADR − QUICK LOCATE RESPONSE, ADDRESS LOCATED AND"
-CONFIRMED
-Description/Business Usage
-Sent by Responding State:
+Process according to state procedures. Update case information, such as noting receipt of
+the transaction.",,,,,
+,Required Data Blocks and Elements,,,,
+,,Data Element Description,,,
+(Data Block Record Layout),,,,,
+,,,,,
+HEADER,,,,,
+LOCAL-FIPS-STATE/COUNTY,Your state/county FIPS code,,,,
+OTHER-FIPS-STATE/COUNTY,"State/county FIPS code to which transaction
+is directed",,,,
+CSENET-VERSION-NUMBER,3,,,,
+TRANSACTION-SERIAL-NUMBER,Fill as appropriate,,,,
+ACTION-CODE,P,,,,
+FUNCTIONAL-TYPE-CODE,LO1,,,,
+TXN-DATE,Date transaction was created,,,,
+OTHER-CASE-ID,Other case ID,,,,
+ACTION-REASON,LICEM,,,,
+ATTACHMENTS-IND,#NAME?,,,,
+CASE-DATA-IND,1,,,,
+NCP-IDENTIFICATION-IND,1,,,,
+*NCP-LOCATE-DATA-IND,1,,,,
+PARTICIPANT-DATA-IND,=0 (numeric),,,,
+ORDER-DATA-IND,=0 (numeric),,,,
+COLLECTION-DATA-IND,=0 (numeric),,,,
+INFORMATION-IND,=0 (numeric),,,,
+OVERDUE-IND,=0 (numeric),,,,
+,"LO1 P LICEM  QUICK LOCATE RESPONSE, EMPLOYER FOUND BUT NOT",,,,
+CONFIRMED,,,,,
+CASE DATA BLOCK,,,,,
+CASE-TYPE,Any case type,,,,
+CASE-STATUS,#NAME?,,,,
+*CONTACT-NAME-LAST,Your state contact last name,,,,
+*CONTACT-NAME-FIRST,Your state contact first name,,,,
+*CONTACT-ADDRESS-LINE1,Contact address,,,,
+*CONTACT-CITY,Contact city,,,,
+*CONTACT-STATE,Contact state,,,,
+*CONTACT-ZIP-1,Contact ZIP Code,,,,
+*CONTACT-PHONE-NUM,Contact phone number,,,,
+NCP IDENTIFICATION DATA BLOCK,,,,,
+NAME-LAST,NCP last name,,,,
+NAME-FIRST,NCP first name,,,,
+*SSN,NCP Social Security number,,,,
+*DATE-OF-BIRTH,NCP date of birth,,,,
+*NCP LOCATE DATA BLOCK,,,,,
+*EMPLOYER-NAME,Employer name,,,,
+*EMPLOYER-ADDRESS-LINE 1,Employer street address,,,,
+*EMPLOYER-CITY,Employer city,,,,
+*EMPLOYER-STATE,Employer state,,,,
+*EMPLOYER-ZIP-1,Employer ZIP Code,,,,
+*EMPLOYER-PHONE-NUM,Employer telephone number,,,,
+*EMPLOYER-EFFECTIVE-DATE,Required if employer entered,,,,
+*EMPLOYER-CONFIRMED-IND,#NAME?,,,,
+,"LO1 P LSADR  QUICK LOCATE RESPONSE, ADDRESS LOCATED AND",,,,
+,CONFIRMED,,,,
+,Description/Business Usage,,,,
+"Sent by Responding State:
 This transaction is used to electronically respond to a locate request (LO1 R) and notifies
 the other state that an address has been located and confirmed.
 Automated Triggers:
 Determine how the CSE system records that an address was found and confirmed.
 Action by Receiving State:
-"Process according to state procedures. Update case information, such as noting receipt of"
-the transaction.
-Required Data Blocks and Elements
-"(Data Block Record Layout) Data Element Description"
-HEADER
-LOCAL-FIPS-STATE/COUNTY Your state/county FIPS code
-OTHER-FIPS-STATE/COUNTY State/county FIPS code to which transaction
-is directed
-CSENET-VERSION-NUMBER 003
-TRANSACTION-SERIAL-NUMBER Fill as appropriate
-ACTION-CODE P
-FUNCTIONAL-TYPE-CODE LO1
-TXN-DATE Date transaction was created
-OTHER-CASE-ID Other case ID
-ACTION-REASON LSADR
-ATTACHMENTS-IND =N
-CASE-DATA-IND =1
-NCP-IDENTIFICATION-IND =1
-NCP-LOCATE-DATA-IND =1
-PARTICIPANT-DATA-IND =0 (numeric)
-ORDER-DATA-IND =0 (numeric)
-COLLECTION-DATA-IND =0 (numeric)
-INFORMATION-IND =0 (numeric)
-OVERDUE-IND =0 (numeric)
-"LO1 P LSADR − QUICK LOCATE RESPONSE, ADDRESS LOCATED AND"
-CONFIRMED
-CASE DATA BLOCK
-CASE-TYPE Any case type
-CASE-STATUS =O (alpha)
-"*CONTACT-NAME-LAST Your state contact last name"
-"*CONTACT-NAME-FIRST Your state contact first name"
-"*CONTACT-ADDRESS-LINE1 Contact address"
-"*CONTACT-CITY Contact city"
-"*CONTACT-STATE Contact state"
-"*CONTACT-ZIP-1 Contact ZIP Code"
-"*CONTACT-PHONE-NUM Contact phone number"
-NCP IDENTIFICATION DATA BLOCK
-NAME-LAST NCP last name
-NAME-FIRST NCP first name
-"*SSN NCP Social Security number"
-"*DATE-OF-BIRTH NCP date of birth"
-NCP LOCATE DATA BLOCK
-RESIDENTIAL-ADDRESS-LINE 1 Street address
-"*RESIDENTIAL-CITY City"
-"*RESIDENTIAL-STATE State"
-"*RESIDENTIAL-ZIP-1 ZIP Code"
-RESIDENTIAL-ADDRESS-EFFECTIVE- Required if residential address entered
-DATE
-RESIDENTIAL-ADDRESS-CONFIRMED- =Y
-IND
-"LO1 P LSALL − QUICK LOCATE RESPONSE, BOTH AN ADDRESS AND"
-EMPOYER LOCATED AND CONFIRMED
-Description/Business Usage
-Sent by Responding State:
+Process according to state procedures. Update case information, such as noting receipt of
+the transaction.",,,,,
+,Required Data Blocks and Elements,,,,
+,,Data Element Description,,,
+(Data Block Record Layout),,,,,
+HEADER,,,,,
+LOCAL-FIPS-STATE/COUNTY,Your state/county FIPS code,,,,
+OTHER-FIPS-STATE/COUNTY,"State/county FIPS code to which transaction
+is directed",,,,
+CSENET-VERSION-NUMBER,3,,,,
+TRANSACTION-SERIAL-NUMBER,Fill as appropriate,,,,
+ACTION-CODE,P,,,,
+FUNCTIONAL-TYPE-CODE,LO1,,,,
+TXN-DATE,Date transaction was created,,,,
+OTHER-CASE-ID,Other case ID,,,,
+ACTION-REASON,LSADR,,,,
+ATTACHMENTS-IND,#NAME?,,,,
+CASE-DATA-IND,1,,,,
+NCP-IDENTIFICATION-IND,1,,,,
+NCP-LOCATE-DATA-IND,1,,,,
+PARTICIPANT-DATA-IND,=0 (numeric),,,,
+ORDER-DATA-IND,=0 (numeric),,,,
+COLLECTION-DATA-IND,=0 (numeric),,,,
+INFORMATION-IND,=0 (numeric),,,,
+OVERDUE-IND,=0 (numeric),,,,
+,"LO1 P LSADR  QUICK LOCATE RESPONSE, ADDRESS LOCATED AND",,,,
+CONFIRMED,,,,,
+CASE DATA BLOCK,,,,,
+CASE-TYPE,Any case type,,,,
+CASE-STATUS,#NAME?,,,,
+*CONTACT-NAME-LAST,Your state contact last name,,,,
+*CONTACT-NAME-FIRST,Your state contact first name,,,,
+*CONTACT-ADDRESS-LINE1,Contact address,,,,
+*CONTACT-CITY,Contact city,,,,
+*CONTACT-STATE,Contact state,,,,
+*CONTACT-ZIP-1,Contact ZIP Code,,,,
+*CONTACT-PHONE-NUM,Contact phone number,,,,
+NCP IDENTIFICATION DATA BLOCK,,,,,
+NAME-LAST,NCP last name,,,,
+NAME-FIRST,NCP first name,,,,
+*SSN,NCP Social Security number,,,,
+*DATE-OF-BIRTH,NCP date of birth,,,,
+NCP LOCATE DATA BLOCK,,,,,
+RESIDENTIAL-ADDRESS-LINE 1,Street address,,,,
+*RESIDENTIAL-CITY,City,,,,
+*RESIDENTIAL-STATE,State,,,,
+*RESIDENTIAL-ZIP-1,ZIP Code,,,,
+"RESIDENTIAL-ADDRESS-EFFECTIVE-
+DATE",Required if residential address entered,,,,
+,"LO1 P LSALL  QUICK LOCATE RESPONSE, BOTH AN ADDRESS AND",,,,
+,EMPOYER LOCATED AND CONFIRMED,,,,
+,Description/Business Usage,,,,
+"Sent by Responding State:
 This transaction is used to electronically respond to a locate request (LO1 R) and indicates
 that an address and an employer have been found and confirmed.
 Automated Triggers:
 Determine how the CSE system records that an address and employer were found and
 confirmed.
 Action by Receiving State:
-"Process according to state procedures. Update case information, such as noting receipt of"
-the transaction.
-Required Data Blocks and Elements
-"(Data Block Record Layout) Data Element Description"
-HEADER
-LOCAL-FIPS-STATE/COUNTY Your state/county FIPS code
-OTHER-FIPS-STATE/COUNTY State/county FIPS code to which transaction
-is directed
-CSENET-VERSION-NUMBER 003
-TRANSACTION-SERIAL-NUMBER Fill as appropriate
-ACTION-CODE P
-FUNCTIONAL-TYPE-CODE LO1
-TXN-DATE Date transaction was created
-OTHER-CASE-ID Other case ID
-ACTION-REASON LSALL
-ATTACHMENTS-IND =N
-CASE-DATA-IND =1
-NCP-IDENTIFICATION-IND =1
-NCP-LOCATE-DATA-IND =1
-PARTICIPANT-DATA-IND =0 (numeric)
-ORDER-DATA-IND =0 (numeric)
-COLLECTION-DATA-IND =0 (numeric)
-INFORMATION-IND =0 (numeric)
-OVERDUE-IND =0 (numeric)
-"LO1 P LSALL − QUICK LOCATE RESPONSE, BOTH AN ADDRESS AND"
-EMPOYER LOCATED AND CONFIRMED
-CASE DATA BLOCK
-CASE-TYPE Any case type
-CASE-STATUS =O (alpha)
-"*CONTACT-NAME-LAST Your state contact last name"
-"*CONTACT-NAME-FIRST Your state contact first name"
-"*CONTACT-ADDRESS-LINE1 Contact address"
-"*CONTACT-CITY Contact city"
-"*CONTACT-STATE Contact state"
-"*CONTACT-ZIP-1 Contact ZIP Code"
-"*CONTACT-PHONE-NUM Contact phone number"
-NCP IDENTIFICATION DATA BLOCK
-NAME-LAST NCP last name
-NAME-FIRST NCP first name
-"*SSN NCP Social Security number"
-"*DATE-OF-BIRTH NCP date of birth"
-NCP LOCATE DATA BLOCK
-RESIDENTIAL-ADDRESS-LINE 1 Street address
-"*RESIDENTIAL-CITY City"
-"*RESIDENTIAL-STATE State"
-"*RESIDENTIAL-ZIP-1 ZIP Code"
-RESIDENTIAL-ADDRESS-EFFECTIVE- Required if residential address entered
-DATE
-RESIDENTIAL-ADDRESS-CONFIRMED- =Y
-IND
-"*EMPLOYER-NAME Employer name"
-"*EMPLOYER -ADDRESS-LINE 1 Employer street address"
-"*EMPLOYER-CITY Employer city"
-"*EMPLOYER -STATE Employer state"
-"*EMPLOYER -ZIP-1 Employer ZIP Code"
-"*EMPLOYER-PHONE-NUM Employer telephone number"
-"LO1 P LSALL − QUICK LOCATE RESPONSE, BOTH AN ADDRESS AND"
-EMPOYER LOCATED AND CONFIRMED
-"*EMPLOYER -EFFECTIVE-DATE Required if employer entered"
-"*EMPLOYER CONFIRMED-IND =N"
-"LO1 P LSEMP − QUICK LOCATE RESPONSE, EMPLOYER LOCATED AND"
-CONFIRMED
-Description/Business Usage
-Sent by Responding State:
+Process according to state procedures. Update case information, such as noting receipt of
+the transaction.",,,,,
+,Required Data Blocks and Elements,,,,
+,,Data Element Description,,,
+(Data Block Record Layout),,,,,
+HEADER,,,,,
+LOCAL-FIPS-STATE/COUNTY,Your state/county FIPS code,,,,
+OTHER-FIPS-STATE/COUNTY,"State/county FIPS code to which transaction
+is directed",,,,
+CSENET-VERSION-NUMBER,3,,,,
+TRANSACTION-SERIAL-NUMBER,Fill as appropriate,,,,
+ACTION-CODE,P,,,,
+FUNCTIONAL-TYPE-CODE,LO1,,,,
+TXN-DATE,Date transaction was created,,,,
+OTHER-CASE-ID,Other case ID,,,,
+ACTION-REASON,LSALL,,,,
+ATTACHMENTS-IND,#NAME?,,,,
+CASE-DATA-IND,1,,,,
+NCP-IDENTIFICATION-IND,1,,,,
+NCP-LOCATE-DATA-IND,1,,,,
+PARTICIPANT-DATA-IND,=0 (numeric),,,,
+ORDER-DATA-IND,=0 (numeric),,,,
+COLLECTION-DATA-IND,=0 (numeric),,,,
+INFORMATION-IND,=0 (numeric),,,,
+,"LO1 P LSALL  QUICK LOCATE RESPONSE, BOTH AN ADDRESS AND",,,,
+EMPOYER LOCATED AND CONFIRMED,,,,,
+CASE DATA BLOCK,,,,,
+CASE-TYPE,Any case type,,,,
+CASE-STATUS,#NAME?,,,,
+*CONTACT-NAME-LAST,Your state contact last name,,,,
+*CONTACT-NAME-FIRST,Your state contact first name,,,,
+*CONTACT-ADDRESS-LINE1,Contact address,,,,
+*CONTACT-CITY,Contact city,,,,
+*CONTACT-STATE,Contact state,,,,
+*CONTACT-ZIP-1,Contact ZIP Code,,,,
+*CONTACT-PHONE-NUM,Contact phone number,,,,
+NCP IDENTIFICATION DATA BLOCK,,,,,
+NAME-LAST,NCP last name,,,,
+NAME-FIRST,NCP first name,,,,
+*SSN,NCP Social Security number,,,,
+*DATE-OF-BIRTH,NCP date of birth,,,,
+NCP LOCATE DATA BLOCK,,,,,
+RESIDENTIAL-ADDRESS-LINE 1,Street address,,,,
+*RESIDENTIAL-CITY,City,,,,
+*RESIDENTIAL-STATE,State,,,,
+*RESIDENTIAL-ZIP-1,ZIP Code,,,,
+"RESIDENTIAL-ADDRESS-EFFECTIVE-
+DATE",Required if residential address entered,,,,
+"RESIDENTIAL-ADDRESS-CONFIRMED-
+IND",#NAME?,,,,
+*EMPLOYER-NAME,Employer name,,,,
+*EMPLOYER -ADDRESS-LINE 1,Employer street address,,,,
+*EMPLOYER-CITY,Employer city,,,,
+*EMPLOYER -STATE,Employer state,,,,
+*EMPLOYER -ZIP-1,Employer ZIP Code,,,,
+,"LO1 P LSALL  QUICK LOCATE RESPONSE, BOTH AN ADDRESS AND",,,,
+EMPOYER LOCATED AND CONFIRMED,,,,,
+*EMPLOYER -EFFECTIVE-DATE,Required if employer entered,,,,
+,"LO1 P LSEMP  QUICK LOCATE RESPONSE, EMPLOYER LOCATED AND",,,,
+,CONFIRMED,,,,
+,Description/Business Usage,,,,
+"Sent by Responding State:
 This transaction is used to electronically respond to a locate request (LO1 R) and notifies
 the other state that an employer has been found and confirmed.
 Automated Triggers:
 Determine how the CSE system records that an employer was found and confirmed.
 Action by Receiving State:
-"Process according to state procedures. Update case information, such as noting receipt of"
-the transaction.
-Required Data Blocks and Elements
-"(Data Block Record Layout) Data Element Description"
-HEADER
-LOCAL-FIPS-STATE/COUNTY Your state/county FIPS code
-OTHER-FIPS-STATE/COUNTY State/county FIPS code to which transaction
-is directed
-CSENET-VERSION-NUMBER 003
-TRANSACTION-SERIAL-NUMBER Fill as appropriate
-ACTION-CODE P
-FUNCTIONAL-TYPE-CODE LO1
-TXN-DATE Date transaction was created
-OTHER-CASE-ID Other case ID
-ACTION-REASON LSEMP
-ATTACHMENTS-IND =N
-CASE-DATA-IND =1
-NCP-IDENTIFICATION-IND =1
-NCP-LOCATE-DATA-IND =1
-PARTICIPANT-DATA-IND =0 (numeric)
-ORDER-DATA-IND =0 (numeric)
-COLLECTION-DATA-IND =0 (numeric)
-INFORMATION-IND =0 (numeric)
-OVERDUE-IND =0 (numeric)
-"LO1 P LSEMP − QUICK LOCATE RESPONSE, EMPLOYER LOCATED AND"
-CONFIRMED
-CASE DATA BLOCK
-CASE-TYPE Any case type
-CASE-STATUS =O (alpha)
-"*CONTACT-NAME-LAST Your state contact last name"
-"*CONTACT-NAME-FIRST Your state contact first name"
-"*CONTACT-ADDRESS-LINE1 Contact address"
-"*CONTACT-CITY Contact city"
-"*CONTACT-STATE Contact state"
-"*CONTACT-ZIP-1 Contact ZIP Code"
-"*CONTACT-PHONE-NUM Contact phone number"
-NCP IDENTIFICATION DATA BLOCK
-NAME-LAST NCP last name
-NAME-FIRST NCP first name
-"*SSN NCP Social Security number"
-"*DATE-OF-BIRTH Date of birth"
-NCP LOCATE DATA BLOCK
-EMPLOYER-NAME Employer name
-"*EMPLOYER-ADDRESS-LINE 1 Employer street address"
-"*EMPLOYER-CITY Employer city"
-"*EMPLOYER-STATE Employer state"
-"*EMPLOYER-ZIP-1 Employer ZIP Code"
-"*EMPLOYER-PHONE-NUM Employer telephone number"
-EMPLOYER-EFFECTIVE-DATE Required if employer entered
-EMPLOYER-CONFIRMED-IND =Y
-"LO1 P LSOTH − QUICK LOCATE RESPONSE, OTHER INFORMATION FOUND"
-Description/Business Usage
-Sent by Responding State:
+Process according to state procedures. Update case information, such as noting receipt of
+the transaction.",,,,,
+,Required Data Blocks and Elements,,,,
+,,Data Element Description,,,
+(Data Block Record Layout),,,,,
+,,,,,
+HEADER,,,,,
+LOCAL-FIPS-STATE/COUNTY,Your state/county FIPS code,,,,
+OTHER-FIPS-STATE/COUNTY,"State/county FIPS code to which transaction
+is directed",,,,
+CSENET-VERSION-NUMBER,3,,,,
+TRANSACTION-SERIAL-NUMBER,Fill as appropriate,,,,
+ACTION-CODE,P,,,,
+FUNCTIONAL-TYPE-CODE,LO1,,,,
+TXN-DATE,Date transaction was created,,,,
+OTHER-CASE-ID,Other case ID,,,,
+ACTION-REASON,LSEMP,,,,
+ATTACHMENTS-IND,#NAME?,,,,
+CASE-DATA-IND,1,,,,
+NCP-IDENTIFICATION-IND,1,,,,
+NCP-LOCATE-DATA-IND,1,,,,
+PARTICIPANT-DATA-IND,=0 (numeric),,,,
+ORDER-DATA-IND,=0 (numeric),,,,
+COLLECTION-DATA-IND,=0 (numeric),,,,
+INFORMATION-IND,=0 (numeric),,,,
+OVERDUE-IND,=0 (numeric),,,,
+,"LO1 P LSEMP  QUICK LOCATE RESPONSE, EMPLOYER LOCATED AND",,,,
+CONFIRMED,,,,,
+CASE DATA BLOCK,,,,,
+CASE-TYPE,Any case type,,,,
+CASE-STATUS,#NAME?,,,,
+*CONTACT-NAME-LAST,Your state contact last name,,,,
+*CONTACT-NAME-FIRST,Your state contact first name,,,,
+*CONTACT-ADDRESS-LINE1,Contact address,,,,
+*CONTACT-CITY,Contact city,,,,
+*CONTACT-STATE,Contact state,,,,
+*CONTACT-ZIP-1,Contact ZIP Code,,,,
+*CONTACT-PHONE-NUM,Contact phone number,,,,
+NCP IDENTIFICATION DATA BLOCK,,,,,
+NAME-LAST,NCP last name,,,,
+NAME-FIRST,NCP first name,,,,
+*SSN,NCP Social Security number,,,,
+*DATE-OF-BIRTH,Date of birth,,,,
+NCP LOCATE DATA BLOCK,,,,,
+EMPLOYER-NAME,Employer name,,,,
+*EMPLOYER-ADDRESS-LINE 1,Employer street address,,,,
+*EMPLOYER-CITY,Employer city,,,,
+*EMPLOYER-STATE,Employer state,,,,
+*EMPLOYER-ZIP-1,Employer ZIP Code,,,,
+*EMPLOYER-PHONE-NUM,Employer telephone number,,,,
+EMPLOYER-EFFECTIVE-DATE,Required if employer entered,,,,
+EMPLOYER-CONFIRMED-IND,#NAME?,,,,
+,"LO1 P LSOTH  QUICK LOCATE RESPONSE, OTHER INFORMATION FOUND",,,,
+,Description/Business Usage,,,,
+"Sent by Responding State:
 This transaction is used to electronically respond to a locate request (LO1 R) and indicates
 that other information concerning the individual has been found.
 Automated Triggers:
 Identify whether and how the CSE system records that information other than an address or
 employer was found on an individual.
 Action by Receiving State:
-"Process according to state procedures. Update case information, such as noting receipt of"
-the transaction.
-Required Data Blocks and Elements
-"(Data Block Record Layout) Data Element Description"
-HEADER
-LOCAL-FIPS-STATE/COUNTY Your state/county FIPS code
-OTHER-FIPS-STATE/COUNTY State/county FIPS code to which transaction
-is directed
-CSENET-VERSION-NUMBER 003
-TRANSACTION-SERIAL-NUMBER Fill as appropriate
-ACTION-CODE P
-FUNCTIONAL-TYPE-CODE LO1
-TXN-DATE Date transaction was created
-OTHER-CASE-ID Other case ID
-ACTION-REASON LSOTH
-ATTACHMENTS-IND =N
-CASE-DATA-IND =1
-NCP-IDENTIFICATION-IND =1
-NCP-LOCATE-DATA-IND =1
-PARTICIPANT-DATA-IND =0 (numeric)
-ORDER-DATA-IND =0 (numeric)
-COLLECTION-DATA-IND =0 (numeric)
-"*INFORMATION-IND Fill as appropriate"
-OVERDUE-IND =0 (numeric)
-"LO1 P LSOTH − QUICK LOCATE RESPONSE, OTHER INFORMATION FOUND"
-CASE DATA BLOCK
-CASE-TYPE Any case type
-CASE-STATUS =O (alpha)
-"*CONTACT-NAME-LAST Your state contact last name"
-"*CONTACT-NAME-FIRST Your state contact first name"
-"*CONTACT-ADDRESS-LINE1 Contact address"
-"*CONTACT-CITY Contact city"
-"*CONTACT-STATE Contact state"
-"*CONTACT-ZIP-1 Contact ZIP Code"
-CONTACT-PHONE-NUM Contact phone number
-NCP IDENTIFICATION DATA BLOCK
-NAME-LAST NCP last name
-NAME-FIRST NCP first name
-"*SSN NCP Social Security number"
-"*DATE-OF-BIRTH NCP date of birth"
-NCP LOCATE DATA BLOCK
-RESIDENTIAL-ADDRESS-LINE 1 Street address
-"*RESIDENTIAL-CITY City"
-"*RESIDENTIAL-STATE State"
-"*RESIDENTIAL-ZIP-1 ZIP Code"
-RESIDENTIAL-ADDRESS-EFFECTIVE- Required if residential address entered
-DATE
-RESIDENTIAL-ADDRESS-CONFIRMED- Fill as appropriate
-IND
-"*INFORMATION DATA BLOCK"
-STATUS-CHANGE-CODE =O (Alpha)
-INFORMATION-TEXT = Fill as appropriate
-"LO1 P LUALL − QUICK LOCATE RESPONSE, NO INFORMATION FOUND"
-Description/Business Usage
-Sent by Responding State:
+Process according to state procedures. Update case information, such as noting receipt of
+the transaction.",,,,,
+,Required Data Blocks and Elements,,,,
+,,Data Element Description,,,
+(Data Block Record Layout),,,,,
+HEADER,,,,,
+LOCAL-FIPS-STATE/COUNTY,Your state/county FIPS code,,,,
+OTHER-FIPS-STATE/COUNTY,"State/county FIPS code to which transaction
+is directed",,,,
+CSENET-VERSION-NUMBER,3,,,,
+TRANSACTION-SERIAL-NUMBER,Fill as appropriate,,,,
+ACTION-CODE,P,,,,
+FUNCTIONAL-TYPE-CODE,LO1,,,,
+TXN-DATE,Date transaction was created,,,,
+OTHER-CASE-ID,Other case ID,,,,
+ACTION-REASON,LSOTH,,,,
+ATTACHMENTS-IND,#NAME?,,,,
+CASE-DATA-IND,1,,,,
+NCP-IDENTIFICATION-IND,1,,,,
+NCP-LOCATE-DATA-IND,1,,,,
+PARTICIPANT-DATA-IND,=0 (numeric),,,,
+ORDER-DATA-IND,=0 (numeric),,,,
+COLLECTION-DATA-IND,=0 (numeric),,,,
+*INFORMATION-IND,Fill as appropriate,,,,
+,"LO1 P LSOTH  QUICK LOCATE RESPONSE, OTHER INFORMATION FOUND",,,,
+CASE DATA BLOCK,,,,,
+CASE-TYPE,Any case type,,,,
+CASE-STATUS,#NAME?,,,,
+*CONTACT-NAME-LAST,Your state contact last name,,,,
+*CONTACT-NAME-FIRST,Your state contact first name,,,,
+*CONTACT-ADDRESS-LINE1,Contact address,,,,
+*CONTACT-CITY,Contact city,,,,
+*CONTACT-STATE,Contact state,,,,
+*CONTACT-ZIP-1,Contact ZIP Code,,,,
+CONTACT-PHONE-NUM,Contact phone number,,,,
+NCP IDENTIFICATION DATA BLOCK,,,,,
+NAME-LAST,NCP last name,,,,
+NAME-FIRST,NCP first name,,,,
+*SSN,NCP Social Security number,,,,
+*DATE-OF-BIRTH,NCP date of birth,,,,
+NCP LOCATE DATA BLOCK,,,,,
+RESIDENTIAL-ADDRESS-LINE 1,Street address,,,,
+*RESIDENTIAL-CITY,City,,,,
+*RESIDENTIAL-STATE,State,,,,
+*RESIDENTIAL-ZIP-1,ZIP Code,,,,
+"RESIDENTIAL-ADDRESS-EFFECTIVE-
+DATE",Required if residential address entered,,,,
+"RESIDENTIAL-ADDRESS-CONFIRMED-
+IND",Fill as appropriate,,,,
+*INFORMATION DATA BLOCK,,,,,
+STATUS-CHANGE-CODE,,#NAME?,,,
+,"LO1 P LUALL  QUICK LOCATE RESPONSE, NO INFORMATION FOUND",,,,
+,Description/Business Usage,,,,
+"Sent by Responding State:
 This transaction is used to electronically respond to a locate request (LO1 R) and indicates
 that no information concerning the individual has been found.
-"It is recommended that states review their internal locate process, identify when their locate"
+It is recommended that states review their internal locate process, identify when their locate
 sources provide responses and establish a reasonable timeframe when this transaction
 should be sent because no information is available. States agreed that a 60-day timeframe
 was acceptable.
 Automated Triggers:
 Determine how the CSE system records that no information has been found.
 Action by Receiving State:
-"Process according to state procedures. Update case information, such as noting receipt of"
-the transaction.
-Required Data Blocks and Elements
-"(Data Block Record Layout) Data Element Description"
-HEADER
-LOCAL-FIPS-STATE/COUNTY Your state/county FIPS code
-OTHER-FIPS-STATE/COUNTY State/county FIPS code to which transaction
-is directed
-CSENET-VERSION-NUMBER 003
-TRANSACTION-SERIAL-NUMBER Fill as appropriate
-ACTION-CODE P
-FUNCTIONAL-TYPE-CODE LO1
-TXN-DATE Date transaction was created
-OTHER-CASE-ID Other case ID
-ACTION-REASON LUALL
-ATTACHMENTS-IND =N
-CASE-DATA-IND =1
-NCP-IDENTIFICATION-IND =1
-NCP-LOCATE-DATA-IND =0 (numeric)
-PARTICIPANT-DATA-IND =0 (numeric)
-ORDER-DATA-IND =0 (numeric)
-COLLECTION-DATA-IND =0 (numeric)
-"LO1 P LUALL − QUICK LOCATE RESPONSE, NO INFORMATION FOUND"
-INFORMATION-IND =0 (numeric)
-OVERDUE-IND =0 (numeric)
-CASE DATA BLOCK
-CASE-TYPE Any case type
-CASE-STATUS Fill as appropriate
-"*CONTACT-NAME-LAST Your state contact last name"
-"*CONTACT-NAME-FIRST Your state contact first name"
-"*CONTACT-ADDRESS-LINE1 Contact address"
-"*CONTACT-CITY Contact city"
-"*CONTACT-STATE Contact state"
-"*CONTACT-ZIP-1 Contact ZIP Code"
-"*CONTACT-PHONE-NUM Contact phone number"
-NCP IDENTIFICATION DATA BLOCK
-NAME-LAST NCP last name
-NAME-FIRST NCP first name
-"*SSN NCP Social Security number"
-"*DATE-OF-BIRTH NCP date of birth"
-"LO1 P LUAPD − QUICK LOCATE RESPONSE, NCP FOUND DECEASED"
-Description/Business Usage
-Sent by Responding State:
+Process according to state procedures. Update case information, such as noting receipt of
+the transaction.",,,,,
+,Required Data Blocks and Elements,,,,
+,,Data Element Description,,,
+(Data Block Record Layout),,,,,
+HEADER,,,,,
+LOCAL-FIPS-STATE/COUNTY,Your state/county FIPS code,,,,
+OTHER-FIPS-STATE/COUNTY,"State/county FIPS code to which transaction
+is directed",,,,
+CSENET-VERSION-NUMBER,3,,,,
+TRANSACTION-SERIAL-NUMBER,Fill as appropriate,,,,
+ACTION-CODE,P,,,,
+FUNCTIONAL-TYPE-CODE,LO1,,,,
+TXN-DATE,Date transaction was created,,,,
+OTHER-CASE-ID,Other case ID,,,,
+ACTION-REASON,LUALL,,,,
+ATTACHMENTS-IND,#NAME?,,,,
+CASE-DATA-IND,1,,,,
+NCP-IDENTIFICATION-IND,1,,,,
+NCP-LOCATE-DATA-IND,=0 (numeric),,,,
+PARTICIPANT-DATA-IND,=0 (numeric),,,,
+ORDER-DATA-IND,=0 (numeric),,,,
+=0 (numeric),,,,,
+,"LO1 P LUALL  QUICK LOCATE RESPONSE, NO INFORMATION FOUND",,,,
+INFORMATION-IND,=0 (numeric),,,,
+OVERDUE-IND,=0 (numeric),,,,
+CASE DATA BLOCK,,,,,
+CASE-TYPE,Any case type,,,,
+CASE-STATUS,Fill as appropriate,,,,
+*CONTACT-NAME-LAST,Your state contact last name,,,,
+*CONTACT-NAME-FIRST,Your state contact first name,,,,
+*CONTACT-ADDRESS-LINE1,Contact address,,,,
+*CONTACT-CITY,Contact city,,,,
+*CONTACT-STATE,Contact state,,,,
+*CONTACT-ZIP-1,Contact ZIP Code,,,,
+*CONTACT-PHONE-NUM,Contact phone number,,,,
+NCP IDENTIFICATION DATA BLOCK,,,,,
+NAME-LAST,NCP last name,,,,
+NAME-FIRST,NCP first name,,,,
+*SSN,NCP Social Security number,,,,
+*DATE-OF-BIRTH,NCP date of birth,,,,
+,"LO1 P LUAPD  QUICK LOCATE RESPONSE, NCP FOUND DECEASED",,,,
+,Description/Business Usage,,,,
+"Sent by Responding State:
 This transaction is used to electronically respond to a locate request (LO1 R) and notifies
 the initiating state that the NCP is deceased.
 Action by Receiving State:
-"Process according to state procedures. Update case information, such as noting receipt of"
+Process according to state procedures. Update case information, such as noting receipt of
 the transaction.
 Recommended Use of Data:
-Provide information regarding the date and proof of death in the Information data block.
-Required Data Blocks and Elements
-"(Data Block Record Layout) Data Element Description"
-HEADER
-LOCAL-FIPS-STATE/COUNTY Your state/county FIPS code
-OTHER-FIPS-STATE/COUNTY State/county FIPS code to which transaction
-is directed
-CSENET-VERSION-NUMBER 003
-TRANSACTION-SERIAL-NUMBER Fill as appropriate
-ACTION-CODE P
-FUNCTIONAL-TYPE-CODE LO1
-TXN-DATE Date transaction was created
-OTHER-CASE-ID Other case ID
-ACTION-REASON LUAPD
-ATTACHMENTS-IND =N
-CASE-DATA-IND =1
-NCP-IDENTIFICATION-IND =1
-NCP-LOCATE-DATA-IND =0 (numeric)
-PARTICIPANT-DATA-IND =0 (numeric)
-ORDER-DATA-IND =0 (numeric)
-COLLECTION-DATA-IND =0 (numeric)
-"*INFORMATION-IND =Fill as appropriate"
-OVERDUE-IND =0 (numeric)
-CASE DATA BLOCK
-"LO1 P LUAPD − QUICK LOCATE RESPONSE, NCP FOUND DECEASED"
-CASE-TYPE Any case type
-CASE-STATUS Fill as appropriate
-"*CONTACT-NAME-LAST Your state contact last name"
-"*CONTACT-NAME-FIRST Your state contact first name"
-"*CONTACT-ADDRESS-LINE1 Contact address"
-"*CONTACT-CITY Contact city"
-"*CONTACT-STATE Contact state"
-"*CONTACT-ZIP-1 Contact ZIP Code"
-"*CONTACT-PHONE-NUM Contact phone number"
-NCP IDENTIFICATION DATA BLOCK
-NAME-LAST NCP last name
-NAME-FIRST NCP first name
-"*SSN NCP Social Security number"
-"*DATE-OF-BIRTH NCP date of birth"
-"*INFORMATION DATA BLOCK"
-STATUS-CHANGE-CODE =O (Alpha)
-INFORMATION-TEXT = Fill as appropriate
-VALID TRANSACTIONS EXCLUDED FROM THE TFM AND
-CORE SET OF TRANSCTIONS
-Functional Type/Action/ Recommendations for
-Action Reason Code Description/Business Usage Alternative Transaction Usage
-LO1 A Blank Acknowledgment None
-"LO1 U Blank** Update previous request Resend the request, LO1 R"
-LO1 C Blank** Cancel locate request Determine the processing of
-responses when received
-LO1 P LSOUT NCP out-of-state address LO1 P LICAD or LO1 P
-verified LSADR
+Provide information regarding the date and proof of death in the Information data block.",,,,,
+,Required Data Blocks and Elements,,,,
+,,Data Element Description,,,
+(Data Block Record Layout),,,,,
+HEADER,,,,,
+LOCAL-FIPS-STATE/COUNTY,Your state/county FIPS code,,,,
+OTHER-FIPS-STATE/COUNTY,"State/county FIPS code to which transaction
+is directed",,,,
+CSENET-VERSION-NUMBER,3,,,,
+TRANSACTION-SERIAL-NUMBER,Fill as appropriate,,,,
+ACTION-CODE,P,,,,
+FUNCTIONAL-TYPE-CODE,LO1,,,,
+TXN-DATE,Date transaction was created,,,,
+OTHER-CASE-ID,Other case ID,,,,
+ACTION-REASON,LUAPD,,,,
+ATTACHMENTS-IND,#NAME?,,,,
+CASE-DATA-IND,1,,,,
+NCP-IDENTIFICATION-IND,1,,,,
+NCP-LOCATE-DATA-IND,=0 (numeric),,,,
+PARTICIPANT-DATA-IND,=0 (numeric),,,,
+ORDER-DATA-IND,=0 (numeric),,,,
+COLLECTION-DATA-IND,=0 (numeric),,,,
+*INFORMATION-IND,#NAME?,,,,
+OVERDUE-IND,=0 (numeric),,,,
+,"LO1 P LUAPD  QUICK LOCATE RESPONSE, NCP FOUND DECEASED",,,,
+CASE-TYPE,Any case type,,,,
+CASE-STATUS,Fill as appropriate,,,,
+*CONTACT-NAME-LAST,Your state contact last name,,,,
+*CONTACT-NAME-FIRST,Your state contact first name,,,,
+*CONTACT-ADDRESS-LINE1,Contact address,,,,
+*CONTACT-CITY,Contact city,,,,
+*CONTACT-STATE,Contact state,,,,
+*CONTACT-ZIP-1,Contact ZIP Code,,,,
+*CONTACT-PHONE-NUM,Contact phone number,,,,
+NCP IDENTIFICATION DATA BLOCK,,,,,
+NAME-LAST,NCP last name,,,,
+NAME-FIRST,NCP first name,,,,
+*SSN,NCP Social Security number,,,,
+*DATE-OF-BIRTH,NCP date of birth,,,,
+*INFORMATION DATA BLOCK,,,,,
+STATUS-CHANGE-CODE,#NAME?,,,,
+INFORMATION-TEXT,#NAME?,,,,
+,VALID TRANSACTIONS EXCLUDED FROM THE TFM AND,,,,
+,CORE SET OF TRANSCTIONS,,,,
+,unctional Type/Action/,,,,Recommendations for
+Action Reason Code,,Description/Business Usage,,Alternative Transaction Usage,
+LO1 A BLANK,Acknowledgment,None,,,
+LO1 U BLANK,Update previous request,"Resend the request, LO1 R",,,
+LO1 C BLANK,Cancel locate request,"Determine the processing of
+responses when received",,,
+LO1 P LSOUT,"NCP out-of-state address
+verified","LO1 P LICAD or LO1 P
+LSADR",,,
