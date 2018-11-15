@@ -22,26 +22,26 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="csv" value="93" />
-          <entry key="py" value="6" />
+          <entry key="csv" value="106" />
+          <entry key="py" value="7" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="PLAIN_TEXT" value="93" />
-          <entry key="Python" value="6" />
+          <entry key="PLAIN_TEXT" value="106" />
+          <entry key="Python" value="7" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="py" value="11855" />
+          <entry key="py" value="19201" />
           <entry key="txt" value="38" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="PLAIN_TEXT" value="38" />
-          <entry key="Python" value="11855" />
+          <entry key="Python" value="19201" />
         </counts>
       </usages-collector>
     </session>
@@ -51,8 +51,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/exportVariables.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
-              <caret line="1" column="13" selection-start-line="1" selection-start-column="13" selection-end-line="1" selection-end-column="13" />
+            <state relative-caret-position="187">
+              <caret line="11" column="30" lean-forward="true" selection-start-line="11" selection-start-column="30" selection-end-line="11" selection-end-column="30" />
             </state>
           </provider>
         </entry>
@@ -60,18 +60,18 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/mainExtractor.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="451">
-              <caret line="253" column="46" selection-start-line="253" selection-start-column="45" selection-end-line="253" selection-end-column="46" />
+            <state relative-caret-position="4420">
+              <caret line="260" column="27" lean-forward="true" selection-start-line="260" selection-start-column="27" selection-end-line="260" selection-end-column="27" />
               <folding>
                 <element signature="e#0#10#0" expanded="true" />
-                <marker date="1542143773514" expanded="true" signature="84:85" ph="..." />
-                <marker date="1542143773514" expanded="true" signature="84:90" ph="..." />
-                <marker date="1542143773514" expanded="true" signature="8156:8413" ph="..." />
-                <marker date="1542143773514" expanded="true" signature="8438:8687" ph="..." />
-                <marker date="1542143773514" expanded="true" signature="8585:8687" ph="..." />
-                <marker date="1542143773514" expanded="true" signature="8734:8743" ph="..." />
-                <marker date="1542143773514" expanded="true" signature="10366:11299" ph="..." />
-                <marker date="1542143773514" expanded="true" signature="11185:11213" ph="..." />
+                <marker date="1542312972249" expanded="true" signature="84:85" ph="..." />
+                <marker date="1542312972249" expanded="true" signature="84:90" ph="..." />
+                <marker date="1542312972249" expanded="true" signature="8251:8508" ph="..." />
+                <marker date="1542312972249" expanded="true" signature="8533:8782" ph="..." />
+                <marker date="1542312972249" expanded="true" signature="8680:8782" ph="..." />
+                <marker date="1542312972249" expanded="true" signature="8829:8838" ph="..." />
+                <marker date="1542312972249" expanded="true" signature="10461:11425" ph="..." />
+                <marker date="1542312972249" expanded="true" signature="11311:11339" ph="..." />
               </folding>
             </state>
           </provider>
@@ -80,12 +80,29 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/exportDataBlockValues.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="434">
-              <caret line="41" lean-forward="true" selection-start-line="41" selection-end-line="41" />
+            <state relative-caret-position="451">
+              <caret line="79" column="12" selection-start-line="79" selection-start-column="12" selection-end-line="79" selection-end-column="12" />
               <folding>
                 <element signature="e#0#10#0" expanded="true" />
-                <marker date="1542148436486" expanded="true" signature="91:96" ph="..." />
+                <marker date="1542321785887" expanded="true" signature="91:96" ph="..." />
+                <marker date="1542321785887" expanded="true" signature="2014:2040" ph="..." />
+                <marker date="1542321785887" expanded="true" signature="3689:3716" ph="..." />
+                <marker date="1542321785887" expanded="true" signature="4182:4217" ph="..." />
+                <marker date="1542321785887" expanded="true" signature="7791:8254" ph="..." />
+                <marker date="1542321785887" expanded="true" signature="8442:8478" ph="..." />
+                <marker date="1542321785887" expanded="true" signature="8775:8784" ph="..." />
+                <marker date="1542321785887" expanded="true" signature="9124:9129" ph="..." />
+                <marker date="1542321785887" expanded="true" signature="9338:9456" ph="..." />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/CSENetTableExtractions/COL.csv">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="321">
+              <caret line="77" column="18" selection-start-line="77" selection-start-column="18" selection-end-line="77" selection-end-column="18" />
             </state>
           </provider>
         </entry>
@@ -93,8 +110,11 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/controller.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="2" column="45" lean-forward="true" selection-start-line="2" selection-start-column="45" selection-end-line="2" selection-end-column="45" />
+            <state relative-caret-position="187">
+              <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
+              <folding>
+                <element signature="e#0#28#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -111,6 +131,7 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>QUICK LOCATE RESPONSE, BOTH AN ADDRESS AND</find>
+      <find>utf</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -153,6 +174,11 @@
             <path>
               <item name="CSENetExtractor" type="b2602c69:ProjectViewProjectNode" />
               <item name="CSENetExtractor" type="462c0819:PsiDirectoryNode" />
+              <item name="CSENetTableExtractions" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="CSENetExtractor" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CSENetExtractor" type="462c0819:PsiDirectoryNode" />
               <item name="generatedFiles" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
@@ -178,7 +204,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.controller">
+  <component name="RunManager" selected="Python.exportDataBlockValues">
     <configuration name="controller" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="CSENetExtractor" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -192,6 +218,27 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/controller.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="exportDataBlockValues" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="CSENetExtractor" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/exportDataBlockValues.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -224,11 +271,13 @@
     <list>
       <item itemvalue="Python.mainExtractor" />
       <item itemvalue="Python.controller" />
+      <item itemvalue="Python.exportDataBlockValues" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.controller" />
+        <item itemvalue="Python.exportDataBlockValues" />
         <item itemvalue="Python.mainExtractor" />
+        <item itemvalue="Python.controller" />
       </list>
     </recent_temporary>
   </component>
@@ -249,12 +298,12 @@
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24973656" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24973656" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.329718" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.329718" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.329718" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3991323" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -262,7 +311,7 @@
       <window_info anchor="bottom" id="Version Control" order="7" weight="0.329718" />
       <window_info anchor="bottom" id="Terminal" order="8" weight="0.329718" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
-      <window_info anchor="bottom" id="Python Console" order="10" />
+      <window_info anchor="bottom" id="Python Console" order="10" weight="0.329718" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -358,13 +407,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/CSENetTableExtractions/COL.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="59" column="41" lean-forward="true" selection-start-line="59" selection-start-column="41" selection-end-line="59" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/CSENetTableExtractions/ENF.csv">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="219">
@@ -427,12 +469,25 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/generatedFiles/ALL_FAR_CODE.csv">
+    <entry file="file://$PROJECT_DIR$/generatedFiles/MSC.csv">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" column="88" lean-forward="true" selection-start-line="16" selection-start-column="88" selection-end-line="16" selection-end-column="88" />
+        <state relative-caret-position="442">
+          <caret line="26" column="26" lean-forward="true" selection-start-line="26" selection-start-column="26" selection-end-line="26" selection-end-column="26" />
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/generatedFiles/DATA_BLOCK.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="24" lean-forward="true" selection-start-line="8" selection-start-column="24" selection-end-line="8" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/generatedFiles/DATA_BLOCK_FIELDS.csv">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/generatedFiles/.csv">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/generatedFiles/COL.csv">
       <provider selected="true" editor-type-id="text-editor">
@@ -441,59 +496,70 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/generatedFiles/MSC.csv">
+    <entry file="file://$PROJECT_DIR$/generatedFiles/ALL_FAR_CODE.csv">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="26" column="26" lean-forward="true" selection-start-line="26" selection-start-column="26" selection-end-line="26" selection-end-column="26" />
+        <state relative-caret-position="-102">
+          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/controller.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="45" lean-forward="true" selection-start-line="2" selection-start-column="45" selection-end-line="2" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mainExtractor.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="451">
-          <caret line="253" column="46" selection-start-line="253" selection-start-column="45" selection-end-line="253" selection-end-column="46" />
+        <state relative-caret-position="187">
+          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
           <folding>
-            <element signature="e#0#10#0" expanded="true" />
-            <marker date="1542143773514" expanded="true" signature="84:85" ph="..." />
-            <marker date="1542143773514" expanded="true" signature="84:90" ph="..." />
-            <marker date="1542143773514" expanded="true" signature="8156:8413" ph="..." />
-            <marker date="1542143773514" expanded="true" signature="8438:8687" ph="..." />
-            <marker date="1542143773514" expanded="true" signature="8585:8687" ph="..." />
-            <marker date="1542143773514" expanded="true" signature="8734:8743" ph="..." />
-            <marker date="1542143773514" expanded="true" signature="10366:11299" ph="..." />
-            <marker date="1542143773514" expanded="true" signature="11185:11213" ph="..." />
+            <element signature="e#0#28#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/exportVariables.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="13" selection-start-line="1" selection-start-column="13" selection-end-line="1" selection-end-column="13" />
+        <state relative-caret-position="187">
+          <caret line="11" column="30" lean-forward="true" selection-start-line="11" selection-start-column="30" selection-end-line="11" selection-end-column="30" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/generatedFiles/DATA_BLOCK.csv">
+    <entry file="file://$PROJECT_DIR$/mainExtractor.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="27" lean-forward="true" selection-start-column="27" selection-end-column="27" />
+        <state relative-caret-position="4420">
+          <caret line="260" column="27" lean-forward="true" selection-start-line="260" selection-start-column="27" selection-end-line="260" selection-end-column="27" />
+          <folding>
+            <element signature="e#0#10#0" expanded="true" />
+            <marker date="1542312972249" expanded="true" signature="84:85" ph="..." />
+            <marker date="1542312972249" expanded="true" signature="84:90" ph="..." />
+            <marker date="1542312972249" expanded="true" signature="8251:8508" ph="..." />
+            <marker date="1542312972249" expanded="true" signature="8533:8782" ph="..." />
+            <marker date="1542312972249" expanded="true" signature="8680:8782" ph="..." />
+            <marker date="1542312972249" expanded="true" signature="8829:8838" ph="..." />
+            <marker date="1542312972249" expanded="true" signature="10461:11425" ph="..." />
+            <marker date="1542312972249" expanded="true" signature="11311:11339" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CSENetTableExtractions/COL.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="321">
+          <caret line="77" column="18" selection-start-line="77" selection-start-column="18" selection-end-line="77" selection-end-column="18" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/exportDataBlockValues.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="434">
-          <caret line="41" lean-forward="true" selection-start-line="41" selection-end-line="41" />
+        <state relative-caret-position="451">
+          <caret line="79" column="12" selection-start-line="79" selection-start-column="12" selection-end-line="79" selection-end-column="12" />
           <folding>
             <element signature="e#0#10#0" expanded="true" />
-            <marker date="1542148436486" expanded="true" signature="91:96" ph="..." />
+            <marker date="1542321785887" expanded="true" signature="91:96" ph="..." />
+            <marker date="1542321785887" expanded="true" signature="2014:2040" ph="..." />
+            <marker date="1542321785887" expanded="true" signature="3689:3716" ph="..." />
+            <marker date="1542321785887" expanded="true" signature="4182:4217" ph="..." />
+            <marker date="1542321785887" expanded="true" signature="7791:8254" ph="..." />
+            <marker date="1542321785887" expanded="true" signature="8442:8478" ph="..." />
+            <marker date="1542321785887" expanded="true" signature="8775:8784" ph="..." />
+            <marker date="1542321785887" expanded="true" signature="9124:9129" ph="..." />
+            <marker date="1542321785887" expanded="true" signature="9338:9456" ph="..." />
           </folding>
         </state>
       </provider>

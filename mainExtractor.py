@@ -51,18 +51,18 @@ class mainExtractor(object):
                     secondFarCode = [firstFourWords[0], firstFourWords[2], firstFourWords[3]]
 
                     firstFarCode = ''.join(firstFarCode)
-                    description = rows[1].lstrip(' ').replace("\n", "\\n")
+                    description = rows[1].lstrip(' âˆ’').replace("\n", "")
                     codes.append([firstFarCode, lineNumber, ['HEADER'], description])
 
                     secondFarCode = ''.join(secondFarCode)
-                    description = rows[1].lstrip(' ').replace("\n", "\\n")
+                    description = rows[1].lstrip(' âˆ’').replace("\n", "")
                     codes.append([secondFarCode, lineNumber, ['HEADER'], description])
 
                 elif len(rows[0]) == 11 and re.search(r'\w[A-Z]{2,3}\b\s\w{1,1}\b\s\w{5,5}\b', rows[0]):
                     firstThreeWords = rows[0].split()[:3]
                     farCode = ''.join(firstThreeWords)
                     if (farCode not in [i[0] for i in codes]):
-                        description = rows[1].lstrip(' ').replace("\n", "\\n")
+                        description = rows[1].lstrip(' âˆ’').replace("\n", "")
                         codes.append([farCode, lineNumber, ['HEADER'], description])
 
 
@@ -72,7 +72,7 @@ class mainExtractor(object):
                     tempExtractWords = self.extractFromFirstThreeWords(firstThreeWords, lineNumber, codes, rows,
                                                                        isDescriptionLine)
                     codes = tempExtractWords[0]
-                    codes[len(codes) - 1][3] = (rows[1].replace("\n", "\\n"))
+                    codes[len(codes) - 1][3] = (rows[1].replace("\n", ""))
                     # print(codes)
                     isDescriptionLine = tempExtractWords[1]
 
@@ -125,6 +125,8 @@ class mainExtractor(object):
         # Append additional lines to the Description text
         elif isDescriptionLine and not rows[1].startswith('Description'):
             # print(codes[len(codes) - 1][3])
+            # print(rows[1])
+            # print(codes)
             description = codes[len(codes) - 1][3] + rows[0] + " " + rows[1]
             # print(description)
             codes[len(codes) - 1][3] = description
@@ -141,9 +143,9 @@ class mainExtractor(object):
             if (rows[1][1:].isupper() and
                     (rows[1][1:] in exportVariables.dataBlocks or rows[1] in exportVariables.dataBlocks)):
                 if (len(codes) == 0):
-                    codes[len(codes)][2].append(rows[1])
+                    codes[len(codes)][2].append(self.removeAsterisk(rows[1]))
                 else:
-                    codes[len(codes) - 1][2].append(rows[1])
+                    codes[len(codes) - 1][2].append(self.removeAsterisk(rows[1]))
 
         # print(isDescriptionLine)
         return [codes, isDescriptionLine]
@@ -225,7 +227,7 @@ class mainExtractor(object):
             else:
                 farType.append('BLANK')
             farType.append(count + currentCount)
-            farType.append(farCodes[3])
+            farType.append(farCodes[3].replace("âˆ’", "").lstrip(" "))
             # print(farCodes[3])
 
             transactionsCSV.writerow(farType)
@@ -248,7 +250,7 @@ class mainExtractor(object):
         for functionType in exportVariables.allFunctionCodes:
             with open(self.saveLocationFARCode, mode='a') as transactionsTypes:
                 transactionsCSV = csv.writer(transactionsTypes, delimiter=',', quotechar='"', lineterminator='\n')
-                print(functionType)
+                # print(functionType)
                 currentFileName = os.path.join(dirName, 'CSENetTableExtractions/', functionType + '.csv')
                 FARCodes = self.extractCSV(currentFileName)
                 self.exportFARCode(FARCodes, transactionsCSV, currentLocation)

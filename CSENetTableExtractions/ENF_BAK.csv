@@ -1,0 +1,1201 @@
+,"ENF A AADIN − ENFORCEMENT ACKNOWLEDGMENT, ADDITIONAL",,,
+,INFORMATION NEEDED TO PROCEED,,,
+,Description/Business Usage,,,
+"Sent By Responding State:This transaction is used to electronically acknowledge the receipt of the case (ENF R) andto inform the initiating state that additional information is needed to proceed. Thetransaction must be sent within the timeframes required by federal guidelines (10 workingdays).Used On:Established interstate casesCorresponds To:Transmittal #1 Acknowledgment[ ] Additional Information NeededRelevant CFR Requirements:The 45CFR 303.7(a)(2)(iii) states that receipt of the case must be acknowledged and ensurethat any missing documentation has been requested from the initiating state.The 45CFR 303.7(c)(4)(ii) states that if unable to proceed with the case because ofinadequate documentation, notify the IV-D agency in the initiating state of the necessaryadditions or corrections to the form or documentation.The 45CFR303.7(a)(2)(iv) states that within 10 working days of receipt of an interstate IV-D case from an initiating state, the central registry must inform the IV-D agency in theinitiating state where the case was sent for action.Automated Triggers:Determine how the CSE system records that an enforcement request was received and adetermination has been made that further information is necessary.Action By Receiving State:Process according to federal guidelines. Update case information, such as noting receipt ofthe transaction, and follow-up on the additional information needed.",,,,
+,Required Data Blocks and Elements,,,
+,,Data Element Description,,
+(Data Block Record Layout),,,,
+HEADER,,,,
+LOCAL-FIPS-STATE/COUNTY,Your state/county FIPS code,,,
+OTHER-FIPS-STATE/COUNTY,"State/county FIPS code to which thetransaction is directed",,,
+CSENET-VERSION-NUMBER,3,,,
+TRANSACTION-SERIAL-NUMBER,Fill as appropriate,,,
+ACTION-CODE,A,,,
+,"ENF A AADIN − ENFORCEMENT ACKNOWLEDGMENT, ADDITIONAL",,,
+INFORMATION NEEDED TO PROCEED,,,,
+FUNCTIONAL-TYPE-CODE,ENF,,,
+TXN-DATE,Date transaction was created,,,
+CASE-ID,Your case ID,,,
+OTHER-CASE-ID,Other case ID,,,
+ACTION-REASON,AADIN,,,
+ATTACHMENTS-IND,#NAME?,,,
+*CASE-DATA-IND,1,,,
+*NCP-IDENTIFICATION-IND,1,,,
+NCP-LOCATE-IND,=0 (numeric),,,
+*PARTICIPANT-DATA-IND,1,,,
+ORDER-DATA-IND,=0 (numeric),,,
+COLLECTION-DATA-IND,=0 (numeric),,,
+*INFORMATION-IND,1,,,
+OVERDUE-IND,=0 (numeric),,,
+*CASE DATA BLOCK,,,,
+*CASE-TYPE,Fill as appropriate,,,
+*CASE-STATUS,#NAME?,,,
+*CONTACT-NAME-LAST,Your state contact last name,,,
+*CONTACT-NAME-FIRST,Your state contact first name,,,
+*CONTACT-ADDRESS-LINE-1,Contact address,,,
+*CONTACT-CITY,Contact city,,,
+*CONTACT-STATE,Contact state,,,
+*CONTACT-ZIP-1,Contact ZIP Code,,,
+*CONTACT-PHONE-NUM,Contact phone number,,,
+*NCP IDENTIFICATION DATA BLOCK,,,,
+*NAME-LAST,NCP last name,,,
+*NAME-FIRST,NCP first name,,,
+*SSN,NCP Social Security number,,,
+*DATE-OF-BIRTH,NCP date of birth,,,
+,"ENF A AADIN − ENFORCEMENT ACKNOWLEDGMENT, ADDITIONAL",,,
+INFORMATION NEEDED TO PROCEED,,,,
+*PARTICIPANT DATA BLOCK,,,,
+*NAME-LAST,Participant last name,,,
+*NAME-FIRST,Participant first name,,,
+*RELATIONSHIP,Fill as appropriate,,,
+*PARTICIPANT-STATUS,#NAME?,,,
+*INFORMATION DATA BLOCK,,,,
+*STATUS-CHANGE-CODE,#NAME?,,,
+*INFORMATION-TEXT-LINE1,Fill as appropriate,,,
+,"ENF A ANOAD − ENFORCEMENT ACKNOWLEDGMENT, NO FURTHER",,,
+,INFORMATION REQUIRED,,,
+,Description/Business Usage,,,
+"Sent By Responding State:This transaction is used to electronically acknowledge the receipt of a case (ENF R) and toinform the initiating state that no additional information is necessary. The transaction mustbe sent within the timeframes required by federal guidelines (10 working days).Used On:Established interstate casesCorresponds To:Transmittal #1 Acknowledgment[ ] Request Received and No Additional Information is NecessaryRelevant CFR Requirement:The 45CFR 303.7(a)(2)(iii) states that receipt of the case must be acknowledged.The 45CFR303.7(a)(2)(iv) states that within 10 working days of receipt of an interstateIV-D case from an initiating state, the central registry must inform the IV-D agency in theinitiating state where the case was sent for action.Automated Triggers:Determine how the CSE system records that an enforcement request was received and thatno further information is necessary for the next step.Action By Receiving State:Process according to federal guidelines. Update case information, such as noting receipt ofthe transaction.",,,,
+,Required Data Blocks and Elements,,,
+,,Data Element Description,,
+(Data Block Record Layout),,,,
+HEADER,,,,
+LOCAL-FIPS-STATE/COUNTY,Your state/county FIPS code,,,
+OTHER-FIPS-STATE/COUNTY,"State/county FIPS code to which thetransaction is directed",,,
+CSENET-VERSION-NUMBER,3,,,
+TRANSACTION-SERIAL-NUMBER,Fill as appropriate,,,
+ACTION-CODE,A,,,
+FUNCTIONAL-TYPE-CODE,ENF,,,
+TXN-DATE,Date transaction was created,,,
+CASE-ID,Your case ID,,,
+OTHER-CASE-ID,Other case ID,,,
+,"ENF A ANOAD − ENFORCEMENT ACKNOWLEDGMENT, NO FURTHER",,,
+INFORMATION REQUIRED,,,,
+ACTION-REASON,ANOAD,,,
+ATTACHMENTS-IND,#NAME?,,,
+*CASE-DATA-IND,1,,,
+*NCP-IDENTIFICATION-IND,1,,,
+NCP-LOCATE-IND,=0 (numeric),,,
+*PARTICIPANT-DATA-IND,1,,,
+ORDER-DATA-IND,=0 (numeric),,,
+COLLECTION-DATA-IND,=0 (numeric),,,
+INFORMATION-IND,=0 (numeric),,,
+OVERDUE-IND,=0 (numeric),,,
+*CASE DATA BLOCK,,,,
+*CASE-TYPE,Fill as appropriate,,,
+*CASE-STATUS,#NAME?,,,
+*CONTACT-NAME-LAST,Your state contact last name,,,
+*CONTACT-NAME-FIRST,Your state contact first name,,,
+*CONTACT-ADDRESS-LINE-1,Contact address,,,
+*CONTACT-CITY,Contact city,,,
+*CONTACT-STATE,Contact state,,,
+*CONTACT-ZIP-1,Contact ZIP Code,,,
+*CONTACT-PHONE-NUM,Contact phone number,,,
+*NCP IDENTIFICATION DATA BLOCK,,,,
+*NAME-LAST,NCP last name,,,
+*NAME-FIRST,NCP first name,,,
+*SSN,NCP Social Security number,,,
+*DATE-OF-BIRTH,NCP date of birth,,,
+*PARTICIPANT DATA BLOCK,,,,
+*NAME-LAST,Participant last name,,,
+*NAME-FIRST,Participant first name,,,
+,"ENF A ANOAD − ENFORCEMENT ACKNOWLEDGMENT, NO FURTHER",,,
+INFORMATION REQUIRED,,,,
+*RELATIONSHIP,Fill as appropriate,,,
+*PARTICIPANT-STATUS,#NAME?,,,
+,"ENF P EILMV − ENFORCEMENT PROVISION OF INFORMATION, LIEN",,,
+,ESTABLISHED MOTOR VEHICLE,,,
+,Description/Business Usage,,,
+"Sent by Responding State:This transaction is used to electronically send a status update on an existing case or anenforcement request (ENF R). The transaction indicates that a lien has been established on amotor vehicle owned by the NCP.Used On:Established interstate casesRelevant CFR Requirements:The 45CFR 303.7(c)(9) states that the responding state must notify the IV-D agency in theinitiating state within 10 working days of receipt of new information on a case.Automated Triggers:Determine how the CSE system records that a motor vehicle lien has been established.Action By Receiving State:Process according to federal guidelines. Update case information, such as noting receipt ofthe transaction.",,,,
+,Required Data Blocks and Elements,,,
+,,Data Element Description,,
+(Data Block Record Layout),,,,
+HEADER,,,,
+LOCAL-FIPS-STATE/COUNTY,Your state/county FIPS code,,,
+OTHER-FIPS-STATE/COUNTY,"State/county FIPS code to which thetransaction is directed",,,
+CSENET-VERSION-NUMBER,3,,,
+TRANSACTION-SERIAL-NUMBER,Fill as appropriate,,,
+ACTION-CODE,P,,,
+FUNCTIONAL-TYPE-CODE,ENF,,,
+TXN-DATE,Date transaction was created,,,
+CASE-ID,Your case ID,,,
+OTHER-CASE-ID,Other case ID,,,
+ACTION-REASON,EILMV,,,
+ATTACHMENTS-IND,#NAME?,,,
+CASE-DATA-IND,1,,,
+NCP-IDENTIFICATION-IND,1,,,
+NCP-LOCATE-IND,=0 (numeric),,,
+,"ENF P EILMV − ENFORCEMENT PROVISION OF INFORMATION, LIEN",,,
+ESTABLISHED MOTOR VEHICLE,,,,
+*PARTICIPANT-DATA-IND,1,,,
+ORDER-DATA-IND,=0 (numeric),,,
+COLLECTION-DATA-IND,=0 (numeric),,,
+*INFORMATION-IND,Fill as appropriate,,,
+OVERDUE-IND,=0 (numeric),,,
+CASE DATA BLOCK,,,,
+CASE-TYPE,Fill as appropriate,,,
+CASE-STATUS,#NAME?,,,
+*CONTACT-NAME-LAST,Your state contact last name,,,
+*CONTACT-NAME-FIRST,Your state contact first name,,,
+*CONTACT-ADDRESS-LINE-1,Contact address,,,
+*CONTACT-CITY,Contact city,,,
+*CONTACT-STATE,Contact state,,,
+*CONTACT-ZIP-1,Contact ZIP Code,,,
+*CONTACT-PHONE-NUM,Contact phone number,,,
+NCP IDENTIFICATION DATA BLOCK,,,,
+NAME-LAST,NCP last name,,,
+NAME-FIRST,NCP first name,,,
+*SSN,NCP Social Security number,,,
+*DATE-OF-BIRTH,NCP date of birth,,,
+*PARTICIPANT DATA BLOCK,,,,
+*NAME-LAST,Participant last name,,,
+*NAME-FIRST,Participant first name,,,
+*RELATIONSHIP,Fill as appropriate,,,
+*PARTICIPANT-STATUS,#NAME?,,,
+*INFORMATION DATA BLOCK,,,,
+STATUS-CHANGE-CODE,#NAME?,,,
+,"ENF P EILMV − ENFORCEMENT PROVISION OF INFORMATION, LIEN",,,
+ESTABLISHED MOTOR VEHICLE,,,,
+,"ENF P EILRE − ENFORCEMENT PROVISION OF INFORMATION, LIEN",,,
+,ESTABLISHED REAL ESTATE,,,
+,Description/Business Usage,,,
+"Sent by Responding State:This transaction is used to electronically send a status update on an existing case or anenforcement request (ENF R). The transaction indicates that a lien has been established onreal estate owned by the NCP.Used On:Established interstate casesRelevant CFR Requirements:The 45CFR 303.7(c)(9) states that the responding state must notify the IV-D agency in theinitiating state within 10 working days of receipt of new information on a case.Automated Triggers:Determine how the CSE system records that a real estate lien has been established.Action By Receiving State:Process according to federal guidelines. Update case information, such as noting receipt ofthe transaction.",,,,
+,Required Data Blocks and Elements,,,
+,,Data Element Description,,
+(Data Block Record Layout),,,,
+HEADER,,,,
+LOCAL-FIPS-STATE/COUNTY,Your state/county FIPS code,,,
+OTHER-FIPS-STATE/COUNTY,"State/county FIPS code to which thetransaction is directed",,,
+CSENET-VERSION-NUMBER,3,,,
+TRANSACTION-SERIAL-NUMBER,Fill as appropriate,,,
+ACTION-CODE,P,,,
+FUNCTIONAL-TYPE-CODE,ENF,,,
+TXN-DATE,Date transaction was created,,,
+CASE-ID,Your case ID,,,
+OTHER-CASE-ID,Other case ID,,,
+ACTION-REASON,EILRE,,,
+ATTACHMENTS-IND,#NAME?,,,
+CASE-DATA-IND,1,,,
+NCP-IDENTIFICATION-IND,1,,,
+NCP-LOCATE-IND,=0 (numeric),,,
+,"ENF P EILRE − ENFORCEMENT PROVISION OF INFORMATION, LIEN",,,
+ESTABLISHED REAL ESTATE,,,,
+*PARTICIPANT-DATA-IND,1,,,
+ORDER-DATA-IND,=0 (numeric),,,
+COLLECTION-DATA-IND,=0 (numeric),,,
+*INFORMATION-IND,Fill as appropriate,,,
+OVERDUE-IND,=0 (numeric),,,
+CASE DATA BLOCK,,,,
+CASE-TYPE,Fill as appropriate,,,
+CASE-STATUS,#NAME?,,,
+*CONTACT-NAME-LAST,Your state contact last name,,,
+*CONTACT-NAME-FIRST,Your state contact first name,,,
+*CONTACT-ADDRESS-LINE-1,Contact address,,,
+*CONTACT-CITY,Contact city,,,
+*CONTACT-STATE,Contact state,,,
+*CONTACT-ZIP-1,Contact ZIP Code,,,
+*CONTACT-PHONE-NUM,Contact phone number,,,
+NCP IDENTIFICATION DATA BLOCK,,,,
+NAME-LAST,NCP last name,,,
+NAME-FIRST,NCP first name,,,
+SSN,NCP Social Security number,,,
+*DATE-OF-BIRTH,NCP date of birth,,,
+*PARTICIPANT DATA BLOCK,,,,
+*NAME-LAST,Participant last name,,,
+*NAME-FIRST,Participant first name,,,
+*RELATIONSHIP,Fill as appropriate,,,
+*PARTICIPANT-STATUS,#NAME?,,,
+*INFORMATION DATA BLOCK,,,,
+STATUS-CHANGE-CODE,#NAME?,,,
+"ENF P EILRE − ENFORCEMENT PROVISION OF INFORMATION, LIEN",,,,
+ESTABLISHED REAL ESTATE,,,,
+Fill as appropriate,,,,
+,"ENF P EIWAR − ENFORCEMENT PROVISION OF INFORMATION, ARREST",,,
+WARRANT ISSUED,,,,
+*PARTICIPANT-DATA-IND,1,,,
+ORDER-DATA-IND,=0 (numeric),,,
+COLLECTION-DATA-IND,=0 (numeric),,,
+*INFORMATION-IND,Fill as appropriate,,,
+OVERDUE-IND,=0 (numeric),,,
+CASE DATA BLOCK,,,,
+CASE-TYPE,Fill as appropriate,,,
+CASE-STATUS,#NAME?,,,
+*CONTACT-NAME-LAST,Your state contact last name,,,
+*CONTACT-NAME-FIRST,Your state contact first name,,,
+*CONTACT-ADDRESS-LINE-1,Contact address,,,
+*CONTACT-CITY,Contact city,,,
+*CONTACT-STATE,Contact state,,,
+*CONTACT-ZIP-1,Contact ZIP Code,,,
+*CONTACT-PHONE-NUM,Contact phone number,,,
+NCP IDENTIFICATION DATA BLOCK,,,,
+NAME-LAST,NCP last name,,,
+NAME-FIRST,NCP first name,,,
+SSN,NCP Social Security number,,,
+*DATE-OF-BIRTH,NCP date of birth,,,
+*PARTICIPANT DATA BLOCK,,,,
+*NAME-LAST,Participant last name,,,
+*NAME-FIRST,Participant first name,,,
+*RELATIONSHIP,Fill as appropriate,,,
+*PARTICIPANT-STATUS,#NAME?,,,
+*INFORMATION DATA BLOCK,,,,
+,"ENF P EIWAR − ENFORCEMENT PROVISION OF INFORMATION, ARREST",,,
+WARRANT ISSUED,,,,
+INFORMATION-TEXT-LINE1,Fill as appropriate,,,
+,"ENF P ESREG − ENFORCEMENT PROVISION OF INFORMATION, ORDER",,,
+,REGISTERED,,,
+,Description/Business Usage,,,
+"Sent by Responding State:This transaction is used to electronically respond to an enforcement request (ENF R) toindicate that the registration of a foreign order has occurred.Used On:Established interstate casesAutomated Triggers:Determine how the CSE system records that a foreign order has been registered.Action By Receiving State:Process according to federal guidelines. Update case information, such as noting receipt ofthe transaction.",,,,
+,Required Data Blocks and Elements,,,
+,,Data Element Description,,
+(Data Block Record Layout),,,,
+HEADER,,,,
+LOCAL-FIPS-STATE/COUNTY,Your state/county FIPS code,,,
+OTHER-FIPS-STATE/COUNTY,"State/county FIPS code to which thetransaction is directed",,,
+CSENET-VERSION-NUMBER,3,,,
+TRANSACTION-SERIAL-NUMBER,Fill as appropriate,,,
+ACTION-CODE,P,,,
+FUNCTIONAL-TYPE-CODE,ENF,,,
+TXN-DATE,Date transaction was created,,,
+CASE-ID,Your case ID,,,
+OTHER-CASE-ID,Other case ID,,,
+ACTION-REASON,ESREG,,,
+ATTACHMENTS-IND,#NAME?,,,
+CASE-DATA-IND,1,,,
+NCP-IDENTIFICATION-IND,1,,,
+NCP-LOCATE-IND,=0 (numeric),,,
+*PARTICIPANT-DATA-IND,1,,,
+*ORDER-DATA-IND,1,,,
+COLLECTION-DATA-IND,=0 (numeric),,,
+,"ENF P ESREG − ENFORCEMENT PROVISION OF INFORMATION, ORDER",,,
+REGISTERED,,,,
+INFORMATION-IND,=0 (numeric),,,
+OVERDUE-IND,=0 (numeric),,,
+CASE DATA BLOCK,,,,
+CASE-TYPE,Fill as appropriate,,,
+CASE-STATUS,#NAME?,,,
+*CONTACT-NAME-LAST,Your state contact last name,,,
+*CONTACT-NAME-FIRST,Your state contact first name,,,
+*CONTACT-ADDRESS-LINE-1,Contact address,,,
+*CONTACT-CITY,Contact city,,,
+*CONTACT-STATE,Contact state,,,
+*CONTACT-ZIP-1,Contact ZIP Code,,,
+*CONTACT-PHONE-NUM,Contact phone number,,,
+NCP IDENTIFICATION DATA BLOCK,,,,
+NAME-LAST,NCP last name,,,
+NAME-FIRST,NCP first name,,,
+SSN,NCP Social Security number,,,
+*DATE-OF-BIRTH,NCP date of birth,,,
+*PARTICIPANT DATA BLOCK,,,,
+*NAME-LAST,Participant last name,,,
+*NAME-FIRST,Participant first name,,,
+*RELATIONSHIP,Fill as appropriate,,,
+*PARTICIPANT-STATUS,#NAME?,,,
+*ORDER DATA BLOCK,,,,
+*ORDER-FIPS-STATE,FIPS code of state that issued order,,,
+*ORDER-FIPS-COUNTY,FIPS code of county that issued order,,,
+*ORDER-ID,The order ID,,,
+*ORDER-FILING-DATE,Date order was filed in your state,,,
+,"ENF P ESREG − ENFORCEMENT PROVISION OF INFORMATION, ORDER",,,
+REGISTERED,,,,
+*ORDER-TYPE,Fill as appropriate,,,
+*DEBT-TYPE,Fill as appropriate,,,
+*ORDER-FREQ,Fill as appropriate,,,
+*ORDER-FREQ-AMOUNT,Dollar amount per frequency,,,
+*ORDER-EFFECTIVE-DATE,Date obligation starts to accrue,,,
+,"ENF P ESTXR − ENFORCEMENT PROVISION OF INFORMATION,",,,
+,"ADMINISTRATIVE REVIEW COMPLETE, CHALLENGE UPHELD",,,
+,Description/Business Usage,,,
+"Sent by Initiating or Responding State:This transaction is used to electronically respond to an enforcement request (ENF RERTXR) and notifies the other state that the federal tax offset administrative review iscomplete and the challenge was upheld.Used On:Established interstate casesRelevant CFR Requirements:45CFR 303.72(5) states that upon resolution of a complaint after an offset has been made,the state with the order must notify the submitting state of its decision promptly.Automated Triggers:Determine how the CSE system records that a federal tax offset administrative review wascompleted and the challenge upheld.Action By Receiving State:Process according to 45 CFR 303.72 (g) and AT 98-17 (II) (E). Update case information,such as noting receipt of the transaction.Recommended Use of Data:Provide related information regarding the decision, the amount of tax offset submitted,received or any specific action/change in the Information Data Block.",,,,
+,Required Data Blocks and Elements,,,
+,,Data Element Description,,
+(Data Block Record Layout),,,,
+HEADER,,,,
+LOCAL-FIPS-STATE/COUNTY,Your state/county FIPS code,,,
+OTHER-FIPS-STATE/COUNTY,"State/county FIPS code to which thetransaction is directed",,,
+CSENET-VERSION-NUMBER,3,,,
+TRANSACTION-SERIAL-NUMBER,Fill as appropriate,,,
+ACTION-CODE,P,,,
+FUNCTIONAL-TYPE-CODE,ENF,,,
+TXN-DATE,Date transaction was created,,,
+CASE-ID,Your case ID,,,
+OTHER-CASE-ID,Other case ID,,,
+ACTION-REASON,ESTXR,,,
+ATTACHMENTS-IND,#NAME?,,,
+,"ENF P ESTXR − ENFORCEMENT PROVISION OF INFORMATION,",,,
+"ADMINISTRATIVE REVIEW COMPLETE, CHALLENGE UPHELD",,,,
+CASE-DATA-IND,1,,,
+NCP-IDENTIFICATION-IND,1,,,
+NCP-LOCATE-IND,=0 (numeric),,,
+*PARTICIPANT-DATA-IND,1,,,
+ORDER-DATA-IND,=0 (numeric),,,
+COLLECTION-DATA-IND,=0 (numeric),,,
+*INFORMATION-IND,Fill as appropriate,,,
+OVERDUE-IND,=0 (numeric),,,
+CASE DATA BLOCK,,,,
+CASE-TYPE,Fill as appropriate,,,
+CASE-STATUS,#NAME?,,,
+*CONTACT-NAME-LAST,Your state contact last name,,,
+*CONTACT-NAME-FIRST,Your state contact first name,,,
+*CONTACT-ADDRESS-LINE-1,Contact address,,,
+*CONTACT-CITY,Contact city,,,
+*CONTACT-STATE,Contact state,,,
+*CONTACT-ZIP-1,Contact ZIP Code,,,
+*CONTACT-PHONE-NUM,Contact phone number,,,
+NCP IDENTIFICATION DATA BLOCK,,,,
+NAME-LAST,NCP last name,,,
+NAME-FIRST,NCP first name,,,
+SSN,NCP Social Security number,,,
+*DATE-OF-BIRTH,NCP date of birth,,,
+*PARTICIPANT DATA BLOCK,,,,
+*NAME-LAST,Participant last name,,,
+*NAME-FIRST,Participant first name,,,
+*RELATIONSHIP,Fill as appropriate,,,
+*PARTICIPANT-STATUS,#NAME?,,,
+,"ENF P ESTXR − ENFORCEMENT PROVISION OF INFORMATION,",,,
+"ADMINISTRATIVE REVIEW COMPLETE, CHALLENGE UPHELD",,,,
+*INFORMATION DATA BLOCK,,,,
+STATUS-CHANGE-CODE,#NAME?,,,
+INFORMATION-TEXT-LINE1,Fill as appropriate,,,
+,"ENF P EUTXR − ENFORCEMENT PROVISION OF INFORMATION,",,,
+,"ADMINISTRATIVE REVIEW COMPLETE, CHALLENGE NOT UPHELD",,,
+,Description/Business Usage,,,
+"Sent by Initiating or Responding State:The transaction is used to electronically respond to an enforcement request (ENF RERTXR) and notifies the other state that the federal tax offset administrative review iscomplete and the challenge was not upheld.Used On:Established interstate casesRelevant CFR Requirements:The 45CFR 303.72(5) states that upon resolution of a complaint after an offset has beenmade, the state with the order must notify the submitting state of its decision promptly.Automated Triggers:Determine how the CSE system records that a federal tax offset administrative review wascompleted and the challenge was not upheld.Action By Receiving State:Process according to 45CFR 303.72 (g) and AT 98-17 (II) (E). Update case information,such as noting receipt of the transaction.Recommended Use of Data:Provide related information regarding the decision in the Information Data Block.",,,,
+,Required Data Blocks and Elements,,,
+,,Data Element Description,,
+(Data Block Record Layout),,,,
+HEADER,,,,
+LOCAL-FIPS-STATE/COUNTY,Your state/county FIPS code,,,
+OTHER-FIPS-STATE/COUNTY,"State/county FIPS code to which thetransaction is directed",,,
+CSENET-VERSION-NUMBER,3,,,
+TRANSACTION-SERIAL-NUMBER,Fill as appropriate,,,
+ACTION-CODE,P,,,
+FUNCTIONAL-TYPE-CODE,ENF,,,
+TXN-DATE,Date transaction was created,,,
+CASE-ID,Your case ID,,,
+OTHER-CASE-ID,Other case ID,,,
+ACTION-REASON,EUTXR,,,
+ATTACHMENTS-IND,#NAME?,,,
+,"ENF P EUTXR − ENFORCEMENT PROVISION OF INFORMATION,",,,
+"ADMINISTRATIVE REVIEW COMPLETE, CHALLENGE NOT UPHELD",,,,
+CASE-DATA-IND,1,,,
+NCP-IDENTIFICATION-IND,1,,,
+NCP-LOCATE-IND,=0 (numeric),,,
+*PARTICIPANT-DATA-IND,1,,,
+ORDER-DATA-IND,=0 (numeric),,,
+COLLECTION-DATA-IND,=0 (numeric),,,
+*INFORMATION-IND,Fill as appropriate,,,
+OVERDUE-IND,=0 (numeric),,,
+CASE DATA BLOCK,,,,
+CASE-TYPE,Fill as appropriate,,,
+CASE-STATUS,#NAME?,,,
+*CONTACT-NAME-LAST,Your state contact last name,,,
+*CONTACT-NAME-FIRST,Your state contact first name,,,
+*CONTACT-ADDRESS-LINE-1,Contact address,,,
+*CONTACT-CITY,Contact city,,,
+*CONTACT-STATE,Contact state,,,
+*CONTACT-ZIP-1,Contact ZIP Code,,,
+*CONTACT-PHONE-NUM,Contact phone number,,,
+NCP IDENTIFICATION DATA BLOCK,,,,
+NAME-LAST,NCP last name,,,
+NAME-FIRST,NCP first name,,,
+SSN,NCP Social Security number,,,
+*DATE-OF-BIRTH,NCP date of birth,,,
+*PARTICIPANT DATA BLOCK,,,,
+*NAME-LAST,Participant last name,,,
+*NAME-FIRST,Participant first name,,,
+*RELATIONSHIP,Fill as appropriate,,,
+*PARTICIPANT-STATUS,#NAME?,,,
+,"ENF P EUTXR − ENFORCEMENT PROVISION OF INFORMATION,",,,
+"ADMINISTRATIVE REVIEW COMPLETE, CHALLENGE NOT UPHELD",,,,
+*INFORMATION DATA BLOCK,,,,
+STATUS-CHANGE-CODE,#NAME?,,,
+INFORMATION-TEXT-LINE1,Fill as appropriate,,,
+,"ENF P GSCOE − ENFORCEMENT PROVISION OF INFORMATION, NEW",,,
+,CONTROLLING ORDER,,,
+,Description/Business Usage,,,
+"Sent by Responding State:This transaction is used to electronically respond to an enforcement request (ENF R) toindicate that a new controlling support order is in effect.Used On:Established interstate casesAutomated Triggers:Determine how the CSE system records that a new controlling order has been established.Action By Receiving State:Process according to federal guidelines. Update case information, such as noting receipt ofthe transaction.",,,,
+,Required Data Blocks and Elements,,,
+,,Data Element Description,,
+(Data Block Record Layout),,,,
+HEADER,,,,
+LOCAL-FIPS-STATE/COUNTY,Your state/county FIPS code,,,
+OTHER-FIPS-STATE/COUNTY,"State/county FIPS code to which thetransaction is directed",,,
+CSENET-VERSION-NUMBER,3,,,
+TRANSACTION-SERIAL-NUMBER,Fill as appropriate,,,
+ACTION-CODE,P,,,
+FUNCTIONAL-TYPE-CODE,ENF,,,
+TXN-DATE,Date transaction was created,,,
+CASE-ID,Your case ID,,,
+OTHER-CASE-ID,Other case ID,,,
+ACTION-REASON,GSCOE,,,
+ATTACHMENTS-IND,#NAME?,,,
+CASE-DATA-IND,1,,,
+NCP-IDENTIFICATION-IND,1,,,
+NCP-LOCATE-IND,=0 (numeric),,,
+*PARTICIPANT-DATA-IND,1,,,
+*ORDER-DATA-IND,1,,,
+COLLECTION-DATA-IND,=0 (numeric),,,
+,"ENF P GSCOE − ENFORCEMENT PROVISION OF INFORMATION, NEW",,,
+CONTROLLING ORDER,,,,
+INFORMATION-IND,=0 (numeric),,,
+OVERDUE-IND,=0 (numeric),,,
+CASE DATA BLOCK,,,,
+CASE-TYPE,Fill as appropriate,,,
+CASE-STATUS,#NAME?,,,
+*CONTACT-NAME-LAST,Your state contact last name,,,
+*CONTACT-NAME-FIRST,Your state contact first name,,,
+*CONTACT-ADDRESS-LINE-1,Contact address,,,
+*CONTACT-CITY,Contact city,,,
+*CONTACT-STATE,Contact state,,,
+*CONTACT-ZIP-1,Contact ZIP Code,,,
+*CONTACT-PHONE-NUM,Contact phone number,,,
+NCP IDENTIFICATION DATA BLOCK,,,,
+NAME-LAST,NCP last name,,,
+NAME-FIRST,NCP first name,,,
+SSN,NCP Social Security number,,,
+*DATE-OF-BIRTH,NCP date of birth,,,
+*PARTICIPANT DATA BLOCK,,,,
+*NAME-LAST,Participant last name,,,
+*NAME-FIRST,Participant first name,,,
+*RELATIONSHIP,Fill as appropriate,,,
+*PARTICIPANT-STATUS,#NAME?,,,
+*ORDER DATA BLOCK,,,,
+*ORDER-FIPS-STATE,FIPS code of state that issued order,,,
+*ORDER-FIPS-COUNTY,FIPS code of county that issued order,,,
+*ORDER-ID,The order ID,,,
+*ORDER-FILING-DATE,Date order was filed in your state,,,
+,"ENF P GSCOE − ENFORCEMENT PROVISION OF INFORMATION, NEW",,,
+CONTROLLING ORDER,,,,
+*ORDER-TYPE,Fill as appropriate,,,
+*DEBT-TYPE,Fill as appropriate,,,
+*ORDER-FREQ,Fill as appropriate,,,
+*ORDER-FREQ-AMOUNT,Dollar amount per frequency,,,
+*ORDER-EFFECTIVE-DATE,Date obligation starts to accrue,,,
+,"ENF P SICPS − ENFORCEMENT PROVISION OF INFORMATION, CONTEMPT",,,
+,PROCEEDING STARTED,,,
+,Description/Business Usage,,,
+"Sent by Responding State:This transaction is used to electronically send a status update on an existing case or to anenforcement request (ENF R). The transaction indicates that contempt proceedings havebeen initiated against the NCP.Used On:Established interstate casesAutomated Triggers:Determine how the CSE system records that a contempt proceeding has been initiated.Action By Receiving State:Process according to federal guidelines. Update case information, such as noting receipt ofthe transaction.",,,,
+,Required Data Blocks and Elements,,,
+,,Data Element Description,,
+(Data Block Record Layout),,,,
+HEADER,,,,
+LOCAL-FIPS-STATE/COUNTY,Your state/county FIPS code,,,
+OTHER-FIPS-STATE/COUNTY,"State/county FIPS code to which thetransaction is directed",,,
+CSENET-VERSION-NUMBER,3,,,
+TRANSACTION-SERIAL-NUMBER,Fill as appropriate,,,
+ACTION-CODE,P,,,
+FUNCTIONAL-TYPE-CODE,ENF,,,
+TXN-DATE,Date transaction was created,,,
+CASE-ID,Your case ID,,,
+OTHER-CASE-ID,Other case ID,,,
+ACTION-REASON,SICPS,,,
+*ACTION-RESOLUTION-DATE,Date event occurred,,,
+ATTACHMENTS-IND,#NAME?,,,
+CASE-DATA-IND,1,,,
+NCP-IDENTIFICATION-IND,1,,,
+NCP-LOCATE-IND,=0 (numeric),,,
+*PARTICIPANT-DATA-IND,1,,,
+,"ENF P SICPS − ENFORCEMENT PROVISION OF INFORMATION, CONTEMPT",,,
+PROCEEDING STARTED,,,,
+ORDER-DATA-IND,=0 (numeric),,,
+COLLECTION-DATA-IND,=0 (numeric),,,
+INFORMATION-IND,=0 (numeric),,,
+OVERDUE-IND,=0 (numeric),,,
+CASE DATA BLOCK,,,,
+CASE-TYPE,Fill as appropriate,,,
+CASE-STATUS,#NAME?,,,
+*CONTACT-NAME-LAST,Your state contact last name,,,
+*CONTACT-NAME-FIRST,Your state contact first name,,,
+*CONTACT-ADDRESS-LINE-1,Contact address,,,
+*CONTACT-CITY,Contact city,,,
+*CONTACT-STATE,Contact state,,,
+*CONTACT-ZIP-1,Contact ZIP Code,,,
+*CONTACT-PHONE-NUM,Contact phone number,,,
+NCP IDENTIFICATION DATA BLOCK,,,,
+NAME-LAST,NCP last name,,,
+NAME-FIRST,NCP first name,,,
+SSN,NCP Social Security number,,,
+*DATE-OF-BIRTH,NCP date of birth,,,
+*PARTICIPANT DATA BLOCK,,,,
+*NAME-LAST,Participant last name,,,
+*NAME-FIRST,Participant first name,,,
+*RELATIONSHIP,Fill as appropriate,,,
+,ENF R ERARR − ENFORCEMENT REQUEST FOR COLLECTION OF ARREARS,,,
+,ONLY,,,
+,Description/Business Usage,,,
+"Sent by Initiating State:This transaction is used to electronically request the collection of arrears only.Used To:Request initiation of a new interstate caseCorresponds To:Transmittal #18. [ ] Collection of Arrears OnlyAutomated Triggers:Determine how the CSE system records that a request for collection of arrears needs to besent to another state.Action By Receiving State:Process according to federal guidelines. Consider initial activities, such as building a caseand initiating locate activities.",,,,
+,Required Data Blocks and Elements,,,
+,,Data Element Description,,
+(Data Block Record Layout),,,,
+HEADER,,,,
+LOCAL-FIPS-STATE/COUNTY,Your state/county FIPS code,,,
+OTHER-FIPS-STATE/COUNTY,"State/county FIPS code to which transactionis directed",,,
+CSENET-VERSION-NUMBER,3,,,
+TRANSACTION-SERIAL-NUMBER,Fill as appropriate,,,
+ACTION-CODE,R,,,
+FUNCTIONAL-TYPE-CODE,ENF,,,
+TXN-DATE,Date transaction was created,,,
+CASE-ID,Your case ID,,,
+ACTION-REASON,ERARR,,,
+ATTACHMENTS-IND,#NAME?,,,
+CASE-DATA-IND,1,,,
+NCP-IDENTIFICATION-IND,1,,,
+NCP-LOCATE-IND,1,,,
+PARTICIPANT-DATA-IND,Fill as appropriate,,,
+ORDER-DATA-IND,1,,,
+,ENF R ERARR − ENFORCEMENT REQUEST FOR COLLECTION OF ARREARS,,,
+ONLY,,,,
+COLLECTION-DATA-IND,=0 (numeric),,,
+INFORMATION-IND,=0 (numeric),,,
+OVERDUE-IND,=0 (numeric),,,
+CASE DATA BLOCK,,,,
+CASE-TYPE,Fill as appropriate,,,
+CASE-STATUS,#NAME?,,,
+PAYMENT-MAILING-ADDRESS-LINE1,Your payment mailing address,,,
+*PAYMENT-CITY,Payment city,,,
+*PAYMENT-STATE,Payment state,,,
+*PAYMENT-ZIP-1,Payment ZIP Code,,,
+*CONTACT-NAME-LAST,Your state contact last name,,,
+*CONTACT-NAME-FIRST,Your state contact first name,,,
+*CONTACT-ADDRESS-LINE-1,Contact address,,,
+*CONTACT-CITY,Contact city,,,
+*CONTACT-STATE,Contact state,,,
+*CONTACT-ZIP-1,Contact ZIP Code,,,
+*CONTACT-PHONE-NUM,Contact phone number,,,
+NCP IDENTIFICATION DATA BLOCK,,,,
+NAME-LAST,NCP last name,,,
+NAME-FIRST,NCP first name,,,
+*SSN,NCP Social Security number,,,
+*DATE-OF-BIRTH,NCP date of birth,,,
+NCP LOCATE DATA BLOCK,,,,
+RESIDENTIAL-ADDRESS-LINE1,NCP street address,,,
+*RESIDENTIAL-CITY,NCP city,,,
+*RESIDENTIAL-STATE,NCP state,,,
+*RESIDENTIAL-ZIP-1,NCP ZIP Code,,,
+"RESIDENTIAL-ADDRESS-EFFECTIVE-DATE",Required if residential address entered,,,
+,ENF R ERARR − ENFORCEMENT REQUEST FOR COLLECTION OF ARREARS,,,
+ONLY,,,,
+"RESIDENTIAL-ADDRESS-CONFIRMED-IND.",Fill as appropriate,,,
+PARTICIPANT DATA BLOCK (2),,,,
+NAME-LAST,Participant last name,,,
+NAME-FIRST,Participant first name,,,
+DATE-OF-BIRTH,Fill as appropriate,,,
+RELATIONSHIP,Fill as appropriate,,,
+PARTICIPANT-STATUS,#NAME?,,,
+*DEPENDENT-RELATION-CP,Fill as appropriate,,,
+ORDER DATA BLOCK,,,,
+ORDER-FIPS-STATE,FIPS code of state that issued order,,,
+ORDER-FIPS-COUNTY,FIPS code of county that issued order,,,
+ORDER-ID,The order ID,,,
+ORDER-FILING-DATE,Date order was filed in your state,,,
+ORDER-TYPE,Fill as appropriate,,,
+DEBT-TYPE,Fill as appropriate,,,
+ORDER-FREQ,Fill as appropriate,,,
+ORDER-FREQ-AMOUNT,Dollar amount per frequency,,,
+ORDER-EFFECTIVE-DATE,Date obligation starts to accrue,,,
+*MEDICAL-ORDERED,Y or N,,,
+,"ENF R ERMEO − ENFORCEMENT REQUEST, REGISTRATION OF FOREIGN",,,
+,SUPPORT ORDER FOR MODIFICATION AND ENFORCEMENT BY OBLIGOR,,,
+,Description/Business Usage,,,
+"Sent by Initiating State:This transaction is used to electronically request the registration of a support order for thepurpose of modification and enforcement as requested by the obligor.Used To:Request initiation of a new interstate caseCorresponds To:Transmittal#17. [ ] Registration of Foreign Support Order(s)B. [ ] For Modification and Enforcement Requested by: [ ] ObligorAutomated Triggers:Determine how the CSE system records that registration of a support order needs to be sentto another state.Action By Receiving State:Process according to federal guidelines. Consider initial activities, such as building a caseand initiating locate activities.",,,,
+,Required Data Blocks and Elements,,,
+,,Data Element Description,,
+(Data Block Record Layout),,,,
+HEADER,,,,
+LOCAL-FIPS-STATE/COUNTY,Your state/county FIPS code,,,
+OTHER-FIPS-STATE/COUNTY,"State/county FIPS code to which thetransaction is directed",,,
+CSENET-VERSION-NUMBER,3,,,
+TRANSACTION-SERIAL-NUMBER,Fill as appropriate,,,
+ACTION-CODE,R,,,
+FUNCTIONAL-TYPE-CODE,ENF,,,
+TXN-DATE,Date transaction was created,,,
+CASE-ID,Your case ID,,,
+ACTION-REASON,ERMEO,,,
+ATTACHMENTS-IND,#NAME?,,,
+CASE-DATA-IND,1,,,
+NCP-IDENTIFICATION-IND,1,,,
+NCP-LOCATE-IND,1,,,
+,"ENF R ERMEO − ENFORCEMENT REQUEST, REGISTRATION OF FOREIGN",,,
+SUPPORT ORDER FOR MODIFICATION AND ENFORCEMENT BY OBLIGOR,,,,
+PARTICIPANT-DATA-IND,Fill as appropriate,,,
+ORDER-DATA-IND,1,,,
+COLLECTION-DATA-IND,=0 (numeric),,,
+INFORMATION-IND,=0 (numeric),,,
+OVERDUE-IND,=0 (numeric),,,
+CASE DATA BLOCK,,,,
+CASE-TYPE,Fill as appropriate,,,
+CASE-STATUS,#NAME?,,,
+PAYMENT-MAILING-ADDRESS-LINE1,Your payment mailing address,,,
+*PAYMENT-CITY,Payment city,,,
+*PAYMENT-STATE,Payment state,,,
+*PAYMENT-ZIP-1,Payment ZIP Code,,,
+*CONTACT-NAME-LAST,Your state contact last name,,,
+*CONTACT-NAME-FIRST,Your state contact first name,,,
+*CONTACT-ADDRESS-LINE-1,Contact address,,,
+*CONTACT-CITY,Contact city,,,
+*CONTACT-STATE,Contact state,,,
+*CONTACT-ZIP-1,Contact ZIP Code,,,
+*CONTACT-PHONE-NUM,Contact phone number,,,
+NCP IDENTIFICATION DATA BLOCK,,,,
+NAME-LAST,NCP last name,,,
+NAME-FIRST,NCP first name,,,
+*SSN,NCP Social Security number,,,
+*DATE-OF-BIRTH,NCP date of birth,,,
+NCP LOCATE DATA BLOCK,,,,
+RESIDENTIAL-ADDRESS-LINE1,NCP street address,,,
+*RESIDENTIAL-CITY,NCP city,,,
+*RESIDENTIAL-STATE,NCP state,,,
+*RESIDENTIAL-ZIP-1,NCP ZIP Code,,,
+,"ENF R ERMEO − ENFORCEMENT REQUEST, REGISTRATION OF FOREIGN",,,
+SUPPORT ORDER FOR MODIFICATION AND ENFORCEMENT BY OBLIGOR,,,,
+"RESIDENTIAL-ADDRESS-EFFECTIVE-DATE",Required if residential address entered,,,
+"RESIDENTIAL-ADDRESS-CONFIRMED-IND.",Fill as appropriate,,,
+PARTICIPANT DATA BLOCK (2),,,,
+NAME-LAST,Participant last name,,,
+NAME-FIRST,Participant first name,,,
+DATE-OF-BIRTH,Fill as appropriate,,,
+RELATIONSHIP,Fill as appropriate,,,
+PARTICIPANT-STATUS,#NAME?,,,
+*DEPENDENT-RELATION-CP,Fill as appropriate,,,
+ORDER DATA BLOCK,,,,
+ORDER-FIPS-STATE,FIPS code of state that issued order,,,
+ORDER-FIPS-COUNTY,FIPS code of county that issued order,,,
+ORDER-ID,The order ID,,,
+ORDER-FILING-DATE,Date order was filed in your state,,,
+ORDER-TYPE,Fill as appropriate,,,
+DEBT-TYPE,Fill as appropriate,,,
+ORDER-FREQ,Fill as appropriate,,,
+ORDER-FREQ-AMOUNT,Dollar amount per frequency,,,
+ORDER-EFFECTIVE-DATE,Date obligation starts to accrue,,,
+*MEDICAL-ORDERED,Y or N,,,
+,"ENF R ERREG – ENFORCEMENT REQUEST, REGISTRATION OF FOREIGN",,,
+,ORDER FOR ENFORCEMENT ONLY BY OBLIGOR,,,
+,Description/Business Usage,,,
+"Sent by Initiating State:This transaction is used to electronically request the registration of a support order for thepurpose of enforcement only as requested by the obligor.Used To:Request the initiation of a new interstate caseCorresponds To:Transmittal#17. [ ] Registration of Foreign Support Order(s)A. [ ] For Enforcement OnlyRequested by: [ ] ObligorAutomated Triggers:Determine how the CSE system records that registration of a support order needs to be sentto another state.Action By Receiving State:Process according to federal guidelines. Consider initial activities, such as building a caseand initiating locate activities.",,,,
+,Required Data Blocks and Elements,,,
+,,Data Element Description,,
+(Data Block Record Layout),,,,
+HEADER,,,,
+LOCAL-FIPS-STATE/COUNTY,Your state/county FIPS Code,,,
+OTHER-FIPS-STATE/COUNTY,"State/county FIPS Code where transaction isdirected",,,
+CSENET-VERSION-NUMBER,3,,,
+TRANSACTION-SERIAL-NUMBER,Fill as appropriate,,,
+ACTION-CODE,R,,,
+FUNCTIONAL-TYPE-CODE,ENF,,,
+TXN-DATE,Date transaction was created,,,
+CASE-ID,Your Case ID,,,
+ACTION-REASON,ERREG,,,
+ATTACHMENTS-IND,#NAME?,,,
+CASE-DATA-IND,1,,,
+NCP-IDENTIFICATION-IND,1,,,
+,"ENF R ERREG – ENFORCEMENT REQUEST, REGISTRATION OF FOREIGN",,,
+ORDER FOR ENFORCEMENT ONLY BY OBLIGOR,,,,
+PARTICIPANT-DATA-IND,Fill as appropriate,,,
+ORDER-DATA-IND,1,,,
+COLLECTION-DATA-IND,=0 (Numeric),,,
+*INFORMATION-IND,Fill as appropriate,,,
+OVERDUE-IND,=0 (Numeric),,,
+CASE DATA BLOCK,,,,
+CASE-TYPE,Fill as appropriate,,,
+CASE-STATUS,#NAME?,,,
+PAYMENT-MAILING-ADDRESS-LINE1,Your payment mailing address,,,
+*PAYMENT-CITY,Payment city,,,
+*PAYMENT-STATE,Payment state,,,
+*PAYMENT-ZIP-1,Payment ZIP Code,,,
+*CONTACT-NAME-LAST,Your state contact last name,,,
+*CONTACT-NAME-FIRST,Your state contact first name,,,
+*CONTACT-ADDRESS-LINE-1,Contact address,,,
+*CONTACT-CITY,Contact city,,,
+*CONTACT-STATE,Contact state,,,
+*CONTACT-ZIP-1,Contact ZIP Code,,,
+*CONTACT-PHONE-NUM,Contact phone number,,,
+NCP IDENTIFICATION DATA BLOCK,,,,
+NAME-LAST,NCP last name,,,
+NAME-FIRST,NCP first name,,,
+*SSN,NCP Social Security number,,,
+*DATE-OF-BIRTH,NCP date of birth,,,
+NCP LOCATE DATA BLOCK,,,,
+RESIDENTIAL-ADDRESS-LINE1,NCP street address,,,
+*RESIDENTIAL-CITY,NCP city,,,
+*RESIDENTIAL-STATE,NCP state,,,
+*RESIDENTIAL-ZIP-1,NCP ZIP Code,,,
+,"ENF R ERREG – ENFORCEMENT REQUEST, REGISTRATION OF FOREIGN",,,
+ORDER FOR ENFORCEMENT ONLY BY OBLIGOR,,,,
+"RESIDENTIAL-ADDRESS-CONFIRMED-IND.",Fill as appropriate,,,
+PARTICIPANT DATA BLOCK (2),,,,
+NAME-LAST,Participant last name,,,
+NAME-FIRST,Participant first name,,,
+DATE-OF-BIRTH,Fill as appropriate,,,
+RELATIONSHIP,Fill as appropriate,,,
+PARTICIPANT-STATUS,#NAME?,,,
+*DEPENDENT-RELATION-CP,Fill as appropriate,,,
+ORDER DATA BLOCK,,,,
+ORDER-FIPS-STATE,FIPS code of state that issued order,,,
+ORDER-FIPS-COUNTY,FIPS code of county that issued order,,,
+ORDER-ID,The order ID,,,
+ORDER-FILING-DATE,Date order was filed in your state,,,
+ORDER-TYPE,Fill as appropriate,,,
+DEBT-TYPE,Fill as appropriate,,,
+ORDER-FREQ,Fill as appropriate,,,
+ORDER-FREQ-AMOUNT,Dollar amount per frequency,,,
+ORDER-EFFECTIVE-DATE,Date obligation starts to accrue,,,
+*MEDICAL-ORDERED,Y or N,,,
+*INFORMATION DATA BLOCK,,,,
+STATUS-CHANGE-CODE,#NAME?,,,
+,"ENF R ERREO − ENFORCEMENT REQUEST, REGISTRATION OF FOREIGN",,,
+,ORDER FOR ENFORCEMENT ONLY BY OBLIGEE,,,
+,Description/Business Usage,,,
+"Sent by Initiating State:This transaction is used to electronically request registration of a support order for thepurpose of enforcement only as requested by the obligee.Used To:Request the initiation of a new interstate caseCorresponds To:Transmittal #17. [ ] Registration of Foreign Support Order(s)A. [ ] For Enforcement OnlyRequested by [ ] ObligeeAutomated Triggers:Determine how the CSE system records that registration of a support order needs to be sentto another state.Action By Receiving State:Process according to federal guidelines. Consider initial activities, such as building a caseand initiating locate activities.",,,,
+,Required Data Blocks and Elements,,,
+,,Data Element Description,,
+(Data Block Record Layout),,,,
+HEADER,,,,
+LOCAL-FIPS-STATE/COUNTY,Your state/county FIPS code,,,
+OTHER-FIPS-STATE/COUNTY,"State/county FIPS code to which thetransaction is directed",,,
+CSENET-VERSION-NUMBER,3,,,
+TRANSACTION-SERIAL-NUMBER,Fill as appropriate,,,
+ACTION-CODE,R,,,
+FUNCTIONAL-TYPE-CODE,ENF,,,
+TXN-DATE,Date transaction was created,,,
+CASE-ID,Your case ID,,,
+ACTION-REASON,ERREO,,,
+ATTACHMENTS-IND,#NAME?,,,
+CASE-DATA-IND,1,,,
+NCP-IDENTIFICATION-IND,1,,,
+,"ENF R ERREO − ENFORCEMENT REQUEST, REGISTRATION OF FOREIGN",,,
+ORDER FOR ENFORCEMENT ONLY BY OBLIGEE,,,,
+NCP-LOCATE-IND,1,,,
+PARTICIPANT-DATA-IND,Fill as appropriate,,,
+ORDER-DATA-IND,1,,,
+COLLECTION-DATA-IND,=0 (numeric),,,
+INFORMATION-IND,=0 (numeric),,,
+OVERDUE-IND,=0 (numeric),,,
+CASE DATA BLOCK,,,,
+CASE-TYPE,Fill as appropriate,,,
+CASE-STATUS,#NAME?,,,
+PAYMENT-MAILING-ADDRESS-LINE1,Your payment mailing address,,,
+*PAYMENT-CITY,Payment city,,,
+*PAYMENT-STATE,Payment state,,,
+*PAYMENT-ZIP-1,Payment ZIP Code,,,
+*CONTACT-NAME-LAST,Your state contact last name,,,
+*CONTACT-NAME-FIRST,Your state contact first name,,,
+*CONTACT-ADDRESS-LINE-1,Contact address,,,
+*CONTACT-CITY,Contact city,,,
+*CONTACT-STATE,Contact state,,,
+*CONTACT-ZIP-1,Contact ZIP Code,,,
+*CONTACT-PHONE-NUM,Contact phone number,,,
+NCP IDENTIFICATION DATA BLOCK,,,,
+NAME-LAST,NCP last name,,,
+NAME-FIRST,NCP first name,,,
+*SSN,NCP Social Security number,,,
+*DATE-OF-BIRTH,NCP date of birth,,,
+NCP LOCATE DATA BLOCK,,,,
+RESIDENTIAL-ADDRESS-LINE1,NCP street address,,,
+*RESIDENTIAL-CITY,NCP city,,,
+,"ENF R ERREO − ENFORCEMENT REQUEST, REGISTRATION OF FOREIGN",,,
+ORDER FOR ENFORCEMENT ONLY BY OBLIGEE,,,,
+*RESIDENTIAL-STATE,NCP state,,,
+*RESIDENTIAL-ZIP-1,NCP ZIP Code,,,
+"RESIDENTIAL-ADDRESS-EFFECTIVE-DATE",Required if residential address entered,,,
+"RESIDENTIAL-ADDRESS-CONFIRMED-IND.",Fill as appropriate,,,
+PARTICIPANT DATA BLOCK (2),,,,
+NAME-LAST,Participant last name,,,
+NAME-FIRST,Participant first name,,,
+DATE-OF-BIRTH,Fill as appropriate,,,
+RELATIONSHIP,Fill as appropriate,,,
+PARTICIPANT-STATUS,#NAME?,,,
+*DEPENDENT-RELATION-CP,Fill as appropriate,,,
+ORDER DATA BLOCK,,,,
+ORDER-FIPS-STATE,FIPS code of state that issued order,,,
+ORDER-FIPS-COUNTY,FIPS code of county that issued order,,,
+ORDER-ID,The order ID,,,
+ORDER-FILING-DATE,Date order was filed in your state,,,
+ORDER-TYPE,Fill as appropriate,,,
+DEBT-TYPE,Fill as appropriate,,,
+ORDER-FREQ,Fill as appropriate,,,
+ORDER-FREQ-AMOUNT,Dollar amount per frequency,,,
+ORDER-EFFECTIVE-DATE,Date obligation starts to accrue,,,
+*MEDICAL-ORDERED,Y or N,,,
+,"ENF R ERRES − ENFORCEMENT REQUEST, REGISTRATION OF FOREIGN",,,
+,ORDER FOR ENFORCEMENT ONLY BY STATE AGENCY,,,
+,Description/Business Usage,,,
+"Sent by Initiating State:This transaction is used to electronically request registration of a support order for thepurpose of enforcement only as requested by a state agency.Used To:Request initiation of a new interstate caseCorresponds To:Transmittal #17. [ ] Registration of Foreign Support Order(s):A. [ ] For Enforcement OnlyRequested by [ ] State AgencyAutomated Triggers:Determine how the CSE system records that registration of a support order needs to be sentto another state.Action By Receiving State:Process according to federal guidelines. Consider initial activities, such as building a caseand initiating locate activities.",,,,
+,Required Data Blocks and Elements,,,
+,,Data Element Description,,
+(Data Block Record Layout),,,,
+HEADER,,,,
+LOCAL-FIPS-STATE/COUNTY,Your state/county FIPS code,,,
+OTHER-FIPS-STATE/COUNTY,"State/county FIPS code to which thetransaction is directed",,,
+CSENET-VERSION-NUMBER,3,,,
+TRANSACTION-SERIAL-NUMBER,Fill as appropriate,,,
+ACTION-CODE,R,,,
+TXN-DATE,Date transaction was created,,,
+CASE-ID,Your case ID,,,
+ACTION-REASON,ERRES,,,
+ATTACHMENTS-IND,#NAME?,,,
+CASE-DATA-IND,1,,,
+NCP-IDENTIFICATION-IND,1,,,
+NCP-LOCATE-IND,1,,,
+,"ENF R ERRES − ENFORCEMENT REQUEST, REGISTRATION OF FOREIGN",,,
+ORDER FOR ENFORCEMENT ONLY BY STATE AGENCY,,,,
+"RESIDENTIAL-ADDRESS-EFFECTIVE-DATE",Required if residential address entered,,,
+"RESIDENTIAL-ADDRESS-CONFIRMED-IND.",Fill as appropriate,,,
+PARTICIPANT DATA BLOCK (2),,,,
+NAME-LAST,Participant last name,,,
+NAME-FIRST,Participant first name,,,
+DATE-OF-BIRTH,Fill as appropriate,,,
+RELATIONSHIP,Fill as appropriate,,,
+PARTICIPANT-STATUS,#NAME?,,,
+*DEPENDENT-RELATION-CP,Fill as appropriate,,,
+ORDER DATA BLOCK,,,,
+ORDER-FIPS-STATE,FIPS code of state that issued order,,,
+ORDER-FIPS-COUNTY,FIPS code of county that issued order,,,
+ORDER-ID,The order ID,,,
+ORDER-FILING-DATE,Date order was filed in your state,,,
+ORDER-TYPE,Fill as appropriate,,,
+DEBT-TYPE,Fill as appropriate,,,
+ORDER-FREQ,Fill as appropriate,,,
+ORDER-FREQ-AMOUNT,Dollar amount per frequency,,,
+ORDER-EFFECTIVE-DATE,Date obligation starts to accrue,,,
+*MEDICAL-ORDERED,Y or N,,,
+,"ENF R ERTXR − ENFORCEMENT REQUEST, ADMINISTRATIVE REVIEW OF",,,
+,TAX OFFSET,,,
+,Description/Business Usage,,,
+"Sent by Initiating or Responding Jurisdiction:This transaction is used to electronically request a federal tax offset administrative review.Used On:Established interstate casesRelevant CFR Requirements:The 45CFR 303.72(4)(g)(2) states that if the complaint cannot be resolved by thesubmitting state and the noncustodial parent requests an administrative review in the statewith the order upon which the referral for offset is based, the submitting state must notifythe state with the order of the request for an administrative review.Corresponds To:Transmittal #1:10. [ ] Administrative Review for Federal Tax Refund OffsetAutomated Triggers:Determine how the CSE system records that request for a federal tax offset administrativereview needs to be sent to another state.Action By Receiving State:Process according to federal guidelines. (See 45CFR 303.72 (g), AT 98-17 (II) (E). Updatecase information, such as noting receipt of the transaction.",,,,
+,Required Data Blocks and Elements,,,
+,,Data Element Description,,
+(Data Block Record Layout),,,,
+HEADER,,,,
+LOCAL-FIPS-STATE/COUNTY,Your state/county FIPS code,,,
+OTHER-FIPS-STATE/COUNTY,"State/county FIPS code to which thetransaction is directed",,,
+CSENET-VERSION-NUMBER,3,,,
+TRANSACTION-SERIAL-NUMBER,Fill as appropriate,,,
+ACTION-CODE,R,,,
+FUNCTIONAL-TYPE-CODE,ENF,,,
+TXN-DATE,Date transaction was created,,,
+CASE-ID,Your case ID,,,
+ACTION-REASON,ERTXR,,,
+ATTACHMENTS-IND,#NAME?,,,
+,"ENF R ERRES − ENFORCEMENT REQUEST, REGISTRATION OF FOREIGN",,,
+ORDER FOR ENFORCEMENT ONLY BY STATE AGENCY,,,,
+NCP-IDENTIFICATION-IND,1,,,
+NCP-LOCATE-IND,1,,,
+PARTICIPANT-DATA-IND,Fill as appropriate,,,
+ORDER-DATA-IND,1,,,
+COLLECTION-DATA-IND,=0 (numeric),,,
+*INFORMATION-IND,Fill as appropriate,,,
+OVERDUE-IND,=0 (numeric),,,
+CASE DATA BLOCK,,,,
+CASE-TYPE,Fill as appropriate,,,
+CASE-STATUS,#NAME?,,,
+PAYMENT-MAILING-ADDRESS-LINE1,Your payment mailing address,,,
+*PAYMENT-CITY,Payment city,,,
+*PAYMENT-STATE,Payment state,,,
+*PAYMENT-ZIP-1,Payment ZIP Code,,,
+*CONTACT-NAME-LAST,Your state contact last name,,,
+*CONTACT-NAME-FIRST,Your state contact first name,,,
+*CONTACT-ADDRESS-LINE-1,Contact address,,,
+*CONTACT-CITY,Contact city,,,
+*CONTACT-STATE,Contact state,,,
+*CONTACT-ZIP-1,Contact ZIP Code,,,
+*CONTACT-PHONE-NUM,Contact phone number,,,
+NCP IDENTIFICATION DATA BLOCK,,,,
+NAME-LAST,NCP last name,,,
+NAME-FIRST,NCP first name,,,
+*SSN,NCP Social Security number,,,
+*DATE-OF-BIRTH,NCP date of birth,,,
+NCP LOCATE DATA BLOCK,,,,
+,"ENF R ERRES − ENFORCEMENT REQUEST, REGISTRATION OF FOREIGN",,,
+ORDER FOR ENFORCEMENT ONLY BY STATE AGENCY,,,,
+*RESIDENTIAL-CITY,NCP city,,,
+*RESIDENTIAL-STATE,NCP state,,,
+*RESIDENTIAL-ZIP-1,NCP ZIP Code,,,
+"RESIDENTIAL-ADDRESS-EFFECTIVE-DATE",Required if residential address entered,,,
+"RESIDENTIAL-ADDRESS-CONFIRMED-IND.",Fill as appropriate,,,
+PARTICIPANT DATA BLOCK (2),,,,
+NAME-LAST,Participant last name,,,
+NAME-FIRST,Participant first name,,,
+DATE-OF-BIRTH,Fill as appropriate,,,
+RELATIONSHIP,Fill as appropriate,,,
+PARTICIPANT-STATUS,#NAME?,,,
+*DEPENDENT-RELATION-CP,Fill as appropriate,,,
+ORDER DATA BLOCK,,,,
+ORDER-FIPS-STATE,FIPS code of state that issued order,,,
+ORDER-FIPS-COUNTY,FIPS code of county that issued order,,,
+ORDER-ID,The order ID,,,
+ORDER-FILING-DATE,Date order was filed in your state,,,
+ORDER-TYPE,Fill as appropriate,,,
+DEBT-TYPE,Fill as appropriate,,,
+ORDER-FREQ,Fill as appropriate,,,
+ORDER-FREQ-AMOUNT,Dollar amount per frequency,,,
+ORDER-EFFECTIVE-DATE,Date obligation starts to accrue,,,
+*MEDICAL-ORDERED,Y or N,,,
+*INFORMATION DATA BLOCK,,,,
+STATUS-CHANGE-CODE,#NAME?,,,
+INFORMATION-TEXT-LINE1,Fill as appropriate,,,
+,"ENF R ERALL − ENFORCEMENT REQUEST, ALL REMEDIES",,,
+,Description/Business Usage,,,
+"Sent by Initiating State:This transaction is used to electronically request multiple enforcement activities.Used To:Request the initiation of a new interstate caseCorresponds To:This transaction corresponds to the use of multiple enforcement requests on Transmittal #1.Automated Triggers:Determine how the CSE system records that multiple enforcement activities are neededfrom another state.Action By Receiving State:Process according to federal guidelines. Consider initial activities, such as building a caseand initiating locate activities.",,,,
+,Required Data Blocks and Elements,,,
+,,Data Element Description,,
+(Data Block Record Layout),,,,
+HEADER,,,,
+LOCAL-FIPS-STATE/COUNTY,Your state/county FIPS code,,,
+OTHER-FIPS-STATE/COUNTY,"State/county FIPS code to which thetransaction is directed",,,
+CSENET-VERSION-NUMBER,3,,,
+TRANSACTION-SERIAL-NUMBER,Fill as appropriate,,,
+ACTION-CODE,R,,,
+FUNCTIONAL-TYPE-CODE,ENF,,,
+TXN-DATE,Date transaction was created,,,
+CASE-ID,Your case ID,,,
+ACTION-REASON,ERALL,,,
+ATTACHMENTS-IND,#NAME?,,,
+CASE-DATA-IND,1,,,
+NCP-IDENTIFICATION-IND,1,,,
+NCP-LOCATE-IND,1,,,
+PARTICIPANT-DATA-IND,Fill as appropriate,,,
+ORDER-DATA-IND,1,,,
+COLLECTION-DATA-IND,=0 (numeric),,,
+,"ENF R ERALL − ENFORCEMENT REQUEST, ALL REMEDIES",,,
+,Description/Business Usage,,,
+*INFORMATION-IND,=0 (numeric),,,
+OVERDUE-IND,=0 (numeric),,,
+CASE DATA BLOCK,,,,
+CASE-TYPE,Fill as appropriate,,,
+CASE-STATUS,#NAME?,,,
+PAYMENT-MAILING-ADDRESS-LINE1,Your payment mailing address,,,
+*PAYMENT-CITY,Payment city,,,
+*PAYMENT-STATE,Payment state,,,
+*PAYMENT-ZIP-1,Payment ZIP Code,,,
+*CONTACT-NAME-LAST,Your state contact last name,,,
+*CONTACT-NAME-FIRST,Your state contact first name,,,
+*CONTACT-ADDRESS-LINE-1,Contact address,,,
+*CONTACT-CITY,Contact city,,,
+*CONTACT-STATE,Contact state,,,
+*CONTACT-ZIP-1,Contact ZIP Code,,,
+*CONTACT-PHONE-NUM,Contact phone number,,,
+NCP IDENTIFICATION DATA BLOCK,,,,
+NAME-LAST,NCP last name,,,
+NAME-FIRST,NCP first name,,,
+*SSN,NCP Social Security number,,,
+*DATE-OF-BIRTH,NCP date of birth,,,
+NCP LOCATE DATA BLOCK,,,,
+RESIDENTIAL-ADDRESS-LINE1,NCP street address,,,
+*RESIDENTIAL-CITY,NCP city,,,
+*RESIDENTIAL-STATE,NCP state,,,
+*RESIDENTIAL-ZIP-1,NCP ZIP Code,,,
+,"ENF R ERALL − ENFORCEMENT REQUEST, ALL REMEDIES",,,
+,Description/Business Usage,,,
+"RESIDENTIAL-ADDRESS-CONFIRMED-IND.",Fill as appropriate,,,
+PARTICIPANT DATA BLOCK (2),,,,
+NAME-LAST,Participant last name,,,
+NAME-FIRST,Participant first name,,,
+DATE-OF-BIRTH,Fill as appropriate,,,
+RELATIONSHIP,Fill as appropriate,,,
+PARTICIPANT-STATUS,#NAME?,,,
+*DEPENDENT-RELATION-CP,Fill as appropriate,,,
+ORDER DATA BLOCK,,,,
+ORDER-FIPS-STATE,FIPS code of state that issued order,,,
+ORDER-FIPS-COUNTY,FIPS code of county that issued order,,,
+ORDER-ID,The order ID,,,
+ORDER-FILING-DATE,Date order was filed in your state,,,
+ORDER-TYPE,Fill as appropriate,,,
+DEBT-TYPE,Fill as appropriate,,,
+ORDER-FREQ,Fill as appropriate,,,
+ORDER-FREQ-AMOUNT,Dollar amount per frequency,,,
+ORDER-EFFECTIVE-DATE,Date obligation starts to accrue,,,
+*MEDICAL-ORDERED,Y or N,,,
+*INFORMATION DATA BLOCK,,,,
+STATUS-CHANGE-CODE,#NAME?,,,
+INFORMATION-TEXT-LINE1,Fill as appropriate,,,
+,"ENF R ERMEE − ENFORCEMENT REQUEST, REGISTRATION OF FOREIGN",,,
+,SUPPORT ORDER FOR MODIFICATION AND ENFORCEMENT BY STATE,,,
+,AGENCY,,,
+,Description/Business Usage,,,
+"Sent by Initiating State:This transaction is used to electronically request registration of a foreign order for thepurpose of enforcement and modification as requested by a state agency.Used To:Request the initiation of a new interstate caseCorresponds To:Transmittal#1:7. [ ] Registration of Foreign Support Order(s)B. [ ] For Modification and Enforcement Requested by: [ ] State AgencyAutomated Triggers:Determine how the CSE system records that registration for modification and enforcementof a foreign support order is needed from another state.",,,,
+,Required Data Blocks and Elements,,,
+,,Data Element Description,,
+(Data Block Record Layout),,,,
+HEADER,,,,
+LOCAL-FIPS-STATE/COUNTY,Your state/county FIPS code,,,
+OTHER-FIPS-STATE/COUNTY,"State/county FIPS code to which thetransaction is directed",,,
+CSENET-VERSION-NUMBER,3,,,
+TRANSACTION-SERIAL-NUMBER,Fill as appropriate,,,
+ACTION-CODE,R,,,
+FUNCTIONAL-TYPE-CODE,ENF,,,
+TXN-DATE,Date transaction was created,,,
+CASE-ID,Your case ID,,,
+ACTION-REASON,ERMEE,,,
+ATTACHMENTS-IND,#NAME?,,,
+CASE-DATA-IND,1,,,
+NCP-IDENTIFICATION-IND,1,,,
+NCP-LOCATE-IND,1,,,
+PARTICIPANT-DATA-IND,Fill as appropriate,,,
+ORDER-DATA-IND,1,,,
+,"ENF R ERMEE − ENFORCEMENT REQUEST, REGISTRATION OF FOREIGN",,,
+SUPPORT ORDER FOR MODIFICATION AND ENFORCEMENT BY STATE,,,,
+AGENCY,,,,
+COLLECTION-DATA-IND,=0 (numeric),,,
+INFORMATION-IND,=0 (numeric),,,
+OVERDUE-IND,=0 (numeric),,,
+CASE DATA BLOCK,,,,
+CASE-TYPE,Fill as appropriate,,,
+CASE-STATUS,#NAME?,,,
+PAYMENT-MAILING-ADDRESS-LINE1,Your payment mailing address,,,
+*PAYMENT-CITY,Payment city,,,
+*PAYMENT-STATE,Payment state,,,
+*PAYMENT-ZIP-1,Payment ZIP Code,,,
+*CONTACT-NAME-LAST,Your state contact last name,,,
+*CONTACT-NAME-FIRST,Your state contact first name,,,
+*CONTACT-ADDRESS-LINE-1,Contact address,,,
+*CONTACT-CITY,Contact city,,,
+*CONTACT-STATE,Contact state,,,
+*CONTACT-ZIP-1,Contact ZIP Code,,,
+*CONTACT-PHONE-NUM,Contact phone number,,,
+NCP IDENTIFICATION DATA BLOCK,,,,
+NAME-LAST,NCP last name,,,
+NAME-FIRST,NCP first name,,,
+*SSN,NCP Social Security number,,,
+*DATE-OF-BIRTH,NCP date of birth,,,
+NCP LOCATE DATA BLOCK,,,,
+RESIDENTIAL-ADDRESS-LINE1,NCP street address,,,
+*RESIDENTIAL-CITY,NCP city,,,
+*RESIDENTIAL-STATE,NCP state,,,
+*RESIDENTIAL-ZIP-1,NCP ZIP Code,,,
+,"ENF R ERMEE − ENFORCEMENT REQUEST, REGISTRATION OF FOREIGN",,,
+SUPPORT ORDER FOR MODIFICATION AND ENFORCEMENT BY STATE,,,,
+AGENCY,,,,
+"RESIDENTIAL-ADDRESS-EFFECTIVE-DATE",Required if residential address entered,,,
+"RESIDENTIAL-ADDRESS-CONFIRMED-IND.",Fill as appropriate,,,
+PARTICIPANT DATA BLOCK (2),,,,
+NAME-LAST,Participant last name,,,
+NAME-FIRST,Participant first name,,,
+DATE-OF-BIRTH,Fill as appropriate,,,
+RELATIONSHIP,Fill as appropriate,,,
+PARTICIPANT-STATUS,#NAME?,,,
+*DEPENDENT-RELATION-CP,Fill as appropriate,,,
+ORDER DATA BLOCK,,,,
+ORDER-FIPS-STATE,FIPS code of state that issued order,,,
+ORDER-FIPS-COUNTY,FIPS code of county that issued order,,,
+ORDER-ID,The order ID,,,
+ORDER-FILING-DATE,Date order was filed in your state,,,
+ORDER-TYPE,Fill as appropriate,,,
+DEBT-TYPE,Fill as appropriate,,,
+ORDER-FREQ,Fill as appropriate,,,
+ORDER-FREQ-AMOUNT,Dollar amount per frequency,,,
+ORDER-EFFECTIVE-DATE,Date obligation starts to accrue,,,
+*MEDICAL-ORDERED,Y or N,,,
+,"ENF R ERMEM − ENFORCEMENT REQUEST, REGISTRATION OF FOREIGN",,,
+,SUPPORT ORDER FOR MODIFICATION AND ENFORCEMENT BY OBLIGEE,,,
+,Description/Business Usage,,,
+"Sent by Initiating State:This transaction is used to electronically request registration of foreign order for thepurpose of enforcement and modification as requested by the obligee.Used To:Request the initiation of a new interstate caseCorresponds To:Transmittal#1:7. [ ] Registration of Foreign Support Order(s)B. [ ] For Modification and Enforcement Requested by: [ ] Obligee.Automated Triggers:Determine how the CSE system records that registration for modification and enforcementis needed from another state.Action By Receiving State:Process according to federal guidelines. Consider initial activities, such as building a caseand initiating locate activities.",,,,
+,Required Data Blocks and Elements,,,
+,,Data Element Description,,
+(Data Block Record Layout),,,,
+HEADER,,,,
+LOCAL-FIPS-STATE/COUNTY,Your state/county FIPS code,,,
+OTHER-FIPS-STATE/COUNTY,"State/county FIPS code to which thetransaction is directed",,,
+CSENET-VERSION-NUMBER,3,,,
+TRANSACTION-SERIAL-NUMBER,Fill as appropriate,,,
+ACTION-CODE,R,,,
+FUNCTIONAL-TYPE-CODE,ENF,,,
+TXN-DATE,Date transaction was created,,,
+CASE-ID,Your case ID,,,
+ACTION-REASON,ERMEM,,,
+ATTACHMENTS-IND,#NAME?,,,
+CASE-DATA-IND,1,,,
+NCP-IDENTIFICATION-IND,1,,,
+NCP-LOCATE-IND,1,,,
+,"ENF R ERMEM − ENFORCEMENT REQUEST, REGISTRATION OF FOREIGN",,,
+,SUPPORT ORDER FOR MODIFICATION AND ENFORCEMENT BY OBLIGEE,,,
+,Description/Business Usage,,,
+PARTICIPANT-DATA-IND,Fill as appropriate,,,
+ORDER-DATA-IND,1,,,
+COLLECTION-DATA-IND,=0 (numeric),,,
+INFORMATION-IND,=0 (numeric),,,
+OVERDUE-IND,=0 (numeric),,,
+CASE DATA BLOCK,,,,
+CASE-TYPE,Fill as appropriate,,,
+CASE-STATUS,#NAME?,,,
+PAYMENT-MAILING-ADDRESS-LINE1,Your payment mailing address,,,
+*PAYMENT-CITY,Payment city,,,
+*PAYMENT-STATE,Payment state,,,
+*PAYMENT-ZIP-1,Payment ZIP Code,,,
+*CONTACT-NAME-LAST,Your state contact last name,,,
+*CONTACT-NAME-FIRST,Your state contact first name,,,
+*CONTACT-ADDRESS-LINE-1,Contact address,,,
+*CONTACT-CITY,Contact city,,,
+*CONTACT-STATE,Contact state,,,
+*CONTACT-ZIP-1,Contact ZIP Code,,,
+*CONTACT-PHONE-NUM,Contact phone number,,,
+NCP IDENTIFICATION DATA BLOCK,,,,
+NAME-LAST,NCP last name,,,
+NAME-FIRST,NCP first name,,,
+*SSN,NCP Social Security number,,,
+*DATE-OF-BIRTH,NCP date of birth,,,
+NCP LOCATE DATA BLOCK,,,,
+RESIDENTIAL-ADDRESS-LINE1,NCP street address,,,
+*RESIDENTIAL-CITY,NCP city,,,
+,"ENF R ERMEM − ENFORCEMENT REQUEST, REGISTRATION OF FOREIGN",,,
+,SUPPORT ORDER FOR MODIFICATION AND ENFORCEMENT BY OBLIGEE,,,
+,Description/Business Usage,,,
+*RESIDENTIAL-ZIP-1,NCP ZIP Code,,,
+"RESIDENTIAL-ADDRESS-EFFECTIVE-DATE",Required if residential address entered,,,
+"RESIDENTIAL-ADDRESS-CONFIRMED-IND.",Fill as appropriate,,,
+PARTICIPANT DATA BLOCK (2),,,,
+NAME-LAST,Participant last name,,,
+NAME-FIRST,Participant first name,,,
+DATE-OF-BIRTH,Fill as appropriate,,,
+RELATIONSHIP,Fill as appropriate,,,
+PARTICIPANT-STATUS,#NAME?,,,
+*DEPENDENT-RELATION-CP,Fill as appropriate,,,
+ORDER DATA BLOCK,,,,
+ORDER-FIPS-STATE,FIPS code of state that issued order,,,
+ORDER-FIPS-COUNTY,FIPS code of county that issued order,,,
+ORDER-ID,The order ID,,,
+ORDER-FILING-DATE,Date order was filed in your state,,,
+ORDER-TYPE,Fill as appropriate,,,
+DEBT-TYPE,Fill as appropriate,,,
+ORDER-FREQ,Fill as appropriate,,,
+ORDER-FREQ-AMOUNT,Dollar amount per frequency,,,
+ORDER-EFFECTIVE-DATE,Date obligation starts to accrue,,,
+,VALID TRANSACTIONS EXCLUDED FROM THE TFM AND,,,
+,CORE SET OF TRANSACTIONS,,,
+,,,,
+Action Reason Code,,,,Alternative Transaction Usage
+,,,,
+ENF A BLANK,"EnforcementAcknowledgment","ENF A ANOAD or ENF AAADIN",,
+ENF C BLANK,"Enforcement Cancel PreviousRequest","MSC P GSPUD or considerMSC closure transaction if theother state initiated a case",,
+ENF M BLANK,"Enforcement Reminder,Response Overdue",MSC R GRUPD,,
+ENF M GRPOU,"Enforcement Reminder,Attachment(s) Overdue",MSC R GRUPD,,
+ENF P EILPP,"Enforcement Provision ofInformation, Lien EstablishedPersonal Property",MSC P GSPUD,,
+ENF P ESORD,"Enforcement Provision ofInformation, New OrderEstablished","EST P SSEST (Currentlyconverted by the CSENetapplication)",,
+ENF P ESWAG,"Enforcement Provision ofInformation, WageWithholding Established",MSC P GSPUD,,
+ENF P GIHER,"Enforcement Provision ofInformation, Notice ofUpcoming Hearing",MSC P GIHER,,
+ENF P GSARR,"Enforcement Provision ofinformation, Notice ofArrearageReconciliation/Determinationof Sum Certain",MSC P GSPUD,,
+ENF P GSFIL,"Enforcement Provision ofInformation, Document filed",MSC P GSPUD,,
+"ENF R, U EREXO","Enforcement Request/Update,Request Collection ofExisting Order","Use ENF R ERALL if initiatinga new interstate caseUse MSC P GSPUD if anestablished interstate case exists",,
+,VALID TRANSACTIONS EXCLUDED FROM THE TFM AND,,,
+,CORE SET OF TRANSACTIONS,,,
+,,,,
+Action Reason Code,,,,Alternative Transaction Usage
+,,,,
+"ENF R, U ERFSM","Enforcement RequestRegistration of ForeignSupport Order forModification by Obligor",N/A,,
+"ENF R, U ERFSO","Enforcement Request/Update,Registration of ForeignSupport Order forModification by Obligee",N/A,,
+"ENF R, U ERFSS","Enforcement Request,Registration of ForeignSupport Order forModification by State Agency",N/A,,
+"ENF R, U ERSTA","Enforcement Request,Request Status ofEnforcement Actions","MSC R GRUPD (Currentlyconverted by the CSENetapplication)",,
+"ENF R, U ERWAG","Enforcement Request/Update,Wage Withholding",MSC R GRUPD,,
+ENF U ERALL,"Enforcement Update, RequestEnforcement – All Remedies",MSC P GSPUD*,,
+ENF U ERARR,"Enforcement Update, RequestCollection of Arrears",MSC P GSPUD*,,
+ENF U ERMEE,"Enforcement Update, RequestRegistration of ForeignSupport Order forModification andEnforcement by the State IV-D Agency",MSC P GSPUD*,,
+ENF U ERMEM,"Enforcement Update, RequestRegistration of ForeignSupport Order forModification andEnforcement by Obligee",MSC P GSPUD*,,
+,VALID TRANSACTIONS EXCLUDED FROM THE TFM AND,,,
+,CORE SET OF TRANSACTIONS,,,
+,,,,
+Action Reason Code,,,,Alternative Transaction Usage
+,,,,
+ENF U ERMEO,"Enforcement Update, RequestRegistration of ForeignSupport Order forModification andEnforcement by Obligor",MSC P GSPUD*,,
+ENF U ERREG,"Enforcement Update,Registration of a SupportOrder",MSC P GSPUD*,,
+ENF U ERREO,"Enforcement Update, RequestRegistration of Foreign Orderfor Enforcement Only byObligee",MSC P GSPUD*,,
+ENF U ERRES,"Enforcement of a ForeignSupport Order Update,Request Registration ofForeign Support Order forEnforcement Only by theState IV-D Agency",MSC P GSPUD*,,
+ENF U ERTXR,"Enforcement Update, RequestAdministrative Review ofTax Offset",MSC P GSPUD*,,

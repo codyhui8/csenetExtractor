@@ -2,6 +2,7 @@
 "",SENT TO THE CSENET SERVER,,,,,,,,,,,,,,,,
 "",Rules,,,Field Name,,,Location,,,Length,,,A/N,,,Comments,
 1,Local-FIPS-State,1-2,2,N,"RequiredThe Local-FIPS-State must contain valid FIPS codes based on thejurisdiction table downloaded from the IRG. This always refers tothe first two digits of your state’s FIPS code.The CSENet application will convert the Local-FIPS-State andOther-FIPS-State on incoming transactions to keep the appropriatepoint of reference.You must have communications enabled for the specificFunctional-Type-Code with the state with which you arecommunicating. The exchange agreement must be established inthe CSENet application.",,,,,,,,,,,,
+1,Local-FIPS-County,3-5,3,N,"RequiredThe Local-FIPS-County must contain valid FIPS codes based onthe jurisdiction table downloaded from the IRG. This alwaysrefers to the 3rd, 4th and 5th digits of your state’s FIPS code.The CSENet application will convert the Local-FIPS-County andOther-FIPS-County on incoming transactions to keep theappropriate point of reference.You must have communications enabled for the specificFunctional-Type-Code with the state with which you arecommunicating. The exchange agreement must be established inthe CSENet application.",,,,,,,,,,,,
 "",CHART C-3: CSENET DATA BLOCK TRANSACTION HEADER RECORD FOR TRANSACTIONS,,,,,,,,,,,,,,,,
 "",SENT TO THE CSENET SERVER,,,,,,,,,,,,,,,,
 "",Rules,,,Field Name,,,Location,,,Length,,,A/N,,,Comments,
@@ -34,6 +35,7 @@
 "",Rules,,,Field Name,,,Location,,,Length,,,A/N,,,Comments,
 "1,2,3,4",Other-Case-ID,61-75,15,A/N,"RequiredThe case ID used by the jurisdiction with which you arecommunicating.Required for Responses, Acknowledgments and CSI transactions.The CSENet application will convert the Case-ID and the Other-Case-ID on incoming transactions to keep the appropriate point ofreference.The following criteria apply to this field:•First position must not be a space•Must not contain all zeros•Must not contain an asterisk (*) or backslash (\) in anyposition•Must not contain a combination of spaces and zeros",,,,,,,,,,,,
 "1,2,3,4",Action-Reason,76-80,5,A/N,"RequiredRequired for CSI transactions.If used, must be in conjunction with functional type and actioncodes in accordance with the Valid Transactions Table (AppendixB).",,,,,,,,,,,,
+"1,4,5a","Action-Resolution-Date",81-88,8,N,"This field should be used in conjunction with certain action reasoncodes to indicate the date on which an event occurs.",,,,,,,,,,,,
 "",CHART C-3: CSENET DATA BLOCK TRANSACTION HEADER RECORD FOR TRANSACTIONS,,,,,,,,,,,,,,,,
 "",SENT TO THE CSENET SERVER,,,,,,,,,,,,,,,,
 "",Rules,,,Field Name,,,Location,,,Length,,,A/N,,,Comments,
@@ -47,6 +49,7 @@
 "",CHART C-3: CSENET DATA BLOCK TRANSACTION HEADER RECORD FOR TRANSACTIONS,,,,,,,,,,,,,,,,
 "",SENT TO THE CSENET SERVER,,,,,,,,,,,,,,,,
 "",Rules,,,Field Name,,,Location,,,Length,,,A/N,,,Comments,
+1,Participant-Data-Ind.,93,1,N,"RequiredIndicates the number of Participant data blocks included in thistransaction.Valid values for this field are:0 – Participant data block is not included in this transaction1 – One Participant data block is included in this transaction2 – Two Participant data blocks are included in this transaction3 – Three Participant data blocks are included in this transaction4 – Four Participant data blocks are included in this transaction5 – Five Participant data blocks are included in this transaction6 – Six Participant data blocks are included in this transaction7 – Seven Participant data blocks are included in this transaction8 – Eight Participant data blocks are included in this transaction9 – Nine Participant data blocks are included in this transactionThis indicator must be set to 2 or greater for PAT, EST, ENFRequest and Update transactions, [and the MSC R GRPAYtransaction]. These transactions require a minimum of twoParticipant data blocks: one containing the custodial party’sinformation and at least one additional Participant data blockcontaining dependent information.This indicator must be at least 1 and may be 2-9 for CSIResponses if the 2nd character of the action reason code is S.",,,,,,,,,,,,
 "",CHART C-3: CSENET DATA BLOCK TRANSACTION HEADER RECORD FOR TRANSACTIONS,,,,,,,,,,,,,,,,
 "",SENT TO THE CSENET SERVER,,,,,,,,,,,,,,,,
 "",Rules,,,Field Name,,,Location,,,Length,,,A/N,,,Comments,
@@ -63,6 +66,7 @@
 "1,4,5a",Sent-Time,105-110,6,N,"This field may be filled by the state CSE system with the time thetransaction was generated or sent. If used, the time must be in themilitary format of HHMMSS.",,,,,,,,,,,,
 "1,4",Due-Date,111-118,8,N,"This field is reserved for a future version. For the current version,this field must be blank-filled.",,,,,,,,,,,,
 "1,4",Response-Date,119-126,8,N,"This field is reserved for a future version. For the current version,this field must be blank-filled.",,,,,,,,,,,,
+1,Overdue-Ind.,127,1,N,"RequiredThis field is used to indicate that a response is overdue.This field must be filled with 0.",,,,,,,,,,,,
 "",CHART C-4: CSENET DATA BLOCK TRANSACTION HEADER RECORD FOR TRANSACTIONS,,,,,,,,,,,,,,,,
 "",SENT FROM THE CSENET SERVER,,,,,,,,,,,,,,,,
 "",Rules,,,Field Name,,,Location,,,Length,,,A/N,,,Comments,
@@ -86,11 +90,13 @@
 "",Rules,,,Field Name,,,Location,,,Length,,,A/N,,,Comments,
 "1,4",Error-Reason-Code,30-31,2,A/N,"This field is reserved for a future version. For the current version,this field must be blank-filled.",,,,,,,,,,,,
 "1,4",Transaction-Type,32-33,2,A/N,"This field is reserved for a future version. For the current version,this field must be blank-filled.",,,,,,,,,,,,
+"1,2,3",Action-Code,34,1,A/N,"RequiredMust contain a valid Action code. Describes the action requestedby the other state.Valid values for this field are:R – Request (an initiating transaction)A – Acknowledgment (acknowledgment of receipt of request)P – Provision (provision of information/response)M – Reminder (used when a response is overdue)U – Update (update of previously transmitted request)C – Cancel (cancellation of previous request)[Note: Reminder, Update and Cancel transactions are not includedin the core set of transactions and may be considered for deletionin the future.]",,,,,,,,,,,,
 "",CHART C-4: CSENET DATA BLOCK TRANSACTION HEADER RECORD FOR TRANSACTIONS,,,,,,,,,,,,,,,,
 "",SENT FROM THE CSENET SERVER,,,,,,,,,,,,,,,,
 "",Rules,,,Field Name,,,Location,,,Length,,,A/N,,,Comments,
 "1,2","Functional-Type-Code",35-37,3,A/N,"RequiredMust contain a valid functional type code. Indicates the childsupport business function.Valid values for this field are:LO1 – Quick LocateCSI – Case Status InformationENF – EnforcementMSC – Managing State CasesPAT – Paternity EstablishmentEST – Order EstablishmentCOL – Collection",,,,,,,,,,,,
 "1,5a",Transaction-Date,38-45,8,N,"RequiredThe date the transaction was generated.The CSENet application passes the date placed in this field by thestate generating the transaction.",,,,,,,,,,,,
+"1,2,3,4",Case-ID,46-60,15,A/N,"RequiredThe case ID used by your jurisdiction.Will be present in all Responses, Acknowledgments and CSItransactions.The CSENet application will convert the Case-ID and the Other-Case-ID on incoming transactions to keep the appropriate point ofreference.",,,,,,,,,,,,
 "",CHART C-4: CSENET DATA BLOCK TRANSACTION HEADER RECORD FOR TRANSACTIONS,,,,,,,,,,,,,,,,
 "",SENT FROM THE CSENET SERVER,,,,,,,,,,,,,,,,
 "",Rules,,,Field Name,,,Location,,,Length,,,A/N,,,Comments,
@@ -106,9 +112,11 @@
 "",CHART C-4: CSENET DATA BLOCK TRANSACTION HEADER RECORD FOR TRANSACTIONS,,,,,,,,,,,,,,,,
 "",SENT FROM THE CSENET SERVER,,,,,,,,,,,,,,,,
 "",Rules,,,Field Name,,,Location,,,Length,,,A/N,,,Comments,
+1,"NCP-Locate-Data-Ind.",92,1,N,"RequiredIndicates whether an NCP Locate data block is included in thistransaction.Valid values for this field are:0 – NCP Locate data block is not included in this transaction1 – NCP Locate data block is included in this transactionThis indicator must be set to 1 for PAT, EST, ENF Requests andUpdates.This indicator must be set to 1 for LO1 Responses if the 2ndcharacter of the action reason code is S.This indicator can be 0 or 1 for COL, MSC, CSI transactions.This indicator can be 0 or 1 for PAT, EST and ENF Responses.",,,,,,,,,,,,
 "",CHART C-4: CSENET DATA BLOCK TRANSACTION HEADER RECORD FOR TRANSACTIONS,,,,,,,,,,,,,,,,
 "",SENT FROM THE CSENET SERVER,,,,,,,,,,,,,,,,
 "",Rules,,,Field Name,,,Location,,,Length,,,A/N,,,Comments,
+1,Participant-Data-Ind.,93,1,N,"RequiredIndicates the number of Participant data blocks included in thistransaction.Valid values for this field are:0 – Participant data block is not included in this transaction1 – One Participant data block is included in this transaction2 – Two Participant data blocks are included in this transaction3 – Three Participant data blocks are included in this transaction4 – Four Participant data blocks are included in this transaction5 – Five Participant data blocks are included in this transaction6 – Six Participant data blocks are included in this transaction7 – Seven Participant data blocks are included in this transaction8 – Eight Participant data blocks are included in this transaction9 – Nine Participant data blocks are included in this transactionThis indicator must be set to 2 or greater for PAT, EST, ENFRequest and Update transaction and the [MSC R GRPAYtransaction.] These transactions require a minimum or twoParticipant data blocks: one containing the custodial party’sinformation and at least one additional Participant data blockcontaining dependent information.This indicator must be at least 1 and may be 2-9 for CSIResponses if the 2nd character of the action reason code is S.",,,,,,,,,,,,
 "",CHART C-4: CSENET DATA BLOCK TRANSACTION HEADER RECORD FOR TRANSACTIONS,,,,,,,,,,,,,,,,
 "",SENT FROM THE CSENET SERVER,,,,,,,,,,,,,,,,
 "",Rules,,,Field Name,,,Location,,,Length,,,A/N,,,Comments,
@@ -126,9 +134,11 @@
 "1,2,3,4",Processing-Complete,111,1,A/N,"This field is reserved for a future version. For the current version,it is blank-filled.",,,,,,,,,,,,
 "1,4,5a","Attachments-Due-Date",112-119,8,N,"This field is reserved for a future version. For the current version,it is blank-filled.",,,,,,,,,,,,
 "1,2,4",Sent-To-State-Host,120,1,A/N,"This field is reserved for a future version. For the current version,it is blank-filled.",,,,,,,,,,,,
+"1,2,4","Interstate-Forms-Printed",121,1,A/N,"This field is reserved for a future version. For the current version,it is blank-filled.",,,,,,,,,,,,
 "",CHART C-5: CSENET CASE DATA BLOCK RECORD,,,,,,,,,,,,,,,,
 "",Rules,,,Field Name,,,Location,,,Length,,,A/N,,,Comments,
 "1,2",Case-Type,1,1,A/N,"RequiredType of case in your state.Valid values for this field are:A – TANFN – Non-TANF*F – Foster careR – TANF arrears only*C – Foster care arrears only*V – Non-IV-DM – Medical careS − Former assistanceT − Never assistance*These case types are considered obsolete in accordance withmodifications identified in the FPLS Release 01-01 ManifestMinor in support of changes in the Uniform Interstate FamilySupport Act (UIFSA) forms and implemented in November2001.",,,,,,,,,,,,
+"1,2",Case-Status,2,1,A/N,"RequiredIndicates whether a case is open in your state.Valid values for this field are:O – OpenC – Closed",,,,,,,,,,,,
 "",CHART C-5: CSENET CASE DATA BLOCK RECORD,,,,,,,,,,,,,,,,
 "",Rules,,,Field Name,,,Location,,,Length,,,A/N,,,Comments,
 "1,2,3,4","Payment-Mail-Address-Line-1",3-27,25,A/N,"RequiredAddress to which payments are mailed.Required for EST, ENF Request and Update transactions [andthe MSC R GRPAY transaction].",,,,,,,,,,,,
@@ -157,6 +167,7 @@
 "1,2,3,4",Initiating-Docket-Num.,295-311,17,A/N,Initiating state’s docket number.,,,,,,,,,,,,
 "1,4,5c","Send-Payments-Bank-Account",312-331,20,N,"Bank account number for transfer of payments via ElectronicFunds Transfer (EFT).",,,,,,,,,,,,
 "1,4,5c","Send-Payments-Routing-Code",332-341,10,N,"Routing code for transfer of payments via Electronic FundsTransfer (EFT).",,,,,,,,,,,,
+"1,2,3,4",State-With-CEJ,342-343,2,A/N,"State with Continuing Exclusive Jurisdiction (CEJ).Must be a valid two-character state abbreviation. (SeeAppendix G for listing.)",,,,,,,,,,,,
 "",CHART C-5: CSENET CASE DATA BLOCK RECORD,,,,,,,,,,,,,,,,
 "",Rules,,,Field Name,,,Location,,,Length,,,A/N,,,Comments,
 "1,4",Payment-FIPS-State,344-345,2,N,"The Payment-FIPS-State must contain valid FIPS codesbased on the jurisdiction table downloaded from the IRG.This always refers to the first two digits of your state’s FIPScode.FIPS code used for the Payment Mailing Address.",,,,,,,,,,,,
@@ -171,6 +182,7 @@
 "1,2,3,4",Name-Suffix,54-56,3,A/N,"Suffix for NCP’s name, e.g., III, Jr., etc.",,,,,,,,,,,,
 "1,4,5c",SSN,57-65,9,N,"RequiredNCP’s Social Security number.This field is required for ENF Responses.This field is required for PAT, EST, ENF Requests andUpdates, PAT, EST and COL Responses, if the Mailing-Address, Residential-Address and Employer-Name fields inthe NCP Locate data block are blank-filled.",,,,,,,,,,,,
 "1,4,5a",Date-Of-Birth,66-73,8,N,Must be a valid date and prior to the current date.,,,,,,,,,,,,
+"1,2,3,4",Race,74,1,A/N,"Valid values for this field are:W – WhiteB – BlackI – American Indian, Eskimo or AleutianA – Asian or Pacific IslanderS – HispanicX – Other",,,,,,,,,,,,
 "",CHART C-6: CSENET NONCUSTODIAL PARENT IDENTIFICATION (NCP-ID) DATA BLOCK RECORD,,,,,,,,,,,,,,,,
 "",Rules,,,Field Name,,,Location,,,Length,,,A/N,,,Comments,
 "1,2,4",Gender,75,1,A/N,"Valid values for this field are:M – MaleF – FemaleO – Other (i.e., unborn, unknown)",,,,,,,,,,,,
@@ -186,6 +198,7 @@
 "1,4,5c",Alias-SSN-1,121-129,9,N,NCP’s first alias Social Security number.,,,,,,,,,,,,
 "1,4,5c",Alias-SSN-2,130-138,9,N,NCP’s second alias Social Security number.,,,,,,,,,,,,
 "1,2,3,4",Possibly-Dangerous,139,1,A/N,"Indicates whether the NCP is possibly dangerous.Valid values for this field are:Y – Possibly DangerousN or blank – Not known to be dangerous",,,,,,,,,,,,
+"1,2,3,4",Maiden-Name,140-160,21,A/N,NCP’s maiden name.,,,,,,,,,,,,
 "",CHART C-6: CSENET NONCUSTODIAL PARENT IDENTIFICATION (NCP-ID) DATA BLOCK RECORD,,,,,,,,,,,,,,,,
 "",Rules,,,Field Name,,,Location,,,Length,,,A/N,,,Comments,
 "1,2,3,4","Mother’s-Maiden-Or-Father’s-Name",161-181,21,A/N,NCP’s mother’s maiden name or father’s name.,,,,,,,,,,,,
@@ -196,6 +209,7 @@
 "1,2,3,4",Residential-City,51-68,18,A/N,NCP’s residential address city.,,,,,,,,,,,,
 "1,2,3,4",Residential-State,69-70,2,A/N,"NCP’s residential address state.Must be a valid two-character state abbreviation. (SeeAppendix G for listing.)",,,,,,,,,,,,
 "1,4,5c",Residential-Zip-1,71-75,5,N,NCP’s residential five-digit ZIP Code.,,,,,,,,,,,,
+"1,4,5c",Residential-Zip-2,76-79,4,N,NCP’s residential four-digit ZIP Code.,,,,,,,,,,,,
 "",CHART C-7: CSENET NONCUSTODIAL PARENT (NCP) LOCATE DATA BLOCK RECORD,,,,,,,,,,,,,,,,
 "",Rules,,,Field Name,,,Location,,,Length,,,A/N,,,Comments,
 "1,2,3,4",Mailing-Address-Line-1,80-104,25,A/N,"RequiredLine 1 of the NCP’s mailing address.At least one field, Residential-Address-Line-1, Mailing-Address-Line-1 or Employer-Name, is required for LO1,PAT, EST and ENF Responses, if the 2nd character of theaction reason code is S.At least one field, Residential-Address-Line-1, Mailing–Address-Line-1 or Employer-Name, is required for PAT R,PAT P, EST R, EST P and COL P unless the SSN is present.For ENF Requests or Updates, either the Mailing orResidential Address or Employer-Name is required.At least one field, Residential-Address-Line-1, Mailing-Address-Line-1 or Employer-Name, is required for ENFRequests and ENF Updates.",,,,,,,,,,,,
@@ -278,6 +292,7 @@
 "1,4,5a",Last-Mail-Address-Date,885-892,8,N,"This field contains the date when the NCP’s last mailingaddress was discovered to be invalid.",,,,,,,,,,,,
 "1,2,3,4",Last-Employer,893-932,40,A/N,NCP’s last known employer.,,,,,,,,,,,,
 "1,4,5a",Last-Employer-Date,933-940,8,N,Date the NCP was most recently employed at this employer.,,,,,,,,,,,,
+"1,2,3,4","Last-Employer-Address-Line-1",941-965,25,A/N,Line 1 of NCP’s last known employer’s address.,,,,,,,,,,,,
 "",CHART C-7: CSENET NONCUSTODIAL PARENT (NCP) LOCATE DATA BLOCK RECORD,,,,,,,,,,,,,,,,
 "",Rules,,,Field Name,,,Location,,,Length,,,A/N,,,Comments,
 "1,2,3,4","Last-Employer-Address-Line-2",966-990,25,A/N,Line 2 of NCP’s last known employer’s address.,,,,,,,,,,,,
@@ -320,6 +335,7 @@
 "1,4,5c",Employer3-Phone-Num.,"1328-1337",10,N,NCP’s Employer3 phone number.,,,,,,,,,,,,
 "1,4,5a","Employer3-Effective-Date","1338-1345",8,N,"RequiredIndicates when the employer was discovered.This field is required if Employer3-Name is present.",,,,,,,,,,,,
 "1,4,5a",Employer3-End-Date,"1346-1353",8,N,Indicates when Employer3 became invalid.,,,,,,,,,,,,
+"1,2,4","Employer3-Confirmed-Ind.",1354,1,A/N,"RequiredIndicates if Employer3 has been confirmed.This field is required if Employer3-Name is present.Valid values for this field are:Y – Employer verifiedN – Employer not verified",,,,,,,,,,,,
 "",CHART C-7: CSENET NONCUSTODIAL PARENT (NCP) LOCATE DATA BLOCK RECORD,,,,,,,,,,,,,,,,
 "",Rules,,,Field Name,,,Location,,,Length,,,A/N,,,Comments,
 "1,4",Wage3-Qtr,1355,1,N,"RequiredOne calendar quarter’s worth of wages received from theEmployer3 listed.Valid values for this field are:1 – 1st quarter2 – 2nd quarter3 – 3rd quarter4 – 4th quarterIf any of the Wage3 fields are filled, all three must be filled.If unused, the field must be blank-filled.",,,,,,,,,,,,
@@ -333,12 +349,14 @@
 "1,2,3,4",Name-Middle,38-53,16,A/N,Middle name of the participant.,,,,,,,,,,,,
 "1,2,3,4",Name-Suffix,54-56,3,A/N,"Suffix for participants name, e.g., III, Jr., etc.",,,,,,,,,,,,
 "1,4,5a",Date-Of-Birth,57-64,8,N,"RequiredParticipant’s date of birth. Must be a valid date and prior tothe current date.Required for PAT Requests and Updates.Required for EST Requests and Updates and ENF Requestsand Updates if the Relationship code is D.",,,,,,,,,,,,
+"1,4,5c",SSN,65-73,9,N,Participant’s Social Security number.,,,,,,,,,,,,
 "",CHART C-8: CSENET PARTICIPANT DATA BLOCK RECORD,,,,,,,,,,,,,,,,
 "",Rules,,,Field Name,,,Location,,,Length,,,A/N,,,Comments,
 "1,2,4",Gender,74,1,A/N,"Participant’s gender.Valid values for this field are:M – MaleF – FemaleO – Other (i.e., unborn, unknown)",,,,,,,,,,,,
 "",CHART C-8: CSENET PARTICIPANT DATA BLOCK RECORD,,,,,,,,,,,,,,,,
 "",Rules,,,Field Name,,,Location,,,Length,,,A/N,,,Comments,
 "1,2,4",Race,75,1,A/N,"Participant’s race.Valid values for this field are:W – WhiteB – BlackI – American Indian, Eskimo or AleutianA – Asian or Pacific IslanderS – HispanicX – Other",,,,,,,,,,,,
+"1,2,4",Relationship,76,1,A/N,"RequiredThis field indicates the role of this particular participant tothe case.Required if a participant name is entered for LO1, PAT, ESTor ENF Request, Update or Response transactions.[Required for MSC R GRPAY; at least one Participant datablock requires a ‘C’ in the Relationship field and at least oneParticipant data block requires a ‘D’ in the Relationshipfield.]Valid values for this field are:A – Noncustodial parentC – Custodial partyD – DependentP – PutativeS – Second adult (caretaker, if not parent)",,,,,,,,,,,,
 "",CHART C-8: CSENET PARTICIPANT DATA BLOCK RECORD,,,,,,,,,,,,,,,,
 "",Rules,,,Field Name,,,Location,,,Length,,,A/N,,,Comments,
 "1,2,4",Participant-Status,77,1,A/N,"RequiredIndicates whether the participant is an active member in thiscase.Required if a participant name is entered.Valid values for this field are:O – Open (active)C – Closed (inactive)",,,,,,,,,,,,
@@ -372,12 +390,14 @@
 "1,2,3,4","Dependent-Child-State-Of-Residence",339-340,2,A/N,"This field is used if the participant is a dependent.Must be a valid two-character state abbreviation. (SeeAppendix G for listing.)",,,,,,,,,,,,
 "",CHART C-8: CSENET PARTICIPANT DATA BLOCK RECORD,,,,,,,,,,,,,,,,
 "",Rules,,,Field Name,,,Location,,,Length,,,A/N,,,Comments,
+"1,2,4","Dependent-Paternity-Status",341,1,A/N,"For dependents only (Relationship = D).Valid values for this field are:Y – Paternity status determinedN or blank – Paternity status not determined (not disproved)[1 – Born in wedlock][2 – Paternity established through genetic testing][3 – Paternity not an issue (adoption)][4 – Paternity established judicially (order)][5 – Paternity established through acknowledgment][6 – Other][It is recommended that the Information data block beincluded if the value ‘6’ was chosen, to provide informationconcerning how paternity was established.]",,,,,,,,,,,,
 "",CHART C-9: CSENET ORDER DATA BLOCK RECORD,,,,,,,,,,,,,,,,
 "",Rules,,,Field Name,,,Location,,,Length,,,A/N,,,Comments,
 "1,4",Order-FIPS-State,1-2,2,[A/N],"Required[Jurisdiction] in which the order was established. The Order-FIPS-State field must contain valid FIPS codes based on thejurisdiction table downloaded from the IRG.Required for all transactions except CSI Responses.",,,,,,,,,,,,
 "1,4",Order-FIPS-County,3-5,3,[A/N],"Required[County, tribe or country] in which the order was established.The Order-FIPS-County field must contain valid FIPS codesbased on the jurisdiction table downloaded from the IRG.Required for all transactions except CSI Responses.",,,,,,,,,,,,
 "1,2,3,4",Order-FIPS-Sub,6-7,2,A/N,"The value of the “sub” portion of the FIPS code will not beedited.",,,,,,,,,,,,
 "1,2,3,4",Order-ID,8-24,17,A/N,"RequiredThe order ID refers to the local identification assigned to thisorder.",,,,,,,,,,,,
+"1,4,5a",Order-Filing-Date,25-32,8,N,"RequiredThe date that the order was established.Required for all transactions except CSIs.",,,,,,,,,,,,
 "",CHART C-9: CSENET ORDER DATA BLOCK RECORD,,,,,,,,,,,,,,,,
 "",Rules,,,Field Name,,,Location,,,Length,,,A/N,,,Comments,
 "1,2,4",Order-Type,33,1,A/N,"RequiredIndicates the type of support order.Required for ENF Requests and Updates as well as PAT,EST and ENF Responses.Valid values for this field are:A – AdministrativeJ – JudicialP – Paternity",,,,,,,,,,,,
@@ -388,6 +408,7 @@
 "1,4,5b",Order-Freq.-Amount,37-48,12,N,"RequiredThe dollar amount owed per each frequency above.The Order-Freq.-Amount can equal zero dollars.This field is required [when the Order-Arrears-Total-Amount is blank.]",,,,,,,,,,,,
 "1,4,5a",Order-Effective-Date,49-56,8,N,"RequiredThis is the date that obligations start to accrue.Required for ENF Requests and Updates as well as EST andENF Responses. Also required for PAT Responses if theOrder-Type is not equal to P.",,,,,,,,,,,,
 "1,4,5a",Order-End-Date,57-64,8,N,"The date that the obligations terminate.If entered, must be greater than the Order-Effective-Date.",,,,,,,,,,,,
+"1,4,5a",Order-Cancel-Date,65-72,8,N,"The date that the order was canceled.If entered, must be greater than the effective date.",,,,,,,,,,,,
 "",CHART C-9: CSENET ORDER DATA BLOCK RECORD,,,,,,,,,,,,,,,,
 "",Rules,,,Field Name,,,Location,,,Length,,,A/N,,,Comments,
 "1,2,4",Order-Arrears-Freq.,73,1,A/N,"RequiredIndicates the frequency of arrears payment.Required for ENF Requests and Updates as well as PAT,EST and ENF Responses if the Order-Arrears-Freq.-Amount, below, contains a value greater than zero.Valid values for this field are:W – WeeklyB – Bi-weeklyS – Semi-monthlyM – MonthlyQ – QuarterlyE – Semi-annualA – Annual",,,,,,,,,,,,
@@ -403,6 +424,7 @@
 "1,4,5a","Arrears-Non-TANF-From-Date",126-133,8,N,"RequiredThe start date of the period to which the non-TANF arrearsapply.Required for ENF Requests and Updates as well as PAT,EST and ENF Responses if the Arrears-Non-TANF-Amountfield contains a value greater than zero.",,,,,,,,,,,,
 "1,4,5a","Arrears-Non-TANF-Thru-Date",134-141,8,N,"RequiredThe end date of the period to which the non-TANF arrearsapply.Required for ENF Requests and Updates as well as PAT,EST and ENF Responses if the Arrears-Non-TANF-Amountfield contains a value greater than zero.Must be greater than the Arrears-Non-TANF-From-Date.",,,,,,,,,,,,
 "1,4,5b","Arrears-Non-TANF-Amount",142-153,12,N,"The total dollar amount of the Non-TANF arrears balance.The Arrears-Non-TANF-Amount can equal zero dollars.",,,,,,,,,,,,
+"1,4,5a",Foster-Care-From-Date,154-161,8,N,"RequiredThe start date of the period to which the foster care arrearsapply.Required for ENF Requests and Updates as well as PAT,EST and ENF Responses if the Foster-Care-Amount fieldcontains a value greater than zero.",,,,,,,,,,,,
 "",CHART C-9: CSENET ORDER DATA BLOCK RECORD,,,,,,,,,,,,,,,,
 "",Rules,,,Field Name,,,Location,,,Length,,,A/N,,,Comments,
 "1,4,5a",Foster-Care-Thru-Date,162-169,8,N,"RequiredThe end date of the period to which the foster care arrearsapply.Required for ENF Requests and Updates as well as PAT,EST and ENF Responses if the Foster-Care-Amount fieldcontains a value greater than zero.Must be greater than the Foster-Care-From-Date.",,,,,,,,,,,,
@@ -423,14 +445,17 @@
 "1,4,5a",Date-Of-Collection,1-8,8,N,"RequiredThe date of this particular collection.Required for COL P CITAX.",,,,,,,,,,,,
 "1,4,5a",Date-Of-Posting,9-16,8,N,"RequiredIndicates the date the payment was posted.Required for COL P CITAX.This field must be equal to or greater than the Date-Of-Collection if both have been entered.",,,,,,,,,,,,
 "1,4,5b",Payment-Amount,17-28,12,N,"RequiredThe total amount of the collected payment for COL PCITAX.Required for COL P CITAX.",,,,,,,,,,,,
+"1,2,4",Payment-Source,29,1,A/N,"RequiredIndicates the source of payment.Required for COL P CITAX.Valid values for this field are:A – Wage assignmentG – GarnishmentI – IRS tax interceptS – State tax interceptU – UIB interceptN – Normal",,,,,,,,,,,,
 "",CHART C-10: CSENET COLLECTION DATA BLOCK RECORD,,,,,,,,,,,,,,,,
 "",Rules,,,Field Name,,,Location,,,Length,,,A/N,,,Comments,
 "","Payment Source(Continued)",,,,"O – OtherW – Worker’s compensation offsetAll of the above codes are valid, but the IRS and state taxintercept codes are the only two recommended uses of theCOL transaction.",,,,,,,,,,,,
 "1,2,4","Interstate-Payment-Method",30,1,A/N,"RequiredRequired for COL P CITAX.Valid values for this transaction are:E – Electronic funds transferM – ManualO – OtherNote: If the payment is IRS tax offset money, the O code isrecommended because money will not be sent to the otherstate.",,,,,,,,,,,,
 "1,2,3,4",RDFI-ID,31-50,20,A/N,Reserved for electronic funds transfer use.,,,,,,,,,,,,
+"1,2,3,4",RDFI-Account-Num.,51-70,20,A/N,Reserved for electronic funds transfer use.,,,,,,,,,,,,
 "",CHART C-11: CSENET INFORMATION DATA BLOCK RECORD,,,,,,,,,,,,,,,,
 "",Rules,,,Field Name,,,Location,,,Length,,,A/N,,,Comments,
 "1,2,4",Status-Change-Code,1,1,A/N,"RequiredThis field is used to indicate whether the case status has changed.Required for all transactions except for MSC P REJCT.Valid values for this field are:O – OpenC – Closed",,,,,,,,,,,,
+"1,2,3,4",New-Case-ID,2-16,15,A/N,"RequiredThis field will be used to transmit a new, changed or corrected IV-D case ID to another state.Required for MSC P GSCAS.The following criteria apply to this field:•First position must not be a space•Must not contain all zeros•Must not contain an asterisk (*) or backslash (\) in anyposition•Must not contain a combination of spaces and zeros",,,,,,,,,,,,
 "",CHART C-11: CSENET INFORMATION DATA BLOCK RECORD,,,,,,,,,,,,,,,,
 "",Rules,,,Field Name,,,Location,,,Length,,,A/N,,,Comments,
 "1,2,3,41,2,3,41,2,3,41,2,3,41,2,3,4","Information-Text-Line-1-Line-2-Line-3-Line-4-Line-5","17-9697-176177-256257-336337-416","8080808080","A/NA/NA/NA/NA/N","RequiredAll 5 lines contain free form text.A value, other than a space, in line 1, 2 or 3 is required if theAttachment Indicator = Y.For MSC P REJCT, the first 24 positions of the Information-Text-Line-1 field must not be all spaces. Data from the rejectedtransaction must be entered in the following order in theInformation-Text-Line-1:•Transaction-Serial-Number•Action-Code•Functional-Type-Code•Transaction-Date•Action-Reason (if applicable)[For MSC P GSTAI the Information-Text-Line-1 field must not beall spaces. Data for the interest transaction must be entered in thefollowing order in the Information-Text-Line-1:•The first 12 positions of the Information-Text-Line-1 fieldmust contain the Total-Arrears-Owed-Amount. Thisamount can equal zero.•The next 12 positions of the Information-Text-Line-1 fieldmust contain the Total-Interest-Owed-Amount. Thisamount can equal zero.",,,,,,,,,,,,
@@ -448,6 +473,7 @@
 "1,2,3,4",Local-Case-ID,24-38,15,A/N,The originating state’s case ID on the transaction that erred.,,,,,,,,,,,,
 "1,2,4",Filler,39,1,A/N,"This field is reserved for a future version. For the current version,this field will be blank-filled.",,,,,,,,,,,,
 "1,2,3,4",Other-Case-ID,40-54,15,A/N,The other state’s case ID on the transaction that erred.,,,,,,,,,,,,
+"1,2,4",Filler,55,1,A/N,"This field is reserved for a future version. For the current version,this field will be blank-filled.",,,,,,,,,,,,
 "",CHART C-12: CSENET SERVER ERROR FILE,,,,,,,,,,,,,,,,
 "",Rules,,,Field Name,,,Location,,,Length,,,A/N,,,Comments,
 "1,2,3,4",Action-Code,56,1,A/N,"Action code, e.g., Request, Acknowledgment, etc., from theoriginal transaction.",,,,,,,,,,,,

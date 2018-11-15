@@ -9,6 +9,18 @@ dataBlocks = [
     'INFORMATION DATA BLOCK'
 ]
 
+dataBlocksFieldExtractions = [
+    'HEADER',
+    'CASE DATA BLOCK',
+    'NONCUSTODIAL PARENT IDENTIFICATION (NCP-ID) DATA BLOCK',
+    'NONCUSTODIAL PARENT (NCP) LOCATE DATA BLOCK',
+    'PARTICIPANT DATA BLOCK',
+    'ORDER DATA BLOCK',
+    'COLLECTION DATA BLOCK',
+    'INFORMATION DATA BLOCK',
+    'SERVER ERROR FILE'
+]
+
 allFunctionCodes = [
     'COL',
     'CSI',
@@ -17,4 +29,16 @@ allFunctionCodes = [
     'LO1',
     'MSC',
     'PAT'
+]
+
+DATA_BLOCK_FIELDS_DEFINITION = [
+    'DATA_BLOCK_ID',
+    'DATA_BLOCK_FIELDS_ID',
+    'FIELD_NAME_CD',
+    'LOCATION_START',
+    'LOCATION_END',
+    'LENGTH',
+    'ALPHA_NUMERIC_CD',
+    'COMMENT_TXT',
+    'REQUIRED_CD'
 ]
