@@ -2,6 +2,7 @@ import csv
 import os
 import exportVariables
 import re
+import helperFunctions as helper
 
 
 class mainExtractor(object):
@@ -93,7 +94,7 @@ class mainExtractor(object):
         # The following IF/ELIF statement will check to see if the FAR code already exists in the 'codes' array.
         # If it does not exist, then it inputs the FAR code and then the 'Header' block, since all FAR codes will have a Header Block
         # print(rows)
-        if (len(firstThreeWords) > 1 and self.isUpper(firstThreeWords) and self.isFarCode(firstThreeWords)):
+        if (len(firstThreeWords) > 1 and helper.isUpper(firstThreeWords) and helper.isFarCode(firstThreeWords)):
             if ((len(firstThreeWords[0]) == 3 and len(firstThreeWords[1]) == 1 and len(firstThreeWords[2]) == 5)):
                 FARCode = ' '.join(firstThreeWords)
                 if FARCode not in (temp[0] for temp in codes):
@@ -108,7 +109,7 @@ class mainExtractor(object):
                     self.appendHeader(codes, FARCode, lineNumber, rows)
                     isDescriptionLine = True
         # # This will run if we have a file with a UTF-8 value of 'âˆ’'. Otherwise, this can be commented out
-        # elif (len(firstThreeWords) > 2 and 'âˆ’' in firstThreeWords[2] and self.isFarCode(firstThreeWords)):
+        # elif (len(firstThreeWords) > 2 and 'âˆ’' in firstThreeWords[2] and helper.isFarCode(firstThreeWords)):
         #     if ((len(firstThreeWords[0]) == 3 and len(firstThreeWords[1]) == 1)):
         #         FARCode = ' '.join([firstThreeWords[0], firstThreeWords[1], firstThreeWords[2][:4]])
         #         if FARCode not in (temp[0] for temp in codes):
@@ -137,15 +138,15 @@ class mainExtractor(object):
         # Store FAR code data block if it is not linked to the FAR code yet.
         if (rows[0][1:].isupper() and
                 (rows[0][1:] in exportVariables.dataBlocks or rows[0] in exportVariables.dataBlocks)):
-            codes[len(codes) - 1][2].append(self.removeAsterisk(rows[0]))
+            codes[len(codes) - 1][2].append(helper.removeAsterisk(rows[0]))
             # print(codes)
         elif (len(rows) > 1):
             if (rows[1][1:].isupper() and
                     (rows[1][1:] in exportVariables.dataBlocks or rows[1] in exportVariables.dataBlocks)):
                 if (len(codes) == 0):
-                    codes[len(codes)][2].append(self.removeAsterisk(rows[1]))
+                    codes[len(codes)][2].append(helper.removeAsterisk(rows[1]))
                 else:
-                    codes[len(codes) - 1][2].append(self.removeAsterisk(rows[1]))
+                    codes[len(codes) - 1][2].append(helper.removeAsterisk(rows[1]))
 
         # print(isDescriptionLine)
         return [codes, isDescriptionLine]
@@ -162,27 +163,6 @@ class mainExtractor(object):
             # print(codes)
 
         return codes
-
-    def isFarCode(self, firstThreeWords):
-        if len(firstThreeWords[0]) > 4 or len(firstThreeWords[0]) < 3:
-            return False
-        elif len(firstThreeWords[1]) != 1:
-            return False
-        elif len(firstThreeWords[2]) > 8:
-            return False
-        return True
-
-    def isUpper(self, words):
-        for i in words:
-            if not i[:2].isupper():
-                return False
-        return True
-
-    def removeAsterisk(self, value):
-        if value[0] == '*':
-            return value[1:]
-        else:
-            return value
 
     def exportDataBlocks(self, csenetTransactions):
         with open(self.saveLocation, mode='w') as transactionsTypes:

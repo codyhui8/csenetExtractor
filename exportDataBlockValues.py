@@ -2,6 +2,7 @@ import csv
 import os
 import exportVariables
 import re
+import helperFunctions as helper
 
 class exportDataBlockValues(object):
     def __init__(self):
@@ -91,8 +92,8 @@ class exportDataBlockValues(object):
                     break
 
                 if rows[0] is not None and rows[0] != '' and hasReachedFarCode:
-                    if rows[0] != currentDataBlock and self.removeAsterisk(rows[0]) in exportVariables.dataBlocks:
-                        currentDataBlock = self.removeAsterisk(rows[0])
+                    if rows[0] != currentDataBlock and helper.removeAsterisk(rows[0]) in exportVariables.dataBlocks:
+                        currentDataBlock = helper.removeAsterisk(rows[0])
                         # print("-----" + currentDataBlock)
 
                 if isCurrentlyFarCode:
@@ -158,7 +159,7 @@ class exportDataBlockValues(object):
             fileName = input('Name of the DataBlock table extract: ')
         else:
             fileName = checkFileName
-        with open(self.returnOpenFileLocation(fileName), mode='r', encoding="utf-8-sig") as csv_file:
+        with open(helper.returnOpenFileLocation(fileName), mode='r', encoding="utf-8-sig") as csv_file:
             csv_reader = csv.reader(csv_file, delimiter=",", quotechar='"', lineterminator='\n')
             typesOfDataBlocks = exportVariables.dataBlocksFieldExtractions
             countDataBlock = 0
@@ -198,7 +199,7 @@ class exportDataBlockValues(object):
             rowData[len(rowData) - 1][2] = tempString
             return rowData
         # 'DATA_BLOCK_ID'
-        currRowData = [self.returnDataBlockID(currentDataBlock, dataBlockTableExtraction)]
+        currRowData = [helper.returnDataBlockID(currentDataBlock, dataBlockTableExtraction)]
 
         # 'DATA_BLOCK_FIELDS_ID'
         currRowData.append(count)
@@ -208,7 +209,7 @@ class exportDataBlockValues(object):
 
         # 'LOCATION_START'
         # 'LOCATION_END'
-        startEndValue = self.returnStartEnd(rows[2])
+        startEndValue = helper.returnStartEnd(rows[2])
         if len(startEndValue) == 2:
             currRowData.append(startEndValue[0])
             currRowData.append(startEndValue[1])
@@ -220,13 +221,13 @@ class exportDataBlockValues(object):
         currRowData.append(rows[3])
 
         # 'ALPHA_NUMERIC_CD'
-        currRowData.append(self.returnAlphaNumeric(rows[4]))
+        currRowData.append(helper.returnAlphaNumeric(rows[4]))
 
         # 'COMMENT_TXT'
         currRowData.append(rows[5].replace("\n", "\\n"))
 
         # 'REQUIRED_CD'
-        currRowData.append(self.returnRequired(rows[5]))
+        currRowData.append(helper.returnRequired(rows[5]))
 
         rowData.append(currRowData)
         # print(currRowData)
@@ -247,44 +248,5 @@ class exportDataBlockValues(object):
         for count, values in enumerate(exportVariables.dataBlocksFieldExtractions):
             allDataBlocks[values] = count + 1
         return allDataBlocks
-
-
-    def returnDataBlockID(self, currentDataBlock, dataBlockFields):
-        if currentDataBlock not in dataBlockFields:
-            return len(exportVariables.dataBlocksFieldExtractions) + 1
-        if dataBlockFields[currentDataBlock] is not None:
-            return dataBlockFields[currentDataBlock]
-        return None
-
-    def returnStartEnd(self, startEndValue):
-        tempValue = startEndValue.split('-')
-        if len(tempValue) == 1:
-            return [tempValue[0], tempValue[0]]
-        # print([tempValue[0], tempValue[1].lstrip("\n")])
-        return [tempValue[0], tempValue[1].lstrip("\n")]
-
-    def returnAlphaNumeric(self, value):
-        if value.strip("[]") == 'A/N':
-            return 'A'
-        elif value == 'A' or value == 'N':
-            return value
-        else:
-            return None
-
-    def returnRequired(self, commentString):
-        if commentString.startswith('Required'):
-            return True
-        else:
-            return False
-
-    def returnOpenFileLocation(self, fileName):
-        dirName = os.path.dirname(__file__)
-        return os.path.join(dirName, 'CSENetTableExtractions/', fileName + '.csv')
-
-    def removeAsterisk(self, value):
-        if value[0] == '*':
-            return value[1:]
-        else:
-            return value
 
 blocks = exportDataBlockValues()
