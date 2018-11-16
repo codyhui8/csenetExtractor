@@ -31,58 +31,100 @@ class exportDataBlockValues(object):
 
     # Create FAR_CODE_DATA_BLOCK table definition
     def extractFarCodeDataBlock(self):
-        dataBlockFieldsData = self.extractDataBlockFields(os.path.join(self.dirName, 'generatedFiles/', 'DATA_BLOCK_FIELDS'))
-        print(dataBlockFieldsData)
+        dataBlockFieldsData = self.extractDataBlockFields(os.path.join(self.dirName, 'CSENetTableExtractions/', 'DataBlockFields_EDITED'))
+        # print(dataBlockFieldsData)
         allFarCode = self.extractAllFarCodeValues(os.path.join(self.dirName, 'generatedFiles/', 'ALL_FAR_CODE.csv'))
-        print(allFarCode)
-        for farCodes, value in allFarCode.items():
+        # print(allFarCode)
+        with open(self.saveLocation, mode='w') as farCodeDataBlockFields:
+            storedDataBlocks = csv.writer(farCodeDataBlockFields, delimiter=',', quotechar='"', lineterminator='\n')
+            header = ['FAR_CODE_DATA_BLOCK_ID', 'DATA_BLOCK_FIELDS_ID', 'VALUE_TXT', 'FAR_CODE_ID']
+            storedDataBlocks.writerow(header)
+            farCodeDataBlockFields.close()
+        farCodeDataBlockDefintion = []
+        for farCodes, farCodeId in allFarCode.items():
+            
             farCodeFileName = self.getFunctionCodeFileName(farCodes[:3])
             farCodes = farCodes[:3] + ' ' + farCodes[3:4] + ' ' + farCodes[4:]
-            self.extractRelevantRows(farCodeFileName, farCodes)
+            farCodeDataBlockDefintion = self.extractRelevantRows(farCodeFileName, farCodes, dataBlockFieldsData, farCodeId, farCodeDataBlockDefintion)
 
-        return None
+        return farCodeDataBlockDefintion
 
     # Write FAR_CODE_DATA_BLOCK table definition
     def writeFarCodeDataBlock(self, farCodeDataBlockDefintion):
-        return None
+        with open(self.saveLocation, mode='a') as farCodeDataBlockFields:
+            storedDataBlocks = csv.writer(farCodeDataBlockFields, delimiter=',', quotechar='"', lineterminator='\n')
+            count = 1
+            for i in farCodeDataBlockDefintion:
+                tempValue = [count]
+                for p in i:
+                    tempValue.append(p)
+                storedDataBlocks.writerow(tempValue)
+                count += 1
+
+        print('Everything is written')
 
     # Return fileName given the Function code
     def getFunctionCodeFileName(self, functionCode):
         return os.path.join(self.dirName, 'CSENetTableExtractions/', functionCode + '.csv')
 
     # Processes files and gets the relevant fields and descriptions
-    def extractRelevantRows(self, farCodeFileName, farCodes):
+    def extractRelevantRows(self, farCodeFileName, farCodes, dataBlockFieldsData, farCodeId, farCodeDataBlockDefintion):
         with open(farCodeFileName, mode='r', encoding="utf-8") as csv_file:
             csv_reader = csv.reader(csv_file, delimiter=",", quotechar='"', lineterminator='\n')
-            tempExtract = []
             isCurrentlyFarCode = False
             hasReachedFarCode = False
-            print(farCodes)
+
+            currentDataBlock = 'Header'
+            # print(farCodes)
+            # print(dataBlockFieldsData)
+            mappedDataBlockFields = {}
+            for i in dataBlockFieldsData: 
+                mappedDataBlockFields[self.cleanStringPeriodDashLower(i[2])] = [i[1], [0]]
+            # print(allDataBlockFields)
             for rows in csv_reader:
-                if farCodes in rows[1]:
+                if farCodes in rows[1] and not hasReachedFarCode:
+                    # print(farCodes)
                     isCurrentlyFarCode = True
                     hasReachedFarCode = True
                 elif farCodes[:3] + ' ' in rows[1] and farCodes not in rows[1] and hasReachedFarCode:
                     isCurrentlyFarCode = False
                     break
 
+                if rows[0] is not None and rows[0] != '' and hasReachedFarCode:
+                    if rows[0] != currentDataBlock and self.removeAsterisk(rows[0]) in exportVariables.dataBlocks:
+                        currentDataBlock = self.removeAsterisk(rows[0])
+                        # print("-----" + currentDataBlock)
+
                 if isCurrentlyFarCode:
                     if rows[0].isupper():
-                        rowDetail = self.determineRowDetail(rows)
+                        # print(rows)
+                        rowDetail = self.determineRowDetail(rows, mappedDataBlockFields, farCodeId)
                         if rowDetail is not None:
-                            tempExtract.append(rowDetail)
+                            farCodeDataBlockDefintion.append(rowDetail)
 
-            print(tempExtract)
+            # print(tempExtract)
+        return farCodeDataBlockDefintion
 
     # Determines the relevant information in the Row Detail.
     # This will include the following:
     #    1. DATA_BLOCK_FIELD.DATA_BLOCK_FIELD_ID
     #    2. FAR_CODE_DATA_BLOCK.VALUE_TXT
-    def determineRowDetail(self, row):
+    #    3. FAR_CODE.FAR_CODE_ID
+    def determineRowDetail(self, row, mappedDataBlockFields, farCodeId):
+        tempReturnDetails = []
+        currentString = self.cleanStringPeriodDashLower(row[0])
+        if currentString in mappedDataBlockFields.keys():
+            dataBlockFieldId = mappedDataBlockFields[currentString][0]
+
+            return [dataBlockFieldId, row[1], int(farCodeId)]
         return None
 
     def extractDataBlockFieldId(self, dataBlockField):
         return None
+
+
+    def cleanStringPeriodDashLower(self, stringValue):
+        return re.compile('[\W_]+').sub('', stringValue.lower())
 
 
     # Extract information from the FAR_CODE table definiton
@@ -238,5 +280,11 @@ class exportDataBlockValues(object):
     def returnOpenFileLocation(self, fileName):
         dirName = os.path.dirname(__file__)
         return os.path.join(dirName, 'CSENetTableExtractions/', fileName + '.csv')
+
+    def removeAsterisk(self, value):
+        if value[0] == '*':
+            return value[1:]
+        else:
+            return value
 
 blocks = exportDataBlockValues()
