@@ -1,0 +1,3711 @@
+FAR_CODE_DATA_BLOCK_ID,DATA_BLOCK_FIELDS_ID,VALUE_TXT,FAR_CODE_ID
+1,13,003,1
+2,14,Fill as appropriate,1
+3,17,P,1
+4,18,COL,1
+5,20,Your case ID,1
+6,21,Other case ID,1
+7,22,CITAX,1
+8,24,=N,1
+9,25,=1 (numeric),1
+10,26,=1 (numeric),1
+11,27,Fill as appropriate,1
+12,28,=1 (numeric),1
+13,29,Fill as appropriate,1
+14,30,=1 (numeric),1
+15,31,=0 (numeric),1
+16,5,=0 (numeric),1
+17,38,Any case type except non-IV-D,1
+18,39,=O (alpha),1
+19,46,Your state contact last name,1
+20,47,Your state contact first name,1
+21,50,Contact address,1
+22,52,Contact city,1
+23,53,Contact state,1
+24,54,Contact ZIP Code,1
+25,56,Contact phone number,1
+26,199,NCP last name,1
+27,200,NCP first name,1
+28,204,NCP Social Security number,1
+29,203,NCP date of birth,1
+30,200,Participant first name,1
+31,207,Fill as appropriate,1
+32,208,=O (alpha),1
+33,265,Date payment was received,1
+34,266,Date payment was posted,1
+35,267,Fill as appropriate,1
+36,268,Fill as appropriate,1
+37,13,003,2
+38,14,Fill as appropriate,2
+39,17,P,2
+40,18,COL,2
+41,20,Your case ID,2
+42,21,Other case ID,2
+43,22,CISUB,2
+44,24,=N,2
+45,25,=1 (numeric),2
+46,27,=0 (numeric),2
+47,28,=0 (numeric),2
+48,29,=0 (numeric),2
+49,30,=0 (numeric),2
+50,31,=0 (numeric),2
+51,5,=0 (numeric),2
+52,38,Any case type except non-IV-D,2
+53,39,=O (alpha),2
+54,46,Your state contact last name,2
+55,47,Your state contact first name,2
+56,50,Contact address,2
+57,52,Contact city,2
+58,53,Contact state,2
+59,54,Contact ZIP Code,2
+60,56,Contact phone number,2
+61,199,NCP last name,2
+62,200,NCP first name,2
+63,204,NCP Social Security number,2
+64,13,003,3
+65,14,Fill as appropriate,3
+66,17,R,3
+67,18,CSI,3
+68,20,Your case ID,3
+69,21,Other case ID,3
+70,22,FRINF,3
+71,24,=N,3
+72,26,=0 (numeric),3
+73,27,=0 (numeric),3
+74,28,=0 (numeric),3
+75,29,=0 (numeric),3
+76,30,=0 (numeric),3
+77,31,=0 (numeric),3
+78,13,003,4
+79,14,Fill as appropriate,4
+80,17,R,4
+81,18,CSI,4
+82,20,Your case ID,4
+83,21,Other case ID,4
+84,22,FRNNF,4
+85,24,=N,4
+86,26,=0 (numeric),4
+87,27,=0 (numeric),4
+88,28,=0 (numeric),4
+89,29,=0 (numeric),4
+90,30,=0 (numeric),4
+91,31,=0 (numeric),4
+92,13,003,5
+93,14,Fill as appropriate,5
+94,17,P,5
+95,18,CSI,5
+96,20,Your case ID,5
+97,21,Other case ID,5
+98,22,FSINF,5
+99,24,=N,5
+100,25,=1 (numeric),5
+101,27,Fill as appropriate,5
+102,28,Fill as appropriate,5
+103,29,Fill as appropriate,5
+104,30,=0 (numeric),5
+105,31,=0 (numeric),5
+106,5,=0 (numeric),5
+107,38,Any case type,5
+108,39,Fill as appropriate,5
+109,46,Your state contact last name,5
+110,47,Your state contact first name,5
+111,50,Contact address,5
+112,52,Contact city,5
+113,53,Contact state,5
+114,54,Contact ZIP Code,5
+115,56,NCP phone number,5
+116,199,Participant last name,5
+117,200,Participant first name,5
+118,207,Fill as appropriate,5
+119,13,003,6
+120,14,Fill as appropriate,6
+121,17,P,6
+122,18,CSI,6
+123,20,Your case ID,6
+124,21,Other case ID,6
+125,22,FUINF,6
+126,24,=N,6
+127,25,=0 (numeric),6
+128,26,=0 (numeric),6
+129,27,=0 (numeric),6
+130,28,=0 (numeric),6
+131,30,=0 (numeric),6
+132,31,=0 (numeric),6
+133,13,003,7
+134,14,Fill as appropriate,7
+135,17,A,7
+136,18,ENF,7
+137,20,Your case ID,7
+138,21,Other case ID,7
+139,22,AADIN,7
+140,24,=N,7
+141,25,=1,7
+142,26,=1,7
+143,28,=1,7
+144,29,=0 (numeric),7
+145,30,=0 (numeric),7
+146,31,=1,7
+147,5,=0 (numeric),7
+148,38,Fill as appropriate,7
+149,39,=O (alpha),7
+150,46,Your state contact last name,7
+151,47,Your state contact first name,7
+152,50,Contact address,7
+153,52,Contact city,7
+154,53,Contact state,7
+155,54,Contact ZIP Code,7
+156,56,Contact phone number,7
+157,199,NCP last name,7
+158,200,NCP first name,7
+159,204,NCP Social Security number,7
+160,203,NCP date of birth,7
+161,199,Participant last name,7
+162,200,Participant first name,7
+163,207,Fill as appropriate,7
+164,208,=O (alpha),7
+165,272,=O (alpha),7
+166,274,Fill as appropriate,7
+167,13,003,8
+168,14,Fill as appropriate,8
+169,17,A,8
+170,18,ENF,8
+171,20,Your case ID,8
+172,21,Other case ID,8
+173,22,ANOAD,8
+174,24,=N,8
+175,25,=1,8
+176,26,=1,8
+177,28,=1,8
+178,29,=0 (numeric),8
+179,30,=0 (numeric),8
+180,31,=0 (numeric),8
+181,5,=0 (numeric),8
+182,38,Fill as appropriate,8
+183,39,=O (alpha),8
+184,46,Your state contact last name,8
+185,47,Your state contact first name,8
+186,50,Contact address,8
+187,52,Contact city,8
+188,53,Contact state,8
+189,54,Contact ZIP Code,8
+190,56,Contact phone number,8
+191,199,NCP last name,8
+192,200,NCP first name,8
+193,204,NCP Social Security number,8
+194,203,NCP date of birth,8
+195,199,Participant last name,8
+196,200,Participant first name,8
+197,207,Fill as appropriate,8
+198,208,=O (alpha),8
+199,13,003,9
+200,14,Fill as appropriate,9
+201,17,P,9
+202,18,ENF,9
+203,20,Your case ID,9
+204,21,Other case ID,9
+205,22,EILMV,9
+206,24,=N,9
+207,25,=1,9
+208,26,=1,9
+209,28,=1,9
+210,29,=0 (numeric),9
+211,30,=0 (numeric),9
+212,31,Fill as appropriate,9
+213,5,=0 (numeric),9
+214,38,Fill as appropriate,9
+215,39,=O (alpha),9
+216,46,Your state contact last name,9
+217,47,Your state contact first name,9
+218,50,Contact address,9
+219,52,Contact city,9
+220,53,Contact state,9
+221,54,Contact ZIP Code,9
+222,56,Contact phone number,9
+223,199,NCP last name,9
+224,200,NCP first name,9
+225,204,NCP Social Security number,9
+226,203,NCP date of birth,9
+227,199,Participant last name,9
+228,200,Participant first name,9
+229,207,Fill as appropriate,9
+230,208,=O (alpha),9
+231,272,=O (alpha),9
+232,274,Fill as appropriate,9
+233,13,003,10
+234,14,Fill as appropriate,10
+235,17,P,10
+236,18,ENF,10
+237,20,Your case ID,10
+238,21,Other case ID,10
+239,22,EILRE,10
+240,24,=N,10
+241,25,=1,10
+242,26,=1,10
+243,28,=1,10
+244,29,=0 (numeric),10
+245,30,=0 (numeric),10
+246,31,Fill as appropriate,10
+247,5,=0 (numeric),10
+248,38,Fill as appropriate,10
+249,39,=O (alpha),10
+250,46,Your state contact last name,10
+251,47,Your state contact first name,10
+252,50,Contact address,10
+253,52,Contact city,10
+254,53,Contact state,10
+255,54,Contact ZIP Code,10
+256,56,Contact phone number,10
+257,199,NCP last name,10
+258,200,NCP first name,10
+259,204,NCP Social Security number,10
+260,203,NCP date of birth,10
+261,199,Participant last name,10
+262,200,Participant first name,10
+263,207,Fill as appropriate,10
+264,208,=O (alpha),10
+265,272,=O (alpha),10
+266,274,Fill as appropriate,10
+267,13,003,11
+268,14,Fill as appropriate,11
+269,17,P,11
+270,18,ENF,11
+271,20,Your case ID,11
+272,21,Other case ID,11
+273,22,EIWAR,11
+274,24,=N,11
+275,25,=1,11
+276,26,=1,11
+277,28,=1,11
+278,29,=0 (numeric),11
+279,30,=0 (numeric),11
+280,31,Fill as appropriate,11
+281,5,=0 (numeric),11
+282,38,Fill as appropriate,11
+283,39,=O (alpha),11
+284,46,Your state contact last name,11
+285,47,Your state contact first name,11
+286,50,Contact address,11
+287,52,Contact city,11
+288,53,Contact state,11
+289,54,Contact ZIP Code,11
+290,56,Contact phone number,11
+291,199,NCP last name,11
+292,200,NCP first name,11
+293,204,NCP Social Security number,11
+294,203,NCP date of birth,11
+295,199,Participant last name,11
+296,200,Participant first name,11
+297,207,Fill as appropriate,11
+298,208,=O (alpha),11
+299,272,=O (alpha),11
+300,274,Fill as appropriate,11
+301,13,003,12
+302,14,Fill as appropriate,12
+303,17,P,12
+304,18,ENF,12
+305,20,Your case ID,12
+306,21,Other case ID,12
+307,22,ESREG,12
+308,24,=N,12
+309,25,=1,12
+310,26,=1,12
+311,28,=1,12
+312,29,=1,12
+313,30,=0 (numeric),12
+314,31,=0 (numeric),12
+315,5,=0 (numeric),12
+316,38,Fill as appropriate,12
+317,39,=O (alpha),12
+318,46,Your state contact last name,12
+319,47,Your state contact first name,12
+320,50,Contact address,12
+321,52,Contact city,12
+322,53,Contact state,12
+323,54,Contact ZIP Code,12
+324,56,Contact phone number,12
+325,199,NCP last name,12
+326,200,NCP first name,12
+327,204,NCP Social Security number,12
+328,203,NCP date of birth,12
+329,199,Participant last name,12
+330,200,Participant first name,12
+331,207,Fill as appropriate,12
+332,208,=O (alpha),12
+333,232,FIPS code of state that issued order,12
+334,233,FIPS code of county that issued order,12
+335,235,The order ID,12
+336,236,Date order was filed in your state,12
+337,237,Fill as appropriate,12
+338,238,Fill as appropriate,12
+339,239,Fill as appropriate,12
+340,240,Dollar amount per frequency,12
+341,241,Date obligation starts to accrue,12
+342,259,Y or N,12
+343,13,003,13
+344,14,Fill as appropriate,13
+345,17,P,13
+346,18,ENF,13
+347,20,Your case ID,13
+348,21,Other case ID,13
+349,22,ESTXR,13
+350,24,=N,13
+351,25,=1,13
+352,26,=1,13
+353,28,=1,13
+354,29,=0 (numeric),13
+355,30,=0 (numeric),13
+356,31,Fill as appropriate,13
+357,5,=0 (numeric),13
+358,38,Fill as appropriate,13
+359,39,=O (alpha),13
+360,46,Your state contact last name,13
+361,47,Your state contact first name,13
+362,50,Contact address,13
+363,52,Contact city,13
+364,53,Contact state,13
+365,54,Contact ZIP Code,13
+366,56,Contact phone number,13
+367,199,NCP last name,13
+368,200,NCP first name,13
+369,204,NCP Social Security number,13
+370,203,NCP date of birth,13
+371,199,Participant last name,13
+372,200,Participant first name,13
+373,207,Fill as appropriate,13
+374,208,=O (alpha),13
+375,272,=O (alpha),13
+376,274,Fill as appropriate,13
+377,13,003,14
+378,14,Fill as appropriate,14
+379,17,P,14
+380,18,ENF,14
+381,20,Your case ID,14
+382,21,Other case ID,14
+383,22,EUTXR,14
+384,24,=N,14
+385,25,=1,14
+386,26,=1,14
+387,28,=1,14
+388,29,=0 (numeric),14
+389,30,=0 (numeric),14
+390,31,Fill as appropriate,14
+391,5,=0 (numeric),14
+392,38,Fill as appropriate,14
+393,39,=O (alpha),14
+394,46,Your state contact last name,14
+395,47,Your state contact first name,14
+396,50,Contact address,14
+397,52,Contact city,14
+398,53,Contact state,14
+399,54,Contact ZIP Code,14
+400,56,Contact phone number,14
+401,199,NCP last name,14
+402,200,NCP first name,14
+403,204,NCP Social Security number,14
+404,203,NCP date of birth,14
+405,199,Participant last name,14
+406,200,Participant first name,14
+407,207,Fill as appropriate,14
+408,208,=O (alpha),14
+409,272,=O (alpha),14
+410,274,Fill as appropriate,14
+411,13,003,15
+412,14,Fill as appropriate,15
+413,17,P,15
+414,18,ENF,15
+415,20,Your case ID,15
+416,21,Other case ID,15
+417,22,GSCOE,15
+418,24,=N,15
+419,25,=1,15
+420,26,=1,15
+421,28,=1,15
+422,29,=1,15
+423,30,=0 (numeric),15
+424,31,=0 (numeric),15
+425,5,=0 (numeric),15
+426,38,Fill as appropriate,15
+427,39,=O (alpha),15
+428,46,Your state contact last name,15
+429,47,Your state contact first name,15
+430,50,Contact address,15
+431,52,Contact city,15
+432,53,Contact state,15
+433,54,Contact ZIP Code,15
+434,56,Contact phone number,15
+435,199,NCP last name,15
+436,200,NCP first name,15
+437,204,NCP Social Security number,15
+438,203,NCP date of birth,15
+439,199,Participant last name,15
+440,200,Participant first name,15
+441,207,Fill as appropriate,15
+442,208,=O (alpha),15
+443,232,FIPS code of state that issued order,15
+444,233,FIPS code of county that issued order,15
+445,235,The order ID,15
+446,236,Date order was filed in your state,15
+447,237,Fill as appropriate,15
+448,238,Fill as appropriate,15
+449,239,Fill as appropriate,15
+450,240,Dollar amount per frequency,15
+451,241,Date obligation starts to accrue,15
+452,259,Y or N,15
+453,13,003,16
+454,14,Fill as appropriate,16
+455,17,P,16
+456,18,ENF,16
+457,20,Your case ID,16
+458,21,Other case ID,16
+459,22,SICPS,16
+460,23,Date event occurred,16
+461,24,=N,16
+462,25,=1,16
+463,26,=1,16
+464,28,=1,16
+465,29,=0 (numeric),16
+466,30,=0 (numeric),16
+467,31,=0 (numeric),16
+468,5,=0 (numeric),16
+469,38,Fill as appropriate,16
+470,39,=O (alpha),16
+471,46,Your state contact last name,16
+472,47,Your state contact first name,16
+473,50,Contact address,16
+474,52,Contact city,16
+475,53,Contact state,16
+476,54,Contact ZIP Code,16
+477,56,Contact phone number,16
+478,199,NCP last name,16
+479,200,NCP first name,16
+480,204,NCP Social Security number,16
+481,203,NCP date of birth,16
+482,199,Participant last name,16
+483,200,Participant first name,16
+484,207,Fill as appropriate,16
+485,208,=O (alpha),16
+486,13,003,17
+487,14,Fill as appropriate,17
+488,17,R,17
+489,18,ENF,17
+490,20,Your case ID,17
+491,22,ERARR,17
+492,24,=N,17
+493,25,=1,17
+494,26,=1,17
+495,28,Fill as appropriate,17
+496,29,=1,17
+497,30,=0 (numeric),17
+498,31,=0 (numeric),17
+499,5,=0 (numeric),17
+500,38,Fill as appropriate,17
+501,39,=O (alpha),17
+502,42,Payment city,17
+503,43,Payment state,17
+504,44,Payment ZIP Code,17
+505,46,Your state contact last name,17
+506,47,Your state contact first name,17
+507,50,Contact address,17
+508,52,Contact city,17
+509,53,Contact state,17
+510,54,Contact ZIP Code,17
+511,56,Contact phone number,17
+512,199,NCP last name,17
+513,200,NCP first name,17
+514,204,NCP Social Security number,17
+515,203,NCP date of birth,17
+516,89,NCP street address,17
+517,91,NCP city,17
+518,92,NCP state,17
+519,93,NCP ZIP Code,17
+520,101,Required if residential address entered,17
+521,103,Fill as appropriate,17
+522,199,Participant last name,17
+523,200,Participant first name,17
+524,203,Fill as appropriate,17
+525,207,Fill as appropriate,17
+526,208,=O (alpha),17
+527,209,Fill as appropriate,17
+528,232,FIPS code of state that issued order,17
+529,233,FIPS code of county that issued order,17
+530,235,The order ID,17
+531,236,Date order was filed in your state,17
+532,237,Fill as appropriate,17
+533,238,Fill as appropriate,17
+534,239,Fill as appropriate,17
+535,240,Dollar amount per frequency,17
+536,241,Date obligation starts to accrue,17
+537,259,Y or N,17
+538,13,003,18
+539,14,Fill as appropriate,18
+540,17,R,18
+541,18,ENF,18
+542,20,Your case ID,18
+543,22,ERMEO,18
+544,24,=N,18
+545,25,=1,18
+546,26,=1,18
+547,28,Fill as appropriate,18
+548,29,=1,18
+549,30,=0 (numeric),18
+550,31,=0 (numeric),18
+551,5,=0 (numeric),18
+552,38,Fill as appropriate,18
+553,39,=O (alpha),18
+554,42,Payment city,18
+555,43,Payment state,18
+556,44,Payment ZIP Code,18
+557,46,Your state contact last name,18
+558,47,Your state contact first name,18
+559,50,Contact address,18
+560,52,Contact city,18
+561,53,Contact state,18
+562,54,Contact ZIP Code,18
+563,56,Contact phone number,18
+564,199,NCP last name,18
+565,200,NCP first name,18
+566,204,NCP Social Security number,18
+567,203,NCP date of birth,18
+568,89,NCP street address,18
+569,91,NCP city,18
+570,92,NCP state,18
+571,93,NCP ZIP Code,18
+572,101,Required if residential address entered,18
+573,103,Fill as appropriate,18
+574,199,Participant last name,18
+575,200,Participant first name,18
+576,203,Fill as appropriate,18
+577,207,Fill as appropriate,18
+578,208,=O (alpha),18
+579,209,Fill as appropriate,18
+580,232,FIPS code of state that issued order,18
+581,233,FIPS code of county that issued order,18
+582,235,The order ID,18
+583,236,Date order was filed in your state,18
+584,237,Fill as appropriate,18
+585,238,Fill as appropriate,18
+586,239,Fill as appropriate,18
+587,240,Dollar amount per frequency,18
+588,241,Date obligation starts to accrue,18
+589,259,Y or N,18
+590,13,003,19
+591,14,Fill as appropriate,19
+592,17,R,19
+593,18,ENF,19
+594,20,Your Case ID,19
+595,22,ERREG,19
+596,24,=N,19
+597,25,=1,19
+598,26,=1,19
+599,28,Fill as appropriate,19
+600,29,=1,19
+601,30,=0 (Numeric),19
+602,31,Fill as appropriate,19
+603,5,=0 (Numeric),19
+604,38,Fill as appropriate,19
+605,39,=O (alpha),19
+606,42,Payment city,19
+607,43,Payment state,19
+608,44,Payment ZIP Code,19
+609,46,Your state contact last name,19
+610,47,Your state contact first name,19
+611,50,Contact address,19
+612,52,Contact city,19
+613,53,Contact state,19
+614,54,Contact ZIP Code,19
+615,56,Contact phone number,19
+616,199,NCP last name,19
+617,200,NCP first name,19
+618,204,NCP Social Security number,19
+619,203,NCP date of birth,19
+620,89,NCP street address,19
+621,91,NCP city,19
+622,92,NCP state,19
+623,93,NCP ZIP Code,19
+624,101,Required if residential address entered,19
+625,103,Fill as appropriate,19
+626,199,Participant last name,19
+627,200,Participant first name,19
+628,203,Fill as appropriate,19
+629,207,Fill as appropriate,19
+630,208,=O (alpha),19
+631,209,Fill as appropriate,19
+632,232,FIPS code of state that issued order,19
+633,233,FIPS code of county that issued order,19
+634,235,The order ID,19
+635,236,Date order was filed in your state,19
+636,237,Fill as appropriate,19
+637,238,Fill as appropriate,19
+638,239,Fill as appropriate,19
+639,240,Dollar amount per frequency,19
+640,241,Date obligation starts to accrue,19
+641,259,Y or N,19
+642,272,=O (alpha),19
+643,274,Fill as appropriate,19
+644,13,003,20
+645,14,Fill as appropriate,20
+646,17,R,20
+647,18,ENF,20
+648,20,Your case ID,20
+649,22,ERREO,20
+650,24,=N,20
+651,25,=1,20
+652,26,=1,20
+653,28,Fill as appropriate,20
+654,29,=1,20
+655,30,=0 (numeric),20
+656,31,=0 (numeric),20
+657,5,=0 (numeric),20
+658,38,Fill as appropriate,20
+659,39,=O (alpha),20
+660,42,Payment city,20
+661,43,Payment state,20
+662,44,Payment ZIP Code,20
+663,46,Your state contact last name,20
+664,47,Your state contact first name,20
+665,50,Contact address,20
+666,52,Contact city,20
+667,53,Contact state,20
+668,54,Contact ZIP Code,20
+669,56,Contact phone number,20
+670,199,NCP last name,20
+671,200,NCP first name,20
+672,204,NCP Social Security number,20
+673,203,NCP date of birth,20
+674,89,NCP street address,20
+675,91,NCP city,20
+676,92,NCP state,20
+677,93,NCP ZIP Code,20
+678,101,Required if residential address entered,20
+679,103,Fill as appropriate,20
+680,199,Participant last name,20
+681,200,Participant first name,20
+682,203,Fill as appropriate,20
+683,207,Fill as appropriate,20
+684,208,=O (alpha),20
+685,209,Fill as appropriate,20
+686,232,FIPS code of state that issued order,20
+687,233,FIPS code of county that issued order,20
+688,235,The order ID,20
+689,236,Date order was filed in your state,20
+690,237,Fill as appropriate,20
+691,238,Fill as appropriate,20
+692,239,Fill as appropriate,20
+693,240,Dollar amount per frequency,20
+694,241,Date obligation starts to accrue,20
+695,259,Y or N,20
+696,13,003,21
+697,14,Fill as appropriate,21
+698,17,R,21
+699,20,Your case ID,21
+700,22,ERRES,21
+701,24,=N,21
+702,25,=1,21
+703,26,=1,21
+704,28,Fill as appropriate,21
+705,29,=1,21
+706,30,=0 (numeric),21
+707,31,=0 (numeric),21
+708,5,=0 (numeric),21
+709,38,Fill as appropriate,21
+710,39,=O (alpha),21
+711,42,Payment city,21
+712,43,Payment state,21
+713,44,Payment ZIP Code,21
+714,46,Your state contact last name,21
+715,47,Your state contact first name,21
+716,50,Contact address,21
+717,52,Contact city,21
+718,53,Contact state,21
+719,54,Contact ZIP Code,21
+720,56,Contact phone number,21
+721,199,NCP last name,21
+722,200,NCP first name,21
+723,204,NCP Social Security number,21
+724,203,NCP date of birth,21
+725,89,NCP street address,21
+726,91,NCP city,21
+727,92,NCP state,21
+728,93,NCP ZIP Code,21
+729,101,Required if residential address entered,21
+730,103,Fill as appropriate,21
+731,199,Participant last name,21
+732,200,Participant first name,21
+733,203,Fill as appropriate,21
+734,207,Fill as appropriate,21
+735,208,=O (alpha),21
+736,209,Fill as appropriate,21
+737,232,FIPS code of state that issued order,21
+738,233,FIPS code of county that issued order,21
+739,235,The order ID,21
+740,236,Date order was filed in your state,21
+741,237,Fill as appropriate,21
+742,238,Fill as appropriate,21
+743,239,Fill as appropriate,21
+744,240,Dollar amount per frequency,21
+745,241,Date obligation starts to accrue,21
+746,259,Y or N,21
+747,13,003,22
+748,14,Fill as appropriate,22
+749,17,R,22
+750,18,ENF,22
+751,20,Your case ID,22
+752,22,ERTXR,22
+753,24,=N,22
+754,25,=1,22
+755,26,=1,22
+756,28,Fill as appropriate,22
+757,29,=1,22
+758,30,=0 (numeric),22
+759,31,Fill as appropriate,22
+760,5,=0 (numeric),22
+761,38,Fill as appropriate,22
+762,39,=O (alpha),22
+763,42,Payment city,22
+764,43,Payment state,22
+765,44,Payment ZIP Code,22
+766,46,Your state contact last name,22
+767,47,Your state contact first name,22
+768,50,Contact address,22
+769,52,Contact city,22
+770,53,Contact state,22
+771,54,Contact ZIP Code,22
+772,56,Contact phone number,22
+773,199,NCP last name,22
+774,200,NCP first name,22
+775,204,NCP Social Security number,22
+776,203,NCP date of birth,22
+777,89,NCP street address,22
+778,91,NCP city,22
+779,92,NCP state,22
+780,93,NCP ZIP Code,22
+781,101,Required if residential address entered,22
+782,103,Fill as appropriate,22
+783,199,Participant last name,22
+784,200,Participant first name,22
+785,203,Fill as appropriate,22
+786,207,Fill as appropriate,22
+787,208,=O (alpha),22
+788,209,Fill as appropriate,22
+789,232,FIPS code of state that issued order,22
+790,233,FIPS code of county that issued order,22
+791,235,The order ID,22
+792,236,Date order was filed in your state,22
+793,237,Fill as appropriate,22
+794,238,Fill as appropriate,22
+795,239,Fill as appropriate,22
+796,240,Dollar amount per frequency,22
+797,241,Date obligation starts to accrue,22
+798,259,Y or N,22
+799,272,=O (alpha),22
+800,274,Fill as appropriate,22
+801,13,003,23
+802,14,Fill as appropriate,23
+803,17,R,23
+804,18,ENF,23
+805,20,Your case ID,23
+806,22,ERALL,23
+807,24,=N,23
+808,25,=1,23
+809,26,=1,23
+810,28,Fill as appropriate,23
+811,29,=1,23
+812,30,=0 (numeric),23
+813,31,=0 (numeric),23
+814,5,=0 (numeric),23
+815,38,Fill as appropriate,23
+816,39,=O (alpha),23
+817,42,Payment city,23
+818,43,Payment state,23
+819,44,Payment ZIP Code,23
+820,46,Your state contact last name,23
+821,47,Your state contact first name,23
+822,50,Contact address,23
+823,52,Contact city,23
+824,53,Contact state,23
+825,54,Contact ZIP Code,23
+826,56,Contact phone number,23
+827,199,NCP last name,23
+828,200,NCP first name,23
+829,204,NCP Social Security number,23
+830,203,NCP date of birth,23
+831,89,NCP street address,23
+832,91,NCP city,23
+833,92,NCP state,23
+834,93,NCP ZIP Code,23
+835,101,Required if residential address entered,23
+836,103,Fill as appropriate,23
+837,199,Participant last name,23
+838,200,Participant first name,23
+839,203,Fill as appropriate,23
+840,207,Fill as appropriate,23
+841,208,=O (alpha),23
+842,209,Fill as appropriate,23
+843,232,FIPS code of state that issued order,23
+844,233,FIPS code of county that issued order,23
+845,235,The order ID,23
+846,236,Date order was filed in your state,23
+847,237,Fill as appropriate,23
+848,238,Fill as appropriate,23
+849,239,Fill as appropriate,23
+850,240,Dollar amount per frequency,23
+851,241,Date obligation starts to accrue,23
+852,259,Y or N,23
+853,272,=O (alpha),23
+854,274,Fill as appropriate,23
+855,13,003,24
+856,14,Fill as appropriate,24
+857,17,R,24
+858,18,ENF,24
+859,20,Your case ID,24
+860,22,ERMEE,24
+861,24,=N,24
+862,25,=1,24
+863,26,=1,24
+864,28,Fill as appropriate,24
+865,29,=1,24
+866,30,=0 (numeric),24
+867,31,=0 (numeric),24
+868,5,=0 (numeric),24
+869,38,Fill as appropriate,24
+870,39,=O (alpha),24
+871,42,Payment city,24
+872,43,Payment state,24
+873,44,Payment ZIP Code,24
+874,46,Your state contact last name,24
+875,47,Your state contact first name,24
+876,50,Contact address,24
+877,52,Contact city,24
+878,53,Contact state,24
+879,54,Contact ZIP Code,24
+880,56,Contact phone number,24
+881,199,NCP last name,24
+882,200,NCP first name,24
+883,204,NCP Social Security number,24
+884,203,NCP date of birth,24
+885,89,NCP street address,24
+886,91,NCP city,24
+887,92,NCP state,24
+888,93,NCP ZIP Code,24
+889,101,Required if residential address entered,24
+890,103,Fill as appropriate,24
+891,199,Participant last name,24
+892,200,Participant first name,24
+893,203,Fill as appropriate,24
+894,207,Fill as appropriate,24
+895,208,=O (alpha),24
+896,209,Fill as appropriate,24
+897,232,FIPS code of state that issued order,24
+898,233,FIPS code of county that issued order,24
+899,235,The order ID,24
+900,236,Date order was filed in your state,24
+901,237,Fill as appropriate,24
+902,238,Fill as appropriate,24
+903,239,Fill as appropriate,24
+904,240,Dollar amount per frequency,24
+905,241,Date obligation starts to accrue,24
+906,259,Y or N,24
+907,13,003,25
+908,14,Fill as appropriate,25
+909,17,R,25
+910,18,ENF,25
+911,20,Your case ID,25
+912,22,ERMEM,25
+913,24,=N,25
+914,25,=1,25
+915,26,=1,25
+916,28,Fill as appropriate,25
+917,29,=1,25
+918,30,=0 (numeric),25
+919,31,=0 (numeric),25
+920,5,=0 (numeric),25
+921,38,Fill as appropriate,25
+922,39,=O (alpha),25
+923,42,Payment city,25
+924,43,Payment state,25
+925,44,Payment ZIP Code,25
+926,46,Your state contact last name,25
+927,47,Your state contact first name,25
+928,50,Contact address,25
+929,52,Contact city,25
+930,53,Contact state,25
+931,54,Contact ZIP Code,25
+932,56,Contact phone number,25
+933,199,NCP last name,25
+934,200,NCP first name,25
+935,204,NCP Social Security number,25
+936,203,NCP date of birth,25
+937,89,NCP street address,25
+938,91,NCP city,25
+939,92,NCP state,25
+940,93,NCP ZIP Code,25
+941,101,Required if residential address entered,25
+942,103,Fill as appropriate,25
+943,199,Participant last name,25
+944,200,Participant first name,25
+945,203,Fill as appropriate,25
+946,207,Fill as appropriate,25
+947,208,=O (alpha),25
+948,209,Fill as appropriate,25
+949,232,FIPS code of state that issued order,25
+950,233,FIPS code of county that issued order,25
+951,235,The order ID,25
+952,236,Date order was filed in your state,25
+953,237,Fill as appropriate,25
+954,238,Fill as appropriate,25
+955,239,Fill as appropriate,25
+956,240,Dollar amount per frequency,25
+957,241,Date obligation starts to accrue,25
+958,259,Y or N,25
+959,13,3,57
+960,14,Fill as appropriate,57
+961,17,A,57
+962,18,EST,57
+963,20,Your case ID,57
+964,21,Other case ID,57
+965,22,AADIN,57
+966,24,#NAME?,57
+967,25,1,57
+968,26,1,57
+969,28,1,57
+970,29,=0 (numeric),57
+971,30,=0 (numeric),57
+972,31,1,57
+973,5,=0 (numeric),57
+974,38,Fill as appropriate,57
+975,39,#NAME?,57
+976,46,Your state contact,57
+977,47,Your state contact,57
+978,50,Contact address,57
+979,52,Contact city,57
+980,53,Contact state,57
+981,54,Contact ZIP Code,57
+982,56,Contact phone number,57
+983,199,NCP last name,57
+984,200,NCP first name,57
+985,204,NCP Social Security number,57
+986,203,NCP date of birth,57
+987,199,Participant last name,57
+988,200,Participant first name,57
+989,207,Fill as appropriate,57
+990,208,#NAME?,57
+991,272,#NAME?,57
+992,274,Fill as appropriate,57
+993,13,3,58
+994,14,Fill as appropriate,58
+995,17,A,58
+996,18,EST,58
+997,20,Your case ID,58
+998,22,ANOAD,58
+999,24,#NAME?,58
+1000,25,1,58
+1001,26,1,58
+1002,28,1,58
+1003,29,=0 (numeric),58
+1004,30,=0 (numeric),58
+1005,31,=0 (numeric),58
+1006,5,=0 (numeric),58
+1007,38,Fill as appropriate,58
+1008,39,#NAME?,58
+1009,46,Your state contact,58
+1010,47,Your state contact,58
+1011,50,Contact address,58
+1012,52,Contact city,58
+1013,53,Contact state,58
+1014,54,Contact ZIP Code,58
+1015,199,NCP last name,58
+1016,200,NCP first name,58
+1017,204,NCP Social Security number,58
+1018,203,NCP date of birth,58
+1019,199,Participant last name,58
+1020,200,Participant first name,58
+1021,207,Fill as appropriate,58
+1022,208,#NAME?,58
+1023,13,3,59
+1024,14,Fill as appropriate,59
+1025,17,P,59
+1026,18,EST,59
+1027,20,Your case ID,59
+1028,21,Other case ID,59
+1029,22,GSCOE,59
+1030,24,#NAME?,59
+1031,25,1,59
+1032,26,1,59
+1033,28,Fill as appropriate,59
+1034,29,1,59
+1035,30,=0 (numeric),59
+1036,31,=0 (numeric),59
+1037,5,=0 (numeric),59
+1038,38,Fill as appropriate,59
+1039,39,#NAME?,59
+1040,46,Your state contact last name,59
+1041,47,Your state contact first name,59
+1042,50,Contact address,59
+1043,52,Contact city,59
+1044,53,Contact state,59
+1045,54,Contact ZIP Code,59
+1046,56,Contact phone number,59
+1047,199,NCP last name,59
+1048,200,NCP first name,59
+1049,204,NCP Social Security number,59
+1050,203,NCP date of birth,59
+1051,199,Participant last name,59
+1052,200,Participant first name,59
+1053,207,Fill as appropriate,59
+1054,208,#NAME?,59
+1055,232,FIPS code of state that issued order,59
+1056,233,FIPS code of county that issued order,59
+1057,235,The order ID,59
+1058,236,Date order was filed in your state,59
+1059,237,Fill as appropriate,59
+1060,238,Fill as appropriate,59
+1061,239,Fill as appropriate,59
+1062,240,Dollar amount per frequency,59
+1063,241,Date obligation starts to accrue,59
+1064,259,Y or N,59
+1065,13,3,60
+1066,14,Fill as appropriate,60
+1067,17,P,60
+1068,18,EST,60
+1069,20,Your case ID,60
+1070,21,Other case ID,60
+1071,22,SICHS,60
+1072,23,The date the event will occur,60
+1073,24,#NAME?,60
+1074,25,1,60
+1075,26,1,60
+1076,28,Fill as appropriate,60
+1077,29,=0 (numeric),60
+1078,30,=0 (numeric),60
+1079,31,Fill as appropriate,60
+1080,5,=0 (numeric),60
+1081,38,Fill as appropriate,60
+1082,39,#NAME?,60
+1083,46,Your state contact last name,60
+1084,47,Your state contact first name,60
+1085,50,Contact address,60
+1086,52,Contact city,60
+1087,53,Contact state,60
+1088,54,Contact ZIP Code,60
+1089,56,Contact phone number,60
+1090,199,NCP last name,60
+1091,200,NCP first name,60
+1092,204,NCP Social Security number,60
+1093,203,NCP date of birth,60
+1094,199,Participant last name,60
+1095,200,Participant first name,60
+1096,207,Fill as appropriate,60
+1097,208,#NAME?,60
+1098,272,#NAME?,60
+1099,13,3,61
+1100,14,Fill as appropriate,61
+1101,17,P,61
+1102,18,EST,61
+1103,20,Your case ID,61
+1104,21,Other case ID,61
+1105,22,SSADJ,61
+1106,24,#NAME?,61
+1107,25,1,61
+1108,26,1,61
+1109,28,Fill as appropriate,61
+1110,29,=0 (numeric),61
+1111,30,=0 (numeric),61
+1112,31,=0 (numeric),61
+1113,5,=0 (numeric),61
+1114,38,Fill as appropriate,61
+1115,39,#NAME?,61
+1116,46,Your state contact last name,61
+1117,47,Your state contact first name,61
+1118,50,Contact address,61
+1119,52,Contact city,61
+1120,53,Contact state,61
+1121,54,Contact ZIP Code,61
+1122,56,Contact phone number,61
+1123,199,NCP last name,61
+1124,200,NCP first name,61
+1125,204,NCP Social Security number,61
+1126,203,NCP date of birth,61
+1127,199,Participant last name,61
+1128,200,Participant first name,61
+1129,207,Fill as appropriate,61
+1130,208,#NAME?,61
+1131,13,3,62
+1132,14,Fill as appropriate,62
+1133,17,P,62
+1134,18,EST,62
+1135,20,Your case ID,62
+1136,21,Other case ID,62
+1137,22,SSEST,62
+1138,24,#NAME?,62
+1139,25,1,62
+1140,26,1,62
+1141,28,Fill as appropriate,62
+1142,29,1,62
+1143,30,=0 (numeric),62
+1144,31,=0 (numeric),62
+1145,5,=0 (numeric),62
+1146,38,Fill as appropriate,62
+1147,39,#NAME?,62
+1148,46,Your state contact last name,62
+1149,47,Your state contact first name,62
+1150,50,Contact address,62
+1151,52,Contact city,62
+1152,53,Contact state,62
+1153,54,Contact ZIP Code,62
+1154,56,Contact phone number,62
+1155,199,NCP last name,62
+1156,200,NCP first name,62
+1157,204,NCP Social Security number,62
+1158,203,NCP date of birth,62
+1159,199,Participant last name,62
+1160,200,Participant first name,62
+1161,207,Fill as appropriate,62
+1162,208,#NAME?,62
+1163,232,FIPS code of state that issued order,62
+1164,233,FIPS code of county that issued order,62
+1165,235,The order ID,62
+1166,236,Date order was filed in your state,62
+1167,237,Fill as appropriate,62
+1168,238,Fill as appropriate,62
+1169,239,Fill as appropriate,62
+1170,240,Dollar amount per frequency,62
+1171,241,Date obligation starts to accrue,62
+1172,259,Y or N,62
+1173,13,3,63
+1174,14,Fill as appropriate,63
+1175,17,P,63
+1176,18,EST,63
+1177,20,Your case ID,63
+1178,21,Other case ID,63
+1179,22,SSMOD,63
+1180,24,#NAME?,63
+1181,25,1,63
+1182,26,1,63
+1183,29,1,63
+1184,30,=0 (numeric),63
+1185,31,=0 (numeric),63
+1186,5,=0 (numeric),63
+1187,38,Fill as appropriate,63
+1188,39,#NAME?,63
+1189,46,Your state contact last name,63
+1190,47,Your state contact first name,63
+1191,50,Contact address,63
+1192,52,Contact city,63
+1193,53,Contact state,63
+1194,54,Contact ZIP Code,63
+1195,56,Contact phone number,63
+1196,199,NCP last name,63
+1197,200,NCP first name,63
+1198,204,NCP Social Security number,63
+1199,203,NCP date of birth,63
+1200,199,Participant last name,63
+1201,200,Participant first name,63
+1202,207,Fill as appropriate,63
+1203,208,#NAME?,63
+1204,232,FIPS code of state that issued order,63
+1205,233,FIPS code of county that issued order,63
+1206,235,The order ID,63
+1207,236,Date order was filed in your state,63
+1208,237,Fill as appropriate,63
+1209,238,Fill as appropriate,63
+1210,239,Fill as appropriate,63
+1211,240,Dollar amount per frequency,63
+1212,241,Date obligation starts to accrue,63
+1213,259,Y or N,63
+1214,13,3,64
+1215,14,Fill as appropriate,64
+1216,17,P,64
+1217,18,EST,64
+1218,20,Your case ID,64
+1219,21,Other case ID,64
+1220,22,SUADJ,64
+1221,24,#NAME?,64
+1222,25,1,64
+1223,26,1,64
+1224,28,Fill as appropriate,64
+1225,29,=0 (numeric),64
+1226,30,=0 (numeric),64
+1227,31,Fill as appropriate,64
+1228,5,=0 (numeric),64
+1229,38,Fill as appropriate,64
+1230,39,#NAME?,64
+1231,46,Your state contact last name,64
+1232,47,Your state contact first name,64
+1233,50,Contact address,64
+1234,52,Contact city,64
+1235,53,Contact state,64
+1236,54,Contact ZIP Code,64
+1237,56,Contact phone number,64
+1238,199,NCP last name,64
+1239,200,NCP first name,64
+1240,204,NCP Social Security number,64
+1241,203,NCP date of birth,64
+1242,199,Participant last name,64
+1243,200,Participant first name,64
+1244,207,Fill as appropriate,64
+1245,208,#NAME?,64
+1246,13,3,65
+1247,14,Fill as appropriate,65
+1248,17,P,65
+1249,18,EST,65
+1250,20,Your case ID,65
+1251,21,Other case ID,65
+1252,22,SUEST,65
+1253,24,#NAME?,65
+1254,25,1,65
+1255,26,1,65
+1256,28,Fill as appropriate,65
+1257,29,=0 (numeric),65
+1258,30,=0 (numeric),65
+1259,31,Fill as appropriate,65
+1260,5,=0 (numeric),65
+1261,38,Fill as appropriate,65
+1262,39,#NAME?,65
+1263,46,Your state contact last name,65
+1264,47,Your state contact first name,65
+1265,50,Contact address,65
+1266,52,Contact city,65
+1267,53,Contact state,65
+1268,54,Contact ZIP Code,65
+1269,56,Contact phone number,65
+1270,199,NCP last name,65
+1271,200,NCP first name,65
+1272,204,NCP Social Security number,65
+1273,203,NCP date of birth,65
+1274,199,Participant last name,65
+1275,200,Participant first name,65
+1276,207,Fill as appropriate,65
+1277,208,#NAME?,65
+1278,272,#NAME?,65
+1279,13,3,66
+1280,14,Fill as appropriate,66
+1281,17,P,66
+1282,18,EST,66
+1283,20,Your case ID,66
+1284,21,Other case ID,66
+1285,22,SUMOD,66
+1286,24,#NAME?,66
+1287,25,1,66
+1288,26,1,66
+1289,29,1,66
+1290,30,=0 (numeric),66
+1291,31,Fill as appropriate,66
+1292,5,=0 (numeric),66
+1293,38,Fill as appropriate,66
+1294,39,#NAME?,66
+1295,46,Your state contact last name,66
+1296,47,Your state contact first name,66
+1297,50,Contact address,66
+1298,52,Contact city,66
+1299,53,Contact state,66
+1300,54,Contact ZIP Code,66
+1301,56,Contact phone number,66
+1302,199,NCP last name,66
+1303,200,NCP first name,66
+1304,204,NCP Social Security number,66
+1305,203,NCP date of birth,66
+1306,199,Participant last name,66
+1307,200,Participant first name,66
+1308,207,Fill as appropriate,66
+1309,208,#NAME?,66
+1310,232,FIPS code of state that issued order,66
+1311,233,FIPS code of county that issued order,66
+1312,235,The order ID,66
+1313,236,Date order was filed in your state,66
+1314,237,Fill as appropriate,66
+1315,238,Fill as appropriate,66
+1316,239,Fill as appropriate,66
+1317,240,Dollar amount per frequency,66
+1318,241,Date obligation starts to accrue,66
+1319,259,Y or N,66
+1320,272,#NAME?,66
+1321,274,Fill as appropriate,66
+1322,13,3,67
+1323,14,Fill as appropriate,67
+1324,17,R,67
+1325,18,EST,67
+1326,20,Your case ID,67
+1327,22,SRADJ,67
+1328,24,#NAME?,67
+1329,26,1,67
+1330,28,Fill as appropriate,67
+1331,29,1,67
+1332,30,=0 (numeric),67
+1333,31,=0 (numeric),67
+1334,5,=0 (numeric),67
+1335,38,Fill as appropriate,67
+1336,39,#NAME?,67
+1337,42,Payment city,67
+1338,43,Payment state,67
+1339,44,Payment ZIP Code,67
+1340,46,Your state contact last name,67
+1341,47,Your state contact first name,67
+1342,50,Contact address,67
+1343,52,Contact city,67
+1344,53,Contact state,67
+1345,54,Contact ZIP Code,67
+1346,56,Contact phone number,67
+1347,199,NCP last name,67
+1348,200,NCP first name,67
+1349,204,NCP Social Security number,67
+1350,203,NCP date of birth,67
+1351,91,NCP city,67
+1352,92,NCP state,67
+1353,93,NCP ZIP Code,67
+1354,101,Required if residential address entered,67
+1355,103,Fill as appropriate,67
+1356,199,Participant last name,67
+1357,200,Participant first name,67
+1358,203,Fill as appropriate,67
+1359,204,Participant’s Social Security number,67
+1360,207,Fill as appropriate,67
+1361,208,#NAME?,67
+1362,209,Fill as appropriate,67
+1363,232,FIPS code of state that issued order,67
+1364,233,FIPS code of county that issued order,67
+1365,235,The order ID,67
+1366,236,Date order was filed in your state,67
+1367,237,Fill as appropriate,67
+1368,238,Fill as appropriate,67
+1369,239,Fill as appropriate,67
+1370,240,Dollar amount per frequency,67
+1371,241,Date obligation starts to accrue,67
+1372,13,3,68
+1373,14,Fill as appropriate,68
+1374,17,R,68
+1375,18,EST,68
+1376,20,Your case ID,68
+1377,21,Other case ID,68
+1378,22,SRMOD,68
+1379,24,#NAME?,68
+1380,25,1,68
+1381,26,1,68
+1382,28,Fill as appropriate,68
+1383,29,1,68
+1384,30,=0 (numeric),68
+1385,31,=0 (numeric),68
+1386,5,=0 (numeric),68
+1387,38,Fill as appropriate,68
+1388,39,#NAME?,68
+1389,42,Payment city,68
+1390,43,Payment state,68
+1391,44,Payment ZIP Code,68
+1392,46,Your state contact last name,68
+1393,47,Your state contact first name,68
+1394,50,Contact address,68
+1395,52,Contact city,68
+1396,53,Contact state,68
+1397,54,Contact ZIP Code,68
+1398,56,Contact phone number,68
+1399,199,NCP last name,68
+1400,200,NCP first name,68
+1401,204,NCP Social Security number,68
+1402,203,NCP date of birth,68
+1403,89,NCP street address,68
+1404,91,NCP city,68
+1405,92,NCP state,68
+1406,93,NCP ZIP Code,68
+1407,101,Required if residential address entered,68
+1408,103,Fill as appropriate,68
+1409,199,Participant last name,68
+1410,200,Participant first name,68
+1411,203,Fill as appropriate,68
+1412,204,Participant’s Social Security number,68
+1413,207,Fill as appropriate,68
+1414,208,#NAME?,68
+1415,209,Fill as appropriate,68
+1416,232,FIPS code of state that issued order,68
+1417,233,FIPS code of county that issued order,68
+1418,235,The order ID,68
+1419,236,Date order was filed in your state,68
+1420,237,Fill as appropriate,68
+1421,238,Fill as appropriate,68
+1422,239,Fill as appropriate,68
+1423,240,Dollar amount per frequency,68
+1424,241,Date obligation starts to accrue,68
+1425,259,Y or N,68
+1426,13,3,69
+1427,14,Fill as appropriate,69
+1428,17,R,69
+1429,18,EST,69
+1430,20,Your case ID,69
+1431,22,SRMOC,69
+1432,24,#NAME?,69
+1433,25,1,69
+1434,26,1,69
+1435,28,Fill as appropriate,69
+1436,29,=0 (numeric),69
+1437,30,=0 (numeric),69
+1438,31,=0 (numeric),69
+1439,5,=0 (numeric),69
+1440,38,Fill as appropriate,69
+1441,39,#NAME?,69
+1442,42,Payment city,69
+1443,43,Payment state,69
+1444,44,Payment ZIP Code,69
+1445,46,Your state contact last name,69
+1446,47,Your state contact first name,69
+1447,50,Contact address,69
+1448,52,Contact city,69
+1449,53,Contact state,69
+1450,54,Contact ZIP Code,69
+1451,56,Contact phone number,69
+1452,199,NCP last name,69
+1453,200,NCP first name,69
+1454,204,NCP Social Security number,69
+1455,203,NCP date of birth,69
+1456,89,NCP street address,69
+1457,91,NCP city,69
+1458,92,NCP state,69
+1459,93,NCP ZIP Code,69
+1460,101,Required if residential address entered,69
+1461,103,Fill as appropriate,69
+1462,199,Participant last name,69
+1463,200,Participant first name,69
+1464,203,Fill as appropriate,69
+1465,204,Participant’s Social Security number,69
+1466,207,Fill as appropriate,69
+1467,208,#NAME?,69
+1468,209,Fill as appropriate,69
+1469,13,3,70
+1470,14,Fill as appropriate,70
+1471,17,R,70
+1472,18,EST,70
+1473,20,Your case ID,70
+1474,22,SROPP,70
+1475,24,#NAME?,70
+1476,25,1,70
+1477,26,1,70
+1478,29,=0 (numeric),70
+1479,30,=0 (numeric),70
+1480,31,=0 (numeric),70
+1481,5,=0 (numeric),70
+1482,38,Fill as appropriate,70
+1483,39,#NAME?,70
+1484,42,Payment city,70
+1485,43,Payment state,70
+1486,44,Payment ZIP Code,70
+1487,46,Your state contact last name,70
+1488,47,Your state contact first name,70
+1489,50,Contact address,70
+1490,52,Contact city,70
+1491,53,Contact state,70
+1492,54,Contact ZIP Code,70
+1493,56,Contact phone number,70
+1494,199,NCP last name,70
+1495,200,NCP first name,70
+1496,204,NCP Social Security number,70
+1497,203,NCP date of birth,70
+1498,89,NCP street address,70
+1499,91,NCP city,70
+1500,92,NCP state,70
+1501,93,NCP ZIP Code,70
+1502,101,Required if residential address entered,70
+1503,103,Fill as appropriate,70
+1504,199,Participant last name,70
+1505,200,Participant first name,70
+1506,203,Fill as appropriate,70
+1507,204,Participant’s Social Security number,70
+1508,207,Fill as appropriate,70
+1509,208,#NAME?,70
+1510,209,Fill as appropriate,70
+1511,13,3,71
+1512,14,Fill as appropriate,71
+1513,17,R,71
+1514,18,EST,71
+1515,20,Your case ID,71
+1516,22,SRORD,71
+1517,24,#NAME?,71
+1518,25,1,71
+1519,26,1,71
+1520,28,Fill as appropriate,71
+1521,29,=0 (numeric),71
+1522,30,=0 (numeric),71
+1523,31,=0 (numeric),71
+1524,5,=0 (numeric),71
+1525,38,Fill as appropriate,71
+1526,39,#NAME?,71
+1527,42,Payment city,71
+1528,43,Payment state,71
+1529,44,Payment ZIP Code,71
+1530,46,Your state contact last name,71
+1531,47,Your state contact first name,71
+1532,50,Contact address,71
+1533,52,Contact city,71
+1534,53,Contact state,71
+1535,54,Contact ZIP Code,71
+1536,56,Contact phone number,71
+1537,199,NCP last name,71
+1538,200,NCP first name,71
+1539,204,NCP Social Security number,71
+1540,203,NCP date of birth,71
+1541,89,NCP street address,71
+1542,91,NCP city,71
+1543,92,NCP state,71
+1544,93,NCP ZIP Code,71
+1545,101,Required if residential address entered,71
+1546,103,Fill as appropriate,71
+1547,199,Participant last name,71
+1548,200,Participant first name,71
+1549,203,Fill as appropriate,71
+1550,204,Participant’s Social Security number,71
+1551,207,Fill as appropriate,71
+1552,208,#NAME?,71
+1553,209,Fill as appropriate,71
+1554,13,3,72
+1555,14,Fill as appropriate,72
+1556,17,R,72
+1557,18,PAT,72
+1558,20,Your case ID,72
+1559,22,SRPAT,72
+1560,24,#NAME?,72
+1561,25,1,72
+1562,26,1,72
+1563,28,Fill as appropriate,72
+1564,29,=0 (numeric),72
+1565,30,=0 (numeric),72
+1566,31,=0 (numeric),72
+1567,5,=0 (numeric),72
+1568,38,Fill as appropriate,72
+1569,39,#NAME?,72
+1570,42,Payment city,72
+1571,43,Payment state,72
+1572,44,Payment ZIP Code,72
+1573,46,Your state contact last name,72
+1574,47,Your state contact first name,72
+1575,50,Contact address,72
+1576,52,Contact city,72
+1577,53,Contact state,72
+1578,54,Contact ZIP Code,72
+1579,56,Contact phone number,72
+1580,199,NCP last name,72
+1581,200,NCP first name,72
+1582,204,NCP Social Security number,72
+1583,203,NCP date of birth,72
+1584,91,NCP City,72
+1585,92,NCP state,72
+1586,93,NCP ZIP Code,72
+1587,101,Required if residential address entered,72
+1588,103,Fill as appropriate,72
+1589,199,Participant last name,72
+1590,200,Participant first name,72
+1591,203,Fill as appropriate,72
+1592,207,Fill as appropriate,72
+1593,208,#NAME?,72
+1594,209,Fill as appropriate,72
+1595,272,#NAME?,72
+1596,274,Fill as appropriate,72
+1597,13,3,96
+1598,14,Fill as appropriate,96
+1599,17,R,96
+1600,18,LO1,96
+1601,20,Your case ID,96
+1602,24,#NAME?,96
+1603,25,1,96
+1604,26,1,96
+1605,27,=0 (numeric),96
+1606,29,=0 (numeric),96
+1607,30,=0 (numeric),96
+1608,31,=0 (numeric),96
+1609,5,=0 (numeric),96
+1610,38,Any case type except non-IV-D,96
+1611,39,Fill as appropriate,96
+1612,46,Your state contact last name,96
+1613,47,Your state contact first name,96
+1614,50,Contact address,96
+1615,52,Contact city,96
+1616,53,Contact state,96
+1617,54,Contact ZIP Code,96
+1618,56,Contact phone number,96
+1619,199,NCP last name,96
+1620,200,NCP first name,96
+1621,204,NCP Social Security number,96
+1622,203,NCP date of birth,96
+1623,13,3,97
+1624,14,Fill as appropriate,97
+1625,17,P,97
+1626,18,LO1,97
+1627,21,Other case ID,97
+1628,22,LICAD,97
+1629,24,#NAME?,97
+1630,25,1,97
+1631,26,1,97
+1632,27,1,97
+1633,28,=0 (numeric),97
+1634,29,=0 (numeric),97
+1635,30,=0 (numeric),97
+1636,31,=0 (numeric),97
+1637,38,Any case type,97
+1638,39,#NAME?,97
+1639,46,Your state contact last name,97
+1640,47,Your state contact first name,97
+1641,50,Contact address,97
+1642,52,Contact city,97
+1643,53,Contact state,97
+1644,54,Contact ZIP Code,97
+1645,56,Contact phone number,97
+1646,199,NCP last name,97
+1647,200,NCP first name,97
+1648,204,NCP Social Security number,97
+1649,203,NCP date of birth,97
+1650,89,Street address,97
+1651,91,City,97
+1652,92,State,97
+1653,93,ZIP Code,97
+1654,101,Required if residential address entered,97
+1655,13,3,98
+1656,14,Fill as appropriate,98
+1657,17,P,98
+1658,18,LO1,98
+1659,21,Other case ID,98
+1660,22,LICEM,98
+1661,24,#NAME?,98
+1662,25,1,98
+1663,26,1,98
+1664,27,1,98
+1665,28,=0 (numeric),98
+1666,29,=0 (numeric),98
+1667,30,=0 (numeric),98
+1668,31,=0 (numeric),98
+1669,5,=0 (numeric),98
+1670,38,Any case type,98
+1671,39,#NAME?,98
+1672,46,Your state contact last name,98
+1673,47,Your state contact first name,98
+1674,50,Contact address,98
+1675,52,Contact city,98
+1676,53,Contact state,98
+1677,54,Contact ZIP Code,98
+1678,56,Contact phone number,98
+1679,199,NCP last name,98
+1680,200,NCP first name,98
+1681,204,NCP Social Security number,98
+1682,203,NCP date of birth,98
+1683,129,Employer name,98
+1684,130,Employer street address,98
+1685,132,Employer city,98
+1686,133,Employer state,98
+1687,134,Employer ZIP Code,98
+1688,136,Employer telephone number,98
+1689,137,Required if employer entered,98
+1690,139,#NAME?,98
+1691,13,3,99
+1692,14,Fill as appropriate,99
+1693,17,P,99
+1694,18,LO1,99
+1695,21,Other case ID,99
+1696,22,LSADR,99
+1697,24,#NAME?,99
+1698,25,1,99
+1699,26,1,99
+1700,27,1,99
+1701,28,=0 (numeric),99
+1702,29,=0 (numeric),99
+1703,30,=0 (numeric),99
+1704,31,=0 (numeric),99
+1705,5,=0 (numeric),99
+1706,38,Any case type,99
+1707,39,#NAME?,99
+1708,46,Your state contact last name,99
+1709,47,Your state contact first name,99
+1710,50,Contact address,99
+1711,52,Contact city,99
+1712,53,Contact state,99
+1713,54,Contact ZIP Code,99
+1714,56,Contact phone number,99
+1715,199,NCP last name,99
+1716,200,NCP first name,99
+1717,204,NCP Social Security number,99
+1718,203,NCP date of birth,99
+1719,89,Street address,99
+1720,91,City,99
+1721,92,State,99
+1722,93,ZIP Code,99
+1723,101,Required if residential address entered,99
+1724,13,3,100
+1725,14,Fill as appropriate,100
+1726,17,P,100
+1727,18,LO1,100
+1728,21,Other case ID,100
+1729,22,LSALL,100
+1730,24,#NAME?,100
+1731,25,1,100
+1732,26,1,100
+1733,27,1,100
+1734,28,=0 (numeric),100
+1735,29,=0 (numeric),100
+1736,30,=0 (numeric),100
+1737,31,=0 (numeric),100
+1738,38,Any case type,100
+1739,39,#NAME?,100
+1740,46,Your state contact last name,100
+1741,47,Your state contact first name,100
+1742,50,Contact address,100
+1743,52,Contact city,100
+1744,53,Contact state,100
+1745,54,Contact ZIP Code,100
+1746,56,Contact phone number,100
+1747,199,NCP last name,100
+1748,200,NCP first name,100
+1749,204,NCP Social Security number,100
+1750,203,NCP date of birth,100
+1751,89,Street address,100
+1752,91,City,100
+1753,92,State,100
+1754,93,ZIP Code,100
+1755,101,Required if residential address entered,100
+1756,103,#NAME?,100
+1757,129,Employer name,100
+1758,130,Employer street address,100
+1759,132,Employer city,100
+1760,133,Employer state,100
+1761,134,Employer ZIP Code,100
+1762,137,Required if employer entered,100
+1763,13,3,101
+1764,14,Fill as appropriate,101
+1765,17,P,101
+1766,18,LO1,101
+1767,21,Other case ID,101
+1768,22,LSEMP,101
+1769,24,#NAME?,101
+1770,25,1,101
+1771,26,1,101
+1772,27,1,101
+1773,28,=0 (numeric),101
+1774,29,=0 (numeric),101
+1775,30,=0 (numeric),101
+1776,31,=0 (numeric),101
+1777,5,=0 (numeric),101
+1778,38,Any case type,101
+1779,39,#NAME?,101
+1780,46,Your state contact last name,101
+1781,47,Your state contact first name,101
+1782,50,Contact address,101
+1783,52,Contact city,101
+1784,53,Contact state,101
+1785,54,Contact ZIP Code,101
+1786,56,Contact phone number,101
+1787,199,NCP last name,101
+1788,200,NCP first name,101
+1789,204,NCP Social Security number,101
+1790,203,Date of birth,101
+1791,129,Employer name,101
+1792,130,Employer street address,101
+1793,132,Employer city,101
+1794,133,Employer state,101
+1795,134,Employer ZIP Code,101
+1796,136,Employer telephone number,101
+1797,137,Required if employer entered,101
+1798,139,#NAME?,101
+1799,13,3,102
+1800,14,Fill as appropriate,102
+1801,17,P,102
+1802,18,LO1,102
+1803,21,Other case ID,102
+1804,22,LSOTH,102
+1805,24,#NAME?,102
+1806,25,1,102
+1807,26,1,102
+1808,27,1,102
+1809,28,=0 (numeric),102
+1810,29,=0 (numeric),102
+1811,30,=0 (numeric),102
+1812,31,Fill as appropriate,102
+1813,38,Any case type,102
+1814,39,#NAME?,102
+1815,46,Your state contact last name,102
+1816,47,Your state contact first name,102
+1817,50,Contact address,102
+1818,52,Contact city,102
+1819,53,Contact state,102
+1820,54,Contact ZIP Code,102
+1821,56,Contact phone number,102
+1822,199,NCP last name,102
+1823,200,NCP first name,102
+1824,204,NCP Social Security number,102
+1825,203,NCP date of birth,102
+1826,89,Street address,102
+1827,91,City,102
+1828,92,State,102
+1829,93,ZIP Code,102
+1830,101,Required if residential address entered,102
+1831,103,Fill as appropriate,102
+1832,272,,102
+1833,13,3,103
+1834,14,Fill as appropriate,103
+1835,17,P,103
+1836,18,LO1,103
+1837,21,Other case ID,103
+1838,22,LUALL,103
+1839,24,#NAME?,103
+1840,25,1,103
+1841,26,1,103
+1842,27,=0 (numeric),103
+1843,28,=0 (numeric),103
+1844,29,=0 (numeric),103
+1845,31,=0 (numeric),103
+1846,5,=0 (numeric),103
+1847,38,Any case type,103
+1848,39,Fill as appropriate,103
+1849,46,Your state contact last name,103
+1850,47,Your state contact first name,103
+1851,50,Contact address,103
+1852,52,Contact city,103
+1853,53,Contact state,103
+1854,54,Contact ZIP Code,103
+1855,56,Contact phone number,103
+1856,199,NCP last name,103
+1857,200,NCP first name,103
+1858,204,NCP Social Security number,103
+1859,203,NCP date of birth,103
+1860,13,3,104
+1861,14,Fill as appropriate,104
+1862,17,P,104
+1863,18,LO1,104
+1864,21,Other case ID,104
+1865,22,LUAPD,104
+1866,24,#NAME?,104
+1867,25,1,104
+1868,26,1,104
+1869,27,=0 (numeric),104
+1870,28,=0 (numeric),104
+1871,29,=0 (numeric),104
+1872,30,=0 (numeric),104
+1873,31,#NAME?,104
+1874,5,=0 (numeric),104
+1875,38,Any case type,104
+1876,39,Fill as appropriate,104
+1877,46,Your state contact last name,104
+1878,47,Your state contact first name,104
+1879,50,Contact address,104
+1880,52,Contact city,104
+1881,53,Contact state,104
+1882,54,Contact ZIP Code,104
+1883,56,Contact phone number,104
+1884,199,NCP last name,104
+1885,200,NCP first name,104
+1886,204,NCP Social Security number,104
+1887,203,NCP date of birth,104
+1888,272,#NAME?,104
+1889,13,003,105
+1890,14,Fill as appropriate,105
+1891,17,P,105
+1892,18,MSC,105
+1893,20,Your case ID,105
+1894,21,Other case ID,105
+1895,22,GIHER,105
+1896,23,The date the event will occur,105
+1897,24,=N,105
+1898,25,=1,105
+1899,26,=1,105
+1900,28,=1,105
+1901,29,=0 (numeric),105
+1902,30,=0 (numeric),105
+1903,31,=0 (numeric),105
+1904,5,=0 (numeric),105
+1905,38,Fill as appropriate,105
+1906,39,=O (alpha),105
+1907,46,Your state contact last name,105
+1908,47,Your state contact first name,105
+1909,50,Contact address,105
+1910,52,Contact city,105
+1911,53,Contact state,105
+1912,54,Contact ZIP Code,105
+1913,56,Contact phone number,105
+1914,199,NCP last name,105
+1915,200,NCP first name,105
+1916,204,NCP Social Security number,105
+1917,203,NCP date of birth,105
+1918,200,Participant first name,105
+1919,207,Fill as appropriate,105
+1920,208,=O (alpha),105
+1921,13,003,106
+1922,14,Fill as appropriate,106
+1923,17,P,106
+1924,18,MSC,106
+1925,20,Your case ID,106
+1926,21,Other case ID,106
+1927,22,GSADD,106
+1928,24,=N,106
+1929,25,=1,106
+1930,26,=1,106
+1931,28,Fill as appropriate,106
+1932,29,=0 (numeric),106
+1933,30,=0 (numeric),106
+1934,31,=0 (numeric),106
+1935,5,=0 (numeric),106
+1936,38,Fill as appropriate,106
+1937,39,=O (alpha),106
+1938,46,Your state contact last name,106
+1939,47,Your state contact first name,106
+1940,50,Contact address,106
+1941,52,Contact city,106
+1942,53,Contact state,106
+1943,54,Contact ZIP Code,106
+1944,56,Contact phone number,106
+1945,199,NCP last name,106
+1946,200,NCP first name,106
+1947,204,NCP Social Security number,106
+1948,203,NCP date of birth,106
+1949,199,Participant last name,106
+1950,200,Participant first name,106
+1951,207,Fill as appropriate,106
+1952,208,=O (alpha),106
+1953,13,003,107
+1954,14,Fill as appropriate,107
+1955,17,P,107
+1956,18,MSC,107
+1957,20,Your case ID,107
+1958,21,Other case ID,107
+1959,22,GSC02,107
+1960,24,=N,107
+1961,23,The date case was closed,107
+1962,25,=1,107
+1963,26,=1,107
+1964,28,Fill as appropriate,107
+1965,29,=0 (numeric),107
+1966,30,=0 (numeric),107
+1967,31,=0 (numeric),107
+1968,5,=0 (numeric),107
+1969,38,Fill as appropriate,107
+1970,39,=C,107
+1971,46,Your state contact last name,107
+1972,47,Your state contact first name,107
+1973,50,Contact address,107
+1974,52,Contact city,107
+1975,53,Contact state,107
+1976,54,Contact ZIP Code,107
+1977,56,Contact phone number,107
+1978,199,NCP last name,107
+1979,200,NCP first name,107
+1980,204,NCP Social Security number,107
+1981,203,NCP date of birth,107
+1982,199,Participant last name,107
+1983,200,Participant first name,107
+1984,207,Fill as appropriate,107
+1985,208,=C,107
+1986,13,003,108
+1987,14,Fill as appropriate,108
+1988,17,P,108
+1989,18,MSC,108
+1990,20,Your case ID,108
+1991,21,Other case ID,108
+1992,22,GSC03,108
+1993,23,Date case was closed,108
+1994,24,=N,108
+1995,25,=1,108
+1996,26,=1,108
+1997,28,Fill as appropriate,108
+1998,29,=0 (numeric),108
+1999,30,=0 (numeric),108
+2000,31,=0 (numeric),108
+2001,5,=0 (numeric),108
+2002,38,Fill as appropriate,108
+2003,39,=C,108
+2004,46,Your state contact last name,108
+2005,47,Your state contact first name,108
+2006,50,Contact address,108
+2007,52,Contact city,108
+2008,53,Contact state,108
+2009,54,Contact ZIP Code,108
+2010,56,Contact phone number,108
+2011,199,NCP last name,108
+2012,200,NCP first name,108
+2013,204,NCP Social Security number,108
+2014,203,NCP date of birth,108
+2015,199,Participant last name,108
+2016,200,Participant first name,108
+2017,207,Fill as appropriate,108
+2018,208,=C,108
+2019,13,003,109
+2020,14,Fill as appropriate,109
+2021,17,P,109
+2022,18,MSC,109
+2023,20,Your case ID,109
+2024,21,Other case ID,109
+2025,22,GSC05,109
+2026,23,Date case was closed,109
+2027,24,=N,109
+2028,25,=1,109
+2029,26,=1,109
+2030,28,Fill as appropriate,109
+2031,29,=0 (numeric),109
+2032,30,=0 (numeric),109
+2033,31,=0 (numeric),109
+2034,5,=0 (numeric),109
+2035,38,Fill as appropriate,109
+2036,39,=C,109
+2037,46,Your state contact last name,109
+2038,47,Your state contact first name,109
+2039,50,Contact address,109
+2040,52,Contact city,109
+2041,53,Contact state,109
+2042,54,Contact ZIP Code,109
+2043,56,Contact phone number,109
+2044,199,NCP last name,109
+2045,200,NCP first name,109
+2046,204,NCP Social Security number,109
+2047,203,NCP date of birth,109
+2048,199,Participant last name,109
+2049,200,Participant first name,109
+2050,207,Fill as appropriate,109
+2051,13,003,110
+2052,14,Fill as appropriate,110
+2053,17,P,110
+2054,18,MSC,110
+2055,20,Your case ID,110
+2056,21,Other case ID,110
+2057,22,GSC5B,110
+2058,24,=N,110
+2059,25,=1,110
+2060,26,=1,110
+2061,28,Fill as appropriate,110
+2062,29,=0 (numeric),110
+2063,30,=0 (numeric),110
+2064,31,=0 (numeric),110
+2065,5,=0 (numeric),110
+2066,38,Fill as appropriate,110
+2067,39,=C,110
+2068,46,Your state contact last name,110
+2069,47,Your state contact first name,110
+2070,50,Contact address,110
+2071,52,Contact city,110
+2072,53,Contact state,110
+2073,54,Contact ZIP Code,110
+2074,56,Contact phone number,110
+2075,199,NCP last name,110
+2076,200,NCP first name,110
+2077,204,NCP Social Security number,110
+2078,203,NCP date of birth,110
+2079,199,Participant last name,110
+2080,200,Participant first name,110
+2081,207,Fill as appropriate,110
+2082,13,003,111
+2083,14,Fill as appropriate,111
+2084,17,P,111
+2085,18,MSC,111
+2086,20,Your case ID,111
+2087,21,Other case ID,111
+2088,23,Date case was closed,111
+2089,24,=N,111
+2090,25,=1,111
+2091,26,=1,111
+2092,28,Fill as appropriate,111
+2093,29,=0 (numeric),111
+2094,30,=0 (numeric),111
+2095,31,=0 (numeric),111
+2096,5,=0 (numeric),111
+2097,38,Fill as appropriate,111
+2098,39,=C,111
+2099,46,Your state contact last name,111
+2100,47,Your state contact first name,111
+2101,50,Contact address,111
+2102,52,Contact city,111
+2103,53,Contact state,111
+2104,54,Contact ZIP Code,111
+2105,56,Contact phone number,111
+2106,199,NCP last name,111
+2107,200,NCP first name,111
+2108,204,NCP Social Security number,111
+2109,203,NCP date of birth,111
+2110,199,Participant last name,111
+2111,200,Participant first name,111
+2112,207,Fill as appropriate,111
+2113,208,=C,111
+2114,13,003,112
+2115,14,Fill as appropriate,112
+2116,17,P,112
+2117,18,MSC,112
+2118,20,Your case ID,112
+2119,21,Other case ID,112
+2120,22,GSC07,112
+2121,24,=N,112
+2122,25,=1,112
+2123,26,=1,112
+2124,28,Fill as appropriate,112
+2125,29,=0 (numeric),112
+2126,30,=0 (numeric),112
+2127,31,=0 (numeric),112
+2128,5,=0 (numeric),112
+2129,38,Fill as appropriate,112
+2130,39,=C,112
+2131,46,Your state contact last name,112
+2132,47,Your state contact first name,112
+2133,50,Contact address,112
+2134,52,Contact city,112
+2135,53,Contact state,112
+2136,54,Contact ZIP Code,112
+2137,56,Contact phone number,112
+2138,199,NCP last name,112
+2139,200,NCP first name,112
+2140,204,NCP Social Security number,112
+2141,203,NCP date of birth,112
+2142,199,Participant last name,112
+2143,200,Participant first name,112
+2144,13,003,113
+2145,14,Fill as appropriate,113
+2146,17,P,113
+2147,18,MSC,113
+2148,20,Your case ID,113
+2149,21,Other case ID,113
+2150,22,GSC08,113
+2151,23,Date case was closed,113
+2152,24,=N,113
+2153,25,=1,113
+2154,26,=1,113
+2155,28,Fill as appropriate,113
+2156,29,=0 (numeric),113
+2157,30,=0 (numeric),113
+2158,31,=0 (numeric),113
+2159,5,=0 (numeric),113
+2160,38,Fill as appropriate,113
+2161,39,=C,113
+2162,46,Your state contact last name,113
+2163,47,Your state contact first name,113
+2164,50,Contact address,113
+2165,52,Contact city,113
+2166,53,Contact state,113
+2167,54,Contact ZIP Code,113
+2168,56,Contact phone number,113
+2169,199,NCP last name,113
+2170,200,NCP first name,113
+2171,204,NCP Social Security number,113
+2172,203,NCP date of birth,113
+2173,199,Participant last name,113
+2174,200,Participant first name,113
+2175,207,Fill as appropriate,113
+2176,208,=C,113
+2177,13,003,114
+2178,14,Fill as appropriate,114
+2179,17,P,114
+2180,18,MSC,114
+2181,20,Your case ID,114
+2182,21,Other case ID,114
+2183,22,GSC09,114
+2184,23,Date case was closed,114
+2185,24,=N,114
+2186,25,=1,114
+2187,26,=1,114
+2188,28,Fill as appropriate,114
+2189,30,=0 (numeric),114
+2190,31,=0 (numeric),114
+2191,5,=0 (numeric),114
+2192,38,Fill as appropriate,114
+2193,39,=C,114
+2194,46,Your state contact last name,114
+2195,47,Your state contact first name,114
+2196,50,Contact address,114
+2197,52,Contact city,114
+2198,53,Contact state,114
+2199,54,Contact ZIP Code,114
+2200,56,Contact phone number,114
+2201,199,NCP last name,114
+2202,200,NCP first name,114
+2203,204,NCP Social Security number,114
+2204,203,NCP date of birth,114
+2205,199,Participant last name,114
+2206,200,Participant first name,114
+2207,207,Fill as appropriate,114
+2208,13,003,115
+2209,14,Fill as appropriate,115
+2210,17,P,115
+2211,18,MSC,115
+2212,20,Your case ID,115
+2213,21,Other case ID,115
+2214,22,GSC10,115
+2215,23,Date case was closed,115
+2216,24,=N,115
+2217,25,=1,115
+2218,26,=1,115
+2219,28,Fill as appropriate,115
+2220,29,=0 (numeric),115
+2221,30,=0 (numeric),115
+2222,31,=0 (numeric),115
+2223,5,=0 (numeric),115
+2224,38,Fill as appropriate,115
+2225,39,=C,115
+2226,46,Your state contact last name,115
+2227,47,Your state contact first name,115
+2228,50,Contact address,115
+2229,52,Contact city,115
+2230,53,Contact state,115
+2231,54,Contact ZIP Code,115
+2232,56,Contact phone number,115
+2233,199,NCP last name,115
+2234,200,NCP first name,115
+2235,204,NCP Social Security number,115
+2236,203,NCP date of birth,115
+2237,199,Participant last name,115
+2238,200,Participant first name,115
+2239,207,Fill as appropriate,115
+2240,208,=C,115
+2241,13,003,116
+2242,14,Fill as appropriate,116
+2243,17,P,116
+2244,18,MSC,116
+2245,20,Your case ID,116
+2246,21,Other case ID,116
+2247,22,GSC11,116
+2248,23,Date case was closed,116
+2249,24,=N,116
+2250,25,=1,116
+2251,26,=1,116
+2252,28,Fill as appropriate,116
+2253,29,=0 (numeric),116
+2254,30,=0 (numeric),116
+2255,31,=0 (numeric),116
+2256,5,=0 (numeric),116
+2257,38,Fill as appropriate,116
+2258,39,=C,116
+2259,46,Your state contact last name,116
+2260,47,Your state contact first name,116
+2261,50,Contact address,116
+2262,52,Contact city,116
+2263,53,Contact state,116
+2264,54,Contact ZIP Code,116
+2265,56,Contact phone number,116
+2266,199,NCP last name,116
+2267,200,NCP first name,116
+2268,204,NCP Social Security number,116
+2269,203,NCP date of birth,116
+2270,199,Participant last name,116
+2271,200,Participant first name,116
+2272,207,Fill as appropriate,116
+2273,208,=C,116
+2274,13,003,117
+2275,14,Fill as appropriate,117
+2276,17,P,117
+2277,18,MSC,117
+2278,20,Your case ID,117
+2279,21,Other case ID,117
+2280,22,GSC12,117
+2281,23,Date case was closed,117
+2282,24,=N,117
+2283,25,=1,117
+2284,26,=1,117
+2285,28,Fill as appropriate,117
+2286,29,=0 (numeric),117
+2287,30,=0 (numeric),117
+2288,31,=0 (numeric),117
+2289,5,=0 (numeric),117
+2290,38,Fill as appropriate,117
+2291,39,=C,117
+2292,46,Your state contact last name,117
+2293,47,Your state contact first name,117
+2294,50,Contact address,117
+2295,52,Contact city,117
+2296,53,Contact state,117
+2297,54,Contact ZIP Code,117
+2298,56,Contact phone number,117
+2299,199,NCP last name,117
+2300,200,NCP first name,117
+2301,204,NCP Social Security number,117
+2302,203,NCP date of birth,117
+2303,199,Participant last name,117
+2304,200,Participant first name,117
+2305,207,Fill as appropriate,117
+2306,208,=C,117
+2307,13,003,118
+2308,14,Fill as appropriate,118
+2309,17,P,118
+2310,18,MSC,118
+2311,20,Your case ID,118
+2312,21,Other case ID,118
+2313,22,GSC4A,118
+2314,23,Date case was closed,118
+2315,24,=N,118
+2316,25,=1,118
+2317,26,=1,118
+2318,28,Fill as appropriate,118
+2319,29,=0 (numeric),118
+2320,30,=0 (numeric),118
+2321,31,=0 (numeric),118
+2322,5,=0 (numeric),118
+2323,38,Fill as appropriate,118
+2324,39,=C,118
+2325,46,Your state contact last name,118
+2326,47,Your state contact first name,118
+2327,50,Contact address,118
+2328,52,Contact city,118
+2329,53,Contact state,118
+2330,54,Contact ZIP Code,118
+2331,56,Contact phone number,118
+2332,199,NCP last name,118
+2333,200,NCP first name,118
+2334,204,NCP Social Security number,118
+2335,203,NCP date of birth,118
+2336,199,Participant last name,118
+2337,200,Participant first name,118
+2338,207,Fill as appropriate,118
+2339,208,=C,118
+2340,13,003,119
+2341,14,Fill as appropriate,119
+2342,17,P,119
+2343,18,MSC,119
+2344,20,Your case ID,119
+2345,21,Other case ID,119
+2346,22,GSC4B,119
+2347,23,Date case was closed,119
+2348,24,=N,119
+2349,25,=1,119
+2350,26,=1,119
+2351,28,Fill as appropriate,119
+2352,29,=0 (numeric),119
+2353,30,=0 (numeric),119
+2354,31,=0 (numeric),119
+2355,5,=0 (numeric),119
+2356,38,Fill as appropriate,119
+2357,39,=C,119
+2358,46,Your state contact last name,119
+2359,47,Your state contact first name,119
+2360,50,Contact address,119
+2361,52,Contact city,119
+2362,53,Contact state,119
+2363,54,Contact ZIP Code,119
+2364,56,Contact phone number,119
+2365,199,NCP last name,119
+2366,200,NCP first name,119
+2367,204,NCP Social Security number,119
+2368,203,NCP date of birth,119
+2369,199,Participant last name,119
+2370,200,Participant first name,119
+2371,207,Fill as appropriate,119
+2372,208,=C,119
+2373,13,003,120
+2374,14,Fill as appropriate,120
+2375,17,P,120
+2376,18,MSC,120
+2377,20,Your case ID,120
+2378,21,Other case ID,120
+2379,22,GSC4C,120
+2380,23,Date case was closed,120
+2381,24,=N,120
+2382,25,=1,120
+2383,26,=1,120
+2384,28,Fill as appropriate,120
+2385,29,=0 (numeric),120
+2386,30,=0 (numeric),120
+2387,31,=0 (numeric),120
+2388,5,=0 (numeric),120
+2389,38,Fill as appropriate,120
+2390,39,=C,120
+2391,46,Your state contact last name,120
+2392,47,Your state contact first name,120
+2393,50,Contact address,120
+2394,52,Contact city,120
+2395,53,Contact state,120
+2396,54,Contact ZIP Code,120
+2397,56,Contact phone number,120
+2398,199,NCP last name,120
+2399,200,NCP first name,120
+2400,204,NCP Social Security number,120
+2401,203,NCP date of birth,120
+2402,199,Participant last name,120
+2403,200,Participant first name,120
+2404,207,Fill as appropriate,120
+2405,208,=C,120
+2406,13,003,121
+2407,14,Fill as appropriate,121
+2408,17,P,121
+2409,18,MSC,121
+2410,20,Your case ID,121
+2411,21,Other case ID,121
+2412,22,GSC13,121
+2413,23,Date case was closed,121
+2414,24,=N,121
+2415,25,=1,121
+2416,26,=1,121
+2417,28,Fill as appropriate,121
+2418,29,=0 (numeric),121
+2419,30,=0 (numeric),121
+2420,31,=0 (numeric),121
+2421,5,=0 (numeric),121
+2422,38,Fill as appropriate,121
+2423,39,=C,121
+2424,46,Your state contact last name,121
+2425,47,Your state contact first name,121
+2426,50,Contact address,121
+2427,52,Contact city,121
+2428,53,Contact state,121
+2429,54,Contact ZIP Code,121
+2430,56,Contact phone number,121
+2431,199,NCP last name,121
+2432,200,NCP first name,121
+2433,204,NCP Social Security number,121
+2434,203,NCP date of birth,121
+2435,199,Participant last name,121
+2436,200,Participant first name,121
+2437,207,Fill as appropriate,121
+2438,208,=C,121
+2439,13,003,122
+2440,14,Fill as appropriate,122
+2441,17,P,122
+2442,18,MSC,122
+2443,20,Your case ID,122
+2444,21,Other case ID,122
+2445,22,GSC14,122
+2446,23,Date state intends to close the case,122
+2447,24,=N,122
+2448,25,=1,122
+2449,26,=1,122
+2450,28,Fill as appropriate,122
+2451,29,=0 (numeric),122
+2452,30,=0 (numeric),122
+2453,31,=0 (numeric),122
+2454,5,=0 (numeric),122
+2455,38,Fill as appropriate,122
+2456,39,=O (alpha),122
+2457,46,Your state contact last name,122
+2458,47,Your state contact first name,122
+2459,50,Contact address,122
+2460,52,Contact city,122
+2461,53,Contact state,122
+2462,54,Contact ZIP Code,122
+2463,56,Contact phone number,122
+2464,199,NCP last name,122
+2465,200,NCP first name,122
+2466,204,NCP Social Security number,122
+2467,203,NCP date of birth,122
+2468,199,Participant last name,122
+2469,200,Participant first name,122
+2470,207,Fill as appropriate,122
+2471,208,=O (alpha),122
+2472,13,003,123
+2473,14,Fill as appropriate,123
+2474,17,P,123
+2475,18,MSC,123
+2476,20,Your case ID,123
+2477,21,Other case ID,123
+2478,22,GSC15,123
+2479,24,=N,123
+2480,25,=1,123
+2481,26,=1,123
+2482,28,Fill as appropriate,123
+2483,29,=0 (numeric),123
+2484,30,=0 (numeric),123
+2485,31,=0 (numeric),123
+2486,5,=0 (numeric),123
+2487,38,Fill as appropriate,123
+2488,39,=C,123
+2489,46,Your state contact last name,123
+2490,47,Your state contact first name,123
+2491,50,Contact address,123
+2492,52,Contact city,123
+2493,53,Contact state,123
+2494,54,Contact ZIP Code,123
+2495,56,Contact phone number,123
+2496,199,NCP last name,123
+2497,200,NCP first name,123
+2498,204,NCP Social Security number,123
+2499,203,NCP date of birth,123
+2500,199,Participant last name,123
+2501,200,Participant first name,123
+2502,207,Fill as appropriate,123
+2503,208,=C,123
+2504,13,003,124
+2505,14,Fill as appropriate,124
+2506,17,P,124
+2507,18,MSC,124
+2508,20,Your case ID,124
+2509,21,Other case ID,124
+2510,22,GSC16,124
+2511,23,Date case was closed,124
+2512,24,=N,124
+2513,25,=1,124
+2514,26,=1,124
+2515,28,Fill as appropriate,124
+2516,29,=0 (numeric),124
+2517,30,=0 (numeric),124
+2518,31,=0 (numeric),124
+2519,5,=0 (numeric),124
+2520,38,Fill as appropriate,124
+2521,39,=C,124
+2522,46,Your state contact last name,124
+2523,47,Your state contact first name,124
+2524,50,Contact address,124
+2525,52,Contact city,124
+2526,53,Contact state,124
+2527,54,Contact ZIP Code,124
+2528,56,Contact phone number,124
+2529,199,NCP last name,124
+2530,200,NCP first name,124
+2531,204,NCP Social Security number,124
+2532,203,NCP date of birth,124
+2533,199,Participant last name,124
+2534,200,Participant first name,124
+2535,207,Fill as appropriate,124
+2536,208,=C,124
+2537,13,003,125
+2538,14,Fill as appropriate,125
+2539,17,P,125
+2540,18,MSC,125
+2541,20,Your case ID,125
+2542,21,Other case ID,125
+2543,22,GSC17,125
+2544,24,=N,125
+2545,25,=1,125
+2546,26,=1,125
+2547,28,Fill as appropriate,125
+2548,29,=0 (numeric),125
+2549,30,=0 (numeric),125
+2550,31,=0 (numeric),125
+2551,5,=0 (numeric),125
+2552,38,Fill as appropriate,125
+2553,39,=C,125
+2554,46,Your state contact last name,125
+2555,47,Your state contact first name,125
+2556,50,Contact address,125
+2557,52,Contact city,125
+2558,53,Contact state,125
+2559,54,Contact ZIP Code,125
+2560,56,Contact phone number,125
+2561,199,NCP last name,125
+2562,200,NCP first name,125
+2563,204,NCP Social Security number,125
+2564,203,Provide the NCP date of birth,125
+2565,199,Participant last name,125
+2566,200,Participant first name,125
+2567,207,Fill as appropriate,125
+2568,208,=C,125
+2569,13,003,126
+2570,14,Fill as appropriate,126
+2571,17,P,126
+2572,18,MSC,126
+2573,20,Your case ID,126
+2574,21,Other case ID,126
+2575,22,GSC18,126
+2576,23,Date case was closed,126
+2577,24,=N,126
+2578,25,=1,126
+2579,26,=1,126
+2580,28,Fill as appropriate,126
+2581,29,=0 (numeric),126
+2582,30,=0 (numeric),126
+2583,31,=0 (numeric),126
+2584,5,=0 (numeric),126
+2585,38,Fill as appropriate,126
+2586,39,=C,126
+2587,46,Your state contact last name,126
+2588,47,Your state contact first name,126
+2589,50,Contact address,126
+2590,52,Contact city,126
+2591,53,Contact state,126
+2592,54,Contact ZIP Code,126
+2593,56,Contact phone number,126
+2594,199,NCP last name,126
+2595,200,NCP first name,126
+2596,204,NCP Social Security number,126
+2597,203,NCP date of birth,126
+2598,199,Participant last name,126
+2599,200,Participant first name,126
+2600,207,Fill as appropriate,126
+2601,208,=C,126
+2602,13,003,127
+2603,14,Fill as appropriate,127
+2604,17,P,127
+2605,18,MSC,127
+2606,20,Your case ID,127
+2607,21,Other case ID,127
+2608,22,GSCAS,127
+2609,24,=N,127
+2610,25,=1,127
+2611,26,=1,127
+2612,28,Fill as appropriate,127
+2613,29,=0 (numeric),127
+2614,30,=0 (numeric),127
+2615,31,=1,127
+2616,5,=0 (numeric),127
+2617,38,Fill as appropriate,127
+2618,39,=O (alpha),127
+2619,46,Your state contact last name,127
+2620,47,Your state contact first name,127
+2621,50,Contact address,127
+2622,52,Contact city,127
+2623,53,Contact state,127
+2624,54,Contact ZIP Code,127
+2625,56,Contact phone number,127
+2626,199,NCP last name,127
+2627,200,NCP first name,127
+2628,204,NCP Social Security number,127
+2629,203,NCP date of birth,127
+2630,199,Participant last name,127
+2631,200,Participant first name,127
+2632,207,Fill as appropriate,127
+2633,208,=O (alpha),127
+2634,273,New case ID,127
+2635,13,003,128
+2636,14,Fill as appropriate,128
+2637,17,P,128
+2638,18,MSC,128
+2639,20,Your case ID,128
+2640,21,Other case ID,128
+2641,22,GSDEL,128
+2642,24,=N,128
+2643,25,=1,128
+2644,26,=1,128
+2645,28,Fill as appropriate,128
+2646,29,=0 (numeric),128
+2647,30,=0 (numeric),128
+2648,31,=0 (numeric),128
+2649,5,=0 (numeric),128
+2650,38,Fill as appropriate,128
+2651,39,=O (alpha),128
+2652,46,Your state contact last name,128
+2653,47,Your state contact first name,128
+2654,50,Contact address,128
+2655,52,Contact city,128
+2656,53,Contact state,128
+2657,54,Contact ZIP Code,128
+2658,56,Contact phone number,128
+2659,199,NCP last name,128
+2660,200,NCP first name,128
+2661,204,NCP Social Security number,128
+2662,203,NCP date of birth,128
+2663,199,Participant last name,128
+2664,200,Participant first name,128
+2665,207,Fill as appropriate,128
+2666,208,=C,128
+2667,13,003,129
+2668,14,Fill as appropriate,129
+2669,17,P,129
+2670,18,MSC,129
+2671,20,Your case ID,129
+2672,21,Other case ID,129
+2673,22,GSFIP,129
+2674,24,=N,129
+2675,25,=1,129
+2676,26,=1,129
+2677,28,Fill as appropriate,129
+2678,29,=0 (numeric),129
+2679,30,=0 (numeric),129
+2680,31,=0 (numeric),129
+2681,5,=0 (numeric),129
+2682,38,Fill as appropriate,129
+2683,39,=O (alpha),129
+2684,46,Your state contact last name,129
+2685,47,Your state contact first name,129
+2686,50,Contact address,129
+2687,52,Contact city,129
+2688,53,Contact state,129
+2689,54,Contact ZIP Code,129
+2690,56,Contact phone number,129
+2691,199,NCP last name,129
+2692,200,NCP first name,129
+2693,204,NCP Social Security number,129
+2694,203,NCP date of birth,129
+2695,199,Participant last name,129
+2696,200,Participant first name,129
+2697,207,Fill as appropriate,129
+2698,208,=O (alpha),129
+2699,13,003,130
+2700,14,Fill as appropriate,130
+2701,17,P,130
+2702,18,MSC,130
+2703,20,Your case ID,130
+2704,21,Other case ID,130
+2705,22,GSFWD,130
+2706,24,=N,130
+2707,25,=1,130
+2708,26,=1,130
+2709,28,Fill as appropriate,130
+2710,29,=1 (numeric),130
+2711,30,=0 (numeric),130
+2712,31,Fill as appropriate,130
+2713,5,=0 (numeric),130
+2714,38,Fill as appropriate,130
+2715,39,=O (alpha),130
+2716,46,Your state contact last name,130
+2717,47,Your state contact first name,130
+2718,50,Contact address,130
+2719,52,Contact city,130
+2720,53,Contact state,130
+2721,54,Contact ZIP Code,130
+2722,56,Contact phone number,130
+2723,199,NCP last name,130
+2724,200,NCP first name,130
+2725,204,NCP Social Security number,130
+2726,199,Participant last name,130
+2727,200,Participant first name,130
+2728,207,Fill as appropriate,130
+2729,208,=O (alpha),130
+2730,89,NCP street address,130
+2731,91,NCP city,130
+2732,92,NCP state,130
+2733,93,NCP ZIP Code,130
+2734,101,Required if residential address is present,130
+2735,103,=Y,130
+2736,129,Employer name,130
+2737,130,Employer address,130
+2738,132,Employer city,130
+2739,133,Employer State,130
+2740,134,Employer ZIP Code,130
+2741,137,Required if employer present,130
+2742,139,=Y,130
+2743,232,FIPS code of state that issued order,130
+2744,233,FIPS code of county that issued order,130
+2745,235,The order ID,130
+2746,236,Date order was filed in your state,130
+2747,237,Fill as appropriate,130
+2748,238,Fill as appropriate,130
+2749,240,Dollar amount per frequency,130
+2750,241,Date the obligation starts to accrue,130
+2751,259,Y or N,130
+2752,274,=Fill as indicated under business usage,130
+2753,13,003,131
+2754,14,Fill as appropriate,131
+2755,17,P,131
+2756,18,MSC,131
+2757,20,Your case ID,131
+2758,21,Other case ID,131
+2759,22,GSMAD,131
+2760,24,=N,131
+2761,25,=1,131
+2762,26,=1,131
+2763,28,Fill as appropriate,131
+2764,29,=0 (numeric),131
+2765,30,=0 (numeric),131
+2766,31,=0 (numeric),131
+2767,5,=0 (numeric),131
+2768,38,Fill as appropriate,131
+2769,39,=O (alpha),131
+2770,46,Your state contact last name,131
+2771,47,Your state contact first name,131
+2772,50,Contact address,131
+2773,52,Contact city,131
+2774,53,Contact state,131
+2775,54,Contact ZIP Code,131
+2776,56,Contact phone number,131
+2777,199,NCP last name,131
+2778,200,NCP first name,131
+2779,204,NCP Social Security number,131
+2780,203,NCP date of birth,131
+2781,143,NCP insurance carrier’s name,131
+2782,199,Participant last name,131
+2783,200,Participant first name,131
+2784,207,Fill as appropriate,131
+2785,208,=O (alpha),131
+2786,209,Fill as appropriate,131
+2787,13,003,132
+2788,14,Fill as appropriate,132
+2789,17,P,132
+2790,18,MSC,132
+2791,20,Your case ID,132
+2792,21,Other case ID,132
+2793,22,GSMDE,132
+2794,24,=N,132
+2795,25,=1,132
+2796,26,=1,132
+2797,28,Fill as appropriate,132
+2798,29,=0 (numeric),132
+2799,30,=0 (numeric),132
+2800,31,=0 (numeric),132
+2801,5,=0 (numeric),132
+2802,38,Fill as appropriate,132
+2803,39,=O (alpha),132
+2804,46,Your state contact last name,132
+2805,47,Your state contact first name,132
+2806,50,Contact address,132
+2807,52,Contact city,132
+2808,53,Contact state,132
+2809,54,Contact ZIP Code,132
+2810,56,Contact phone number,132
+2811,199,NCP last name,132
+2812,200,NCP first name,132
+2813,204,NCP Social Security number,132
+2814,203,NCP date of birth,132
+2815,143,NCP insurance carrier’s name,132
+2816,144,NCP health insurance policy number,132
+2817,199,Participant last name,132
+2818,200,Participant first name,132
+2819,207,Fill as appropriate,132
+2820,208,=O (alpha),132
+2821,209,Fill as appropriate,132
+2822,13,003,133
+2823,14,Fill as appropriate,133
+2824,17,P,133
+2825,18,MSC,133
+2826,20,Your case ID,133
+2827,21,Other case ID,133
+2828,22,GSPAD,133
+2829,24,=N,133
+2830,25,=1,133
+2831,26,=1,133
+2832,28,Fill as appropriate,133
+2833,29,=0 (numeric),133
+2834,30,=0 (numeric),133
+2835,31,=0 (numeric),133
+2836,5,=0 (numeric),133
+2837,38,Fill as appropriate,133
+2838,39,=O (alpha),133
+2839,42,Payment city,133
+2840,43,Payment state,133
+2841,46,Your state contact last name,133
+2842,47,Your state contact first name,133
+2843,50,Contact address,133
+2844,52,Contact city,133
+2845,53,Contact state,133
+2846,54,Contact ZIP Code,133
+2847,56,Contact phone number,133
+2848,199,NCP last name,133
+2849,200,NCP first name,133
+2850,204,NCP Social Security number,133
+2851,203,NCP date of birth,133
+2852,199,Participant last name,133
+2853,200,Participant first name,133
+2854,207,Fill as appropriate,133
+2855,13,003,134
+2856,14,Fill as appropriate,134
+2857,17,P,134
+2858,18,MSC,134
+2859,20,Your case ID,134
+2860,21,Other case ID,134
+2861,22,GSPAY,134
+2862,24,=N,134
+2863,25,=1,134
+2864,26,=1,134
+2865,28,Fill as appropriate,134
+2866,29,=0 (numeric),134
+2867,30,=0 (numeric),134
+2868,31,=0 (numeric),134
+2869,5,=0 (numeric),134
+2870,38,Fill as appropriate,134
+2871,39,=O (alpha),134
+2872,42,Payment city,134
+2873,43,Payment state,134
+2874,46,Your state contact last name,134
+2875,47,Your state contact first name,134
+2876,50,Contact address,134
+2877,52,Contact city,134
+2878,53,Contact state,134
+2879,54,Contact ZIP Code,134
+2880,56,Contact phone number,134
+2881,199,NCP last name,134
+2882,200,NCP first name,134
+2883,204,NCP Social Security number,134
+2884,203,NCP date of birth,134
+2885,199,Participant last name,134
+2886,200,Participant first name,134
+2887,207,Fill as appropriate,134
+2888,208,=O (alpha),134
+2889,13,003,135
+2890,14,Fill as appropriate,135
+2891,17,P,135
+2892,18,MSC,135
+2893,20,Your case ID,135
+2894,21,Other case ID,135
+2895,22,GSPUD,135
+2896,24,=N,135
+2897,25,=1,135
+2898,26,=1,135
+2899,28,=1,135
+2900,29,=0 (numeric),135
+2901,30,=0 (numeric),135
+2902,31,=1,135
+2903,5,=0 (numeric),135
+2904,38,Fill as appropriate,135
+2905,39,=O (alpha),135
+2906,46,Your state contact last name,135
+2907,47,Your state contact first name,135
+2908,50,Contact address,135
+2909,52,Contact city,135
+2910,53,Contact state,135
+2911,54,Contact ZIP Code,135
+2912,56,Contact phone number,135
+2913,199,NCP last name,135
+2914,200,NCP first name,135
+2915,203,NCP date of birth,135
+2916,199,Participant last name,135
+2917,200,Participant first name,135
+2918,207,Fill as appropriate,135
+2919,208,=O (alpha),135
+2920,272,=O (alpha),135
+2921,13,003,136
+2922,14,Fill as appropriate,136
+2923,17,P,136
+2924,18,MSC,136
+2925,20,Your case ID,136
+2926,24,=N,136
+2927,25,=1,136
+2928,26,=1,136
+2929,28,Fill as appropriate,136
+2930,29,Fill as appropriate,136
+2931,30,=0 (Numeric),136
+2932,31,=1,136
+2933,5,=0 (Numeric),136
+2934,38,Fill as appropriate,136
+2935,39,=O (Alpha),136
+2936,42,Payment city,136
+2937,43,Payment state,136
+2938,44,Payment ZIP Code,136
+2939,46,Your state contact last name,136
+2940,47,Your state contact first name,136
+2941,50,Contact address,136
+2942,52,Contact city,136
+2943,53,Contact state,136
+2944,54,Contact ZIP Code,136
+2945,56,Contact phone number,136
+2946,199,NCP last name,136
+2947,200,NCP first name,136
+2948,204,NCP Social Security number,136
+2949,203,NCP date of birth,136
+2950,199,Participant last name,136
+2951,200,Participant first name,136
+2952,203,Fill as appropriate,136
+2953,207,Fill as appropriate,136
+2954,208,=O (Alpha),136
+2955,232,FIPS code of state that issued order,136
+2956,233,FIPS code of county that issued order,136
+2957,235,The order ID,136
+2958,236,Date order was filed in your state,136
+2959,237,Fill as appropriate,136
+2960,238,Fill as appropriate,136
+2961,239,Fill as appropriate,136
+2962,240,Dollar amount per frequency,136
+2963,241,Date obligation starts to accrue,136
+2964,259,Y or N,136
+2965,272,=O (alpha),136
+2966,274,Fill as appropriate,136
+2967,13,003,137
+2968,14,Fill as appropriate,137
+2969,17,P,137
+2970,18,MSC,137
+2971,20,Your case ID,137
+2972,21,Other case ID,137
+2973,22,GSTYP,137
+2974,24,=N,137
+2975,25,=1,137
+2976,26,=1,137
+2977,28,=1,137
+2978,29,=0 (numeric),137
+2979,30,=0 (numeric),137
+2980,31,=0 (numeric),137
+2981,5,=0 (numeric),137
+2982,38,New case type except Non-IV-D,137
+2983,39,=O (alpha),137
+2984,46,Your state contact last name,137
+2985,47,Your state contact first name,137
+2986,50,Contact address,137
+2987,52,Contact city,137
+2988,53,Contact state,137
+2989,54,Contact ZIP Code,137
+2990,56,Contact phone number,137
+2991,199,NCP last name,137
+2992,200,NCP first name,137
+2993,204,NCP Social Security number,137
+2994,203,NCP date of birth,137
+2995,199,Participant last name,137
+2996,200,Participant first name,137
+2997,207,Fill as appropriate,137
+2998,208,=O (alpha),137
+2999,13,003,138
+3000,14,Fill as appropriate,138
+3001,17,P,138
+3002,18,MSC,138
+3003,20,Your case ID,138
+3004,21,Other case ID,138
+3005,22,GSWKR,138
+3006,24,=N,138
+3007,25,=1,138
+3008,26,=1,138
+3009,28,=1,138
+3010,29,=0 (numeric),138
+3011,30,=0 (numeric),138
+3012,31,=0 (numeric),138
+3013,5,=0 (numeric),138
+3014,38,Fill as appropriate,138
+3015,39,=O (alpha),138
+3016,46,Your state contact last name,138
+3017,47,Your state contact first name,138
+3018,50,Contact address,138
+3019,52,Contact city,138
+3020,53,Contact state,138
+3021,54,Contact ZIP Code,138
+3022,56,Contact phone number,138
+3023,199,NCP last name,138
+3024,200,NCP first name,138
+3025,204,NCP Social Security number,138
+3026,203,NCP date of birth,138
+3027,199,Participant last name,138
+3028,200,Participant first name,138
+3029,207,Fill as appropriate,138
+3030,208,=O (alpha),138
+3031,13,003,139
+3032,14,Fill as appropriate,139
+3033,17,P,139
+3034,18,MSC,139
+3035,20,Your case ID,139
+3036,21,Other case ID,139
+3037,22,LICAD,139
+3038,24,=N,139
+3039,25,=1,139
+3040,26,=1,139
+3041,28,=1,139
+3042,29,=0 (numeric),139
+3043,30,=0 (numeric),139
+3044,31,=0 (numeric),139
+3045,5,=0 (numeric),139
+3046,38,Fill as appropriate,139
+3047,39,=O (alpha),139
+3048,46,Your state contact last name,139
+3049,47,Your state contact first name,139
+3050,50,Contact address,139
+3051,52,Contact city,139
+3052,53,Contact state,139
+3053,54,Contact ZIP Code,139
+3054,56,Contact phone number,139
+3055,199,NCP last name,139
+3056,200,NCP first name,139
+3057,204,NCP Social Security number,139
+3058,203,NCP date of birth,139
+3059,89,NCP street address,139
+3060,91,NCP city,139
+3061,92,NCP state,139
+3062,101,Required if residential address present,139
+3063,103,=N,139
+3064,199,Participant last name,139
+3065,200,Participant first name,139
+3066,207,Fill as appropriate,139
+3067,208,=O (alpha),139
+3068,13,003,140
+3069,14,Fill as appropriate,140
+3070,17,P,140
+3071,18,MSC,140
+3072,20,Your case ID,140
+3073,21,Other case ID,140
+3074,22,LSADR,140
+3075,24,=N,140
+3076,25,=1,140
+3077,26,=1,140
+3078,28,=1,140
+3079,29,=0 (numeric),140
+3080,30,=0 (numeric),140
+3081,31,=0 (numeric),140
+3082,5,=0 (numeric),140
+3083,38,Fill as appropriate,140
+3084,39,=O (alpha),140
+3085,46,Your state contact last name,140
+3086,47,Your state contact first name,140
+3087,50,Contact address,140
+3088,52,Contact city,140
+3089,53,Contact state,140
+3090,54,Contact ZIP Code,140
+3091,56,Contact phone number,140
+3092,199,NCP last name,140
+3093,200,NCP first name,140
+3094,204,NCP Social Security number,140
+3095,203,NCP date of birth,140
+3096,89,NCP street address,140
+3097,91,NCP city,140
+3098,92,NCP state,140
+3099,101,Required if address present,140
+3100,103,=Y,140
+3101,199,Participant last name,140
+3102,200,Participant first name,140
+3103,207,Fill as appropriate,140
+3104,208,=O (Alpha),140
+3105,13,003,141
+3106,14,Fill as appropriate,141
+3107,17,P,141
+3108,18,MSC,141
+3109,20,Your case ID,141
+3110,21,Other case ID,141
+3111,22,LSEMP,141
+3112,25,=1,141
+3113,26,=1,141
+3114,28,=1,141
+3115,29,=0 (numeric),141
+3116,30,=0 (numeric),141
+3117,31,=0 (numeric),141
+3118,5,=0 (numeric),141
+3119,38,Fill as appropriate,141
+3120,39,=O (alpha),141
+3121,46,Your state contact last name,141
+3122,47,Your state contact first name,141
+3123,50,Contact address,141
+3124,52,Contact city,141
+3125,53,Contact state,141
+3126,54,Contact ZIP Code,141
+3127,56,Contact phone number,141
+3128,199,NCP last name,141
+3129,200,NCP first name,141
+3130,204,NCP Social Security number,141
+3131,203,NCP date of birth,141
+3132,129,Employer name,141
+3133,130,Employer address,141
+3134,132,Employer city,141
+3135,133,Employer State,141
+3136,134,Employer ZIP Code,141
+3137,137,Required if employer present,141
+3138,139,=Y,141
+3139,199,Participant last name,141
+3140,200,Participant first name,141
+3141,207,Fill as appropriate,141
+3142,13,003,142
+3143,14,Fill as appropriate,142
+3144,17,P,142
+3145,18,MSC,142
+3146,20,Your case ID,142
+3147,21,Other case ID,142
+3148,22,LSOUT,142
+3149,24,=N,142
+3150,25,=1,142
+3151,26,=1,142
+3152,28,=1,142
+3153,29,=0 (numeric),142
+3154,30,=0 (numeric),142
+3155,31,=0 (numeric),142
+3156,5,=0 (numeric),142
+3157,38,Fill as appropriate,142
+3158,39,=O (alpha),142
+3159,46,Your state contact last name,142
+3160,47,Your state contact first name,142
+3161,50,Contact address,142
+3162,52,Contact city,142
+3163,53,Contact state,142
+3164,54,Contact ZIP Code,142
+3165,56,Contact phone number,142
+3166,199,NCP last name,142
+3167,200,NCP first name,142
+3168,204,NCP Social Security number,142
+3169,203,NCP date of birth,142
+3170,89,NCP street address,142
+3171,91,NCP city,142
+3172,93,NCP ZIP Code,142
+3173,101,Required if residential address present,142
+3174,103,=Y,142
+3175,199,Participant last name,142
+3176,200,Participant first name,142
+3177,207,Fill as appropriate,142
+3178,13,003,143
+3179,14,Fill as appropriate,143
+3180,17,P,143
+3181,18,MSC,143
+3182,20,Your case ID,143
+3183,21,Other case ID,143
+3184,22,LUAPD,143
+3185,24,=N,143
+3186,25,=1,143
+3187,26,=1,143
+3188,28,=1,143
+3189,30,=0 (numeric),143
+3190,31,Fill as appropriate,143
+3191,5,=0 (numeric),143
+3192,38,Fill as appropriate,143
+3193,39,=O (alpha),143
+3194,46,Your state contact last name,143
+3195,47,Your state contact first name,143
+3196,50,Contact address,143
+3197,52,Contact city,143
+3198,53,Contact state,143
+3199,54,Contact ZIP Code,143
+3200,56,Contact phone number,143
+3201,199,NCP last name,143
+3202,200,NCP first name,143
+3203,204,NCP Social Security number,143
+3204,203,NCP date of birth,143
+3205,199,Participant last name,143
+3206,200,Participant first name,143
+3207,207,Fill as appropriate,143
+3208,208,=O (alpha),143
+3209,272,=O (alpha),143
+3210,274,Fill as appropriate,143
+3211,13,003,144
+3212,14,Fill as appropriate,144
+3213,17,P,144
+3214,18,MSC,144
+3215,20,Case ID received in the rejected transaction,144
+3216,21,"Other case ID received in the rejected
+transaction",144
+3217,22,REJCT,144
+3218,24,=N,144
+3219,25,=0 (numeric),144
+3220,26,=0 (numeric),144
+3221,28,=0 (numeric),144
+3222,29,=0 (numeric),144
+3223,30,=0 (numeric),144
+3224,31,=1,144
+3225,5,=0 (numeric),144
+3226,274,=Fill as indicated under business usage,144
+3227,13,003,145
+3228,14,Fill as appropriate,145
+3229,17,R,145
+3230,18,MSC,145
+3231,20,Your case ID,145
+3232,21,Other case ID,145
+3233,22,GRINT,145
+3234,24,=N,145
+3235,25,=1,145
+3236,26,=1,145
+3237,28,Fill as appropriate,145
+3238,29,Fill as appropriate,145
+3239,30,=0 (Numeric),145
+3240,31,=0 (Numeric),145
+3241,5,=0 (Numeric),145
+3242,38,Fill as appropriate,145
+3243,39,=O (Alpha),145
+3244,42,Payment city,145
+3245,43,Payment state,145
+3246,44,Payment ZIP Code,145
+3247,46,Your state contact last name,145
+3248,47,Your state contact first name,145
+3249,50,Contact address,145
+3250,52,Contact city,145
+3251,53,Contact state,145
+3252,54,Contact ZIP Code,145
+3253,56,Contact phone number,145
+3254,199,NCP last name,145
+3255,200,NCP first name,145
+3256,204,NCP Social Security number,145
+3257,203,NCP date of birth,145
+3258,200,Participant first name,145
+3259,203,Fill as appropriate,145
+3260,207,Fill as appropriate,145
+3261,208,=O (Alpha),145
+3262,209,Fill as appropriate,145
+3263,232,FIPS code of state that issued order,145
+3264,233,FIPS code of county that issued order,145
+3265,235,The order ID,145
+3266,236,Date order was filed in your state,145
+3267,237,Fill as appropriate,145
+3268,238,Fill as appropriate,145
+3269,239,Fill as appropriate,145
+3270,240,Dollar amount per frequency,145
+3271,241,Date the obligation starts to accrue,145
+3272,13,003,146
+3273,14,Fill as appropriate,146
+3274,17,R,146
+3275,18,MSC,146
+3276,20,Your case ID,146
+3277,22,GRPAY,146
+3278,24,=N,146
+3279,25,=1,146
+3280,26,=1,146
+3281,28,Fill as appropriate,146
+3282,29,=1,146
+3283,30,=0 (Numeric),146
+3284,31,=1 (Numeric),146
+3285,5,=0 (Numeric),146
+3286,38,Fill as appropriate,146
+3287,39,=O (Alpha),146
+3288,42,Payment city,146
+3289,43,Payment state,146
+3290,44,Payment ZIP Code,146
+3291,46,Your state contact last name,146
+3292,47,Your state contact first name,146
+3293,50,Contact address,146
+3294,52,Contact city,146
+3295,53,Contact state,146
+3296,54,Contact ZIP Code,146
+3297,56,Contact phone number,146
+3298,199,NCP last name,146
+3299,200,NCP first name,146
+3300,204,NCP Social Security number,146
+3301,203,NCP date of birth,146
+3302,89,NCP street address,146
+3303,91,NCP city,146
+3304,92,NCP state,146
+3305,93,NCP ZIP Code,146
+3306,101,Required if residential address present,146
+3307,103,Fill as appropriate,146
+3308,199,Participant last name,146
+3309,200,Participant first name,146
+3310,203,Fill as appropriate,146
+3311,207,Fill as appropriate,146
+3312,208,=O (Alpha),146
+3313,209,Fill as appropriate,146
+3314,232,FIPS code of state that issued order,146
+3315,233,FIPS code of county that issued order,146
+3316,235,The order ID,146
+3317,236,Date order was filed in your state,146
+3318,237,Fill as appropriate,146
+3319,238,Fill as appropriate,146
+3320,239,Fill as appropriate,146
+3321,240,Dollar amount per frequency,146
+3322,241,Date obligation starts to accrue,146
+3323,272,=O (alpha),146
+3324,13,003,147
+3325,17,R,147
+3326,20,Your case ID,147
+3327,21,Other case ID,147
+3328,22,GRPOC,147
+3329,24,=N,147
+3330,25,=1,147
+3331,26,=1,147
+3332,27,=0 (numeric),147
+3333,28,=1,147
+3334,29,=0 (numeric),147
+3335,30,=0 (numeric),147
+3336,31,Fill as appropriate,147
+3337,5,=0 (numeric),147
+3338,38,Fill as appropriate,147
+3339,39,=O (alpha),147
+3340,46,Your state contact last name,147
+3341,47,Your state contact first name,147
+3342,50,Contact address,147
+3343,52,Contact city,147
+3344,53,Contact state,147
+3345,54,Contact ZIP Code,147
+3346,56,Contact phone number,147
+3347,199,NCP last name,147
+3348,200,NCP first name,147
+3349,204,NCP Social Security number,147
+3350,199,Participant last name,147
+3351,200,Participant first name,147
+3352,207,Fill as appropriate,147
+3353,208,=O (alpha),147
+3354,209,Fill as appropriate,147
+3355,272,=O (alpha),147
+3356,13,003,148
+3357,17,R,148
+3358,18,MSC,148
+3359,20,Your case ID,148
+3360,21,Other case ID,148
+3361,22,GRUPD,148
+3362,24,=N,148
+3363,25,=1,148
+3364,26,=1,148
+3365,27,=0 (numeric),148
+3366,28,Fill as appropriate,148
+3367,29,=0 (numeric),148
+3368,30,=0 (numeric),148
+3369,31,=0 (numeric),148
+3370,5,=0 (numeric),148
+3371,38,Fill as appropriate,148
+3372,39,=O (alpha),148
+3373,46,Your state contact last name,148
+3374,47,Your state contact first name,148
+3375,50,Contact address,148
+3376,52,Contact city,148
+3377,53,Contact state,148
+3378,54,Contact ZIP Code,148
+3379,56,Contact phone number,148
+3380,199,NCP last name,148
+3381,200,NCP first name,148
+3382,204,NCP Social Security number,148
+3383,203,NCP date of birth,148
+3384,199,Participant last name,148
+3385,200,Participant first name,148
+3386,207,Fill as appropriate,148
+3387,208,=O (alpha),148
+3388,209,Fill as appropriate,148
+3389,13,3,167
+3390,14,Fill as appropriate,167
+3391,17,R,167
+3392,18,PAT,167
+3393,20,Your case ID,167
+3394,24,#NAME?,167
+3395,25,=1 (numeric),167
+3396,26,=1 (numeric),167
+3397,27,=1 (numeric),167
+3398,28,Fill as appropriate,167
+3399,13,3,168
+3400,14,Fill as appropriate,168
+3401,17,A,168
+3402,18,PAT,168
+3403,20,Your case ID,168
+3404,21,Other case ID,168
+3405,22,AADIN,168
+3406,24,#NAME?,168
+3407,25,1,168
+3408,26,1,168
+3409,28,1,168
+3410,29,=0 (numeric),168
+3411,30,=0 (numeric),168
+3412,31,1,168
+3413,5,=0 (numeric),168
+3414,38,Fill as appropriate,168
+3415,39,#NAME?,168
+3416,46,Your state contact last name,168
+3417,47,Your state contact first name,168
+3418,50,Contact address,168
+3419,52,Contact city,168
+3420,53,Contact state,168
+3421,54,Contact ZIP Code,168
+3422,56,Contact phone number,168
+3423,199,NCP last name,168
+3424,200,NCP first name,168
+3425,204,NCP Social Security number,168
+3426,199,Participant last name,168
+3427,200,Participant first name,168
+3428,207,Fill as appropriate,168
+3429,208,#NAME?,168
+3430,272,#NAME?,168
+3431,13,3,169
+3432,14,Fill as appropriate,169
+3433,17,A,169
+3434,18,PAT,169
+3435,20,Your case ID,169
+3436,22,ANOAD,169
+3437,24,#NAME?,169
+3438,25,1,169
+3439,26,1,169
+3440,28,1,169
+3441,29,=0 (numeric),169
+3442,30,=0 (numeric),169
+3443,31,=0 (numeric),169
+3444,5,=0 (numeric),169
+3445,38,Fill as appropriate,169
+3446,39,#NAME?,169
+3447,46,Your state contact last name,169
+3448,47,Your state contact first name,169
+3449,50,Contact address,169
+3450,52,Contact city,169
+3451,53,Contact state,169
+3452,54,Contact ZIP Code,169
+3453,56,Contact phone number,169
+3454,199,NCP last name,169
+3455,200,NCP first name,169
+3456,204,NCP Social Security number,169
+3457,203,NCP date of birth,169
+3458,199,Participant last name,169
+3459,200,Participant first name,169
+3460,13,3,170
+3461,14,Fill as appropriate,170
+3462,17,P,170
+3463,18,PAT,170
+3464,20,Your case ID,170
+3465,21,Other case ID,170
+3466,22,PIBTS,170
+3467,23,Date genetic test scheduled,170
+3468,24,#NAME?,170
+3469,25,1,170
+3470,28,Fill as appropriate,170
+3471,29,=0 (numeric),170
+3472,30,=0 (numeric),170
+3473,31,Fill as appropriate,170
+3474,5,=0 (numeric),170
+3475,38,Fill as appropriate,170
+3476,39,#NAME?,170
+3477,46,Your state contact last name,170
+3478,47,Your state contact first name,170
+3479,50,Contact address,170
+3480,52,Contact city,170
+3481,53,Contact state,170
+3482,54,Contact ZIP Code,170
+3483,56,Contact phone number,170
+3484,199,NCP last name,170
+3485,200,NCP first name,170
+3486,204,NCP Social Security number,170
+3487,203,NCP date of birth,170
+3488,199,Participant last name,170
+3489,200,Participant first name,170
+3490,207,Fill as appropriate,170
+3491,208,#NAME?,170
+3492,13,3,171
+3493,14,Fill as appropriate,171
+3494,17,P,171
+3495,18,PAT,171
+3496,20,Your case ID,171
+3497,21,Other case ID,171
+3498,22,PICHS,171
+3499,23,Date hearing scheduled,171
+3500,24,#NAME?,171
+3501,25,1,171
+3502,26,1,171
+3503,28,Fill as appropriate,171
+3504,29,=0 (numeric),171
+3505,30,=0 (numeric),171
+3506,31,Fill as appropriate,171
+3507,5,=0 (numeric),171
+3508,38,Fill as appropriate,171
+3509,39,#NAME?,171
+3510,46,Your state contact last name,171
+3511,47,Your state contact first name,171
+3512,50,Contact address,171
+3513,52,Contact city,171
+3514,53,Contact state,171
+3515,54,Contact ZIP Code,171
+3516,56,Contact phone number,171
+3517,199,NCP last name,171
+3518,200,NCP first name,171
+3519,204,NCP Social Security number,171
+3520,203,NCP date of birth,171
+3521,199,Participant last name,171
+3522,200,Participant first name,171
+3523,207,Fill as appropriate,171
+3524,13,3,172
+3525,14,Fill as appropriate,172
+3526,17,P,172
+3527,18,PAT,172
+3528,20,Your case ID,172
+3529,21,Other case ID,172
+3530,22,PIPNS,172
+3531,24,#NAME?,172
+3532,25,1,172
+3533,26,1,172
+3534,28,Fill as appropriate,172
+3535,29,=0 (numeric),172
+3536,30,=0 (numeric),172
+3537,31,Fill as appropriate,172
+3538,5,=0 (numeric),172
+3539,38,Fill as appropriate,172
+3540,39,#NAME?,172
+3541,46,Your state contact last name,172
+3542,47,Your state contact first name,172
+3543,50,Contact address,172
+3544,52,Contact city,172
+3545,53,Contact state,172
+3546,54,Contact ZIP Code,172
+3547,56,Contact phone number,172
+3548,199,NCP last name,172
+3549,200,NCP first name,172
+3550,204,NCP Social Security number,172
+3551,203,NCP date of birth,172
+3552,199,Participant last name,172
+3553,200,Participant first name,172
+3554,207,Fill as appropriate,172
+3555,208,#NAME?,172
+3556,209,Fill as appropriate,172
+3557,272,#NAME?,172
+3558,274,Fill as appropriate,172
+3559,13,3,173
+3560,14,Fill as appropriate,173
+3561,17,P,173
+3562,18,PAT,173
+3563,20,Your case ID,173
+3564,21,Other case ID,173
+3565,22,PSESO,173
+3566,24,#NAME?,173
+3567,25,1,173
+3568,26,1,173
+3569,28,Fill as appropriate,173
+3570,29,Fill as appropriate,173
+3571,30,=0 (numeric),173
+3572,31,=0 (numeric),173
+3573,5,=0 (numeric),173
+3574,38,Fill as appropriate,173
+3575,39,#NAME?,173
+3576,46,Your state contact last name,173
+3577,47,Your state contact first name,173
+3578,50,Contact address,173
+3579,52,Contact city,173
+3580,53,Contact state,173
+3581,54,Contact ZIP Code,173
+3582,56,Contact phone number,173
+3583,199,NCP last name,173
+3584,200,NCP first name,173
+3585,204,NCP Social Security number,173
+3586,203,NCP date of birth,173
+3587,199,Participant last name,173
+3588,200,Participant first name,173
+3589,207,Fill as appropriate,173
+3590,208,#NAME?,173
+3591,209,Fill as appropriate,173
+3592,232,FIPS code of state that issued order,173
+3593,233,FIPS code of county that issued order,173
+3594,235,The order ID,173
+3595,236,Date order was filed in your state,173
+3596,237,Fill as appropriate,173
+3597,238,Fill as appropriate,173
+3598,239,Fill as appropriate,173
+3599,240,Dollar amount per frequency,173
+3600,241,Date the obligation starts to accrue,173
+3601,13,3,174
+3602,14,Fill as appropriate,174
+3603,17,P,174
+3604,18,PAT,174
+3605,20,Your case ID,174
+3606,21,Other case ID,174
+3607,22,PSEST,174
+3608,24,#NAME?,174
+3609,25,1,174
+3610,26,1,174
+3611,29,1,174
+3612,30,=0 (numeric),174
+3613,31,=0 (numeric),174
+3614,5,=0 (numeric),174
+3615,38,Fill as appropriate,174
+3616,39,#NAME?,174
+3617,46,Your state contact last name,174
+3618,47,Your state contact first name,174
+3619,50,Contact address,174
+3620,52,Contact city,174
+3621,53,Contact state,174
+3622,54,Contact ZIP Code,174
+3623,56,Contact phone number,174
+3624,199,NCP last name,174
+3625,200,NCP first name,174
+3626,204,NCP Social Security number,174
+3627,203,NCP date of birth,174
+3628,199,Participant last name,174
+3629,200,Participant first name,174
+3630,207,Fill as appropriate,174
+3631,208,#NAME?,174
+3632,209,Fill as appropriate,174
+3633,232,FIPS code of state that issued order,174
+3634,233,FIPS code of county that issued order,174
+3635,235,The order ID,174
+3636,236,Date order was filed in your state,174
+3637,237,#NAME?,174
+3638,238,Fill as appropriate,174
+3639,13,3,175
+3640,14,Fill as appropriate,175
+3641,17,P,175
+3642,18,PAT,175
+3643,20,Your case ID,175
+3644,21,Other case ID,175
+3645,22,PSSTO,175
+3646,24,#NAME?,175
+3647,25,1,175
+3648,26,1,175
+3649,29,1,175
+3650,30,=0 (numeric),175
+3651,31,=0 (numeric),175
+3652,5,=0 (numeric),175
+3653,38,Fill as appropriate,175
+3654,39,#NAME?,175
+3655,46,Your state contact last name,175
+3656,47,Your state contact first name,175
+3657,50,Contact address,175
+3658,52,Contact city,175
+3659,53,Contact state,175
+3660,54,Contact ZIP Code,175
+3661,56,Contact phone number,175
+3662,199,NCP last name,175
+3663,200,NCP first name,175
+3664,204,NCP Social Security number,175
+3665,203,NCP date of birth,175
+3666,199,Participant last name,175
+3667,200,Participant first name,175
+3668,207,Fill as appropriate,175
+3669,208,#NAME?,175
+3670,209,Fill as appropriate,175
+3671,232,FIPS code of state that issued order,175
+3672,233,FIPS code of county that issued order,175
+3673,235,The order ID,175
+3674,236,Date order was filed in your state,175
+3675,237,P,175
+3676,238,Fill as appropriate,175
+3677,13,3,176
+3678,14,Fill as appropriate,176
+3679,17,P,176
+3680,18,PAT,176
+3681,20,Your case ID,176
+3682,21,Other case ID,176
+3683,22,PUEST,176
+3684,24,#NAME?,176
+3685,25,1,176
+3686,26,1,176
+3687,28,Fill as appropriate,176
+3688,29,=0 (numeric),176
+3689,30,=0 (numeric),176
+3690,31,Fill as appropriate,176
+3691,5,=0 (numeric),176
+3692,38,Fill as appropriate,176
+3693,39,#NAME?,176
+3694,46,Your state contact last name,176
+3695,47,Your state contact first name,176
+3696,50,Contact address,176
+3697,52,Contact city,176
+3698,53,Contact state,176
+3699,54,Contact ZIP Code,176
+3700,56,Contact phone number,176
+3701,199,NCP last name,176
+3702,200,NCP first name,176
+3703,204,NCP Social Security number,176
+3704,203,NCP date of birth,176
+3705,199,Participant last name,176
+3706,200,Participant first name,176
+3707,207,Fill as appropriate,176
+3708,208,#NAME?,176
+3709,209,Fill as appropriate,176

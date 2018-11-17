@@ -6,6 +6,6 @@ if functionToRun == 'FAR':
     extractor = mainExtractor()
     extractor.extractData()
 elif functionToRun == 'DATA':
-    exportDataBlockValues.exportData()
+    exportDataBlockValues = exportDataBlockValues()
 else:
     print("Choice Invalid.")

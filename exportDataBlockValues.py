@@ -248,5 +248,3 @@ class exportDataBlockValues(object):
         for count, values in enumerate(exportVariables.dataBlocksFieldExtractions):
             allDataBlocks[values] = count + 1
         return allDataBlocks
-
-blocks = exportDataBlockValues()
