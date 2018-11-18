@@ -1,1021 +1,1337 @@
-,"EST A AADIN − ESTABLISHMENT ACKNOWLEDGMENT, ADDITIONAL",,,,
-,INFORMATION NEEDED TO PROCEED,,,,
-,Description/Business Usage,,,,
-"Sent By Responding State:This transaction is used to electronically acknowledge the receipt of the case (EST R) andto inform the initiating state that additional information is needed to proceed. Thetransaction must be sent within the timeframes required by federal guidelines (10 workingdays).Used On:Established interstate casesCorresponds To:Transmittal #1 Acknowledgment[ ] Additional Information NeededRelevant CFR Requirements:The 45CFR 303.7(a)(2)(iii) states that receipt of the case must be acknowledged and ensurethat any missing documentation has been requested from the initiating state.The 45CFR 303.7(c)(4)(ii) states that if unable to proceed with the case because ofinadequate documentation, notify the IV-D agency in the initiating state of the necessaryadditions or corrections to the form or documentation.The 45CFR303.7(a)(2)(iv) states that within 10 working days of receipt of an interstateIV-D case from an initiating state, the central registry must inform the IV-D agency in theinitiating state where the case was sent for action.Automated Triggers:Determine how the CSE system records that an establishment request was received and adetermination has been made that further information is necessary.Action By Receiving State:Process according to federal guidelines. Update case information, such as noting receipt ofthe transaction, and follow-up on the additional information needed.",,,,,
-,Required data blocks and Elements,,,,
-,,Data Element Description,,,
-(Data Block Record Layout),,,,,
-HEADER,,,,,
-LOCAL-FIPS-STATE/COUNTY,Your state/county FIPS code,,,,
-OTHER-FIPS-STATE/COUNTY,"State/county FIPS code to which transactionis directed",,,,
-CSENET-VERSION-NUMBER,3,,,,
-TRANSACTION-SERIAL-NUMBER,Fill as appropriate,,,,
-ACTION-CODE,A,,,,
-,"EST A AADIN − ESTABLISHMENT ACKNOWLEDGMENT, ADDITIONAL",,,,
-,INFORMATION NEEDED TO PROCEED,,,,
-,Description/Business Usage,,,,
-FUNCTIONAL-TYPE-CODE,EST,,,,
-TXN-DATE,Date transaction was created,,,,
-CASE ID,Your case ID,,,,
-OTHER-CASE-ID,Other case ID,,,,
-ACTION-REASON,AADIN,,,,
-ATTACHMENTS-IND,#NAME?,,,,
-*CASE-DATA-IND,1,,,,
-*NCP-IDENTIFICATION-IND,1,,,,
-NCP-LOCATE-IND,=0 (numeric),,,,
-*PARTICIPANT-DATA-IND,1,,,,
-ORDER-DATA-IND,=0 (numeric),,,,
-COLLECTION-DATA-IND,=0 (numeric),,,,
-*INFORMATION-IND,1,,,,
-OVERDUE-IND,=0 (numeric),,,,
-*CASE DATA BLOCK,,,,,
-*CASE-TYPE,Fill as appropriate,,,,
-*CASE-STATUS,#NAME?,,,,
-*CONTACT-NAME-LAST,Your state contact,,,,
-*CONTACT-NAME-FIRST,Your state contact,,,,
-*CONTACT-ADDRESS-LINE-1,Contact address,,,,
-*CONTACT-CITY,Contact city,,,,
-*CONTACT-STATE,Contact state,,,,
-*CONTACT-ZIP-1,Contact ZIP Code,,,,
-*CONTACT-PHONE-NUM,Contact phone number,,,,
-*NCP IDENTIFICATION DATA BLOCK,,,,,
-*NAME-LAST,NCP last name,,,,
-*NAME-FIRST,NCP first name,,,,
-*SSN,NCP Social Security number,,,,
-,"EST A AADIN − ESTABLISHMENT ACKNOWLEDGMENT, ADDITIONAL",,,,
-,INFORMATION NEEDED TO PROCEED,,,,
-,Description/Business Usage,,,,
-*DATE-OF-BIRTH,NCP date of birth,,,,
-*PARTICIPANT DATA BLOCK,,,,,
-*NAME-LAST,Participant last name,,,,
-*NAME-FIRST,Participant first name,,,,
-*RELATIONSHIP,Fill as appropriate,,,,
-*PARTICIPANT-STATUS,#NAME?,,,,
-*INFORMATION DATA BLOCK,,,,,
-*STATUS-CHANGE-CODE,#NAME?,,,,
-*INFORMATION-TEXT-LINE1,Fill as appropriate,,,,
-,"EST A ANOAD − ESTABLISHMENT ACKNOWLEDGMENT, NO FURTHER",,,,
-,INFORMATION REQUIRED,,,,
-,Description/Business Usage,,,,
-"Sent By Responding State:This transaction is used to electronically acknowledge the receipt of the case (EST R) andto inform the initiating state that no additional information is necessary. The transactionmust be sent within the timeframes required by federal guidelines (10 working days).Used On:Established interstate casesRelevant CFR Requirements:The 45CFR 303.7(a)(2)(iii) states that receipt of the case must be acknowledged.The 45CFR303.7(a)(2)(iv) states that within 10 working days of receipt of an interstateIV-D case from an initiating state, the central registry must inform the IV-D agency in theinitiating state where the case was sent for action.Corresponds To:Transmittal #1 Acknowledgment[ ] Request Received and No Additional Information is NecessaryAutomated Triggers:Determine how the CSE system records that an establishment request was received and thatno further information is necessary for the next step.Action By Receiving State:Process according to federal guidelines. Update case information, such as noting receipt ofthe transaction.",,,,,
-,Required data blocks and Elements,,,,
-,,Data Element Description,,,
-(Data Block Record Layout),,,,,
-HEADER,,,,,
-LOCAL-FIPS-STATE/COUNTY,Your state/county FIPS code,,,,
-OTHER-FIPS-STATE/COUNTY,"State/county FIPS code to which transactionis directed",,,,
-CSENET-VERSION-NUMBER,3,,,,
-TRANSACTION-SERIAL-NUMBER,Fill as appropriate,,,,
-ACTION-CODE,A,,,,
-FUNCTIONAL-TYPE-CODE,EST,,,,
-TXN-DATE,Date transaction was created,,,,
-CASE ID,Your case ID,,,,
-,"EST A ANOAD − ESTABLISHMENT ACKNOWLEDGMENT, NO FURTHER",,,,
-INFORMATION REQUIRED,,,,,
-ACTION-REASON,ANOAD,,,,
-ATTACHMENTS-IND,#NAME?,,,,
-*CASE-DATA-IND,1,,,,
-*NCP-IDENTIFICATION-IND,1,,,,
-NCP-LOCATE-IND,=0 (numeric),,,,
-*PARTICIPANT-DATA-IND,1,,,,
-ORDER-DATA-IND,=0 (numeric),,,,
-COLLECTION-DATA-IND,=0 (numeric),,,,
-INFORMATION-IND,=0 (numeric),,,,
-OVERDUE-IND,=0 (numeric),,,,
-*CASE DATA BLOCK,,,,,
-*CASE-TYPE,Fill as appropriate,,,,
-*CASE-STATUS,#NAME?,,,,
-*CONTACT-NAME-LAST,Your state contact,,,,
-*CONTACT-NAME-FIRST,Your state contact,,,,
-*CONTACT-ADDRESS-LINE-1,Contact address,,,,
-*CONTACT-CITY,Contact city,,,,
-*CONTACT-STATE,Contact state,,,,
-*CONTACT-ZIP-1,Contact ZIP Code,,,,
-*CONTACE-PHONE-NUM,Contact phone number,,,,
-*NCP IDENTIFICATION DATA BLOCK,,,,,
-*NAME-LAST,NCP last name,,,,
-*NAME-FIRST,NCP first name,,,,
-*SSN,NCP Social Security number,,,,
-*DATE-OF-BIRTH,NCP date of birth,,,,
-*PARTICIPANT DATA BLOCK,,,,,
-*NAME-LAST,Participant last name,,,,
-*NAME-FIRST,Participant first name,,,,
-,"EST A ANOAD − ESTABLISHMENT ACKNOWLEDGMENT, NO FURTHER",,,,
-INFORMATION REQUIRED,,,,,
-*RELATIONSHIP,Fill as appropriate,,,,
-*PARTICIPANT-STATUS,#NAME?,,,,
-,"EST P GSCOE − ESTABLISHMENT PROVISION OF INFORMATION, NEW",,,,
-,CONTROLLING ORDER,,,,
-,Description/Business Usage,,,,
-"Sent by Responding State:This transaction is used to electronically relay that a new controlling order has beenestablished.Used On:Established interstate casesAutomated Triggers:Determine how the CSE system records that a new controlling order has been established.Action By Receiving State:Process according to federal guidelines and update case information such as noting receiptof the transaction.",,,,,
-,Required data blocks and Elements,,,,
-,,Data Element Description,,,
-(Data Block Record Layout),,,,,
-HEADER,,,,,
-LOCAL-FIPS-STATE/COUNTY,Your state/county FIPS code,,,,
-OTHER-FIPS-STATE/COUNTY,"State/county FIPS code to which transactionis directed",,,,
-CSENET-VERSION-NUMBER,3,,,,
-TRANSACTION-SERIAL-NUMBER,Fill as appropriate,,,,
-ACTION-CODE,P,,,,
-FUNCTIONAL-TYPE-CODE,EST,,,,
-TXN-DATE,Date transaction was created,,,,
-CASE ID,Your case ID,,,,
-OTHER-CASE-ID,Other case ID,,,,
-ACTION-REASON,GSCOE,,,,
-ATTACHMENTS-IND,#NAME?,,,,
-CASE-DATA-IND,1,,,,
-NCP-IDENTIFICATION-IND,1,,,,
-NCP-LOCATE-IND,=0 (numeric),,,,
-*PARTICIPANT-DATA-IND,Fill as appropriate,,,,
-*ORDER-DATA-IND,1,,,,
-COLLECTION-DATA-IND,=0 (numeric),,,,
-,"EST P GSCOE − ESTABLISHMENT PROVISION OF INFORMATION, NEW",,,,
-,CONTROLLING ORDER,,,,
-,Description/Business Usage,,,,
-INFORMATION-IND,=0 (numeric),,,,
-OVERDUE-IND,=0 (numeric),,,,
-CASE DATA BLOCK,,,,,
-CASE-TYPE,Fill as appropriate,,,,
-CASE-STATUS,#NAME?,,,,
-*CONTACT-NAME-LAST,Your state contact last name,,,,
-*CONTACT-NAME-FIRST,Your state contact first name,,,,
-*CONTACT-ADDRESS-LINE-1,Contact address,,,,
-*CONTACT-CITY,Contact city,,,,
-*CONTACT-STATE,Contact state,,,,
-*CONTACT-ZIP-1,Contact ZIP Code,,,,
-*CONTACT-PHONE-NUM,Contact phone number,,,,
-NCP IDENTIFICATION DATA BLOCK,,,,,
-NAME-LAST,NCP last name,,,,
-NAME-FIRST,NCP first name,,,,
-*SSN,NCP Social Security number,,,,
-*DATE-OF-BIRTH,NCP date of birth,,,,
-*PARTICIPANT DATA BLOCK (2),,,,,
-*NAME-LAST,Participant last name,,,,
-*NAME-FIRST,Participant first name,,,,
-*RELATIONSHIP,Fill as appropriate,,,,
-*PARTICIPANT-STATUS,#NAME?,,,,
-*ORDER DATA BLOCK,,,,,
-*ORDER-FIPS-STATE,FIPS code of state that issued order,,,,
-*ORDER-FIPS-COUNTY,FIPS code of county that issued order,,,,
-*ORDER-ID,The order ID,,,,
-,"EST P GSCOE − ESTABLISHMENT PROVISION OF INFORMATION, NEW",,,,
-,CONTROLLING ORDER,,,,
-,Description/Business Usage,,,,
-*ORDER-FILING-DATE,Date order was filed in your state,,,,
-*ORDER-TYPE,Fill as appropriate,,,,
-*DEBT-TYPE,Fill as appropriate,,,,
-*ORDER-FREQ,Fill as appropriate,,,,
-*ORDER-FREQ-AMOUNT,Dollar amount per frequency,,,,
-*ORDER-EFFECTIVE-DATE,Date obligation starts to accrue,,,,
-*MEDICAL-ORDERED,Y or N,,,,
-,"EST P SICHS − ESTABLISHMENT PROVISION OF INFORMATION, SUPPORT",,,,
-,HEARING SCHEDULED,,,,
-,Description/Business Usage,,,,
-"Sent by Responding State:This transaction is used to electronically send a status update to an establishment request(EST R). The transaction indicates that a support hearing has been scheduled.Used On:Established interstate casesCorresponds To:Transmittal #23. [ ] Notice of HearingRelevant CFR Requirements:The 45CFR 303.7(c)(8) states that the IV-D agency must provide timely notice to the IV-Dagency in the initiating state in advance of any formal hearings which may result inestablishment or adjustment of an order.Automated Triggers:Determine how the CSE system records that a support hearing has been scheduled.Action By Receiving State:Process according to federal guidelines. Update case information, such as hearing date, andnote receipt of the transaction.",,,,,
-,Required data blocks and Elements,,,,
-,,Data Element Description,,,
-(Data Block Record Layout),,,,,
-HEADER,,,,,
-LOCAL-FIPS-STATE/COUNTY,Your state/county FIPS code,,,,
-OTHER-FIPS-STATE/COUNTY,"State/county FIPS code to which transactionis directed",,,,
-CSENET-VERSION-NUMBER,3,,,,
-TRANSACTION-SERIAL-NUMBER,Fill as appropriate,,,,
-ACTION-CODE,P,,,,
-FUNCTIONAL-TYPE-CODE,EST,,,,
-TXN-DATE,Date transaction was created,,,,
-CASE ID,Your case ID,,,,
-OTHER-CASE-ID,Other case ID,,,,
-ACTION-REASON,SICHS,,,,
-*ACTION-RESOLUTION-DATE,The date the event will occur,,,,
-,"EST P SICHS − ESTABLISHMENT PROVISION OF INFORMATION, SUPPORT",,,,
-HEARING SCHEDULED,,,,,
-ATTACHMENTS-IND,#NAME?,,,,
-CASE-DATA-IND,1,,,,
-NCP-IDENTIFICATION-IND,1,,,,
-NCP-LOCATE-IND.,=0 (numeric),,,,
-*PARTICIPANT-DATA-IND,Fill as appropriate,,,,
-ORDER-DATA-IND,=0 (numeric),,,,
-COLLECTION-DATA-IND,=0 (numeric),,,,
-*INFORMATION-IND,Fill as appropriate,,,,
-OVERDUE-IND,=0 (numeric),,,,
-CASE DATA BLOCK,,,,,
-CASE-TYPE,Fill as appropriate,,,,
-CASE-STATUS,#NAME?,,,,
-*CONTACT-NAME-LAST,Your state contact last name,,,,
-*CONTACT-NAME-FIRST,Your state contact first name,,,,
-*CONTACT-ADDRESS-LINE-1,Contact address,,,,
-*CONTACT-CITY,Contact city,,,,
-*CONTACT-STATE,Contact state,,,,
-*CONTACT-ZIP-1,Contact ZIP Code,,,,
-*CONTACT-PHONE-NUM,Contact phone number,,,,
-NCP IDENTIFICATION DATA BLOCK,,,,,
-NAME-LAST,NCP last name,,,,
-NAME-FIRST,NCP first name,,,,
-*SSN,NCP Social Security number,,,,
-*DATE-OF-BIRTH,NCP date of birth,,,,
-*PARTICIPANT DATA BLOCK (2),,,,,
-*NAME-LAST,Participant last name,,,,
-*NAME-FIRST,Participant first name,,,,
-*RELATIONSHIP,Fill as appropriate,,,,
-,"EST P SICHS − ESTABLISHMENT PROVISION OF INFORMATION, SUPPORT",,,,
-HEARING SCHEDULED,,,,,
-*PARTICIPANT-STATUS,#NAME?,,,,
-*INFORMATION DATA BLOCK,,,,,
-*STATUS-CHANGE-CODE,#NAME?,,,,
-,"EST P SSADJ − ESTABLISHMENT PROVISION OF INFORMATION, REVIEW",,,,
-,AND MODIFICATION WARRANTED,,,,
-,Description/Business Usage,,,,
-"Sent by Responding State:This transaction is used to electronically send a status update to an establishment request(EST R SRADJ) for a review and adjustment. The transaction indicates that a review andmodification is warranted.Used On:Established interstate casesAutomated Triggers:Determine how the CSE system records that a review and modification is warranted.Action By Receiving State:Process according to federal guidelines. Update case information, such as the results of thereview and note receipt of the transaction.",,,,,
-,Required data blocks and Elements,,,,
-,,Data Element Description,,,
-(Data Block Record Layout),,,,,
-HEADER,,,,,
-LOCAL-FIPS-STATE/COUNTY,Your state/county FIPS code,,,,
-OTHER-FIPS-STATE/COUNTY,"State/county FIPS code to which transactionis directed",,,,
-CSENET-VERSION-NUMBER,3,,,,
-TRANSACTION-SERIAL-NUMBER,Fill as appropriate,,,,
-ACTION-CODE,P,,,,
-FUNCTIONAL-TYPE-CODE,EST,,,,
-TXN-DATE,Date transaction was created,,,,
-CASE ID,Your case ID,,,,
-OTHER-CASE-ID,Other case ID,,,,
-ACTION-REASON,SSADJ,,,,
-ATTACHMENTS-IND,#NAME?,,,,
-CASE-DATA-IND,1,,,,
-NCP-IDENTIFICATION-IND,1,,,,
-NCP-LOCATE-IND,=0 (numeric),,,,
-*PARTICIPANT-DATA-IND,Fill as appropriate,,,,
-ORDER-DATA-IND,=0 (numeric),,,,
-,"EST P SSADJ − ESTABLISHMENT PROVISION OF INFORMATION, REVIEW",,,,
-,AND MODIFICATION WARRANTED,,,,
-,Description/Business Usage,,,,
-COLLECTION-DATA-IND,=0 (numeric),,,,
-INFORMATION-IND,=0 (numeric),,,,
-OVERDUE-IND,=0 (numeric),,,,
-CASE DATA BLOCK,,,,,
-CASE-TYPE,Fill as appropriate,,,,
-CASE-STATUS,#NAME?,,,,
-*CONTACT-NAME-LAST,Your state contact last name,,,,
-*CONTACT-NAME-FIRST,Your state contact first name,,,,
-*CONTACT-ADDRESS-LINE-1,Contact address,,,,
-*CONTACT-CITY,Contact city,,,,
-*CONTACT-STATE,Contact state,,,,
-*CONTACT-ZIP-1,Contact ZIP Code,,,,
-*CONTACT-PHONE-NUM,Contact phone number,,,,
-NCP IDENTIFICATION DATA BLOCK,,,,,
-NAME-LAST,NCP last name,,,,
-NAME-FIRST,NCP first name,,,,
-*SSN,NCP Social Security number,,,,
-*DATE-OF-BIRTH,NCP date of birth,,,,
-*PARTICIPANT DATA BLOCK (2),,,,,
-*NAME-LAST,Participant last name,,,,
-*NAME-FIRST,Participant first name,,,,
-*RELATIONSHIP,Fill as appropriate,,,,
-*PARTICIPANT-STATUS,#NAME?,,,,
-,"EST P SSEST − ESTABLISHMENT PROVISION OF INFORMATION, SUPPORT",,,,
-,ORDER ESTABLISHED,,,,
-,Description/Business Usage,,,,
-"Sent by Responding State:This transaction is used to electronically respond to an establishment request (EST R). Thetransaction indicates that a support order was established.Used On:Established interstate casesAutomated Triggers:Determine how the CSE system records that a new order was established.Action By Receiving State:Process according to federal guidelines. Update case information, such as noting receipt ofthe transaction.",,,,,
-,Required data blocks and Elements,,,,
-,,Data Element Description,,,
-(Data Block Record Layout),,,,,
-HEADER,,,,,
-LOCAL-FIPS-STATE/COUNTY,Your state/county FIPS code,,,,
-OTHER-FIPS-STATE/COUNTY,"State/county FIPS code to which transactionis directed",,,,
-CSENET-VERSION-NUMBER,3,,,,
-TRANSACTION-SERIAL-NUMBER,Fill as appropriate,,,,
-ACTION-CODE,P,,,,
-FUNCTIONAL-TYPE-CODE,EST,,,,
-TXN-DATE,Date transaction was created,,,,
-CASE ID,Your case ID,,,,
-OTHER-CASE-ID,Other case ID,,,,
-ACTION-REASON,SSEST,,,,
-ATTACHMENTS-IND,#NAME?,,,,
-CASE-DATA-IND,1,,,,
-NCP-IDENTIFICATION-IND,1,,,,
-NCP-LOCATE-IND,=0 (numeric),,,,
-*PARTICIPANT-DATA-IND,Fill as appropriate,,,,
-*ORDER-DATA-IND,1,,,,
-COLLECTION-DATA-IND,=0 (numeric),,,,
-,"EST P SSEST − ESTABLISHMENT PROVISION OF INFORMATION, SUPPORT",,,,
-,ORDER ESTABLISHED,,,,
-,Description/Business Usage,,,,
-INFORMATION-IND,=0 (numeric),,,,
-OVERDUE-IND,=0 (numeric),,,,
-CASE DATA BLOCK,,,,,
-CASE-TYPE,Fill as appropriate,,,,
-CASE-STATUS,#NAME?,,,,
-*CONTACT-NAME-LAST,Your state contact last name,,,,
-*CONTACT-NAME-FIRST,Your state contact first name,,,,
-*CONTACT-ADDRESS-LINE-1,Contact address,,,,
-*CONTACT-CITY,Contact city,,,,
-*CONTACT-STATE,Contact state,,,,
-*CONTACT-ZIP-1,Contact ZIP Code,,,,
-*CONTACT-PHONE-NUM,Contact phone number,,,,
-NCP IDENTIFICATION DATA BLOCK,,,,,
-NAME-LAST,NCP last name,,,,
-NAME-FIRST,NCP first name,,,,
-*SSN,NCP Social Security number,,,,
-*DATE-OF-BIRTH,NCP date of birth,,,,
-*PARTICIPANT DATA BLOCK (2),,,,,
-*NAME-LAST,Participant last name,,,,
-*NAME-FIRST,Participant first name,,,,
-*RELATIONSHIP,Fill as appropriate,,,,
-*PARTICIPANT-STATUS,#NAME?,,,,
-*ORDER DATA BLOCK,,,,,
-*ORDER-FIPS-STATE,FIPS code of state that issued order,,,,
-*ORDER-FIPS-COUNTY,FIPS code of county that issued order,,,,
-*ORDER-ID,The order ID,,,,
-,"EST P SSEST − ESTABLISHMENT PROVISION OF INFORMATION, SUPPORT",,,,
-,ORDER ESTABLISHED,,,,
-,Description/Business Usage,,,,
-*ORDER-FILING-DATE,Date order was filed in your state,,,,
-*ORDER-TYPE,Fill as appropriate,,,,
-*DEBT-TYPE,Fill as appropriate,,,,
-*ORDER-FREQ,Fill as appropriate,,,,
-*ORDER-FREQ-AMOUNT,Dollar amount per frequency,,,,
-*ORDER-EFFECTIVE-DATE,Date obligation starts to accrue,,,,
-*MEDICAL-ORDERED,Y or N,,,,
-,"EST P SSMOD − ESTABLISHMENT PROVISION OF INFORMATION,",,,,
-,SUPPORT ORDER MODIFIED,,,,
-,Description/Business Usage,,,,
-"Sent by Responding State:This transaction is used to electronically respond to an establishment request (EST RSRADJ or SRMOD) or to provide information from an action filed by an entity other thanthe initiating state (e.g., NCP filed for modification). The transaction indicates that thesupport order was modified.Used On:Established interstate casesAutomated Triggers:Determine how the CSE system records that the order was modified.Action By Receiving State:Process according to federal guidelines. Update case information, such as noting receipt ofthe transaction.",,,,,
-,Required data blocks and Elements,,,,
-,,Data Element Description,,,
-(Data Block Record Layout),,,,,
-HEADER,,,,,
-LOCAL-FIPS-STATE/COUNTY,Your state/county FIPS code,,,,
-OTHER-FIPS-STATE/COUNTY,"State/county FIPS code to which transactionis directed",,,,
-CSENET-VERSION-NUMBER,3,,,,
-TRANSACTION-SERIAL-NUMBER,Fill as appropriate,,,,
-ACTION-CODE,P,,,,
-FUNCTIONAL-TYPE-CODE,EST,,,,
-TXN-DATE,Date transaction was created,,,,
-CASE ID,Your case ID,,,,
-OTHER-CASE-ID,Other case ID,,,,
-ACTION-REASON,SSMOD,,,,
-ATTACHMENTS-IND,#NAME?,,,,
-CASE-DATA-IND,1,,,,
-NCP-IDENTIFICATION-IND,1,,,,
-NCP-LOCATE-IND,=0 (numeric),,,,
-,"EST P SSMOD − ESTABLISHMENT PROVISION OF INFORMATION,",,,,
-,SUPPORT ORDER MODIFIED,,,,
-,Description/Business Usage,,,,
-*ORDER-DATA-IND,1,,,,
-COLLECTION-DATA-IND,=0 (numeric),,,,
-INFORMATION-IND,=0 (numeric),,,,
-OVERDUE-IND,=0 (numeric),,,,
-CASE DATA BLOCK,,,,,
-CASE-TYPE,Fill as appropriate,,,,
-CASE-STATUS,#NAME?,,,,
-*CONTACT-NAME-LAST,Your state contact last name,,,,
-*CONTACT-NAME-FIRST,Your state contact first name,,,,
-*CONTACT-ADDRESS-LINE-1,Contact address,,,,
-*CONTACT-CITY,Contact city,,,,
-*CONTACT-STATE,Contact state,,,,
-*CONTACT-ZIP-1,Contact ZIP Code,,,,
-*CONTACT- PHONE-NUM,Contact phone number,,,,
-NCP IDENTIFICATION DATA BLOCK,,,,,
-NAME-LAST,NCP last name,,,,
-NAME-FIRST,NCP first name,,,,
-*SSN,NCP Social Security number,,,,
-*DATE-OF-BIRTH,NCP date of birth,,,,
-*PARTICIPANT DATA BLOCK (2),,,,,
-*NAME-LAST,Participant last name,,,,
-*NAME-FIRST,Participant first name,,,,
-*RELATIONSHIP,Fill as appropriate,,,,
-*PARTICIPANT-STATUS,#NAME?,,,,
-*ORDER DATA BLOCK,,,,,
-*ORDER-FIPS-STATE,FIPS code of state that issued order,,,,
-,"EST P SSMOD − ESTABLISHMENT PROVISION OF INFORMATION,",,,,
-,SUPPORT ORDER MODIFIED,,,,
-,Description/Business Usage,,,,
-*ORDER-FIPS-COUNTY,FIPS code of county that issued order,,,,
-*ORDER-ID,The order ID,,,,
-*ORDER-FILING-DATE,Date order was filed in your state,,,,
-*ORDER-TYPE,Fill as appropriate,,,,
-*DEBT-TYPE,Fill as appropriate,,,,
-*ORDER-FREQ,Fill as appropriate,,,,
-*ORDER-FREQ-AMOUNT,Dollar amount per frequency,,,,
-*ORDER-EFFECTIVE-DATE,Date obligation starts to accrue,,,,
-*MEDICAL-ORDERED,Y or N,,,,
-,"EST P SUADJ − ESTABLISHMENT PROVISION OF INFORMATION, REVIEW",,,,
-,AND MODIFICATION NOT WARRANTED,,,,
-,Description/Business Usage,,,,
-"Sent by Responding State:This transaction is used to electronically respond to an establishment request for anadministrative review and adjustment (EST R SRADJ). The transaction indicates that areview and modification is not warranted.Used On:Established interstate casesAutomated Triggers:Determine how the CSE system records that a review and modification is not warranted.Action By Receiving State:Process according to federal guidelines. Update case information, such as results, and notereceipt of the transaction.",,,,,
-,Required data blocks and Elements,,,,
-,,Data Element Description,,,
-(Data Block Record Layout),,,,,
-HEADER,,,,,
-LOCAL-FIPS-STATE/COUNTY,Your state/county FIPS code,,,,
-OTHER-FIPS-STATE/COUNTY,"State/county FIPS code to which transactionis directed",,,,
-CSENET-VERSION-NUMBER,3,,,,
-TRANSACTION-SERIAL-NUMBER,Fill as appropriate,,,,
-ACTION-CODE,P,,,,
-FUNCTIONAL-TYPE-CODE,EST,,,,
-TXN-DATE,Date transaction was created,,,,
-CASE ID,Your case ID,,,,
-OTHER-CASE-ID,Other case ID,,,,
-ACTION-REASON,SUADJ,,,,
-ATTACHMENTS-IND,#NAME?,,,,
-CASE-DATA-IND,1,,,,
-NCP-IDENTIFICATION-IND,1,,,,
-NCP-LOCATE-IND,=0 (numeric),,,,
-*PARTICIPANT-DATA-IND,Fill as appropriate,,,,
-ORDER-DATA-IND,=0 (numeric),,,,
-,"EST P SUADJ − ESTABLISHMENT PROVISION OF INFORMATION, REVIEW",,,,
-,AND MODIFICATION NOT WARRANTED,,,,
-,Description/Business Usage,,,,
-COLLECTION-DATA-IND,=0 (numeric),,,,
-INFORMATION-IND,Fill as appropriate,,,,
-OVERDUE-IND,=0 (numeric),,,,
-CASE DATA BLOCK,,,,,
-CASE-TYPE,Fill as appropriate,,,,
-CASE-STATUS,#NAME?,,,,
-*CONTACT-NAME-LAST,Your state contact last name,,,,
-*CONTACT-NAME-FIRST,Your state contact first name,,,,
-*CONTACT-ADDRESS-LINE-1,Contact address,,,,
-*CONTACT-CITY,Contact city,,,,
-*CONTACT-STATE,Contact state,,,,
-*CONTACT-ZIP-1,Contact ZIP Code,,,,
-*CONTACT-PHONE-NUM,Contact phone number,,,,
-NCP IDENTIFICATION DATA BLOCK,,,,,
-NAME-LAST,NCP last name,,,,
-NAME-FIRST,NCP first name,,,,
-*SSN,NCP Social Security number,,,,
-*DATE-OF-BIRTH,NCP date of birth,,,,
-*PARTICIPANT DATA BLOCK (2),,,,,
-*NAME-LAST,Participant last name,,,,
-*NAME-FIRST,Participant first name,,,,
-*RELATIONSHIP,Fill as appropriate,,,,
-*PARTICIPANT-STATUS,#NAME?,,,,
-,"EST P SUEST − ESTABLISHMENT PROVISION OF INFORMATION, SUPPORT",,,,
-,ORDER NOT ESTABLISHED,,,,
-,Description/Business Usage,,,,
-"Sent by Responding State:This transaction is used to electronically respond to an establishment request (EST R) thetransaction indicates that a support order was not established.Used On:Established interstate casesAutomated Triggers:Determine how the CSE system records that a support order was not established.Action By Receiving State:Process according to federal guidelines. Update case information, such as noting theoutcome and receipt of the transaction.",,,,,
-,Required data blocks and Elements,,,,
-,,Data Element Description,,,
-(Data Block Record Layout),,,,,
-HEADER,,,,,
-LOCAL-FIPS-STATE/COUNTY,Your state/county FIPS code,,,,
-OTHER-FIPS-STATE/COUNTY,"State/county FIPS code to which transactionis directed",,,,
-CSENET-VERSION-NUMBER,3,,,,
-TRANSACTION-SERIAL-NUMBER,Fill as appropriate,,,,
-ACTION-CODE,P,,,,
-FUNCTIONAL-TYPE-CODE,EST,,,,
-TXN-DATE,Date transaction was created,,,,
-CASE ID,Your case ID,,,,
-OTHER-CASE-ID,Other case ID,,,,
-ACTION-REASON,SUEST,,,,
-ATTACHMENTS-IND,#NAME?,,,,
-CASE-DATA-IND,1,,,,
-NCP-IDENTIFICATION-IND,1,,,,
-NCP-LOCATE-IND,=0 (numeric),,,,
-*PARTICIPANT-DATA-IND,Fill as appropriate,,,,
-ORDER-DATA-IND,=0 (numeric),,,,
-COLLECTION-DATA-IND,=0 (numeric),,,,
-,"EST P SUEST − ESTABLISHMENT PROVISION OF INFORMATION, SUPPORT",,,,
-,ORDER NOT ESTABLISHED,,,,
-,Description/Business Usage,,,,
-*INFORMATION-IND,Fill as appropriate,,,,
-OVERDUE-IND,=0 (numeric),,,,
-CASE DATA BLOCK,,,,,
-CASE-TYPE,Fill as appropriate,,,,
-CASE-STATUS,#NAME?,,,,
-*CONTACT-NAME-LAST,Your state contact last name,,,,
-*CONTACT-NAME-FIRST,Your state contact first name,,,,
-*CONTACT-ADDRESS-LINE-1,Contact address,,,,
-*CONTACT-CITY,Contact city,,,,
-*CONTACT-STATE,Contact state,,,,
-*CONTACT-ZIP-1,Contact ZIP Code,,,,
-*CONTACT-PHONE-NUM,Contact phone number,,,,
-NCP IDENTIFICATION DATA BLOCK,,,,,
-NAME-LAST,NCP last name,,,,
-NAME-FIRST,NCP first name,,,,
-*SSN,NCP Social Security number,,,,
-*DATE-OF-BIRTH,NCP date of birth,,,,
-*PARTICIPANT DATA BLOCK (2),,,,,
-*NAME-LAST,Participant last name,,,,
-*NAME-FIRST,Participant first name,,,,
-*RELATIONSHIP,Fill as appropriate,,,,
-*PARTICIPANT-STATUS,#NAME?,,,,
-*INFORMATION DATA BLOCK,,,,,
-*STATUS-CHANGE-CODE,#NAME?,,,,
-,"EST P SUMOD − ESTABLISHMENT PROVISION OF INFORMATION,",,,,
-,SUPPORT ORDER NOT MODIFIED,,,,
-,Description/Business Usage,,,,
-"Sent by Responding State:This transaction is used to electronically respond to a modification request (EST RSRMOD) or to provide information from an action filed by an entity other than theinitiating state (e.g., NCP filed for modification). The transaction indicates that the supportorder was not modified.Used On:Established interstate casesAutomated Triggers:Determine how the CSE system records that a support order was not modified.Action By Receiving State:Process according to federal guidelines. Update case information, such as noting theoutcome and receipt of the transaction.",,,,,
-,Required data blocks and Elements,,,,
-,,Data Element Description,,,
-(Data Block Record Layout),,,,,
-HEADER,,,,,
-LOCAL-FIPS-STATE/COUNTY,Your state/county FIPS code,,,,
-OTHER-FIPS-STATE/COUNTY,"State/county FIPS code to which transactionis directed",,,,
-CSENET-VERSION-NUMBER,3,,,,
-TRANSACTION-SERIAL-NUMBER,Fill as appropriate,,,,
-ACTION-CODE,P,,,,
-FUNCTIONAL-TYPE-CODE,EST,,,,
-TXN-DATE,Date transaction was created,,,,
-CASE ID,Your case ID,,,,
-OTHER-CASE-ID,Other case ID,,,,
-ACTION-REASON,SUMOD,,,,
-ATTACHMENTS-IND,#NAME?,,,,
-CASE-DATA-IND,1,,,,
-NCP-IDENTIFICATION-IND,1,,,,
-NCP-LOCATE-IND,=0 (numeric),,,,
-,"EST P SUMOD − ESTABLISHMENT PROVISION OF INFORMATION,",,,,
-,SUPPORT ORDER NOT MODIFIED,,,,
-,Description/Business Usage,,,,
-*ORDER-DATA-IND,1,,,,
-COLLECTION-DATA-IND,=0 (numeric),,,,
-*INFORMATION-IND,Fill as appropriate,,,,
-OVERDUE-IND,=0 (numeric),,,,
-CASE DATA BLOCK,,,,,
-CASE-TYPE,Fill as appropriate,,,,
-CASE-STATUS,#NAME?,,,,
-*CONTACT-NAME-LAST,Your state contact last name,,,,
-*CONTACT-NAME-FIRST,Your state contact first name,,,,
-*CONTACT-ADDRESS-LINE-1,Contact address,,,,
-*CONTACT-CITY,Contact city,,,,
-*CONTACT-STATE,Contact state,,,,
-*CONTACT-ZIP-1,Contact ZIP Code,,,,
-*CONTACT-PHONE-NUM,Contact phone number,,,,
-NCP IDENTIFICATION DATA BLOCK,,,,,
-NAME-LAST,NCP last name,,,,
-NAME-FIRST,NCP first name,,,,
-*SSN,NCP Social Security number,,,,
-*DATE-OF-BIRTH,NCP date of birth,,,,
-*PARTICIPANT DATA BLOCK (2),,,,,
-*NAME-LAST,Participant last name,,,,
-*NAME-FIRST,Participant first name,,,,
-*RELATIONSHIP,Fill as appropriate,,,,
-*PARTICIPANT-STATUS,#NAME?,,,,
-*ORDER DATA BLOCK,,,,,
-*ORDER-FIPS-STATE,FIPS code of state that issued order,,,,
-,"EST P SUMOD − ESTABLISHMENT PROVISION OF INFORMATION,",,,,
-,SUPPORT ORDER NOT MODIFIED,,,,
-,Description/Business Usage,,,,
-*ORDER-FIPS-COUNTY,FIPS code of county that issued order,,,,
-*ORDER-ID,The order ID,,,,
-*ORDER-FILING-DATE,Date order was filed in your state,,,,
-*ORDER-TYPE,Fill as appropriate,,,,
-*DEBT-TYPE,Fill as appropriate,,,,
-*ORDER-FREQ,Fill as appropriate,,,,
-*ORDER-FREQ-AMOUNT,Dollar amount per frequency,,,,
-*ORDER-EFFECTIVE-DATE,Date obligation starts to accrue,,,,
-*MEDICAL-ORDERED,Y or N,,,,
-*INFORMATION DATA BLOCK,,,,,
-*STATUS-CHANGE-CODE,#NAME?,,,,
-*INFORMATION-TEXT-LINE1,Fill as appropriate,,,,
-,EST R SRADJ − ESTABLISHMENT REQUEST FOR REVIEW AND,,,,
-,ADJUSTMENT,,,,
-,Description/Business Usage,,,,
-"Sent by Initiating State:This transaction is used to electronically request a review and adjustment.Used On:Established interstate casesRelevant CFR Requirements:The 45CFR 303.7(b)(6) states that the initiating state IV-D agency must send a request forreview of a child support order to another state within 20 calendar days of determining thata request for review of the order should be sent to the other state and of receipt ofinformation from the requestor necessary to conduct the review in accordance with sec.303.8 of this part.Automated Triggers:Determine how the CSE system records that a review and adjustment is needed.Action By Receiving State:Process according to federal guidelines. Update case information, such as noting receipt ofthe transaction.Corresponds To:Transmittal# 1[] Modification or Responding Tribunal Order",,,,,
-,Required data blocks and Elements,,,,
-,,Data Element Description,,,
-(Data Block Record Layout),,,,,
-HEADER,,,,,
-LOCAL-FIPS-STATE/COUNTY,Your state/county FIPS code,,,,
-OTHER-FIPS-STATE/COUNTY,"State/county FIPS code to which transactionis directed",,,,
-CSENET-VERSION-NUMBER,3,,,,
-TRANSACTION-SERIAL-NUMBER,Fill as appropriate,,,,
-ACTION-CODE,R,,,,
-FUNCTIONAL-TYPE-CODE,EST,,,,
-TXN-DATE,Date transaction was created,,,,
-CASE-ID,Your case ID,,,,
-ACTION-REASON,SRADJ,,,,
-ATTACHMENTS-IND,#NAME?,,,,
-1,,,,,
-,EST R SRADJ − ESTABLISHMENT REQUEST FOR REVIEW AND,,,,
-,ADJUSTMENT,,,,
-,Description/Business Usage,,,,
-NCP-IDENTIFICATION-IND,1,,,,
-NCP-LOCATE-IND,1,,,,
-PARTICIPANT-DATA-IND,Fill as appropriate,,,,
-*ORDER-DATA-IND,1,,,,
-COLLECTION-DATA-IND,=0 (numeric),,,,
-INFORMATION-IND,=0 (numeric),,,,
-OVERDUE-IND,=0 (numeric),,,,
-CASE DATA BLOCK,,,,,
-CASE-TYPE,Fill as appropriate,,,,
-CASE-STATUS,#NAME?,,,,
-PAYMENT-MAILING-ADDRESS-LINE1,Your payment mailing address,,,,
-*PAYMENT-CITY,Payment city,,,,
-*PAYMENT-STATE,Payment state,,,,
-*PAYMENT-ZIP-1,Payment ZIP Code,,,,
-*CONTACT-NAME-LAST,Your state contact last name,,,,
-*CONTACT-NAME-FIRST,Your state contact first name,,,,
-*CONTACT-ADDRESS-LINE-1,Contact address,,,,
-*CONTACT-CITY,Contact city,,,,
-*CONTACT-STATE,Contact state,,,,
-*CONTACT-ZIP-1,Contact ZIP Code,,,,
-*CONTACT-PHONE-NUM,Contact phone number,,,,
-NCP IDENTIFICATION DATA BLOCK,,,,,
-NAME-LAST,NCP last name,,,,
-NAME-FIRST,NCP first name,,,,
-*SSN,NCP Social Security number,,,,
-*DATE-OF-BIRTH,NCP date of birth,,,,
-NCP LOCATE DATA BLOCK,,,,,
-,EST R SRADJ − ESTABLISHMENT REQUEST FOR REVIEW AND,,,,
-,ADJUSTMENT,,,,
-,Description/Business Usage,,,,
-*RESIDENTIAL-CITY,NCP city,,,,
-*RESIDENTIAL-STATE,NCP state,,,,
-*RESIDENTIAL-ZIP-1,NCP ZIP Code,,,,
-"*RESIDENTIAL-ADDRESS-EFFECTIVE-DATE",Required if residential address entered,,,,
-"*RESIDENTIAL-ADDRESS-CONFIRMED-IND.",Fill as appropriate,,,,
-PARTICIPANT DATA BLOCK (2),,,,,
-NAME-LAST,Participant last name,,,,
-NAME-FIRST,Participant first name,,,,
-DATE-OF-BIRTH,Fill as appropriate,,,,
-*SSN,Participant’s Social Security number,,,,
-RELATIONSHIP,Fill as appropriate,,,,
-PARTICIPANT-STATUS,#NAME?,,,,
-*DEPENDENT-RELATION-CP,Fill as appropriate,,,,
-*ORDER DATA BLOCK,,,,,
-*ORDER-FIPS-STATE,FIPS code of state that issued order,,,,
-*ORDER-FIPS-COUNTY,FIPS code of county that issued order,,,,
-*ORDER-ID,The order ID,,,,
-*ORDER-FILING-DATE,Date order was filed in your state,,,,
-*ORDER-TYPE,Fill as appropriate,,,,
-*DEBT-TYPE,Fill as appropriate,,,,
-*ORDER-FREQ,Fill as appropriate,,,,
-*ORDER-FREQ-AMOUNT,Dollar amount per frequency,,,,
-*ORDER-EFFECTIVE-DATE,Date obligation starts to accrue,,,,
-,EST R SRMOD − ESTABLISHMENT REQUEST FOR SUPPORT ORDER,,,,
-,MODIFICATION,,,,
-,Description/Business Usage,,,,
-"Sent by Initiating State:This transaction is used to electronically request a modification of a support order.Used To:Request initiation of a new interstate case or on established interstate cases.Corresponds To:Transmittal #14. [ ] Modification of Responding Tribunal OrderAutomated Triggers:Determine how the CSE system records that a modification is needed.Action By Receiving State:Process according to federal guidelines. Either update existing case information, such asnoting receipt of the transaction, or consider initial activities, such as building a case andinitiating locate activities.",,,,,
-,Required data blocks and Elements,,,,
-,,Data Element Description,,,
-(Data Block Record Layout),,,,,
-HEADER,,,,,
-LOCAL-FIPS-STATE/COUNTY,Your state/county FIPS code,,,,
-OTHER-FIPS-STATE/COUNTY,"State/county FIPS code to which transactionis directed",,,,
-CSENET-VERSION-NUMBER,3,,,,
-TRANSACTION-SERIAL-NUMBER,Fill as appropriate,,,,
-ACTION-CODE,R,,,,
-FUNCTIONAL-TYPE-CODE,EST,,,,
-TXN-DATE,Date transaction was created,,,,
-CASE-ID,Your case ID,,,,
-*OTHER-CASE-ID,Other case ID,,,,
-ACTION-REASON,SRMOD,,,,
-ATTACHMENTS-IND,#NAME?,,,,
-CASE-DATA-IND,1,,,,
-NCP-IDENTIFICATION-IND,1,,,,
-NCP-LOCATE-IND,1,,,,
-PARTICIPANT-DATA-IND,Fill as appropriate,,,,
-,EST R SRMOD − ESTABLISHMENT REQUEST FOR SUPPORT ORDER,,,,
-,MODIFICATION,,,,
-,Description/Business Usage,,,,
-*ORDER-DATA-IND,1,,,,
-COLLECTION-DATA-IND,=0 (numeric),,,,
-INFORMATION-IND,=0 (numeric),,,,
-OVERDUE-IND,=0 (numeric),,,,
-CASE DATA BLOCK,,,,,
-CASE-TYPE,Fill as appropriate,,,,
-CASE-STATUS,#NAME?,,,,
-PAYMENT-MAILING-ADDRESS-LINE1,Your payment mailing address,,,,
-*PAYMENT-CITY,Payment city,,,,
-*PAYMENT-STATE,Payment state,,,,
-*PAYMENT-ZIP-1,Payment ZIP Code,,,,
-*CONTACT-NAME-LAST,Your state contact last name,,,,
-*CONTACT-NAME-FIRST,Your state contact first name,,,,
-*CONTACT-ADDRESS-LINE-1,Contact address,,,,
-*CONTACT-CITY,Contact city,,,,
-*CONTACT-STATE,Contact state,,,,
-*CONTACT-ZIP-1,Contact ZIP Code,,,,
-*CONTACT-PHONE-NUM,Contact phone number,,,,
-NCP IDENTIFICATION DATA BLOCK,,,,,
-NAME-LAST,NCP last name,,,,
-NAME-FIRST,NCP first name,,,,
-SSN,NCP Social Security number,,,,
-DATE-OF-BIRTH,NCP date of birth,,,,
-NCP LOCATE DATA BLOCK,,,,,
-*RESIDENTIAL-ADDRESS-LINE1,NCP street address,,,,
-*RESIDENTIAL-CITY,NCP city,,,,
-*RESIDENTIAL-STATE,NCP state,,,,
-*RESIDENTIAL-ZIP-1,NCP ZIP Code,,,,
-,EST R SRMOD − ESTABLISHMENT REQUEST FOR SUPPORT ORDER,,,,
-,MODIFICATION,,,,
-,Description/Business Usage,,,,
-"*RESIDENTIAL-ADDRESS-EFFECTIVE-DATE",Required if residential address entered,,,,
-"*RESIDENTIAL-ADDRESS-CONFIRMED-IND.",Fill as appropriate,,,,
-PARTICIPANT DATA BLOCK (2),,,,,
-NAME-LAST,Participant last name,,,,
-NAME-FIRST,Participant first name,,,,
-DATE-OF-BIRTH,Fill as appropriate,,,,
-*SSN,Participant’s Social Security number,,,,
-RELATIONSHIP,Fill as appropriate,,,,
-PARTICIPANT-STATUS,#NAME?,,,,
-*DEPENDENT-RELATION-CP,Fill as appropriate,,,,
-*ORDER DATA BLOCK,,,,,
-*ORDER-FIPS-STATE,FIPS code of state that issued order,,,,
-*ORDER-FIPS-COUNTY,FIPS code of county that issued order,,,,
-*ORDER-ID,The order ID,,,,
-*ORDER-FILING-DATE,Date order was filed in your state,,,,
-*ORDER-TYPE,Fill as appropriate,,,,
-*DEBT-TYPE,Fill as appropriate,,,,
-*ORDER-FREQ,Fill as appropriate,,,,
-*ORDER-FREQ-AMOUNT,Dollar amount per frequency,,,,
-*ORDER-EFFECTIVE-DATE,Date obligation starts to accrue,,,,
-*MEDICAL-ORDERED,Y or N,,,,
-,EST R SROMC − ESTABLISHMENT REQUEST FOR MEDICAL SUPPORT,,,,
-,ONLY,,,,
-,Description/Business Usage,,,,
-"Sent by Initiating State:This transaction is used to electronically request establishment of medical support only.Used To:Request initiation of a new interstate caseCorresponds To:Transmittal #1C. [ ] Medical Support OnlyAutomated Triggers:Determine how the CSE system records that establishment of medical support only isneeded.Action By Receiving State:Process according to federal guidelines. Consider initial activities, such as building a caseand initiating locate activities.",,,,,
-,Required data blocks and Elements,,,,
-,,Data Element Description,,,
-(Data Block Record Layout),,,,,
-HEADER,,,,,
-LOCAL-FIPS-STATE/COUNTY,Your state/county FIPS code,,,,
-OTHER-FIPS-STATE/COUNTY,"State/county FIPS code to which transactionis directed",,,,
-CSENET-VERSION-NUMBER,3,,,,
-TRANSACTION-SERIAL-NUMBER,Fill as appropriate,,,,
-ACTION-CODE,R,,,,
-FUNCTIONAL-TYPE-CODE,EST,,,,
-TXN-DATE,Date transaction was created,,,,
-CASE-ID,Your case ID,,,,
-ACTION-REASON,SRMOC,,,,
-ATTACHMENTS-IND,#NAME?,,,,
-CASE-DATA-IND,1,,,,
-NCP-IDENTIFICATION-IND,1,,,,
-NCP-LOCATE-IND,1,,,,
-PARTICIPANT-DATA-IND,Fill as appropriate,,,,
-ORDER-DATA-IND,=0 (numeric),,,,
-,EST R SROMC − ESTABLISHMENT REQUEST FOR MEDICAL SUPPORT,,,,
-,ONLY,,,,
-,Description/Business Usage,,,,
-COLLECTION-DATA-IND,=0 (numeric),,,,
-INFORMATION-IND,=0 (numeric),,,,
-OVERDUE-IND,=0 (numeric),,,,
-CASE DATA BLOCK,,,,,
-CASE-TYPE,Fill as appropriate,,,,
-CASE-STATUS,#NAME?,,,,
-PAYMENT-MAILING-ADDRESS-LINE1,Your payment mailing address,,,,
-*PAYMENT-CITY,Payment city,,,,
-*PAYMENT-STATE,Payment state,,,,
-*PAYMENT-ZIP-1,Payment ZIP Code,,,,
-*CONTACT-NAME-LAST,Your state contact last name,,,,
-*CONTACT-NAME-FIRST,Your state contact first name,,,,
-*CONTACT-ADDRESS-LINE-1,Contact address,,,,
-*CONTACT-CITY,Contact city,,,,
-*CONTACT-STATE,Contact state,,,,
-*CONTACT-ZIP-1,Contact ZIP Code,,,,
-*CONTACT-PHONE-NUM,Contact phone number,,,,
-NCP IDENTIFICATION DATA BLOCK,,,,,
-NAME-LAST,NCP last name,,,,
-NAME-FIRST,NCP first name,,,,
-*SSN,NCP Social Security number,,,,
-*DATE-OF-BIRTH,NCP date of birth,,,,
-NCP LOCATE DATA BLOCK,,,,,
-*RESIDENTIAL-ADDRESS-LINE1,NCP street address,,,,
-*RESIDENTIAL-CITY,NCP city,,,,
-*RESIDENTIAL-STATE,NCP state,,,,
-*RESIDENTIAL-ZIP-1,NCP ZIP Code,,,,
-,EST R SROMC − ESTABLISHMENT REQUEST FOR MEDICAL SUPPORT,,,,
-,ONLY,,,,
-,Description/Business Usage,,,,
-"*RESIDENTIAL-ADDRESS-EFFECTIVE-DATE",Required if residential address entered,,,,
-"*RESIDENTIAL-ADDRESS-CONFIRMED-IND.",Fill as appropriate,,,,
-PARTICIPANT DATA BLOCK (2),,,,,
-NAME-LAST,Participant last name,,,,
-NAME-FIRST,Participant first name,,,,
-DATE-OF-BIRTH,Fill as appropriate,,,,
-*SSN,Participant’s Social Security number,,,,
-RELATIONSHIP,Fill as appropriate,,,,
-PARTICIPANT-STATUS,#NAME?,,,,
-*DEPENDENT-RELATION-CP,Fill as appropriate,,,,
-,EST R SROPP − ESTABLISHMENT REQUEST FOR RETROACTIVE CHILD,,,,
-,SUPPORT ONLY,,,,
-,Description/Business Usage,,,,
-"Sent by Initiating State:This transaction is used to electronically request establishment of retroactive child supportonly.Used To:Request initiation of a new interstate caseCorresponds To:Transmittal #1B. [ ] Retroactive Child SupportAutomated Triggers:Determine how the CSE system records that establishment of retroactive child support isneeded.Action By Receiving State:Process according to federal guidelines. Consider initial activities, such as building a case,and initiating locate activities.",,,,,
-,Required data blocks and Elements,,,,
-,,Data Element Description,,,
-(Data Block Record Layout),,,,,
-HEADER,,,,,
-LOCAL-FIPS-STATE/COUNTY,Your state/county FIPS code,,,,
-OTHER-FIPS-STATE/COUNTY,"State/county FIPS code to which transactionis directed",,,,
-CSENET-VERSION-NUMBER,3,,,,
-TRANSACTION-SERIAL-NUMBER,Fill as appropriate,,,,
-ACTION-CODE,R,,,,
-FUNCTIONAL-TYPE-CODE,EST,,,,
-TXN-DATE,Date transaction was created,,,,
-CASE-ID,Your case ID,,,,
-ACTION-REASON,SROPP,,,,
-ATTACHMENTS-IND,#NAME?,,,,
-CASE-DATA-IND,1,,,,
-NCP-IDENTIFICATION-IND,1,,,,
-NCP-LOCATE-IND,1,,,,
-,EST R SROPP − ESTABLISHMENT REQUEST FOR RETROACTIVE CHILD,,,,
-,SUPPORT ONLY,,,,
-,Description/Business Usage,,,,
-ORDER-DATA-IND,=0 (numeric),,,,
-COLLECTION-DATA-IND,=0 (numeric),,,,
-INFORMATION-IND,=0 (numeric),,,,
-OVERDUE-IND,=0 (numeric),,,,
-CASE DATA BLOCK,,,,,
-CASE-TYPE,Fill as appropriate,,,,
-CASE-STATUS,#NAME?,,,,
-PAYMENT-MAILING-ADDRESS-LINE1,Your payment mailing address,,,,
-*PAYMENT-CITY,Payment city,,,,
-*PAYMENT-STATE,Payment state,,,,
-*PAYMENT-ZIP-1,Payment ZIP Code,,,,
-*CONTACT-NAME-LAST,Your state contact last name,,,,
-*CONTACT-NAME-FIRST,Your state contact first name,,,,
-*CONTACT-ADDRESS-LINE-1,Contact address,,,,
-*CONTACT-CITY,Contact city,,,,
-*CONTACT-STATE,Contact state,,,,
-*CONTACT-ZIP-1,Contact ZIP Code,,,,
-*CONTACT-PHONE-NUM,Contact phone number,,,,
-NCP IDENTIFICATION DATA BLOCK,,,,,
-NAME-LAST,NCP last name,,,,
-NAME-FIRST,NCP first name,,,,
-*SSN,NCP Social Security number,,,,
-*DATE-OF-BIRTH,NCP date of birth,,,,
-NCP LOCATE DATA BLOCK,,,,,
-*RESIDENTIAL-ADDRESS-LINE1,NCP street address,,,,
-*RESIDENTIAL-CITY,NCP city,,,,
-*RESIDENTIAL-STATE,NCP state,,,,
-*RESIDENTIAL-ZIP-1,NCP ZIP Code,,,,
-,EST R SROPP − ESTABLISHMENT REQUEST FOR RETROACTIVE CHILD,,,,
-,SUPPORT ONLY,,,,
-,Description/Business Usage,,,,
-"*RESIDENTIAL-ADDRESS-EFFECTIVE-DATE",Required if residential address entered,,,,
-"*RESIDENTIAL-ADDRESS-CONFIRMED-IND.",Fill as appropriate,,,,
-PARTICIPANT DATA BLOCK (2),,,,,
-NAME-LAST,Participant last name,,,,
-NAME-FIRST,Participant first name,,,,
-DATE-OF-BIRTH,Fill as appropriate,,,,
-*SSN,Participant’s Social Security number,,,,
-RELATIONSHIP,Fill as appropriate,,,,
-PARTICIPANT-STATUS,#NAME?,,,,
-*DEPENDENT-RELATION-CP,Fill as appropriate,,,,
-,EST R SRORD − ESTABLISHMENT REQUEST FOR ESTABLISHMENT OF,,,,
-,"CURRENT CHILD SUPPORT, INCLUDING MEDICAL SUPPORT",,,,
-,Description/Business Usage,,,,
-"Sent by Initiating State:This transaction is used to electronically request establishment of current child support,including medical support.Used To:Request initiation of a new interstate caseCorresponds To:Transmittal #12. [ ] Establishment of Order for:A. [ ] Current Child Support, Including Medical SupportAutomated Triggers:Determine how the CSE system records that establishment of current child support andmedical support is needed.Action By Receiving State:Process according to federal guidelines. Consider initial activities, such as building a caseand initiating locate activities.",,,,,
-,Required data blocks and Elements,,,,
-,,Data Element Description,,,
-(Data Block Record Layout),,,,,
-HEADER,,,,,
-LOCAL-FIPS-STATE/COUNTY,Your state/county FIPS code,,,,
-OTHER-FIPS-STATE/COUNTY,"State/county FIPS code to which transactionis directed",,,,
-CSENET-VERSION-NUMBER,3,,,,
-TRANSACTION-SERIAL-NUMBER,Fill as appropriate,,,,
-ACTION-CODE,R,,,,
-FUNCTIONAL-TYPE-CODE,EST,,,,
-TXN-DATE,Date transaction was created,,,,
-CASE-ID,Your case ID,,,,
-ACTION-REASON,SRORD,,,,
-ATTACHMENTS-IND,#NAME?,,,,
-CASE-DATA-IND,1,,,,
-NCP-IDENTIFICATION-IND,1,,,,
-NCP-LOCATE-IND,1,,,,
-,EST R SRORD − ESTABLISHMENT REQUEST FOR ESTABLISHMENT OF,,,,
-,"CURRENT CHILD SUPPORT, INCLUDING MEDICAL SUPPORT",,,,
-,Description/Business Usage,,,,
-PARTICIPANT-DATA-IND,Fill as appropriate,,,,
-ORDER-DATA-IND,=0 (numeric),,,,
-COLLECTION-DATA-IND,=0 (numeric),,,,
-INFORMATION-IND,=0 (numeric),,,,
-OVERDUE-IND,=0 (numeric),,,,
-CASE DATA BLOCK,,,,,
-CASE-TYPE,Fill as appropriate,,,,
-CASE-STATUS,#NAME?,,,,
-PAYMENT-MAILING-ADDRESS-LINE1,Your payment mailing address,,,,
-*PAYMENT-CITY,Payment city,,,,
-*PAYMENT-STATE,Payment state,,,,
-*PAYMENT-ZIP-1,Payment ZIP Code,,,,
-*CONTACT-NAME-LAST,Your state contact last name,,,,
-*CONTACT-NAME-FIRST,Your state contact first name,,,,
-*CONTACT-ADDRESS-LINE-1,Contact address,,,,
-*CONTACT-CITY,Contact city,,,,
-*CONTACT-STATE,Contact state,,,,
-*CONTACT-ZIP-1,Contact ZIP Code,,,,
-CONTACT-PHONE-NUM,Contact phone number,,,,
-NCP IDENTIFICATION DATA BLOCK,,,,,
-NAME-LAST,NCP last name,,,,
-NAME-FIRST,NCP first name,,,,
-*SSN,NCP Social Security number,,,,
-*DATE-OF-BIRTH,NCP date of birth,,,,
-NCP LOCATE DATA BLOCK,,,,,
-*RESIDENTIAL-ADDRESS-LINE1,NCP street address,,,,
-*RESIDENTIAL-CITY,NCP city,,,,
-*RESIDENTIAL-STATE,NCP state,,,,
-,EST R SRORD − ESTABLISHMENT REQUEST FOR ESTABLISHMENT OF,,,,
-,"CURRENT CHILD SUPPORT, INCLUDING MEDICAL SUPPORT",,,,
-,Description/Business Usage,,,,
-*RESIDENTIAL-ZIP-1,NCP ZIP Code,,,,
-"*RESIDENTIAL-ADDRESS-EFFECTIVE-DATE",Required if residential address entered,,,,
-"*RESIDENTIAL-ADDRESS-CONFIRMED-IND.",Fill as appropriate,,,,
-PARTICIPANT DATA BLOCK (2),,,,,
-NAME-LAST,Participant last name,,,,
-NAME-FIRST,Participant first name,,,,
-DATE-OF-BIRTH,Fill as appropriate,,,,
-*SSN,Participant’s Social Security number,,,,
-RELATIONSHIP,Fill as appropriate,,,,
-PARTICIPANT-STATUS,#NAME?,,,,
-*DEPENDENT-RELATION-CP,Fill as appropriate,,,,
-,[EST R SRPAT − ESTABLISHMENT REQUEST FOR ESTABLISHMENT OF,,,,
-,"CURRENT CHILD SUPPORT, REQUESTING THE ESTABLISHMENT OF",,,,
-,PATERNITY AND SUPPORT],,,,
-,Description/Business Usage,,,,
-"Sent by Initiating State:This transaction is used to provide states the ability to send and receive a single transactionrequesting the establishment of both paternity and support.Used to:Request the initiation of a new two-state interstate case. Include additional requests such asretroactive child support or costs and fees in the Information data block.Corresponds to:Transmittal #11.  [ ] Establishment of Paternity and2.  [ ] Establishment of Order for:A. [ ] Current Child Support, Including Medical SupportAutomated Triggers:Identify how the CSE system records that paternity and support establishment in anotherstate is needed.Action By Receiving State:Process according to federal guidelines. Prior to automatically creating an alert that notifiesworkers that this transaction was received, determine whether the worker must take therequired next step or if the CSE system can make decisions. Consider initial activities, suchas building a case and initiating locate activities.",,,,,
-,Required data blocks and Elements,,,,
-,,Data Element Description,,,
-(Data Block Record Layout),,,,,
-HEADER,,,,,
-LOCAL-FIPS-STATE/COUNTY,Your state/county FIPS code,,,,
-OTHER-FIPS-STATE/COUNTY,"State/county FIPS code to which transaction isdirected",,,,
-CSENET-VERSION-NUMBER,3,,,,
-TRANSACTION-SERIAL-NUMBER,Fill as appropriate,,,,
-ACTION-CODE,R,,,,
-FUNCTIONAL-TYPE-CODE,PAT,,,,
-TXN-DATE,Date transaction was created,,,,
-CASE-ID,Your case ID,,,,
-ACTION-REASON,SRPAT,,,,
-ATTACHMENTS-IND,#NAME?,,,,
-,[EST R SRPAT − ESTABLISHMENT REQUEST FOR ESTABLISHMENT OF,,,,
-,"CURRENT CHILD SUPPORT, REQUESTING THE ESTABLISHMENT OF",,,,
-,PATERNITY AND SUPPORT],,,,
-,Description/Business Usage,,,,
-CASE-DATA-IND,1,,,,
-NCP-IDENTIFICATION-IND,1,,,,
-NCP-LOCATE-IND,1,,,,
-PARTICIPANT-DATA-IND,Fill as appropriate,,,,
-ORDER-DATA-IND,=0 (numeric),,,,
-COLLECTION-DATA-IND,=0 (numeric),,,,
-*INFORMATION-IND,=0 (numeric),,,,
-OVERDUE-IND,=0 (numeric),,,,
-CASE DATA BLOCK,,,,,
-CASE-TYPE,Fill as appropriate,,,,
-CASE-STATUS,#NAME?,,,,
-PAYMENT-MAILING-ADDRESS-LINE1,Your payment mailing address,,,,
-PAYMENT-CITY,Payment city,,,,
-PAYMENT-STATE,Payment state,,,,
-PAYMENT-ZIP-1,Payment ZIP Code,,,,
-*CONTACT-NAME-LAST,Your state contact last name,,,,
-*CONTACT-NAME-FIRST,Your state contact first name,,,,
-*CONTACT-ADDRESS-LINE-1,Contact address,,,,
-*CONTACT-CITY,Contact city,,,,
-*CONTACT-STATE,Contact state,,,,
-*CONTACT-ZIP-1,Contact ZIP Code,,,,
-*CONTACT-PHONE-NUM,Contact phone number,,,,
-NCP IDENTIFICATION DATA BLOCK,,,,,
-NAME-LAST,NCP last name,,,,
-NAME-FIRST,NCP first name,,,,
-*SSN,NCP Social Security number,,,,
-*DATE-OF-BIRTH,NCP date of birth,,,,
-NCP LOCATE DATA BLOCK,,,,,
-NCP street address,,,,,
-,[EST R SRPAT − ESTABLISHMENT REQUEST FOR ESTABLISHMENT OF,,,,
-,"CURRENT CHILD SUPPORT, REQUESTING THE ESTABLISHMENT OF",,,,
-,PATERNITY AND SUPPORT],,,,
-,Description/Business Usage,,,,
-*RESIDENTIAL-CITY,NCP City,,,,
-*RESIDENTIAL-STATE,NCP state,,,,
-*RESIDENTIAL-ZIP-1,NCP ZIP Code,,,,
-"RESIDENTIAL-ADDRESS-EFFECTIVE-DATE",Required if residential address entered,,,,
-"RESIDENTIAL-ADDRESS-CONFIRMED-IND.",Fill as appropriate,,,,
-PARTICIPANT DATA BLOCK (2),,,,,
-NAME-LAST,Participant last name,,,,
-NAME-FIRST,Participant first name,,,,
-*DATE-OF-BIRTH,Fill as appropriate,,,,
-RELATIONSHIP,Fill as appropriate,,,,
-PARTICIPANT-STATUS,#NAME?,,,,
-*DEPENDENT-RELATION-CP,Fill as appropriate,,,,
-*INFORMATION DATA BLOCK,,,,,
-*STATUS-CHANGE-CODE,#NAME?,,,,
-*INFORMATION-TEXT-LINE1,Fill as appropriate,,,,
-,VALID TRANSACTIONS EXCLUDED FROM THE TFM,,,,
-,AND CORE SET OF TRANSACTIONS,,,,
-,Functional Type/ Action/,,,,Recommendations for
-Action Reason Code,,Description/Business Usage,,Alternative Transaction Usage,
-EST A BLANK,Acknowledgment,"EST A ANOAD or EST AAADIN",,,
-EST C BLANK,Cancel Support Order Request,N/A,,,
-EST M BLANK,Reminder Transaction,MSC R GRUPD,,,
-EST M GRPOU,Attachments Overdue,MSC R GRUPD,,,
-EST P GSARR,"Notice of ArrearageReconciliation/Determinationof Sum-certain",MSC P GSPUD,,,
-EST P GSFIL,Document Filed,MSC P GSPUD,,,
-EST P SCDIS,"Case Dismissed WithoutPrejudice",EST P SUEST,,,
-EST P SDCOS,"Defendant/RespondentOrdered to Pay Other Costs",EST P SSEST,,,
-EST P SDPAR,"Defendant/Respondent isParent and Owes Duty",MSC P GSPUD,,,
-EST P SDPAY,"Defendant/Respondent isOrdered to Pay",EST P SSEST,,,
-EST P SIANS,"NCP Did Not Show forSupport Order Hearing",MSC P GSPUD,,,
-EST P SICPS,Contempt Proceedings Started,MSC P GSPUD,,,
-EST P SSCON,Order Issued/Confirmed,MSC P GSPUD,,,
-EST P SUDEN,Support Order Request Denied,EST P SUEST,,,
-EST R SROOC,"Request Support OrderEstablishment for Other CostsOnly",N/A,,,
-EST R SROSS,"Request Support Order forSpousal Support",N/A,,,
-EST U SRADJ,"Request for Review andAdjustment",MSC P GSPUD,,,
-,VALID TRANSACTIONS EXCLUDED FROM THE TFM,,,,
-,AND CORE SET OF TRANSACTIONS,,,,
-,Functional Type/ Action/,,,,Recommendations for
-Action Reason Code,,Description/Business Usage,,Alternative Transaction Usage,
-EST U SRMOD,"Request Support OrderModification",MSC P GSPUD,,,
-EST U SROMC,"Request Support OrderEstablishment for MedicalCoverage Only",MSC P GSPUD,,,
-EST U SROOC,"Request Support OrderEstablishment for Other CostsOnly",N/A,,,
-EST U SROPP,"Request Support OrderEstablishment for a PriorPeriod Only",MSC P GSPUD,,,
-EST U SRORD,"Request Support OrderEstablishment – All AvailableSupport Types",MSC P GSPUD,,,
-EST U SROSS,"Request Support Order forSpousal Support",N/A,,,
+"","EST A AADIN − ESTABLISHMENT ACKNOWLEDGMENT, ADDITIONAL",,
+"",INFORMATION NEEDED TO PROCEED,,
+"",Description/Business Usage,,
+"Sent By Responding State:
+This transaction is used to electronically acknowledge the receipt of the case (EST R) and
+to inform the initiating state that additional information is needed to proceed. The
+transaction must be sent within the timeframes required by federal guidelines (10 working
+days).
+Used On:
+Established interstate cases
+Corresponds To:
+Transmittal #1 Acknowledgment
+[ ] Additional Information Needed
+Relevant CFR Requirements:
+The 45CFR 303.7(a)(2)(iii) states that receipt of the case must be acknowledged and ensure
+that any missing documentation has been requested from the initiating state.
+The 45CFR 303.7(c)(4)(ii) states that if unable to proceed with the case because of
+inadequate documentation, notify the IV-D agency in the initiating state of the necessary
+additions or corrections to the form or documentation.
+The 45CFR303.7(a)(2)(iv) states that within 10 working days of receipt of an interstate
+IV-D case from an initiating state, the central registry must inform the IV-D agency in the
+initiating state where the case was sent for action.
+Automated Triggers:
+Determine how the CSE system records that an establishment request was received and a
+determination has been made that further information is necessary.
+Action By Receiving State:
+Process according to federal guidelines. Update case information, such as noting receipt of
+the transaction, and follow-up on the additional information needed.",,,
+"",Required data blocks and Elements,,
+"",,Data Element Description,
+"(Data Block Record Layout)",,,
+HEADER,,,
+LOCAL-FIPS-STATE/COUNTY,Your state/county FIPS code,,
+OTHER-FIPS-STATE/COUNTY,"State/county FIPS code to which transaction
+is directed",,
+CSENET-VERSION-NUMBER,003,,
+TRANSACTION-SERIAL-NUMBER,Fill as appropriate,,
+ACTION-CODE,A,,
+"",,
+"","EST A AADIN − ESTABLISHMENT ACKNOWLEDGMENT, ADDITIONAL",
+"",INFORMATION NEEDED TO PROCEED,
+"",Description/Business Usage,
+FUNCTIONAL-TYPE-CODE,EST,
+TXN-DATE,Date transaction was created,
+CASE ID,Your case ID,
+OTHER-CASE-ID,Other case ID,
+ACTION-REASON,AADIN,
+ATTACHMENTS-IND,=N,
+"*CASE-DATA-IND",=1,
+"*NCP-IDENTIFICATION-IND",=1,
+NCP-LOCATE-IND,=0 (numeric),
+"*PARTICIPANT-DATA-IND",=1,
+ORDER-DATA-IND,=0 (numeric),
+COLLECTION-DATA-IND,=0 (numeric),
+"*INFORMATION-IND",=1,
+OVERDUE-IND,=0 (numeric),
+"*CASE DATA BLOCK",,
+"*CASE-TYPE",Fill as appropriate,
+"*CASE-STATUS",=O (alpha),
+"*CONTACT-NAME-LAST",Your state contact,
+"*CONTACT-NAME-FIRST",Your state contact,
+"*CONTACT-ADDRESS-LINE-1",Contact address,
+"*CONTACT-CITY",Contact city,
+"*CONTACT-STATE",Contact state,
+"*CONTACT-ZIP-1",Contact ZIP Code,
+"*CONTACT-PHONE-NUM",Contact phone number,
+"*NCP IDENTIFICATION DATA BLOCK",,
+"*NAME-LAST",NCP last name,
+"*NAME-FIRST",NCP first name,
+"*SSN",NCP Social Security number,
+"",,
+"","EST A AADIN − ESTABLISHMENT ACKNOWLEDGMENT, ADDITIONAL",
+"",INFORMATION NEEDED TO PROCEED,
+"",Description/Business Usage,
+"*DATE-OF-BIRTH",NCP date of birth,
+"*PARTICIPANT DATA BLOCK",,
+"*NAME-LAST",Participant last name,
+"*NAME-FIRST",Participant first name,
+"*RELATIONSHIP",Fill as appropriate,
+"*PARTICIPANT-STATUS",=O (alpha),
+"*INFORMATION DATA BLOCK",,
+"*STATUS-CHANGE-CODE",=O (alpha),
+"*INFORMATION-TEXT-LINE1",Fill as appropriate,
+"",,,
+"","EST A ANOAD − ESTABLISHMENT ACKNOWLEDGMENT, NO FURTHER",,
+"",INFORMATION REQUIRED,,
+"",Description/Business Usage,,
+"Sent By Responding State:
+This transaction is used to electronically acknowledge the receipt of the case (EST R) and
+to inform the initiating state that no additional information is necessary. The transaction
+must be sent within the timeframes required by federal guidelines (10 working days).
+Used On:
+Established interstate cases
+Relevant CFR Requirements:
+The 45CFR 303.7(a)(2)(iii) states that receipt of the case must be acknowledged.
+The 45CFR303.7(a)(2)(iv) states that within 10 working days of receipt of an interstate
+IV-D case from an initiating state, the central registry must inform the IV-D agency in the
+initiating state where the case was sent for action.
+Corresponds To:
+Transmittal #1 Acknowledgment
+[ ] Request Received and No Additional Information is Necessary
+Automated Triggers:
+Determine how the CSE system records that an establishment request was received and that
+no further information is necessary for the next step.
+Action By Receiving State:
+Process according to federal guidelines. Update case information, such as noting receipt of
+the transaction.",,,
+"",Required data blocks and Elements,,
+"",,Data Element Description,
+"(Data Block Record Layout)",,,
+HEADER,,,
+LOCAL-FIPS-STATE/COUNTY,Your state/county FIPS code,,
+OTHER-FIPS-STATE/COUNTY,"State/county FIPS code to which transaction
+is directed",,
+CSENET-VERSION-NUMBER,003,,
+TRANSACTION-SERIAL-NUMBER,Fill as appropriate,,
+ACTION-CODE,A,,
+FUNCTIONAL-TYPE-CODE,EST,,
+TXN-DATE,Date transaction was created,,
+CASE ID,Your case ID,,
+OTHER-CASE-ID,Other case ID,,
+"",,
+"","EST A ANOAD − ESTABLISHMENT ACKNOWLEDGMENT, NO FURTHER",
+INFORMATION REQUIRED,,
+ACTION-REASON,ANOAD,
+ATTACHMENTS-IND,=N,
+"*CASE-DATA-IND",=1,
+"*NCP-IDENTIFICATION-IND",=1,
+NCP-LOCATE-IND,=0 (numeric),
+"*PARTICIPANT-DATA-IND",=1,
+ORDER-DATA-IND,=0 (numeric),
+COLLECTION-DATA-IND,=0 (numeric),
+INFORMATION-IND,=0 (numeric),
+OVERDUE-IND,=0 (numeric),
+"*CASE DATA BLOCK",,
+"*CASE-TYPE",Fill as appropriate,
+"*CASE-STATUS",=O (alpha),
+"*CONTACT-NAME-LAST",Your state contact,
+"*CONTACT-NAME-FIRST",Your state contact,
+"*CONTACT-ADDRESS-LINE-1",Contact address,
+"*CONTACT-CITY",Contact city,
+"*CONTACT-STATE",Contact state,
+"*CONTACT-ZIP-1",Contact ZIP Code,
+"*CONTACE-PHONE-NUM",Contact phone number,
+"*NCP IDENTIFICATION DATA BLOCK",,
+"*NAME-LAST",NCP last name,
+"*NAME-FIRST",NCP first name,
+"*SSN",NCP Social Security number,
+"*DATE-OF-BIRTH",NCP date of birth,
+"*PARTICIPANT DATA BLOCK",,
+"*NAME-LAST",Participant last name,
+"*NAME-FIRST",Participant first name,
+"",,
+"","EST A ANOAD − ESTABLISHMENT ACKNOWLEDGMENT, NO FURTHER",
+INFORMATION REQUIRED,,
+"*RELATIONSHIP",Fill as appropriate,
+"*PARTICIPANT-STATUS",=O (alpha),
+"",,,
+"","EST P GSCOE − ESTABLISHMENT PROVISION OF INFORMATION, NEW",,
+"",CONTROLLING ORDER,,
+"",Description/Business Usage,,
+"Sent by Responding State:
+This transaction is used to electronically relay that a new controlling order has been
+established.
+Used On:
+Established interstate cases
+Automated Triggers:
+Determine how the CSE system records that a new controlling order has been established.
+Action By Receiving State:
+Process according to federal guidelines and update case information such as noting receipt
+of the transaction.",,,
+"",Required data blocks and Elements,,
+"",,Data Element Description,
+"(Data Block Record Layout)",,,
+HEADER,,,
+LOCAL-FIPS-STATE/COUNTY,Your state/county FIPS code,,
+OTHER-FIPS-STATE/COUNTY,"State/county FIPS code to which transaction
+is directed",,
+CSENET-VERSION-NUMBER,003,,
+TRANSACTION-SERIAL-NUMBER,Fill as appropriate,,
+ACTION-CODE,P,,
+FUNCTIONAL-TYPE-CODE,EST,,
+TXN-DATE,Date transaction was created,,
+CASE ID,Your case ID,,
+OTHER-CASE-ID,Other case ID,,
+ACTION-REASON,GSCOE,,
+ATTACHMENTS-IND,=N,,
+CASE-DATA-IND,=1,,
+NCP-IDENTIFICATION-IND,=1,,
+NCP-LOCATE-IND,=0 (numeric),,
+"*PARTICIPANT-DATA-IND",Fill as appropriate,,
+"*ORDER-DATA-IND",=1,,
+COLLECTION-DATA-IND,=0 (numeric),,
+"",,
+"","EST P GSCOE − ESTABLISHMENT PROVISION OF INFORMATION, NEW",
+"",CONTROLLING ORDER,
+"",Description/Business Usage,
+INFORMATION-IND,=0 (numeric),
+OVERDUE-IND,=0 (numeric),
+CASE DATA BLOCK,,
+CASE-TYPE,Fill as appropriate,
+CASE-STATUS,=O (alpha),
+"*CONTACT-NAME-LAST",Your state contact last name,
+"*CONTACT-NAME-FIRST",Your state contact first name,
+"*CONTACT-ADDRESS-LINE-1",Contact address,
+"*CONTACT-CITY",Contact city,
+"*CONTACT-STATE",Contact state,
+"*CONTACT-ZIP-1",Contact ZIP Code,
+"*CONTACT-PHONE-NUM",Contact phone number,
+NCP IDENTIFICATION DATA BLOCK,,
+NAME-LAST,NCP last name,
+NAME-FIRST,NCP first name,
+"*SSN",NCP Social Security number,
+"*DATE-OF-BIRTH",NCP date of birth,
+"*PARTICIPANT DATA BLOCK (2)",,
+"*NAME-LAST",Participant last name,
+"*NAME-FIRST",Participant first name,
+"*RELATIONSHIP",Fill as appropriate,
+"*PARTICIPANT-STATUS",=O (alpha),
+"*ORDER DATA BLOCK",,
+"*ORDER-FIPS-STATE",FIPS code of state that issued order,
+"*ORDER-FIPS-COUNTY",FIPS code of county that issued order,
+"*ORDER-ID",The order ID,
+"",,
+"","EST P GSCOE − ESTABLISHMENT PROVISION OF INFORMATION, NEW",
+"",CONTROLLING ORDER,
+"",Description/Business Usage,
+"*ORDER-FILING-DATE",Date order was filed in your state,
+"*ORDER-TYPE",Fill as appropriate,
+"*DEBT-TYPE",Fill as appropriate,
+"*ORDER-FREQ",Fill as appropriate,
+"*ORDER-FREQ-AMOUNT",Dollar amount per frequency,
+"*ORDER-EFFECTIVE-DATE",Date obligation starts to accrue,
+"*MEDICAL-ORDERED",Y or N,
+"",,,
+"","EST P SICHS − ESTABLISHMENT PROVISION OF INFORMATION, SUPPORT",,
+"",HEARING SCHEDULED,,
+"",Description/Business Usage,,
+"Sent by Responding State:
+This transaction is used to electronically send a status update to an establishment request
+(EST R). The transaction indicates that a support hearing has been scheduled.
+Used On:
+Established interstate cases
+Corresponds To:
+Transmittal #2
+3. [ ] Notice of Hearing
+Relevant CFR Requirements:
+The 45CFR 303.7(c)(8) states that the IV-D agency must provide timely notice to the IV-D
+agency in the initiating state in advance of any formal hearings which may result in
+establishment or adjustment of an order.
+Automated Triggers:
+Determine how the CSE system records that a support hearing has been scheduled.
+Action By Receiving State:
+Process according to federal guidelines. Update case information, such as hearing date, and
+note receipt of the transaction.",,,
+"",Required data blocks and Elements,,
+"",,Data Element Description,
+"(Data Block Record Layout)",,,
+HEADER,,,
+LOCAL-FIPS-STATE/COUNTY,Your state/county FIPS code,,
+OTHER-FIPS-STATE/COUNTY,"State/county FIPS code to which transaction
+is directed",,
+CSENET-VERSION-NUMBER,003,,
+TRANSACTION-SERIAL-NUMBER,Fill as appropriate,,
+ACTION-CODE,P,,
+FUNCTIONAL-TYPE-CODE,EST,,
+TXN-DATE,Date transaction was created,,
+CASE ID,Your case ID,,
+OTHER-CASE-ID,Other case ID,,
+ACTION-REASON,SICHS,,
+"*ACTION-RESOLUTION-DATE",The date the event will occur,,
+"",,
+"","EST P SICHS − ESTABLISHMENT PROVISION OF INFORMATION, SUPPORT",
+HEARING SCHEDULED,,
+ATTACHMENTS-IND,=N,
+CASE-DATA-IND,=1,
+NCP-IDENTIFICATION-IND,=1,
+NCP-LOCATE-IND.,=0 (numeric),
+"*PARTICIPANT-DATA-IND",Fill as appropriate,
+ORDER-DATA-IND,=0 (numeric),
+COLLECTION-DATA-IND,=0 (numeric),
+"*INFORMATION-IND",Fill as appropriate,
+OVERDUE-IND,=0 (numeric),
+CASE DATA BLOCK,,
+CASE-TYPE,Fill as appropriate,
+CASE-STATUS,=O (alpha),
+"*CONTACT-NAME-LAST",Your state contact last name,
+"*CONTACT-NAME-FIRST",Your state contact first name,
+"*CONTACT-ADDRESS-LINE-1",Contact address,
+"*CONTACT-CITY",Contact city,
+"*CONTACT-STATE",Contact state,
+"*CONTACT-ZIP-1",Contact ZIP Code,
+"*CONTACT-PHONE-NUM",Contact phone number,
+NCP IDENTIFICATION DATA BLOCK,,
+NAME-LAST,NCP last name,
+NAME-FIRST,NCP first name,
+"*SSN",NCP Social Security number,
+"*DATE-OF-BIRTH",NCP date of birth,
+"*PARTICIPANT DATA BLOCK (2)",,
+"*NAME-LAST",Participant last name,
+"*NAME-FIRST",Participant first name,
+"*RELATIONSHIP",Fill as appropriate,
+"",,
+"","EST P SICHS − ESTABLISHMENT PROVISION OF INFORMATION, SUPPORT",
+HEARING SCHEDULED,,
+"*PARTICIPANT-STATUS",=O (alpha),
+"*INFORMATION DATA BLOCK",,
+"*STATUS-CHANGE-CODE",=O (alpha),
+"*INFORMATION-TEXT-LINE1",Fill as appropriate,
+"",,,
+"","EST P SSADJ − ESTABLISHMENT PROVISION OF INFORMATION, REVIEW",,
+"",AND MODIFICATION WARRANTED,,
+"",Description/Business Usage,,
+"Sent by Responding State:
+This transaction is used to electronically send a status update to an establishment request
+(EST R SRADJ) for a review and adjustment. The transaction indicates that a review and
+modification is warranted.
+Used On:
+Established interstate cases
+Automated Triggers:
+Determine how the CSE system records that a review and modification is warranted.
+Action By Receiving State:
+Process according to federal guidelines. Update case information, such as the results of the
+review and note receipt of the transaction.",,,
+"",Required data blocks and Elements,,
+"",,Data Element Description,
+"(Data Block Record Layout)",,,
+HEADER,,,
+LOCAL-FIPS-STATE/COUNTY,Your state/county FIPS code,,
+OTHER-FIPS-STATE/COUNTY,"State/county FIPS code to which transaction
+is directed",,
+CSENET-VERSION-NUMBER,003,,
+TRANSACTION-SERIAL-NUMBER,Fill as appropriate,,
+ACTION-CODE,P,,
+FUNCTIONAL-TYPE-CODE,EST,,
+TXN-DATE,Date transaction was created,,
+CASE ID,Your case ID,,
+OTHER-CASE-ID,Other case ID,,
+ACTION-REASON,SSADJ,,
+ATTACHMENTS-IND,=N,,
+CASE-DATA-IND,=1,,
+NCP-IDENTIFICATION-IND,=1,,
+NCP-LOCATE-IND,=0 (numeric),,
+"*PARTICIPANT-DATA-IND",Fill as appropriate,,
+ORDER-DATA-IND,=0 (numeric),,
+"",,
+"","EST P SSADJ − ESTABLISHMENT PROVISION OF INFORMATION, REVIEW",
+"",AND MODIFICATION WARRANTED,
+"",Description/Business Usage,
+COLLECTION-DATA-IND,=0 (numeric),
+INFORMATION-IND,=0 (numeric),
+OVERDUE-IND,=0 (numeric),
+CASE DATA BLOCK,,
+CASE-TYPE,Fill as appropriate,
+CASE-STATUS,=O (alpha),
+"*CONTACT-NAME-LAST",Your state contact last name,
+"*CONTACT-NAME-FIRST",Your state contact first name,
+"*CONTACT-ADDRESS-LINE-1",Contact address,
+"*CONTACT-CITY",Contact city,
+"*CONTACT-STATE",Contact state,
+"*CONTACT-ZIP-1",Contact ZIP Code,
+"*CONTACT-PHONE-NUM",Contact phone number,
+NCP IDENTIFICATION DATA BLOCK,,
+NAME-LAST,NCP last name,
+NAME-FIRST,NCP first name,
+"*SSN",NCP Social Security number,
+"*DATE-OF-BIRTH",NCP date of birth,
+"*PARTICIPANT DATA BLOCK (2)",,
+"*NAME-LAST",Participant last name,
+"*NAME-FIRST",Participant first name,
+"*RELATIONSHIP",Fill as appropriate,
+"*PARTICIPANT-STATUS",=O (alpha),
+"",,,
+"","EST P SSEST − ESTABLISHMENT PROVISION OF INFORMATION, SUPPORT",,
+"",ORDER ESTABLISHED,,
+"",Description/Business Usage,,
+"Sent by Responding State:
+This transaction is used to electronically respond to an establishment request (EST R). The
+transaction indicates that a support order was established.
+Used On:
+Established interstate cases
+Automated Triggers:
+Determine how the CSE system records that a new order was established.
+Action By Receiving State:
+Process according to federal guidelines. Update case information, such as noting receipt of
+the transaction.",,,
+"",Required data blocks and Elements,,
+"",,Data Element Description,
+"(Data Block Record Layout)",,,
+HEADER,,,
+LOCAL-FIPS-STATE/COUNTY,Your state/county FIPS code,,
+OTHER-FIPS-STATE/COUNTY,"State/county FIPS code to which transaction
+is directed",,
+CSENET-VERSION-NUMBER,003,,
+TRANSACTION-SERIAL-NUMBER,Fill as appropriate,,
+ACTION-CODE,P,,
+FUNCTIONAL-TYPE-CODE,EST,,
+TXN-DATE,Date transaction was created,,
+CASE ID,Your case ID,,
+OTHER-CASE-ID,Other case ID,,
+ACTION-REASON,SSEST,,
+ATTACHMENTS-IND,=N,,
+CASE-DATA-IND,=1,,
+NCP-IDENTIFICATION-IND,=1,,
+NCP-LOCATE-IND,=0 (numeric),,
+"*PARTICIPANT-DATA-IND",Fill as appropriate,,
+"*ORDER-DATA-IND",=1,,
+COLLECTION-DATA-IND,=0 (numeric),,
+"","EST P SSEST − ESTABLISHMENT PROVISION OF INFORMATION, SUPPORT",
+"",ORDER ESTABLISHED,
+"",Description/Business Usage,
+INFORMATION-IND,=0 (numeric),
+OVERDUE-IND,=0 (numeric),
+CASE DATA BLOCK,,
+CASE-TYPE,Fill as appropriate,
+CASE-STATUS,=O (alpha),
+"*CONTACT-NAME-LAST",Your state contact last name,
+"*CONTACT-NAME-FIRST",Your state contact first name,
+"*CONTACT-ADDRESS-LINE-1",Contact address,
+"*CONTACT-CITY",Contact city,
+"*CONTACT-STATE",Contact state,
+"*CONTACT-ZIP-1",Contact ZIP Code,
+"*CONTACT-PHONE-NUM",Contact phone number,
+NCP IDENTIFICATION DATA BLOCK,,
+NAME-LAST,NCP last name,
+NAME-FIRST,NCP first name,
+"*SSN",NCP Social Security number,
+"*DATE-OF-BIRTH",NCP date of birth,
+"*PARTICIPANT DATA BLOCK (2)",,
+"*NAME-LAST",Participant last name,
+"*NAME-FIRST",Participant first name,
+"*RELATIONSHIP",Fill as appropriate,
+"*PARTICIPANT-STATUS",=O (alpha),
+"*ORDER DATA BLOCK",,
+"*ORDER-FIPS-STATE",FIPS code of state that issued order,
+"*ORDER-FIPS-COUNTY",FIPS code of county that issued order,
+"*ORDER-ID",The order ID,
+"",,
+"","EST P SSEST − ESTABLISHMENT PROVISION OF INFORMATION, SUPPORT",
+"",ORDER ESTABLISHED,
+"",Description/Business Usage,
+"*ORDER-FILING-DATE",Date order was filed in your state,
+"*ORDER-TYPE",Fill as appropriate,
+"*DEBT-TYPE",Fill as appropriate,
+"*ORDER-FREQ",Fill as appropriate,
+"*ORDER-FREQ-AMOUNT",Dollar amount per frequency,
+"*ORDER-EFFECTIVE-DATE",Date obligation starts to accrue,
+"*MEDICAL-ORDERED",Y or N,
+"",,,
+"","EST P SSMOD − ESTABLISHMENT PROVISION OF INFORMATION,",,
+"",SUPPORT ORDER MODIFIED,,
+"",Description/Business Usage,,
+"Sent by Responding State:
+This transaction is used to electronically respond to an establishment request (EST R
+SRADJ or SRMOD) or to provide information from an action filed by an entity other than
+the initiating state (e.g., NCP filed for modification). The transaction indicates that the
+support order was modified.
+Used On:
+Established interstate cases
+Automated Triggers:
+Determine how the CSE system records that the order was modified.
+Action By Receiving State:
+Process according to federal guidelines. Update case information, such as noting receipt of
+the transaction.",,,
+"",Required data blocks and Elements,,
+"",,Data Element Description,
+"(Data Block Record Layout)",,,
+HEADER,,,
+LOCAL-FIPS-STATE/COUNTY,Your state/county FIPS code,,
+OTHER-FIPS-STATE/COUNTY,"State/county FIPS code to which transaction
+is directed",,
+CSENET-VERSION-NUMBER,003,,
+TRANSACTION-SERIAL-NUMBER,Fill as appropriate,,
+ACTION-CODE,P,,
+FUNCTIONAL-TYPE-CODE,EST,,
+TXN-DATE,Date transaction was created,,
+CASE ID,Your case ID,,
+OTHER-CASE-ID,Other case ID,,
+ACTION-REASON,SSMOD,,
+ATTACHMENTS-IND,=N,,
+CASE-DATA-IND,=1,,
+NCP-IDENTIFICATION-IND,=1,,
+NCP-LOCATE-IND,=0 (numeric),,
+"*PARTICIPANT-DATA-IND",Fill as appropriate,,
+"","EST P SSMOD − ESTABLISHMENT PROVISION OF INFORMATION,",
+"",SUPPORT ORDER MODIFIED,
+"",Description/Business Usage,
+"*ORDER-DATA-IND",=1,
+COLLECTION-DATA-IND,=0 (numeric),
+INFORMATION-IND,=0 (numeric),
+OVERDUE-IND,=0 (numeric),
+CASE DATA BLOCK,,
+CASE-TYPE,Fill as appropriate,
+CASE-STATUS,=O (alpha),
+"*CONTACT-NAME-LAST",Your state contact last name,
+"*CONTACT-NAME-FIRST",Your state contact first name,
+"*CONTACT-ADDRESS-LINE-1",Contact address,
+"*CONTACT-CITY",Contact city,
+"*CONTACT-STATE",Contact state,
+"*CONTACT-ZIP-1",Contact ZIP Code,
+"*CONTACT- PHONE-NUM",Contact phone number,
+NCP IDENTIFICATION DATA BLOCK,,
+NAME-LAST,NCP last name,
+NAME-FIRST,NCP first name,
+"*SSN",NCP Social Security number,
+"*DATE-OF-BIRTH",NCP date of birth,
+"*PARTICIPANT DATA BLOCK (2)",,
+"*NAME-LAST",Participant last name,
+"*NAME-FIRST",Participant first name,
+"*RELATIONSHIP",Fill as appropriate,
+"*PARTICIPANT-STATUS",=O (alpha),
+"*ORDER DATA BLOCK",,
+"*ORDER-FIPS-STATE",FIPS code of state that issued order,
+"",,
+"","EST P SSMOD − ESTABLISHMENT PROVISION OF INFORMATION,",
+"",SUPPORT ORDER MODIFIED,
+"",Description/Business Usage,
+"*ORDER-FIPS-COUNTY",FIPS code of county that issued order,
+"*ORDER-ID",The order ID,
+"*ORDER-FILING-DATE",Date order was filed in your state,
+"*ORDER-TYPE",Fill as appropriate,
+"*DEBT-TYPE",Fill as appropriate,
+"*ORDER-FREQ",Fill as appropriate,
+"*ORDER-FREQ-AMOUNT",Dollar amount per frequency,
+"*ORDER-EFFECTIVE-DATE",Date obligation starts to accrue,
+"*MEDICAL-ORDERED",Y or N,
+"",,,
+"","EST P SUADJ − ESTABLISHMENT PROVISION OF INFORMATION, REVIEW",,
+"",AND MODIFICATION NOT WARRANTED,,
+"",Description/Business Usage,,
+"Sent by Responding State:
+This transaction is used to electronically respond to an establishment request for an
+administrative review and adjustment (EST R SRADJ). The transaction indicates that a
+review and modification is not warranted.
+Used On:
+Established interstate cases
+Automated Triggers:
+Determine how the CSE system records that a review and modification is not warranted.
+Action By Receiving State:
+Process according to federal guidelines. Update case information, such as results, and note
+receipt of the transaction.",,,
+"",Required data blocks and Elements,,
+"",,Data Element Description,
+"(Data Block Record Layout)",,,
+HEADER,,,
+LOCAL-FIPS-STATE/COUNTY,Your state/county FIPS code,,
+OTHER-FIPS-STATE/COUNTY,"State/county FIPS code to which transaction
+is directed",,
+CSENET-VERSION-NUMBER,003,,
+TRANSACTION-SERIAL-NUMBER,Fill as appropriate,,
+ACTION-CODE,P,,
+FUNCTIONAL-TYPE-CODE,EST,,
+TXN-DATE,Date transaction was created,,
+CASE ID,Your case ID,,
+OTHER-CASE-ID,Other case ID,,
+ACTION-REASON,SUADJ,,
+ATTACHMENTS-IND,=N,,
+CASE-DATA-IND,=1,,
+NCP-IDENTIFICATION-IND,=1,,
+NCP-LOCATE-IND,=0 (numeric),,
+"*PARTICIPANT-DATA-IND",Fill as appropriate,,
+ORDER-DATA-IND,=0 (numeric),,
+"",,
+"","EST P SUADJ − ESTABLISHMENT PROVISION OF INFORMATION, REVIEW",
+"",AND MODIFICATION NOT WARRANTED,
+"",Description/Business Usage,
+COLLECTION-DATA-IND,=0 (numeric),
+INFORMATION-IND,Fill as appropriate,
+OVERDUE-IND,=0 (numeric),
+CASE DATA BLOCK,,
+CASE-TYPE,Fill as appropriate,
+CASE-STATUS,=O (alpha),
+"*CONTACT-NAME-LAST",Your state contact last name,
+"*CONTACT-NAME-FIRST",Your state contact first name,
+"*CONTACT-ADDRESS-LINE-1",Contact address,
+"*CONTACT-CITY",Contact city,
+"*CONTACT-STATE",Contact state,
+"*CONTACT-ZIP-1",Contact ZIP Code,
+"*CONTACT-PHONE-NUM",Contact phone number,
+NCP IDENTIFICATION DATA BLOCK,,
+NAME-LAST,NCP last name,
+NAME-FIRST,NCP first name,
+"*SSN",NCP Social Security number,
+"*DATE-OF-BIRTH",NCP date of birth,
+"*PARTICIPANT DATA BLOCK (2)",,
+"*NAME-LAST",Participant last name,
+"*NAME-FIRST",Participant first name,
+"*RELATIONSHIP",Fill as appropriate,
+"*PARTICIPANT-STATUS",=O (alpha),
+"",,,
+"","EST P SUEST − ESTABLISHMENT PROVISION OF INFORMATION, SUPPORT",,
+"",ORDER NOT ESTABLISHED,,
+"",Description/Business Usage,,
+"Sent by Responding State:
+This transaction is used to electronically respond to an establishment request (EST R) the
+transaction indicates that a support order was not established.
+Used On:
+Established interstate cases
+Automated Triggers:
+Determine how the CSE system records that a support order was not established.
+Action By Receiving State:
+Process according to federal guidelines. Update case information, such as noting the
+outcome and receipt of the transaction.",,,
+"",Required data blocks and Elements,,
+"",,Data Element Description,
+"(Data Block Record Layout)",,,
+HEADER,,,
+LOCAL-FIPS-STATE/COUNTY,Your state/county FIPS code,,
+OTHER-FIPS-STATE/COUNTY,"State/county FIPS code to which transaction
+is directed",,
+CSENET-VERSION-NUMBER,003,,
+TRANSACTION-SERIAL-NUMBER,Fill as appropriate,,
+ACTION-CODE,P,,
+FUNCTIONAL-TYPE-CODE,EST,,
+TXN-DATE,Date transaction was created,,
+CASE ID,Your case ID,,
+OTHER-CASE-ID,Other case ID,,
+ACTION-REASON,SUEST,,
+ATTACHMENTS-IND,=N,,
+CASE-DATA-IND,=1,,
+NCP-IDENTIFICATION-IND,=1,,
+NCP-LOCATE-IND,=0 (numeric),,
+"*PARTICIPANT-DATA-IND",Fill as appropriate,,
+ORDER-DATA-IND,=0 (numeric),,
+COLLECTION-DATA-IND,=0 (numeric),,
+"",,
+"","EST P SUEST − ESTABLISHMENT PROVISION OF INFORMATION, SUPPORT",
+"",ORDER NOT ESTABLISHED,
+"",Description/Business Usage,
+"*INFORMATION-IND",Fill as appropriate,
+OVERDUE-IND,=0 (numeric),
+CASE DATA BLOCK,,
+CASE-TYPE,Fill as appropriate,
+CASE-STATUS,=O (alpha),
+"*CONTACT-NAME-LAST",Your state contact last name,
+"*CONTACT-NAME-FIRST",Your state contact first name,
+"*CONTACT-ADDRESS-LINE-1",Contact address,
+"*CONTACT-CITY",Contact city,
+"*CONTACT-STATE",Contact state,
+"*CONTACT-ZIP-1",Contact ZIP Code,
+"*CONTACT-PHONE-NUM",Contact phone number,
+NCP IDENTIFICATION DATA BLOCK,,
+NAME-LAST,NCP last name,
+NAME-FIRST,NCP first name,
+"*SSN",NCP Social Security number,
+"*DATE-OF-BIRTH",NCP date of birth,
+"*PARTICIPANT DATA BLOCK (2)",,
+"*NAME-LAST",Participant last name,
+"*NAME-FIRST",Participant first name,
+"*RELATIONSHIP",Fill as appropriate,
+"*PARTICIPANT-STATUS",=O (alpha),
+"*INFORMATION DATA BLOCK",,
+"*STATUS-CHANGE-CODE",=O (alpha),
+"*INFORMATION-TEXT-LINE1",Fill as appropriate,
+"",,,
+"","EST P SUMOD − ESTABLISHMENT PROVISION OF INFORMATION,",,
+"",SUPPORT ORDER NOT MODIFIED,,
+"",Description/Business Usage,,
+"Sent by Responding State:
+This transaction is used to electronically respond to a modification request (EST R
+SRMOD) or to provide information from an action filed by an entity other than the
+initiating state (e.g., NCP filed for modification). The transaction indicates that the support
+order was not modified.
+Used On:
+Established interstate cases
+Automated Triggers:
+Determine how the CSE system records that a support order was not modified.
+Action By Receiving State:
+Process according to federal guidelines. Update case information, such as noting the
+outcome and receipt of the transaction.",,,
+"",Required data blocks and Elements,,
+"",,Data Element Description,
+"(Data Block Record Layout)",,,
+HEADER,,,
+LOCAL-FIPS-STATE/COUNTY,Your state/county FIPS code,,
+OTHER-FIPS-STATE/COUNTY,"State/county FIPS code to which transaction
+is directed",,
+CSENET-VERSION-NUMBER,003,,
+TRANSACTION-SERIAL-NUMBER,Fill as appropriate,,
+ACTION-CODE,P,,
+FUNCTIONAL-TYPE-CODE,EST,,
+TXN-DATE,Date transaction was created,,
+CASE ID,Your case ID,,
+OTHER-CASE-ID,Other case ID,,
+ACTION-REASON,SUMOD,,
+ATTACHMENTS-IND,=N,,
+CASE-DATA-IND,=1,,
+NCP-IDENTIFICATION-IND,=1,,
+NCP-LOCATE-IND,=0 (numeric),,
+"*PARTICIPANT-DATA-IND",=1,,
+"",,
+"","EST P SUMOD − ESTABLISHMENT PROVISION OF INFORMATION,",
+"",SUPPORT ORDER NOT MODIFIED,
+"",Description/Business Usage,
+"*ORDER-DATA-IND",=1,
+COLLECTION-DATA-IND,=0 (numeric),
+"*INFORMATION-IND",Fill as appropriate,
+OVERDUE-IND,=0 (numeric),
+CASE DATA BLOCK,,
+CASE-TYPE,Fill as appropriate,
+CASE-STATUS,=O (alpha),
+"*CONTACT-NAME-LAST",Your state contact last name,
+"*CONTACT-NAME-FIRST",Your state contact first name,
+"*CONTACT-ADDRESS-LINE-1",Contact address,
+"*CONTACT-CITY",Contact city,
+"*CONTACT-STATE",Contact state,
+"*CONTACT-ZIP-1",Contact ZIP Code,
+"*CONTACT-PHONE-NUM",Contact phone number,
+NCP IDENTIFICATION DATA BLOCK,,
+NAME-LAST,NCP last name,
+NAME-FIRST,NCP first name,
+"*SSN",NCP Social Security number,
+"*DATE-OF-BIRTH",NCP date of birth,
+"*PARTICIPANT DATA BLOCK (2)",,
+"*NAME-LAST",Participant last name,
+"*NAME-FIRST",Participant first name,
+"*RELATIONSHIP",Fill as appropriate,
+"*PARTICIPANT-STATUS",=O (alpha),
+"*ORDER DATA BLOCK",,
+"*ORDER-FIPS-STATE",FIPS code of state that issued order,
+"",,
+"","EST P SUMOD − ESTABLISHMENT PROVISION OF INFORMATION,",
+"",SUPPORT ORDER NOT MODIFIED,
+"",Description/Business Usage,
+"*ORDER-FIPS-COUNTY",FIPS code of county that issued order,
+"*ORDER-ID",The order ID,
+"*ORDER-FILING-DATE",Date order was filed in your state,
+"*ORDER-TYPE",Fill as appropriate,
+"*DEBT-TYPE",Fill as appropriate,
+"*ORDER-FREQ",Fill as appropriate,
+"*ORDER-FREQ-AMOUNT",Dollar amount per frequency,
+"*ORDER-EFFECTIVE-DATE",Date obligation starts to accrue,
+"*MEDICAL-ORDERED",Y or N,
+"*INFORMATION DATA BLOCK",,
+"*STATUS-CHANGE-CODE",=O (alpha),
+"*INFORMATION-TEXT-LINE1",Fill as appropriate,
+"",,,
+"",EST R SRADJ − ESTABLISHMENT REQUEST FOR REVIEW AND,,
+"",ADJUSTMENT,,
+"",Description/Business Usage,,
+"Sent by Initiating State:
+This transaction is used to electronically request a review and adjustment.
+Used On:
+Established interstate cases
+Relevant CFR Requirements:
+The 45CFR 303.7(b)(6) states that the initiating state IV-D agency must send a request for
+review of a child support order to another state within 20 calendar days of determining that
+a request for review of the order should be sent to the other state and of receipt of
+information from the requestor necessary to conduct the review in accordance with sec.
+303.8 of this part.
+Automated Triggers:
+Determine how the CSE system records that a review and adjustment is needed.
+Action By Receiving State:
+Process according to federal guidelines. Update case information, such as noting receipt of
+the transaction.
+Corresponds To:
+Transmittal# 1
+[] Modification or Responding Tribunal Order",,,
+"",Required data blocks and Elements,,
+"",,Data Element Description,
+"(Data Block Record Layout)",,,
+HEADER,,,
+LOCAL-FIPS-STATE/COUNTY,Your state/county FIPS code,,
+OTHER-FIPS-STATE/COUNTY,"State/county FIPS code to which transaction
+is directed",,
+CSENET-VERSION-NUMBER,003,,
+TRANSACTION-SERIAL-NUMBER,Fill as appropriate,,
+ACTION-CODE,R,,
+FUNCTIONAL-TYPE-CODE,EST,,
+TXN-DATE,Date transaction was created,,
+CASE-ID,Your case ID,,
+ACTION-REASON,SRADJ,,
+ATTACHMENTS-IND,=N,,
+CASE-DATA-IND,=1,,
+"",,
+"",EST R SRADJ − ESTABLISHMENT REQUEST FOR REVIEW AND,
+"",ADJUSTMENT,
+"",Description/Business Usage,
+NCP-IDENTIFICATION-IND,=1,
+NCP-LOCATE-IND,=1,
+PARTICIPANT-DATA-IND,Fill as appropriate,
+"*ORDER-DATA-IND",=1,
+COLLECTION-DATA-IND,=0 (numeric),
+INFORMATION-IND,=0 (numeric),
+OVERDUE-IND,=0 (numeric),
+CASE DATA BLOCK,,
+CASE-TYPE,Fill as appropriate,
+CASE-STATUS,=O (alpha),
+PAYMENT-MAILING-ADDRESS-LINE1,Your payment mailing address,
+"*PAYMENT-CITY",Payment city,
+"*PAYMENT-STATE",Payment state,
+"*PAYMENT-ZIP-1",Payment ZIP Code,
+"*CONTACT-NAME-LAST",Your state contact last name,
+"*CONTACT-NAME-FIRST",Your state contact first name,
+"*CONTACT-ADDRESS-LINE-1",Contact address,
+"*CONTACT-CITY",Contact city,
+"*CONTACT-STATE",Contact state,
+"*CONTACT-ZIP-1",Contact ZIP Code,
+"*CONTACT-PHONE-NUM",Contact phone number,
+NCP IDENTIFICATION DATA BLOCK,,
+NAME-LAST,NCP last name,
+NAME-FIRST,NCP first name,
+"*SSN",NCP Social Security number,
+"*DATE-OF-BIRTH",NCP date of birth,
+NCP LOCATE DATA BLOCK,,
+"*RESIDENTIAL-ADDRESS-LINE1",NCP street address,
+"",,
+"",EST R SRADJ − ESTABLISHMENT REQUEST FOR REVIEW AND,
+"",ADJUSTMENT,
+"",Description/Business Usage,
+"*RESIDENTIAL-CITY",NCP city,
+"*RESIDENTIAL-STATE",NCP state,
+"*RESIDENTIAL-ZIP-1",NCP ZIP Code,
+"*RESIDENTIAL-ADDRESS-EFFECTIVE-
+DATE",Required if residential address entered,
+"*RESIDENTIAL-ADDRESS-CONFIRMED-
+IND.",Fill as appropriate,
+PARTICIPANT DATA BLOCK (2),,
+NAME-LAST,Participant last name,
+NAME-FIRST,Participant first name,
+DATE-OF-BIRTH,Fill as appropriate,
+"*SSN",Participant’s Social Security number,
+RELATIONSHIP,Fill as appropriate,
+PARTICIPANT-STATUS,=O (alpha),
+"*DEPENDENT-RELATION-CP",Fill as appropriate,
+"*ORDER DATA BLOCK",,
+"*ORDER-FIPS-STATE",FIPS code of state that issued order,
+"*ORDER-FIPS-COUNTY",FIPS code of county that issued order,
+"*ORDER-ID",The order ID,
+"*ORDER-FILING-DATE",Date order was filed in your state,
+"*ORDER-TYPE",Fill as appropriate,
+"*DEBT-TYPE",Fill as appropriate,
+"*ORDER-FREQ",Fill as appropriate,
+"*ORDER-FREQ-AMOUNT",Dollar amount per frequency,
+"*ORDER-EFFECTIVE-DATE",Date obligation starts to accrue,
+"*MEDICAL-ORDERED",Y or N,
+"",,,
+"",EST R SRMOD − ESTABLISHMENT REQUEST FOR SUPPORT ORDER,,
+"",MODIFICATION,,
+"",Description/Business Usage,,
+"Sent by Initiating State:
+This transaction is used to electronically request a modification of a support order.
+Used To:
+Request initiation of a new interstate case or on established interstate cases.
+Corresponds To:
+Transmittal #1
+4. [ ] Modification of Responding Tribunal Order
+Automated Triggers:
+Determine how the CSE system records that a modification is needed.
+Action By Receiving State:
+Process according to federal guidelines. Either update existing case information, such as
+noting receipt of the transaction, or consider initial activities, such as building a case and
+initiating locate activities.",,,
+"",Required data blocks and Elements,,
+"",,Data Element Description,
+"(Data Block Record Layout)",,,
+HEADER,,,
+LOCAL-FIPS-STATE/COUNTY,Your state/county FIPS code,,
+OTHER-FIPS-STATE/COUNTY,"State/county FIPS code to which transaction
+is directed",,
+CSENET-VERSION-NUMBER,003,,
+TRANSACTION-SERIAL-NUMBER,Fill as appropriate,,
+ACTION-CODE,R,,
+FUNCTIONAL-TYPE-CODE,EST,,
+TXN-DATE,Date transaction was created,,
+CASE-ID,Your case ID,,
+"*OTHER-CASE-ID",Other case ID,,
+ACTION-REASON,SRMOD,,
+ATTACHMENTS-IND,=N,,
+CASE-DATA-IND,=1,,
+NCP-IDENTIFICATION-IND,=1,,
+NCP-LOCATE-IND,=1,,
+PARTICIPANT-DATA-IND,Fill as appropriate,,
+"",,
+"",EST R SRMOD − ESTABLISHMENT REQUEST FOR SUPPORT ORDER,
+"",MODIFICATION,
+"",Description/Business Usage,
+"*ORDER-DATA-IND",=1,
+COLLECTION-DATA-IND,=0 (numeric),
+INFORMATION-IND,=0 (numeric),
+OVERDUE-IND,=0 (numeric),
+CASE DATA BLOCK,,
+CASE-TYPE,Fill as appropriate,
+CASE-STATUS,=O (alpha),
+PAYMENT-MAILING-ADDRESS-LINE1,Your payment mailing address,
+"*PAYMENT-CITY",Payment city,
+"*PAYMENT-STATE",Payment state,
+"*PAYMENT-ZIP-1",Payment ZIP Code,
+"*CONTACT-NAME-LAST",Your state contact last name,
+"*CONTACT-NAME-FIRST",Your state contact first name,
+"*CONTACT-ADDRESS-LINE-1",Contact address,
+"*CONTACT-CITY",Contact city,
+"*CONTACT-STATE",Contact state,
+"*CONTACT-ZIP-1",Contact ZIP Code,
+"*CONTACT-PHONE-NUM",Contact phone number,
+NCP IDENTIFICATION DATA BLOCK,,
+NAME-LAST,NCP last name,
+NAME-FIRST,NCP first name,
+SSN,NCP Social Security number,
+DATE-OF-BIRTH,NCP date of birth,
+NCP LOCATE DATA BLOCK,,
+"*RESIDENTIAL-ADDRESS-LINE1",NCP street address,
+"*RESIDENTIAL-CITY",NCP city,
+"*RESIDENTIAL-STATE",NCP state,
+"*RESIDENTIAL-ZIP-1",NCP ZIP Code,
+"",,
+"",EST R SRMOD − ESTABLISHMENT REQUEST FOR SUPPORT ORDER,
+"",MODIFICATION,
+"",Description/Business Usage,
+"*RESIDENTIAL-ADDRESS-EFFECTIVE-
+DATE",Required if residential address entered,
+"*RESIDENTIAL-ADDRESS-CONFIRMED-
+IND.",Fill as appropriate,
+PARTICIPANT DATA BLOCK (2),,
+NAME-LAST,Participant last name,
+NAME-FIRST,Participant first name,
+DATE-OF-BIRTH,Fill as appropriate,
+"*SSN",Participant’s Social Security number,
+RELATIONSHIP,Fill as appropriate,
+PARTICIPANT-STATUS,=O (alpha),
+"*DEPENDENT-RELATION-CP",Fill as appropriate,
+"*ORDER DATA BLOCK",,
+"*ORDER-FIPS-STATE",FIPS code of state that issued order,
+"*ORDER-FIPS-COUNTY",FIPS code of county that issued order,
+"*ORDER-ID",The order ID,
+"*ORDER-FILING-DATE",Date order was filed in your state,
+"*ORDER-TYPE",Fill as appropriate,
+"*DEBT-TYPE",Fill as appropriate,
+"*ORDER-FREQ",Fill as appropriate,
+"*ORDER-FREQ-AMOUNT",Dollar amount per frequency,
+"*ORDER-EFFECTIVE-DATE",Date obligation starts to accrue,
+"*MEDICAL-ORDERED",Y or N,
+"",,,
+"",EST R SROMC − ESTABLISHMENT REQUEST FOR MEDICAL SUPPORT,,
+"",ONLY,,
+"",Description/Business Usage,,
+"Sent by Initiating State:
+This transaction is used to electronically request establishment of medical support only.
+Used To:
+Request initiation of a new interstate case
+Corresponds To:
+Transmittal #1
+C. [ ] Medical Support Only
+Automated Triggers:
+Determine how the CSE system records that establishment of medical support only is
+needed.
+Action By Receiving State:
+Process according to federal guidelines. Consider initial activities, such as building a case
+and initiating locate activities.",,,
+"",Required data blocks and Elements,,
+"",,Data Element Description,
+"(Data Block Record Layout)",,,
+HEADER,,,
+LOCAL-FIPS-STATE/COUNTY,Your state/county FIPS code,,
+OTHER-FIPS-STATE/COUNTY,"State/county FIPS code to which transaction
+is directed",,
+CSENET-VERSION-NUMBER,003,,
+TRANSACTION-SERIAL-NUMBER,Fill as appropriate,,
+ACTION-CODE,R,,
+FUNCTIONAL-TYPE-CODE,EST,,
+TXN-DATE,Date transaction was created,,
+CASE-ID,Your case ID,,
+ACTION-REASON,SRMOC,,
+ATTACHMENTS-IND,=N,,
+CASE-DATA-IND,=1,,
+NCP-IDENTIFICATION-IND,=1,,
+NCP-LOCATE-IND,=1,,
+PARTICIPANT-DATA-IND,Fill as appropriate,,
+ORDER-DATA-IND,=0 (numeric),,
+"",,
+"",EST R SROMC − ESTABLISHMENT REQUEST FOR MEDICAL SUPPORT,
+"",ONLY,
+"",Description/Business Usage,
+COLLECTION-DATA-IND,=0 (numeric),
+INFORMATION-IND,=0 (numeric),
+OVERDUE-IND,=0 (numeric),
+CASE DATA BLOCK,,
+CASE-TYPE,Fill as appropriate,
+CASE-STATUS,=O (alpha),
+PAYMENT-MAILING-ADDRESS-LINE1,Your payment mailing address,
+"*PAYMENT-CITY",Payment city,
+"*PAYMENT-STATE",Payment state,
+"*PAYMENT-ZIP-1",Payment ZIP Code,
+"*CONTACT-NAME-LAST",Your state contact last name,
+"*CONTACT-NAME-FIRST",Your state contact first name,
+"*CONTACT-ADDRESS-LINE-1",Contact address,
+"*CONTACT-CITY",Contact city,
+"*CONTACT-STATE",Contact state,
+"*CONTACT-ZIP-1",Contact ZIP Code,
+"*CONTACT-PHONE-NUM",Contact phone number,
+NCP IDENTIFICATION DATA BLOCK,,
+NAME-LAST,NCP last name,
+NAME-FIRST,NCP first name,
+"*SSN",NCP Social Security number,
+"*DATE-OF-BIRTH",NCP date of birth,
+NCP LOCATE DATA BLOCK,,
+"*RESIDENTIAL-ADDRESS-LINE1",NCP street address,
+"*RESIDENTIAL-CITY",NCP city,
+"*RESIDENTIAL-STATE",NCP state,
+"*RESIDENTIAL-ZIP-1",NCP ZIP Code,
+"",,
+"",EST R SROMC − ESTABLISHMENT REQUEST FOR MEDICAL SUPPORT,
+"",ONLY,
+"",Description/Business Usage,
+"*RESIDENTIAL-ADDRESS-EFFECTIVE-
+DATE",Required if residential address entered,
+"*RESIDENTIAL-ADDRESS-CONFIRMED-
+IND.",Fill as appropriate,
+PARTICIPANT DATA BLOCK (2),,
+NAME-LAST,Participant last name,
+NAME-FIRST,Participant first name,
+DATE-OF-BIRTH,Fill as appropriate,
+"*SSN",Participant’s Social Security number,
+RELATIONSHIP,Fill as appropriate,
+PARTICIPANT-STATUS,=O (alpha),
+"*DEPENDENT-RELATION-CP",Fill as appropriate,
+"",,,
+"",EST R SROPP − ESTABLISHMENT REQUEST FOR RETROACTIVE CHILD,,
+"",SUPPORT ONLY,,
+"",Description/Business Usage,,
+"Sent by Initiating State:
+This transaction is used to electronically request establishment of retroactive child support
+only.
+Used To:
+Request initiation of a new interstate case
+Corresponds To:
+Transmittal #1
+B. [ ] Retroactive Child Support
+Automated Triggers:
+Determine how the CSE system records that establishment of retroactive child support is
+needed.
+Action By Receiving State:
+Process according to federal guidelines. Consider initial activities, such as building a case,
+and initiating locate activities.",,,
+"",Required data blocks and Elements,,
+"",,Data Element Description,
+"(Data Block Record Layout)",,,
+HEADER,,,
+LOCAL-FIPS-STATE/COUNTY,Your state/county FIPS code,,
+OTHER-FIPS-STATE/COUNTY,"State/county FIPS code to which transaction
+is directed",,
+CSENET-VERSION-NUMBER,003,,
+TRANSACTION-SERIAL-NUMBER,Fill as appropriate,,
+ACTION-CODE,R,,
+FUNCTIONAL-TYPE-CODE,EST,,
+TXN-DATE,Date transaction was created,,
+CASE-ID,Your case ID,,
+ACTION-REASON,SROPP,,
+ATTACHMENTS-IND,=N,,
+CASE-DATA-IND,=1,,
+NCP-IDENTIFICATION-IND,=1,,
+NCP-LOCATE-IND,=1,,
+PARTICIPANT-DATA-IND,Fill as appropriate,,
+"",,
+"",EST R SROPP − ESTABLISHMENT REQUEST FOR RETROACTIVE CHILD,
+"",SUPPORT ONLY,
+"",Description/Business Usage,
+ORDER-DATA-IND,=0 (numeric),
+COLLECTION-DATA-IND,=0 (numeric),
+INFORMATION-IND,=0 (numeric),
+OVERDUE-IND,=0 (numeric),
+CASE DATA BLOCK,,
+CASE-TYPE,Fill as appropriate,
+CASE-STATUS,=O (alpha),
+PAYMENT-MAILING-ADDRESS-LINE1,Your payment mailing address,
+"*PAYMENT-CITY",Payment city,
+"*PAYMENT-STATE",Payment state,
+"*PAYMENT-ZIP-1",Payment ZIP Code,
+"*CONTACT-NAME-LAST",Your state contact last name,
+"*CONTACT-NAME-FIRST",Your state contact first name,
+"*CONTACT-ADDRESS-LINE-1",Contact address,
+"*CONTACT-CITY",Contact city,
+"*CONTACT-STATE",Contact state,
+"*CONTACT-ZIP-1",Contact ZIP Code,
+"*CONTACT-PHONE-NUM",Contact phone number,
+NCP IDENTIFICATION DATA BLOCK,,
+NAME-LAST,NCP last name,
+NAME-FIRST,NCP first name,
+"*SSN",NCP Social Security number,
+"*DATE-OF-BIRTH",NCP date of birth,
+NCP LOCATE DATA BLOCK,,
+"*RESIDENTIAL-ADDRESS-LINE1",NCP street address,
+"*RESIDENTIAL-CITY",NCP city,
+"*RESIDENTIAL-STATE",NCP state,
+"*RESIDENTIAL-ZIP-1",NCP ZIP Code,
+"",,
+"",EST R SROPP − ESTABLISHMENT REQUEST FOR RETROACTIVE CHILD,
+"",SUPPORT ONLY,
+"",Description/Business Usage,
+"*RESIDENTIAL-ADDRESS-EFFECTIVE-
+DATE",Required if residential address entered,
+"*RESIDENTIAL-ADDRESS-CONFIRMED-
+IND.",Fill as appropriate,
+PARTICIPANT DATA BLOCK (2),,
+NAME-LAST,Participant last name,
+NAME-FIRST,Participant first name,
+DATE-OF-BIRTH,Fill as appropriate,
+"*SSN",Participant’s Social Security number,
+RELATIONSHIP,Fill as appropriate,
+PARTICIPANT-STATUS,=O (alpha),
+"*DEPENDENT-RELATION-CP",Fill as appropriate,
+"",,,
+"",EST R SRORD − ESTABLISHMENT REQUEST FOR ESTABLISHMENT OF,,
+"","CURRENT CHILD SUPPORT, INCLUDING MEDICAL SUPPORT",,
+"",Description/Business Usage,,
+"Sent by Initiating State:
+This transaction is used to electronically request establishment of current child support,
+including medical support.
+Used To:
+Request initiation of a new interstate case
+Corresponds To:
+Transmittal #1
+2. [ ] Establishment of Order for:
+A. [ ] Current Child Support, Including Medical Support
+Automated Triggers:
+Determine how the CSE system records that establishment of current child support and
+medical support is needed.
+Action By Receiving State:
+Process according to federal guidelines. Consider initial activities, such as building a case
+and initiating locate activities.",,,
+"",Required data blocks and Elements,,
+"",,Data Element Description,
+"(Data Block Record Layout)",,,
+HEADER,,,
+LOCAL-FIPS-STATE/COUNTY,Your state/county FIPS code,,
+OTHER-FIPS-STATE/COUNTY,"State/county FIPS code to which transaction
+is directed",,
+CSENET-VERSION-NUMBER,003,,
+TRANSACTION-SERIAL-NUMBER,Fill as appropriate,,
+ACTION-CODE,R,,
+FUNCTIONAL-TYPE-CODE,EST,,
+TXN-DATE,Date transaction was created,,
+CASE-ID,Your case ID,,
+ACTION-REASON,SRORD,,
+ATTACHMENTS-IND,=N,,
+CASE-DATA-IND,=1,,
+NCP-IDENTIFICATION-IND,=1,,
+NCP-LOCATE-IND,=1,,
+"",,
+"",EST R SRORD − ESTABLISHMENT REQUEST FOR ESTABLISHMENT OF,
+"","CURRENT CHILD SUPPORT, INCLUDING MEDICAL SUPPORT",
+"",Description/Business Usage,
+PARTICIPANT-DATA-IND,Fill as appropriate,
+ORDER-DATA-IND,=0 (numeric),
+COLLECTION-DATA-IND,=0 (numeric),
+INFORMATION-IND,=0 (numeric),
+OVERDUE-IND,=0 (numeric),
+CASE DATA BLOCK,,
+CASE-TYPE,Fill as appropriate,
+CASE-STATUS,=O (alpha),
+PAYMENT-MAILING-ADDRESS-LINE1,Your payment mailing address,
+"*PAYMENT-CITY",Payment city,
+"*PAYMENT-STATE",Payment state,
+"*PAYMENT-ZIP-1",Payment ZIP Code,
+"*CONTACT-NAME-LAST",Your state contact last name,
+"*CONTACT-NAME-FIRST",Your state contact first name,
+"*CONTACT-ADDRESS-LINE-1",Contact address,
+"*CONTACT-CITY",Contact city,
+"*CONTACT-STATE",Contact state,
+"*CONTACT-ZIP-1",Contact ZIP Code,
+CONTACT-PHONE-NUM,Contact phone number,
+NCP IDENTIFICATION DATA BLOCK,,
+NAME-LAST,NCP last name,
+NAME-FIRST,NCP first name,
+"*SSN",NCP Social Security number,
+"*DATE-OF-BIRTH",NCP date of birth,
+NCP LOCATE DATA BLOCK,,
+"*RESIDENTIAL-ADDRESS-LINE1",NCP street address,
+"*RESIDENTIAL-CITY",NCP city,
+"*RESIDENTIAL-STATE",NCP state,
+"",,
+"",EST R SRORD − ESTABLISHMENT REQUEST FOR ESTABLISHMENT OF,
+"","CURRENT CHILD SUPPORT, INCLUDING MEDICAL SUPPORT",
+"",Description/Business Usage,
+"*RESIDENTIAL-ZIP-1",NCP ZIP Code,
+"*RESIDENTIAL-ADDRESS-EFFECTIVE-
+DATE",Required if residential address entered,
+"*RESIDENTIAL-ADDRESS-CONFIRMED-
+IND.",Fill as appropriate,
+PARTICIPANT DATA BLOCK (2),,
+NAME-LAST,Participant last name,
+NAME-FIRST,Participant first name,
+DATE-OF-BIRTH,Fill as appropriate,
+"*SSN",Participant’s Social Security number,
+RELATIONSHIP,Fill as appropriate,
+PARTICIPANT-STATUS,=O (alpha),
+"*DEPENDENT-RELATION-CP",Fill as appropriate,
+"",,,
+"",[EST R SRPAT − ESTABLISHMENT REQUEST FOR ESTABLISHMENT OF,,
+"","CURRENT CHILD SUPPORT, REQUESTING THE ESTABLISHMENT OF",,
+"",PATERNITY AND SUPPORT],,
+"",Description/Business Usage,,
+"Sent by Initiating State:
+This transaction is used to provide states the ability to send and receive a single transaction
+requesting the establishment of both paternity and support.
+Used to:
+Request the initiation of a new two-state interstate case. Include additional requests such as
+retroactive child support or costs and fees in the Information data block.
+Corresponds to:
+Transmittal #1
+1.  [ ] Establishment of Paternity and
+2.  [ ] Establishment of Order for:
+A. [ ] Current Child Support, Including Medical Support
+Automated Triggers:
+Identify how the CSE system records that paternity and support establishment in another
+state is needed.
+Action By Receiving State:
+Process according to federal guidelines. Prior to automatically creating an alert that notifies
+workers that this transaction was received, determine whether the worker must take the
+required next step or if the CSE system can make decisions. Consider initial activities, such
+as building a case and initiating locate activities.",,,
+"",Required data blocks and Elements,,
+"",,Data Element Description,
+"(Data Block Record Layout)",,,
+HEADER,,,
+LOCAL-FIPS-STATE/COUNTY,Your state/county FIPS code,,
+OTHER-FIPS-STATE/COUNTY,"State/county FIPS code to which transaction is
+directed",,
+CSENET-VERSION-NUMBER,003,,
+TRANSACTION-SERIAL-NUMBER,Fill as appropriate,,
+ACTION-CODE,R,,
+FUNCTIONAL-TYPE-CODE,PAT,,
+TXN-DATE,Date transaction was created,,
+CASE-ID,Your case ID,,
+ACTION-REASON,SRPAT,,
+ATTACHMENTS-IND,=N,,
+"",,
+"",[EST R SRPAT − ESTABLISHMENT REQUEST FOR ESTABLISHMENT OF,
+"","CURRENT CHILD SUPPORT, REQUESTING THE ESTABLISHMENT OF",
+"",PATERNITY AND SUPPORT],
+"",Description/Business Usage,
+CASE-DATA-IND,=1,
+NCP-IDENTIFICATION-IND,=1,
+NCP-LOCATE-IND,=1,
+PARTICIPANT-DATA-IND,Fill as appropriate,
+ORDER-DATA-IND,=0 (numeric),
+COLLECTION-DATA-IND,=0 (numeric),
+"*INFORMATION-IND",=0 (numeric),
+OVERDUE-IND,=0 (numeric),
+CASE DATA BLOCK,,
+CASE-TYPE,Fill as appropriate,
+CASE-STATUS,=O (alpha),
+PAYMENT-MAILING-ADDRESS-LINE1,Your payment mailing address,
+PAYMENT-CITY,Payment city,
+PAYMENT-STATE,Payment state,
+PAYMENT-ZIP-1,Payment ZIP Code,
+"*CONTACT-NAME-LAST",Your state contact last name,
+"*CONTACT-NAME-FIRST",Your state contact first name,
+"*CONTACT-ADDRESS-LINE-1",Contact address,
+"*CONTACT-CITY",Contact city,
+"*CONTACT-STATE",Contact state,
+"*CONTACT-ZIP-1",Contact ZIP Code,
+"*CONTACT-PHONE-NUM",Contact phone number,
+NCP IDENTIFICATION DATA BLOCK,,
+NAME-LAST,NCP last name,
+NAME-FIRST,NCP first name,
+"*SSN",NCP Social Security number,
+"*DATE-OF-BIRTH",NCP date of birth,
+NCP LOCATE DATA BLOCK,,
+RESIDENTIAL-ADDRESS-LINE1,NCP street address,
+"",,
+"",[EST R SRPAT − ESTABLISHMENT REQUEST FOR ESTABLISHMENT OF,
+"","CURRENT CHILD SUPPORT, REQUESTING THE ESTABLISHMENT OF",
+"",PATERNITY AND SUPPORT],
+"",Description/Business Usage,
+"*RESIDENTIAL-CITY",NCP City,
+"*RESIDENTIAL-STATE",NCP state,
+"*RESIDENTIAL-ZIP-1",NCP ZIP Code,
+"RESIDENTIAL-ADDRESS-EFFECTIVE-
+DATE",Required if residential address entered,
+"RESIDENTIAL-ADDRESS-CONFIRMED-
+IND.",Fill as appropriate,
+PARTICIPANT DATA BLOCK (2),,
+NAME-LAST,Participant last name,
+NAME-FIRST,Participant first name,
+"*DATE-OF-BIRTH",Fill as appropriate,
+RELATIONSHIP,Fill as appropriate,
+PARTICIPANT-STATUS,=O (alpha),
+"*DEPENDENT-RELATION-CP",Fill as appropriate,
+"*INFORMATION DATA BLOCK",,
+"*STATUS-CHANGE-CODE",=O (alpha),
+"*INFORMATION-TEXT-LINE1",Fill as appropriate,
+"",,,,,,
+"",VALID TRANSACTIONS EXCLUDED FROM THE TFM,,,,,
+"",AND CORE SET OF TRANSACTIONS,,,,,
+"",Functional Type/ Action/,,,,Recommendations for,
+Action Reason Code,,Description/Business Usage,,Alternative Transaction Usage,,
+EST A BLANK,Acknowledgment,"EST A ANOAD or EST A
+AADIN",,,,
+EST C BLANK,Cancel Support Order Request,N/A,,,,
+EST M BLANK,Reminder Transaction,MSC R GRUPD,,,,
+EST M GRPOU,Attachments Overdue,MSC R GRUPD,,,,
+EST P GSARR,"Notice of Arrearage
+Reconciliation/Determination
+of Sum-certain",MSC P GSPUD,,,,
+EST P GSFIL,Document Filed,MSC P GSPUD,,,,
+EST P SCDIS,"Case Dismissed Without
+Prejudice",EST P SUEST,,,,
+EST P SDCOS,"Defendant/Respondent
+Ordered to Pay Other Costs",EST P SSEST,,,,
+EST P SDPAR,"Defendant/Respondent is
+Parent and Owes Duty",MSC P GSPUD,,,,
+EST P SDPAY,"Defendant/Respondent is
+Ordered to Pay",EST P SSEST,,,,
+EST P SIANS,"NCP Did Not Show for
+Support Order Hearing",MSC P GSPUD,,,,
+EST P SICPS,Contempt Proceedings Started,MSC P GSPUD,,,,
+EST P SSCON,Order Issued/Confirmed,MSC P GSPUD,,,,
+EST P SUDEN,Support Order Request Denied,EST P SUEST,,,,
+EST R SROOC,"Request Support Order
+Establishment for Other Costs
+Only",N/A,,,,
+EST R SROSS,"Request Support Order for
+Spousal Support",N/A,,,,
+EST U SRADJ,"Request for Review and
+Adjustment",MSC P GSPUD,,,,
+"",,,,,,
+"",VALID TRANSACTIONS EXCLUDED FROM THE TFM,,,,,
+"",AND CORE SET OF TRANSACTIONS,,,,,
+"",Functional Type/ Action/,,,,Recommendations for,
+Action Reason Code,,Description/Business Usage,,Alternative Transaction Usage,,
+EST U SRMOD,"Request Support Order
+Modification",MSC P GSPUD,,,,
+EST U SROMC,"Request Support Order
+Establishment for Medical
+Coverage Only",MSC P GSPUD,,,,
+EST U SROOC,"Request Support Order
+Establishment for Other Costs
+Only",N/A,,,,
+EST U SROPP,"Request Support Order
+Establishment for a Prior
+Period Only",MSC P GSPUD,,,,
+EST U SRORD,"Request Support Order
+Establishment – All Available
+Support Types",MSC P GSPUD,,,,
+EST U SROSS,"Request Support Order for
+Spousal Support",N/A,,,,

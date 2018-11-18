@@ -3,6 +3,15 @@ import os
 import exportVariables
 import re
 
+# Return fileName given the Function code
+def getFunctionCodeFileName(functionCode):
+    dirName = os.path.dirname(__file__)
+    return os.path.join(dirName, 'CSENetTableExtractions/', functionCode + '.csv')
+
+# Remove stringValue of all non-ascii characters and returns the lowercase version 
+def cleanStringPeriodDashLower(stringValue):
+    return re.compile('[\W_]+').sub('', stringValue.lower().replace(" ", ""))
+
 def returnDataBlockID(currentDataBlock, dataBlockFields):
     if currentDataBlock not in dataBlockFields:
         return len(exportVariables.dataBlocksFieldExtractions) + 1

@@ -1357,7 +1357,7 @@ FAR_CODE_DATA_BLOCK_ID,DATA_BLOCK_FIELDS_ID,VALUE_TXT,FAR_CODE_ID
 1356,199,Participant last name,67
 1357,200,Participant first name,67
 1358,203,Fill as appropriate,67
-1359,204,Participant’s Social Security number,67
+1359,204,Participantâ€™s Social Security number,67
 1360,207,Fill as appropriate,67
 1361,208,#NAME?,67
 1362,209,Fill as appropriate,67
@@ -1410,7 +1410,7 @@ FAR_CODE_DATA_BLOCK_ID,DATA_BLOCK_FIELDS_ID,VALUE_TXT,FAR_CODE_ID
 1409,199,Participant last name,68
 1410,200,Participant first name,68
 1411,203,Fill as appropriate,68
-1412,204,Participant’s Social Security number,68
+1412,204,Participantâ€™s Social Security number,68
 1413,207,Fill as appropriate,68
 1414,208,#NAME?,68
 1415,209,Fill as appropriate,68
@@ -1463,7 +1463,7 @@ FAR_CODE_DATA_BLOCK_ID,DATA_BLOCK_FIELDS_ID,VALUE_TXT,FAR_CODE_ID
 1462,199,Participant last name,69
 1463,200,Participant first name,69
 1464,203,Fill as appropriate,69
-1465,204,Participant’s Social Security number,69
+1465,204,Participantâ€™s Social Security number,69
 1466,207,Fill as appropriate,69
 1467,208,#NAME?,69
 1468,209,Fill as appropriate,69
@@ -1505,7 +1505,7 @@ FAR_CODE_DATA_BLOCK_ID,DATA_BLOCK_FIELDS_ID,VALUE_TXT,FAR_CODE_ID
 1504,199,Participant last name,70
 1505,200,Participant first name,70
 1506,203,Fill as appropriate,70
-1507,204,Participant’s Social Security number,70
+1507,204,Participantâ€™s Social Security number,70
 1508,207,Fill as appropriate,70
 1509,208,#NAME?,70
 1510,209,Fill as appropriate,70
@@ -1548,7 +1548,7 @@ FAR_CODE_DATA_BLOCK_ID,DATA_BLOCK_FIELDS_ID,VALUE_TXT,FAR_CODE_ID
 1547,199,Participant last name,71
 1548,200,Participant first name,71
 1549,203,Fill as appropriate,71
-1550,204,Participant’s Social Security number,71
+1550,204,Participantâ€™s Social Security number,71
 1551,207,Fill as appropriate,71
 1552,208,#NAME?,71
 1553,209,Fill as appropriate,71
@@ -2779,7 +2779,7 @@ FAR_CODE_DATA_BLOCK_ID,DATA_BLOCK_FIELDS_ID,VALUE_TXT,FAR_CODE_ID
 2778,200,NCP first name,131
 2779,204,NCP Social Security number,131
 2780,203,NCP date of birth,131
-2781,143,NCP insurance carrier’s name,131
+2781,143,NCP insurance carrierâ€™s name,131
 2782,199,Participant last name,131
 2783,200,Participant first name,131
 2784,207,Fill as appropriate,131
@@ -2813,7 +2813,7 @@ FAR_CODE_DATA_BLOCK_ID,DATA_BLOCK_FIELDS_ID,VALUE_TXT,FAR_CODE_ID
 2812,200,NCP first name,132
 2813,204,NCP Social Security number,132
 2814,203,NCP date of birth,132
-2815,143,NCP insurance carrier’s name,132
+2815,143,NCP insurance carrierâ€™s name,132
 2816,144,NCP health insurance policy number,132
 2817,199,Participant last name,132
 2818,200,Participant first name,132
