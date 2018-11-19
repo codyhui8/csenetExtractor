@@ -216,7 +216,10 @@ class exportDataBlockValues(object):
         currRowData.append(helper.returnAlphaNumeric(rows[4]))
 
         # 'COMMENT_TXT'
-        currRowData.append(rows[5].replace("\n", "\\n"))
+        if helper.returnRequired(rows[5]):
+            currRowData.append(rows[5].replace("\n", "\\n").replace("Required\\n", "", 1))
+        else: 
+            currRowData.append(rows[5].replace("\n", "\\n"))
 
         # 'REQUIRED_CD'
         currRowData.append(helper.returnRequired(rows[5]))

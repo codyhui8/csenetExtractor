@@ -128,7 +128,7 @@ class mainExtractor(object):
             # print(codes[len(codes) - 1][3])
             # print(rows[1])
             # print(codes)
-            description = codes[len(codes) - 1][3] + rows[0] + " " + rows[1]
+            description = codes[len(codes) - 1][3] + rows[0] + " " + rows[1].rstrip("\n\r")
             # print(description)
             codes[len(codes) - 1][3] = description
             # print(codes)
@@ -155,9 +155,9 @@ class mainExtractor(object):
         if (FARCode not in [i[0] for i in codes]):
             # print(rows)
             if rows[1][0] == '[':
-                description = rows[1][12:].lstrip(' ')
+                description = rows[1][12:].lstrip(' ').replace('\n', ' ')
             else:
-                description = rows[1][11:].lstrip(' ')
+                description = rows[1][11:].lstrip(' ').replace('\n', ' ')
             # print(description)
             codes.append([FARCode, lineNumber, ['HEADER'], description])
             # print(codes)
