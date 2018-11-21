@@ -46,9 +46,9 @@ def returnOpenFileLocation(fileName):
 
 def removeAsterisk(value):
     if value[0] == '*':
-        return value[1:]
+        return value[1:].rstrip(' (2)')
     else:
-        return value
+        return value.rstrip(' (2)')
 
 def isFarCode(firstThreeWords):
         if len(firstThreeWords[0]) > 4 or len(firstThreeWords[0]) < 3:

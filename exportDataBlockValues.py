@@ -33,7 +33,7 @@ class exportDataBlockValues(object):
     # Create FAR_CODE_DATA_BLOCK table definition
     def extractFarCodeDataBlock(self):
         dataBlockFieldsData = self.extractDataBlockFields(os.path.join(self.dirName, 'CSENetTableExtractions/', 'DataBlockFields_EDITED'))
-        # print(dataBlockFieldsData)
+        print(dataBlockFieldsData)
         allFarCode = self.extractAllFarCodeValues(os.path.join(self.dirName, 'generatedFiles/', 'ALL_FAR_CODE.csv'))
         # print(allFarCode)
         with open(self.saveLocation, mode='w', encoding="utf-8") as farCodeDataBlockFields:
@@ -76,11 +76,12 @@ class exportDataBlockValues(object):
             # print(dataBlockFieldsData)
             mappedDataBlockFields = {}
             for i in dataBlockFieldsData: 
-                mappedDataBlockFields[helper.cleanStringPeriodDashLower(i[2])] = [i[1], [0]]
+                mappedDataBlockFields[self.hash(i)] = [i[1], i[0]]
+            # print(mappedDataBlockFields)
             # print(allDataBlockFields)
             for rows in csv_reader:
                 if farCodes in rows[1] and not hasReachedFarCode:
-                    # print(farCodes)
+                    print(farCodes)
                     isCurrentlyFarCode = True
                     hasReachedFarCode = True
                 elif farCodes[:3] + ' ' in rows[1] and farCodes not in rows[1] and hasReachedFarCode:
@@ -88,32 +89,53 @@ class exportDataBlockValues(object):
                     break
 
                 if rows[0] is not None and rows[0] != '' and hasReachedFarCode:
+                    print(helper.removeAsterisk(rows[0]))
                     if rows[0] != currentDataBlock and helper.removeAsterisk(rows[0]) in exportVariables.dataBlocks:
+                        print(helper.removeAsterisk(rows[0]))
                         currentDataBlock = helper.removeAsterisk(rows[0])
                         # print("-----" + currentDataBlock)
 
                 if isCurrentlyFarCode:
                     if rows[0].isupper():
                         # print(rows)
-                        rowDetail = self.determineRowDetail(rows, mappedDataBlockFields, farCodeId)
+                        changedCurrentDataBlock = exportVariables.dataBlocks.index(currentDataBlock.upper()) + 1
+                        print(currentDataBlock)
+                        rowDetail = self.determineRowDetail(rows, mappedDataBlockFields, farCodeId, changedCurrentDataBlock)
                         if rowDetail is not None:
                             farCodeDataBlockDefintion.append(rowDetail)
 
             # print(tempExtract)
         return farCodeDataBlockDefintion
 
+    def hash(self, value): 
+        return helper.cleanStringPeriodDashLower(value[2]) + str(value[0])
+    
+
+    def unhash(self, value): 
+        length = len(value)
+        return [ value[:length - 1], value[length - 1] ]
+    
+
     # Determines the relevant information in the Row Detail.
     # This will include the following:
     #    1. DATA_BLOCK_FIELD.DATA_BLOCK_FIELD_ID
     #    2. FAR_CODE_DATA_BLOCK.VALUE_TXT
     #    3. FAR_CODE.FAR_CODE_ID
-    def determineRowDetail(self, row, mappedDataBlockFields, farCodeId):
+    def determineRowDetail(self, row, mappedDataBlockFields, farCodeId, changedCurrentDataBlock):
         tempReturnDetails = []
         currentString = helper.cleanStringPeriodDashLower(row[0])
-        if currentString in mappedDataBlockFields.keys():
+        tempMappedDataBlockFields = []
+        tempTempMappedDataBlockFields = []
+        for i in mappedDataBlockFields.keys():
+            tempMappedDataBlockFields.append(self.unhash(i))
+        for i in tempMappedDataBlockFields:
+            tempTempMappedDataBlockFields.append(i[0])
+
+        if currentString in tempTempMappedDataBlockFields:
             # if "informationtext" in currentString:
             #     print(row)
-            dataBlockFieldId = mappedDataBlockFields[currentString][0]
+            print(currentString)
+            dataBlockFieldId = mappedDataBlockFields[currentString + str(changedCurrentDataBlock)][0]
 
             return [dataBlockFieldId, row[1], int(farCodeId)]
         return None
