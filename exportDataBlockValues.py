@@ -33,7 +33,7 @@ class exportDataBlockValues(object):
     # Create FAR_CODE_DATA_BLOCK table definition
     def extractFarCodeDataBlock(self):
         dataBlockFieldsData = self.extractDataBlockFields(os.path.join(self.dirName, 'CSENetTableExtractions/', 'DataBlockFields_EDITED'))
-        print(dataBlockFieldsData)
+        # print(dataBlockFieldsData)
         allFarCode = self.extractAllFarCodeValues(os.path.join(self.dirName, 'generatedFiles/', 'ALL_FAR_CODE.csv'))
         # print(allFarCode)
         with open(self.saveLocation, mode='w', encoding="utf-8") as farCodeDataBlockFields:
@@ -81,7 +81,7 @@ class exportDataBlockValues(object):
             # print(allDataBlockFields)
             for rows in csv_reader:
                 if farCodes in rows[1] and not hasReachedFarCode:
-                    print(farCodes)
+                    # print(farCodes)
                     isCurrentlyFarCode = True
                     hasReachedFarCode = True
                 elif farCodes[:3] + ' ' in rows[1] and farCodes not in rows[1] and hasReachedFarCode:
@@ -89,9 +89,9 @@ class exportDataBlockValues(object):
                     break
 
                 if rows[0] is not None and rows[0] != '' and hasReachedFarCode:
-                    print(helper.removeAsterisk(rows[0]))
+                    # print(helper.removeAsterisk(rows[0]))
                     if rows[0] != currentDataBlock and helper.removeAsterisk(rows[0]) in exportVariables.dataBlocks:
-                        print(helper.removeAsterisk(rows[0]))
+                        # print(helper.removeAsterisk(rows[0]))
                         currentDataBlock = helper.removeAsterisk(rows[0])
                         # print("-----" + currentDataBlock)
 
@@ -99,7 +99,7 @@ class exportDataBlockValues(object):
                     if rows[0].isupper():
                         # print(rows)
                         changedCurrentDataBlock = exportVariables.dataBlocks.index(currentDataBlock.upper()) + 1
-                        print(currentDataBlock)
+                        # print(currentDataBlock)
                         rowDetail = self.determineRowDetail(rows, mappedDataBlockFields, farCodeId, changedCurrentDataBlock)
                         if rowDetail is not None:
                             farCodeDataBlockDefintion.append(rowDetail)
@@ -134,7 +134,7 @@ class exportDataBlockValues(object):
         if currentString in tempTempMappedDataBlockFields:
             # if "informationtext" in currentString:
             #     print(row)
-            print(currentString)
+            # print(currentString)
             dataBlockFieldId = mappedDataBlockFields[currentString + str(changedCurrentDataBlock)][0]
 
             return [dataBlockFieldId, row[1], int(farCodeId)]
